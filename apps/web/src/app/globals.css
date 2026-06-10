@@ -40,7 +40,7 @@
   --color-info-subtle: rgba(59, 130, 246, 0.12);
 
   /* Fonts */
-  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-sans: "IBM Plex Sans", "Avenir Next", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
@@ -196,6 +196,11 @@ body {
 .badge-accent {
   background: var(--color-accent-subtle);
   color: var(--color-accent);
+}
+
+.badge-muted {
+  background: rgba(148, 150, 168, 0.12);
+  color: var(--color-text-secondary);
 }
 
 /* ============================================================

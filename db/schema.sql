@@ -224,7 +224,7 @@ CREATE TABLE IF NOT EXISTS recommendation_records (
     expected_roas_lift_pct NUMERIC,
     confidence_score NUMERIC,
     risk_level TEXT,
-    decision_required BOOLEAN DEFAULT TRUE,
+    decision_required TEXT DEFAULT 'human_approval',
     status TEXT NOT NULL
 );
 
@@ -293,7 +293,34 @@ CREATE TABLE IF NOT EXISTS agent_logs (
     agent TEXT NOT NULL,
     message TEXT NOT NULL,
     level TEXT NOT NULL, -- 'info', 'warning', 'error', 'success'
+    related_entity_type TEXT,
+    related_entity_id TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS agent_runs (
+    run_id TEXT PRIMARY KEY,
+    run_type TEXT,
+    status TEXT,
+    started_at TIMESTAMP WITH TIME ZONE,
+    completed_at TIMESTAMP WITH TIME ZONE,
+    triggered_by TEXT,
+    summary TEXT,
+    error_message TEXT
+);
+
+CREATE TABLE IF NOT EXISTS agent_run_steps (
+    step_id TEXT PRIMARY KEY,
+    run_id TEXT REFERENCES agent_runs(run_id) ON DELETE CASCADE,
+    step_order INTEGER,
+    agent_name TEXT,
+    status TEXT,
+    tool_used TEXT,
+    public_summary TEXT,
+    related_entity_type TEXT,
+    related_entity_id TEXT,
+    started_at TIMESTAMP WITH TIME ZONE,
+    completed_at TIMESTAMP WITH TIME ZONE
 );
 
 -- 3. Guardrails Config Settings
@@ -382,6 +409,11 @@ CREATE INDEX IF NOT EXISTS idx_jobs_status ON ingestion_jobs(status);
 CREATE INDEX IF NOT EXISTS idx_jobs_created ON ingestion_jobs(created_at);
 
 CREATE INDEX IF NOT EXISTS idx_logs_created ON agent_logs(created_at);
+CREATE INDEX IF NOT EXISTS idx_logs_agent ON agent_logs(agent);
+CREATE INDEX IF NOT EXISTS idx_agent_runs_status ON agent_runs(status);
+CREATE INDEX IF NOT EXISTS idx_agent_runs_started ON agent_runs(started_at);
+CREATE INDEX IF NOT EXISTS idx_agent_run_steps_run ON agent_run_steps(run_id);
+CREATE INDEX IF NOT EXISTS idx_agent_run_steps_agent ON agent_run_steps(agent_name);
 
 -- ─────────────────────────────────────────────────────────────
 -- 4. DEFAULT SEED INSERTS

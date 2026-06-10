@@ -1,242 +1,208 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import type { ReactNode } from "react";
+import { AlertCircle, CheckCircle2, DollarSign, FileQuestion, ShieldAlert, Users } from "lucide-react";
 import {
-  Search,
-  Filter,
-  ArrowUpRight,
-  Eye,
-  Check,
-  X,
-} from "lucide-react";
-import { mockRecommendations, type Recommendation } from "@/lib/mock-data";
-import { apiGet, apiSend } from "@/lib/api";
-import { formatCurrency, timeAgo } from "@/lib/utils";
-
-const platforms = ["All", "Meta", "Google", "TikTok"];
-const risks = ["All", "low", "medium", "high"];
-const statuses = ["All", "pending", "approved", "auto_approved", "rejected"];
+  decideRecommendation,
+  fallbackRecommendationFacets,
+  fallbackRecommendationSummary,
+  getRecommendationFacets,
+  getRecommendationSummary,
+  getRecommendations,
+} from "@/lib/api";
+import { formatCurrency, formatNumber } from "@/lib/utils";
+import {
+  defaultRecommendationFilters,
+  hasActiveRecommendationFilters,
+  RecommendationFilters,
+} from "@/components/recommendations/RecommendationFilters";
+import { RecommendationEmptyState } from "@/components/recommendations/RecommendationEmptyState";
+import { RecommendationTable } from "@/components/recommendations/RecommendationTable";
+import { RecommendationToolbar } from "@/components/recommendations/RecommendationToolbar";
+import type {
+  RecommendationAction,
+  RecommendationFacets,
+  RecommendationFilters as FilterState,
+  RecommendationRecord,
+  RecommendationSummary,
+} from "@/types/recommendations";
 
 export default function RecommendationsPage() {
-  const [recommendations, setRecommendations] = useState<Recommendation[]>(mockRecommendations);
-  const [platformFilter, setPlatformFilter] = useState("All");
-  const [riskFilter, setRiskFilter] = useState("All");
-  const [statusFilter, setStatusFilter] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [filters, setFilters] = useState<FilterState>(defaultRecommendationFilters);
+  const [facets, setFacets] = useState<RecommendationFacets>(fallbackRecommendationFacets);
+  const [summary, setSummary] = useState<RecommendationSummary>(fallbackRecommendationSummary);
+  const [recommendations, setRecommendations] = useState<RecommendationRecord[]>([]);
+  const [total, setTotal] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [busyId, setBusyId] = useState<string | null>(null);
+  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
-  useEffect(() => {
-    apiGet<{ recommendations: Recommendation[] }>("/recommendations", {
-      recommendations: mockRecommendations,
-    }).then((result) => setRecommendations(result.recommendations));
+  const fetchRecommendationData = useCallback(async (nextFilters: FilterState) => {
+    const [nextFacets, nextSummary, list] = await Promise.all([
+      getRecommendationFacets(),
+      getRecommendationSummary(),
+      getRecommendations(nextFilters),
+    ]);
+
+    return { nextFacets, nextSummary, list };
   }, []);
 
-  const handleDecision = async (id: string, decision: "approve" | "reject") => {
-    await apiSend(`/recommendations/${id}/${decision}`, "POST", {});
-    setRecommendations((prev) =>
-      prev.map((rec) =>
-        rec.id === id
-          ? { ...rec, status: decision === "approve" ? "approved" : "rejected", decision_required: false }
-          : rec,
-      ),
-    );
+  const applyRecommendationData = useCallback((data: Awaited<ReturnType<typeof fetchRecommendationData>>) => {
+    setFacets(data.nextFacets);
+    setSummary(data.nextSummary);
+    setRecommendations(data.list.items);
+    setTotal(data.list.total);
+  }, []);
+
+  const loadRecommendations = useCallback(async (nextFilters: FilterState = filters, clearMessage = true) => {
+    setIsLoading(true);
+    if (clearMessage) setMessage(null);
+    try {
+      applyRecommendationData(await fetchRecommendationData(nextFilters));
+    } catch (error) {
+      setMessage({
+        type: "error",
+        text: error instanceof Error ? error.message : "Unable to load recommendations.",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }, [applyRecommendationData, fetchRecommendationData, filters]);
+
+  useEffect(() => {
+    let isCurrent = true;
+
+    fetchRecommendationData(filters)
+      .then((data) => {
+        if (isCurrent) applyRecommendationData(data);
+      })
+      .catch((error) => {
+        if (!isCurrent) return;
+        setMessage({
+          type: "error",
+          text: error instanceof Error ? error.message : "Unable to load recommendations.",
+        });
+      })
+      .finally(() => {
+        if (isCurrent) setIsLoading(false);
+      });
+
+    return () => {
+      isCurrent = false;
+    };
+  }, [applyRecommendationData, fetchRecommendationData, filters]);
+
+  const isFallback = summary.source !== "database" || facets.source !== "database";
+  const hasFilters = useMemo(() => hasActiveRecommendationFilters(filters), [filters]);
+
+  const handleAction = async (id: string, action: RecommendationAction, note?: string) => {
+    setBusyId(id);
+    setMessage(null);
+    try {
+      await decideRecommendation(id, action, note);
+      const actionLabel =
+        action === "approve"
+          ? "approved"
+          : action === "reject"
+            ? "rejected"
+            : "marked for more evidence";
+      await loadRecommendations(filters, false);
+      setMessage({ type: "success", text: `Recommendation ${actionLabel}.` });
+    } catch (error) {
+      setMessage({
+        type: "error",
+        text: error instanceof Error ? error.message : "Decision update failed.",
+      });
+    } finally {
+      setBusyId(null);
+    }
   };
 
-  const filtered = recommendations.filter((rec) => {
-    if (platformFilter !== "All" && rec.platform !== platformFilter) return false;
-    if (riskFilter !== "All" && rec.risk !== riskFilter) return false;
-    if (statusFilter !== "All" && rec.status !== statusFilter) return false;
-    if (searchQuery && !rec.title.toLowerCase().includes(searchQuery.toLowerCase()) && !rec.client_name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
-    return true;
-  });
+  const resetFilters = () => setFilters(defaultRecommendationFilters);
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold gradient-text">Recommendation Queue</h1>
-        <p className="text-sm mt-1" style={{ color: "var(--color-text-secondary)" }}>
-          {recommendations.length} total recommendations · {recommendations.filter((r) => r.decision_required).length} awaiting decision
-        </p>
+      <RecommendationToolbar isLoading={isLoading} isFallback={isFallback} onRefresh={() => loadRecommendations(filters)} />
+
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-5">
+        <SummaryCard icon={<Users size={18} />} label="Total recommendations" value={formatNumber(summary.total)} />
+        <SummaryCard icon={<AlertCircle size={18} />} label="Human approval required" value={formatNumber(summary.human_approval_required)} />
+        <SummaryCard icon={<ShieldAlert size={18} />} label="High-risk recommendations" value={formatNumber(summary.high_risk)} tone="danger" />
+        <SummaryCard icon={<DollarSign size={18} />} label="Estimated weekly savings" value={formatCurrency(summary.estimated_weekly_savings)} tone="success" />
+        <SummaryCard icon={<FileQuestion size={18} />} label="Needs more evidence" value={formatNumber(summary.needs_more_evidence)} />
       </div>
 
-      {/* Filters */}
-      <div className="glass-card p-4">
-        <div className="flex flex-wrap items-center gap-4">
-          {/* Search */}
-          <div className="flex items-center gap-2 flex-1 min-w-[200px] px-3 py-2 rounded-lg" style={{ background: "var(--color-bg-tertiary)", border: "1px solid var(--color-border)" }}>
-            <Search size={16} style={{ color: "var(--color-text-muted)" }} />
-            <input
-              type="text"
-              placeholder="Search by title or client..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="bg-transparent text-sm flex-1 outline-none"
-              style={{ color: "var(--color-text-primary)" }}
-            />
-          </div>
+      <RecommendationFilters
+        facets={facets}
+        filters={filters}
+        onChange={setFilters}
+        onReset={resetFilters}
+      />
 
-          {/* Platform filter */}
-          <div className="flex items-center gap-2">
-            <Filter size={14} style={{ color: "var(--color-text-muted)" }} />
-            <div className="flex gap-1">
-              {platforms.map((p) => (
-                <button
-                  key={p}
-                  onClick={() => setPlatformFilter(p)}
-                  className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all cursor-pointer ${
-                    platformFilter === p ? "text-white" : ""
-                  }`}
-                  style={{
-                    background: platformFilter === p ? "var(--color-accent)" : "var(--color-bg-tertiary)",
-                    color: platformFilter === p ? "white" : "var(--color-text-secondary)",
-                    border: `1px solid ${platformFilter === p ? "var(--color-accent)" : "var(--color-border)"}`,
-                  }}
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
-          </div>
+      {message && (
+        <div
+          className="flex items-center gap-2 rounded-lg border px-4 py-3 text-sm"
+          style={{
+            background: message.type === "success" ? "var(--color-success-subtle)" : "var(--color-danger-subtle)",
+            borderColor: message.type === "success" ? "var(--color-success)" : "var(--color-danger)",
+            color: message.type === "success" ? "var(--color-success)" : "var(--color-danger)",
+          }}
+        >
+          {message.type === "success" ? <CheckCircle2 size={16} /> : <AlertCircle size={16} />}
+          {message.text}
+        </div>
+      )}
 
-          {/* Risk filter */}
-          <div className="flex gap-1">
-            {risks.map((r) => (
-              <button
-                key={r}
-                onClick={() => setRiskFilter(r)}
-                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all cursor-pointer`}
-                style={{
-                  background: riskFilter === r ? "var(--color-accent)" : "var(--color-bg-tertiary)",
-                  color: riskFilter === r ? "white" : "var(--color-text-secondary)",
-                  border: `1px solid ${riskFilter === r ? "var(--color-accent)" : "var(--color-border)"}`,
-                }}
-              >
-                {r === "All" ? "All Risk" : r.charAt(0).toUpperCase() + r.slice(1)}
-              </button>
-            ))}
-          </div>
+      <div className="flex items-center justify-between gap-3 text-sm" style={{ color: "var(--color-text-secondary)" }}>
+        <span>
+          Showing {formatNumber(recommendations.length)} of {formatNumber(total)} recommendations
+        </span>
+        {isLoading && <span>Refreshing recommendations...</span>}
+      </div>
 
-          {/* Status filter */}
-          <select
-            value={statusFilter}
-            onChange={(e) => setStatusFilter(e.target.value)}
-            className="px-3 py-1.5 rounded-md text-xs font-medium outline-none cursor-pointer"
-            style={{
-              background: "var(--color-bg-tertiary)",
-              color: "var(--color-text-secondary)",
-              border: "1px solid var(--color-border)",
-            }}
-          >
-            {statuses.map((s) => (
-              <option key={s} value={s}>
-                {s === "All" ? "All Statuses" : s.replace("_", " ")}
-              </option>
-            ))}
-          </select>
+      {recommendations.length > 0 ? (
+        <RecommendationTable recommendations={recommendations} busyId={busyId} onAction={handleAction} />
+      ) : (
+        <RecommendationEmptyState hasFilters={hasFilters} onReset={resetFilters} />
+      )}
+    </div>
+  );
+}
+
+function SummaryCard({
+  icon,
+  label,
+  value,
+  tone,
+}: {
+  icon: ReactNode;
+  label: string;
+  value: string;
+  tone?: "success" | "danger";
+}) {
+  return (
+    <div className="glass-card p-4">
+      <div className="flex items-center justify-between gap-3">
+        <div className="rounded-lg p-2" style={{ background: "var(--color-bg-tertiary)", color: "var(--color-accent)" }}>
+          {icon}
         </div>
       </div>
-
-      {/* Results */}
-      <div className="space-y-3">
-        {filtered.map((rec, idx) => (
-          <div
-            key={rec.id}
-            className="glass-card glass-card-hover p-5 animate-fade-in"
-            style={{ animationDelay: `${idx * 0.05}s` }}
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1 flex-wrap">
-                  <Link
-                    href={`/recommendations/${rec.id}`}
-                    className="text-sm font-semibold hover:underline"
-                    style={{ color: "var(--color-text-primary)" }}
-                  >
-                    {rec.title}
-                  </Link>
-                  <span className={`badge badge-${rec.risk}`}>
-                    {rec.risk.charAt(0).toUpperCase() + rec.risk.slice(1)} Risk
-                  </span>
-                  <span className="badge badge-info">{rec.platform}</span>
-                  {rec.status === "pending" && (
-                    <span className="badge badge-medium">Decision Required</span>
-                  )}
-                  {rec.status === "auto_approved" && (
-                    <span className="badge badge-low">Auto-Approved</span>
-                  )}
-                  {rec.status === "approved" && (
-                    <span className="badge badge-low">Approved</span>
-                  )}
-                </div>
-                <p className="text-xs mb-2" style={{ color: "var(--color-text-secondary)" }}>
-                  {rec.client_name} · {rec.type.replace(/_/g, " ")} · {timeAgo(rec.created_at)}
-                </p>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
-                  {rec.summary}
-                </p>
-              </div>
-
-              <div className="flex flex-col items-end gap-2 shrink-0">
-                <div className="text-right">
-                  <div className="text-lg font-bold" style={{ color: "var(--color-success)" }}>
-                    {formatCurrency(rec.expected_savings)}
-                  </div>
-                  <div className="text-[11px]" style={{ color: "var(--color-text-muted)" }}>
-                    est. savings/mo
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <div className="text-right">
-                    <div className="text-xs font-medium" style={{ color: "var(--color-text-secondary)" }}>
-                      {(rec.confidence * 100).toFixed(0)}% conf.
-                    </div>
-                  </div>
-                  <div
-                    className="w-12 h-1.5 rounded-full overflow-hidden"
-                    style={{ background: "var(--color-bg-tertiary)" }}
-                  >
-                    <div
-                      className="h-full rounded-full"
-                      style={{
-                        width: `${rec.confidence * 100}%`,
-                        background: rec.confidence >= 0.9 ? "var(--color-success)" : "var(--color-accent)",
-                      }}
-                    />
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-1.5 mt-1">
-                  <Link href={`/recommendations/${rec.id}`}>
-                    <button className="btn btn-secondary btn-sm">
-                      <Eye size={14} /> Evidence
-                      <ArrowUpRight size={12} />
-                    </button>
-                  </Link>
-                  {rec.decision_required && (
-                    <>
-                      <button onClick={() => handleDecision(rec.id, "approve")} className="btn btn-success btn-sm">
-                        <Check size={14} /> Approve
-                      </button>
-                      <button onClick={() => handleDecision(rec.id, "reject")} className="btn btn-danger btn-sm">
-                        <X size={14} /> Reject
-                      </button>
-                    </>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-
-        {filtered.length === 0 && (
-          <div className="glass-card p-12 text-center">
-            <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
-              No recommendations match your filters.
-            </p>
-          </div>
-        )}
+      <div
+        className="mt-3 text-2xl font-bold"
+        style={{
+          color:
+            tone === "success"
+              ? "var(--color-success)"
+              : tone === "danger"
+                ? "var(--color-danger)"
+                : "var(--color-text-primary)",
+        }}
+      >
+        {value}
+      </div>
+      <div className="mt-1 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+        {label}
       </div>
     </div>
   );

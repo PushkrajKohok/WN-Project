@@ -13,6 +13,11 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 
 from app.db import fetch_all, fetch_one, get_database_url, get_db_connection, is_db_configured
+from app.services.agent_log_service import (
+    create_generation_logs,
+    create_ingestion_failure_log,
+    create_ingestion_logs,
+)
 
 ROOT = Path(__file__).resolve().parents[4]
 DATA_DIR = ROOT / "data"
@@ -79,7 +84,10 @@ def set_job(job_id: str, **values: Any) -> Dict[str, Any]:
 
 def manifest_row_counts(manifest: dict[str, Any]) -> dict[str, int]:
     if isinstance(manifest.get("row_counts"), dict):
-        return {str(key): int(value) for key, value in manifest["row_counts"].items()}
+        return {
+            str(key).replace(".csv", ""): int(value)
+            for key, value in manifest["row_counts"].items()
+        }
     if isinstance(manifest.get("files"), list):
         return {
             str(item.get("name", "")).replace(".csv", ""): int(item.get("rows", 0))
@@ -94,7 +102,7 @@ def read_manifest(data_dir: Path) -> Optional[dict[str, Any]]:
     if not manifest_path.exists():
         return None
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    manifest.setdefault("row_counts", manifest_row_counts(manifest))
+    manifest["row_counts"] = manifest_row_counts(manifest)
     return manifest
 
 
@@ -198,6 +206,7 @@ def run_generation(job_id: str, data_dir: Path, clients: int, customers: int, da
             message="Synthetic data generation completed.",
         )
         update_db_job(job_id, "completed", row_counts)
+        create_generation_logs(job_id)
     except Exception as exc:
         set_job(job_id, status="failed", completed_at=utc_now(), error_message=str(exc))
         update_db_job(job_id, "failed", error_message=str(exc))
@@ -228,11 +237,16 @@ def run_ingestion(job_id: str, data_dir: Path, reset: bool) -> None:
             message="CSV ingestion completed.",
         )
         update_db_job(job_id, "completed", row_counts)
+        create_ingestion_logs(row_counts, job_id)
     except Exception as exc:
         stderr = getattr(exc, "stderr", "")
         error = f"{exc}\n{stderr}".strip()
         set_job(job_id, status="failed", completed_at=utc_now(), error_message=error)
         update_db_job(job_id, "failed", error_message=error)
+        create_ingestion_failure_log(
+            "Data Scout could not load CSV data because the database is unavailable or the ingestion script failed.",
+            job_id,
+        )
 
 
 def trigger_generate_job(

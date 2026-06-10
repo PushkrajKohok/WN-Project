@@ -126,7 +126,7 @@ TABLE_SCHEMAS = {
         "recommendation_type": "text", "title": "text", "target_platform": "text",
         "target_campaign_id": "text", "evidence_summary": "text", "supporting_benchmark_id": "text",
         "expected_weekly_savings": "numeric", "expected_roas_lift_pct": "numeric",
-        "confidence_score": "numeric", "risk_level": "text", "decision_required": "boolean", "status": "text"
+        "confidence_score": "numeric", "risk_level": "text", "decision_required": "text", "status": "text"
     },
     "knowledge_graph_edges": {
         "edge_id": "text", "source_node_type": "text", "source_node_id": "text", "relationship": "text",
