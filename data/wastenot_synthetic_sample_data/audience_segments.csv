@@ -1,0 +1,481 @@
+audience_id,client_id,audience_name,source_system,rule_expression,segment_type,estimated_size,destination_platforms,last_synced_at,sync_status
+AUD_00000001,CL_0001,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,195,Meta,2026-04-30 09:17:56,synced
+AUD_00000002,CL_0001,High LTV Customers,Shopify,lifetime_value > 500,targeting,47,Meta,2026-03-16 16:23:35,synced
+AUD_00000003,CL_0001,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,102,Meta,2026-03-12 04:30:14,synced
+AUD_00000004,CL_0001,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,113,Meta,2026-05-05 18:43:47,synced
+AUD_00000005,CL_0001,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,58,Google,2026-05-14 05:31:05,pending
+AUD_00000006,CL_0001,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,342,"Meta,Google",2026-06-01 23:50:38,synced
+AUD_00000007,CL_0001,Recent Refunds,Shopify,refund_created_30d = true,exclusion,67,"Meta,Google",2026-05-01 13:37:29,synced
+AUD_00000008,CL_0001,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,330,Google,2026-05-17 03:10:34,synced
+AUD_00000009,CL_0002,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,353,Meta,2026-03-24 13:14:44,synced
+AUD_00000010,CL_0002,High LTV Customers,Shopify,lifetime_value > 500,targeting,187,Meta,2026-05-26 17:53:20,synced
+AUD_00000011,CL_0002,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,279,"Meta,Google",2026-05-30 06:25:56,synced
+AUD_00000012,CL_0002,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,84,Google,2026-05-05 10:41:46,synced
+AUD_00000013,CL_0002,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,150,"Meta,Google",2026-06-08 03:17:44,synced
+AUD_00000014,CL_0002,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,140,Meta,2026-04-30 06:31:40,synced
+AUD_00000015,CL_0002,Recent Refunds,Shopify,refund_created_30d = true,exclusion,125,Google,2026-04-05 15:41:48,synced
+AUD_00000016,CL_0002,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,342,Google,2026-03-27 10:32:24,synced
+AUD_00000017,CL_0003,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,143,Meta,2026-05-16 07:59:42,pending
+AUD_00000018,CL_0003,High LTV Customers,Shopify,lifetime_value > 500,targeting,108,Meta,2026-04-10 17:53:27,synced
+AUD_00000019,CL_0003,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,54,Meta,2026-04-24 06:28:35,synced
+AUD_00000020,CL_0003,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,144,"Meta,Google",2026-03-31 22:48:59,synced
+AUD_00000021,CL_0003,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,299,Google,2026-04-09 14:45:15,synced
+AUD_00000022,CL_0003,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,324,Google,2026-05-06 04:48:12,synced
+AUD_00000023,CL_0003,Recent Refunds,Shopify,refund_created_30d = true,exclusion,316,"Meta,Google",2026-05-31 13:28:46,synced
+AUD_00000024,CL_0003,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,297,Meta,2026-03-25 05:36:39,synced
+AUD_00000025,CL_0004,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,284,Google,2026-04-26 00:08:22,partial
+AUD_00000026,CL_0004,High LTV Customers,Shopify,lifetime_value > 500,targeting,240,Meta,2026-03-19 02:55:46,synced
+AUD_00000027,CL_0004,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,112,Google,2026-05-23 03:28:41,synced
+AUD_00000028,CL_0004,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,93,"Meta,Google",2026-04-27 03:12:18,synced
+AUD_00000029,CL_0004,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,323,"Meta,Google",2026-04-13 15:33:43,synced
+AUD_00000030,CL_0004,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,290,"Meta,Google",2026-05-13 05:55:08,synced
+AUD_00000031,CL_0004,Recent Refunds,Shopify,refund_created_30d = true,exclusion,304,Meta,2026-04-23 18:20:16,synced
+AUD_00000032,CL_0004,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,171,Google,2026-05-19 17:49:27,synced
+AUD_00000033,CL_0005,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,302,Google,2026-04-05 07:06:40,synced
+AUD_00000034,CL_0005,High LTV Customers,Shopify,lifetime_value > 500,targeting,178,Meta,2026-04-04 01:57:29,pending
+AUD_00000035,CL_0005,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,321,"Meta,Google",2026-05-17 22:47:29,synced
+AUD_00000036,CL_0005,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,304,Meta,2026-05-21 08:02:09,partial
+AUD_00000037,CL_0005,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,315,Google,2026-04-07 06:32:54,pending
+AUD_00000038,CL_0005,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,258,Google,2026-06-06 16:23:11,synced
+AUD_00000039,CL_0005,Recent Refunds,Shopify,refund_created_30d = true,exclusion,177,Google,2026-04-06 07:45:43,synced
+AUD_00000040,CL_0005,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,104,Google,2026-04-09 11:48:26,synced
+AUD_00000041,CL_0006,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,129,Meta,2026-04-18 16:21:54,synced
+AUD_00000042,CL_0006,High LTV Customers,Shopify,lifetime_value > 500,targeting,180,Meta,2026-03-21 01:58:35,synced
+AUD_00000043,CL_0006,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,318,"Meta,Google",2026-03-12 06:06:04,synced
+AUD_00000044,CL_0006,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,367,Meta,2026-04-25 15:38:31,synced
+AUD_00000045,CL_0006,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,145,"Meta,Google",2026-04-11 03:38:23,partial
+AUD_00000046,CL_0006,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,151,Meta,2026-05-27 10:38:09,synced
+AUD_00000047,CL_0006,Recent Refunds,Shopify,refund_created_30d = true,exclusion,211,Meta,2026-05-27 07:20:38,synced
+AUD_00000048,CL_0006,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,91,"Meta,Google",2026-03-19 20:56:23,synced
+AUD_00000049,CL_0007,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,337,Google,2026-04-27 14:39:02,synced
+AUD_00000050,CL_0007,High LTV Customers,Shopify,lifetime_value > 500,targeting,65,"Meta,Google",2026-05-15 23:14:11,synced
+AUD_00000051,CL_0007,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,111,Meta,2026-05-02 10:53:50,synced
+AUD_00000052,CL_0007,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,118,Google,2026-04-23 12:02:57,failed
+AUD_00000053,CL_0007,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,93,Google,2026-04-21 15:37:13,synced
+AUD_00000054,CL_0007,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,383,Google,2026-03-28 05:38:31,synced
+AUD_00000055,CL_0007,Recent Refunds,Shopify,refund_created_30d = true,exclusion,164,Meta,2026-04-25 03:59:21,synced
+AUD_00000056,CL_0007,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,304,Meta,2026-03-30 18:11:40,synced
+AUD_00000057,CL_0008,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,142,"Meta,Google",2026-03-13 19:21:04,synced
+AUD_00000058,CL_0008,High LTV Customers,Shopify,lifetime_value > 500,targeting,264,"Meta,Google",2026-05-30 13:51:18,synced
+AUD_00000059,CL_0008,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,76,Google,2026-05-23 15:51:36,synced
+AUD_00000060,CL_0008,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,377,"Meta,Google",2026-03-14 10:34:05,synced
+AUD_00000061,CL_0008,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,283,Meta,2026-03-22 08:50:35,synced
+AUD_00000062,CL_0008,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,326,Meta,2026-05-20 05:02:04,partial
+AUD_00000063,CL_0008,Recent Refunds,Shopify,refund_created_30d = true,exclusion,256,Google,2026-05-20 19:55:20,synced
+AUD_00000064,CL_0008,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,248,"Meta,Google",2026-04-28 20:50:43,synced
+AUD_00000065,CL_0009,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,247,"Meta,Google",2026-03-12 16:16:08,synced
+AUD_00000066,CL_0009,High LTV Customers,Shopify,lifetime_value > 500,targeting,56,"Meta,Google",2026-05-06 10:08:06,synced
+AUD_00000067,CL_0009,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,251,"Meta,Google",2026-03-30 22:28:37,synced
+AUD_00000068,CL_0009,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,180,Google,2026-04-24 12:33:45,synced
+AUD_00000069,CL_0009,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,398,Meta,2026-04-23 17:12:13,synced
+AUD_00000070,CL_0009,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,140,Meta,2026-05-13 18:03:20,synced
+AUD_00000071,CL_0009,Recent Refunds,Shopify,refund_created_30d = true,exclusion,380,Google,2026-05-21 15:36:18,pending
+AUD_00000072,CL_0009,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,347,"Meta,Google",2026-04-17 19:01:13,synced
+AUD_00000073,CL_0010,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,188,Meta,2026-04-10 09:26:51,synced
+AUD_00000074,CL_0010,High LTV Customers,Shopify,lifetime_value > 500,targeting,125,"Meta,Google",2026-05-12 11:15:01,synced
+AUD_00000075,CL_0010,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,46,Meta,2026-05-22 20:37:57,synced
+AUD_00000076,CL_0010,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,155,Meta,2026-04-20 23:45:14,synced
+AUD_00000077,CL_0010,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,330,Google,2026-04-17 08:18:21,synced
+AUD_00000078,CL_0010,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,172,Google,2026-05-30 09:06:06,partial
+AUD_00000079,CL_0010,Recent Refunds,Shopify,refund_created_30d = true,exclusion,179,Google,2026-04-04 01:41:46,synced
+AUD_00000080,CL_0010,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,353,Google,2026-03-19 10:04:45,synced
+AUD_00000081,CL_0011,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,344,Meta,2026-03-15 19:47:21,failed
+AUD_00000082,CL_0011,High LTV Customers,Shopify,lifetime_value > 500,targeting,211,"Meta,Google",2026-04-15 06:43:18,synced
+AUD_00000083,CL_0011,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,119,Google,2026-04-14 13:08:59,synced
+AUD_00000084,CL_0011,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,393,Meta,2026-04-30 01:11:58,synced
+AUD_00000085,CL_0011,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,261,Meta,2026-03-25 02:49:16,synced
+AUD_00000086,CL_0011,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,104,"Meta,Google",2026-03-17 22:40:21,synced
+AUD_00000087,CL_0011,Recent Refunds,Shopify,refund_created_30d = true,exclusion,190,Google,2026-03-29 01:00:17,synced
+AUD_00000088,CL_0011,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,92,Meta,2026-05-24 17:17:30,partial
+AUD_00000089,CL_0012,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,63,Meta,2026-03-18 04:13:55,synced
+AUD_00000090,CL_0012,High LTV Customers,Shopify,lifetime_value > 500,targeting,96,Meta,2026-06-03 16:37:04,synced
+AUD_00000091,CL_0012,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,192,Meta,2026-05-29 07:09:17,synced
+AUD_00000092,CL_0012,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,187,"Meta,Google",2026-06-07 09:25:58,synced
+AUD_00000093,CL_0012,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,137,Google,2026-06-06 11:48:06,synced
+AUD_00000094,CL_0012,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,399,"Meta,Google",2026-03-20 22:39:11,pending
+AUD_00000095,CL_0012,Recent Refunds,Shopify,refund_created_30d = true,exclusion,204,Meta,2026-04-15 10:58:49,partial
+AUD_00000096,CL_0012,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,343,"Meta,Google",2026-05-21 14:32:58,synced
+AUD_00000097,CL_0013,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,340,Google,2026-05-26 20:31:09,synced
+AUD_00000098,CL_0013,High LTV Customers,Shopify,lifetime_value > 500,targeting,371,Google,2026-05-19 00:28:11,synced
+AUD_00000099,CL_0013,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,146,Meta,2026-03-12 00:03:43,synced
+AUD_00000100,CL_0013,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,206,"Meta,Google",2026-06-02 13:07:17,pending
+AUD_00000101,CL_0013,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,125,"Meta,Google",2026-04-23 00:47:33,synced
+AUD_00000102,CL_0013,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,67,"Meta,Google",2026-04-06 15:35:47,pending
+AUD_00000103,CL_0013,Recent Refunds,Shopify,refund_created_30d = true,exclusion,307,Google,2026-04-01 23:38:56,synced
+AUD_00000104,CL_0013,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,367,Google,2026-04-05 23:42:44,synced
+AUD_00000105,CL_0014,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,263,"Meta,Google",2026-03-28 19:11:47,synced
+AUD_00000106,CL_0014,High LTV Customers,Shopify,lifetime_value > 500,targeting,327,"Meta,Google",2026-04-12 04:18:47,synced
+AUD_00000107,CL_0014,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,197,"Meta,Google",2026-05-20 16:23:40,partial
+AUD_00000108,CL_0014,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,369,"Meta,Google",2026-05-31 23:07:42,failed
+AUD_00000109,CL_0014,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,283,Meta,2026-04-11 02:16:29,synced
+AUD_00000110,CL_0014,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,129,Meta,2026-05-23 23:30:20,failed
+AUD_00000111,CL_0014,Recent Refunds,Shopify,refund_created_30d = true,exclusion,321,Google,2026-04-12 03:51:11,synced
+AUD_00000112,CL_0014,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,380,Google,2026-03-24 08:28:05,partial
+AUD_00000113,CL_0015,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,334,Google,2026-05-27 10:15:06,synced
+AUD_00000114,CL_0015,High LTV Customers,Shopify,lifetime_value > 500,targeting,280,Google,2026-04-17 20:26:54,synced
+AUD_00000115,CL_0015,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,152,Google,2026-05-30 01:15:49,synced
+AUD_00000116,CL_0015,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,247,"Meta,Google",2026-03-15 12:26:45,synced
+AUD_00000117,CL_0015,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,268,Meta,2026-05-03 19:20:29,synced
+AUD_00000118,CL_0015,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,267,Google,2026-05-11 19:46:15,synced
+AUD_00000119,CL_0015,Recent Refunds,Shopify,refund_created_30d = true,exclusion,387,Google,2026-03-28 22:53:48,synced
+AUD_00000120,CL_0015,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,226,"Meta,Google",2026-05-22 17:42:27,synced
+AUD_00000121,CL_0016,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,222,Meta,2026-05-16 04:55:27,synced
+AUD_00000122,CL_0016,High LTV Customers,Shopify,lifetime_value > 500,targeting,83,Google,2026-04-22 09:19:09,synced
+AUD_00000123,CL_0016,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,140,Meta,2026-03-12 01:09:49,synced
+AUD_00000124,CL_0016,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,55,Meta,2026-05-02 15:58:11,synced
+AUD_00000125,CL_0016,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,151,Google,2026-04-14 07:48:57,synced
+AUD_00000126,CL_0016,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,377,Meta,2026-05-28 23:43:29,synced
+AUD_00000127,CL_0016,Recent Refunds,Shopify,refund_created_30d = true,exclusion,304,"Meta,Google",2026-06-04 08:24:18,synced
+AUD_00000128,CL_0016,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,134,Google,2026-04-26 11:36:19,synced
+AUD_00000129,CL_0017,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,71,"Meta,Google",2026-04-01 02:41:41,synced
+AUD_00000130,CL_0017,High LTV Customers,Shopify,lifetime_value > 500,targeting,153,Google,2026-05-08 01:41:36,synced
+AUD_00000131,CL_0017,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,353,Google,2026-03-22 14:14:49,partial
+AUD_00000132,CL_0017,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,330,"Meta,Google",2026-05-24 07:42:26,synced
+AUD_00000133,CL_0017,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,284,"Meta,Google",2026-04-04 13:09:02,synced
+AUD_00000134,CL_0017,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,182,"Meta,Google",2026-05-01 12:33:38,synced
+AUD_00000135,CL_0017,Recent Refunds,Shopify,refund_created_30d = true,exclusion,286,"Meta,Google",2026-04-26 01:37:48,synced
+AUD_00000136,CL_0017,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,119,Google,2026-04-12 21:17:01,synced
+AUD_00000137,CL_0018,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,297,Google,2026-04-11 17:50:29,synced
+AUD_00000138,CL_0018,High LTV Customers,Shopify,lifetime_value > 500,targeting,117,Google,2026-04-23 18:11:30,synced
+AUD_00000139,CL_0018,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,377,Google,2026-05-09 06:31:54,synced
+AUD_00000140,CL_0018,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,144,Google,2026-04-01 15:02:03,synced
+AUD_00000141,CL_0018,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,199,Google,2026-05-30 22:21:13,synced
+AUD_00000142,CL_0018,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,129,Meta,2026-04-05 07:05:25,partial
+AUD_00000143,CL_0018,Recent Refunds,Shopify,refund_created_30d = true,exclusion,243,Google,2026-03-30 23:41:05,synced
+AUD_00000144,CL_0018,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,380,Meta,2026-05-28 14:38:04,synced
+AUD_00000145,CL_0019,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,164,Meta,2026-05-07 22:58:08,synced
+AUD_00000146,CL_0019,High LTV Customers,Shopify,lifetime_value > 500,targeting,54,Meta,2026-05-07 13:43:41,synced
+AUD_00000147,CL_0019,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,339,"Meta,Google",2026-05-16 05:46:48,synced
+AUD_00000148,CL_0019,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,76,"Meta,Google",2026-05-04 13:20:59,synced
+AUD_00000149,CL_0019,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,73,Meta,2026-05-30 22:37:49,synced
+AUD_00000150,CL_0019,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,123,"Meta,Google",2026-05-20 06:05:40,synced
+AUD_00000151,CL_0019,Recent Refunds,Shopify,refund_created_30d = true,exclusion,197,"Meta,Google",2026-05-15 18:43:54,synced
+AUD_00000152,CL_0019,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,202,"Meta,Google",2026-04-25 11:18:53,synced
+AUD_00000153,CL_0020,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,313,Google,2026-04-13 15:02:04,synced
+AUD_00000154,CL_0020,High LTV Customers,Shopify,lifetime_value > 500,targeting,173,"Meta,Google",2026-04-21 01:38:01,synced
+AUD_00000155,CL_0020,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,95,Google,2026-04-05 14:21:53,pending
+AUD_00000156,CL_0020,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,304,"Meta,Google",2026-03-31 03:56:36,partial
+AUD_00000157,CL_0020,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,400,Google,2026-05-20 00:29:51,synced
+AUD_00000158,CL_0020,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,333,Meta,2026-04-23 23:20:11,synced
+AUD_00000159,CL_0020,Recent Refunds,Shopify,refund_created_30d = true,exclusion,46,Meta,2026-03-31 07:36:40,synced
+AUD_00000160,CL_0020,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,304,"Meta,Google",2026-05-02 15:43:19,synced
+AUD_00000161,CL_0021,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,43,Google,2026-05-05 06:16:25,synced
+AUD_00000162,CL_0021,High LTV Customers,Shopify,lifetime_value > 500,targeting,219,"Meta,Google",2026-05-24 23:33:58,pending
+AUD_00000163,CL_0021,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,155,"Meta,Google",2026-04-17 11:20:15,partial
+AUD_00000164,CL_0021,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,371,"Meta,Google",2026-05-29 01:17:37,synced
+AUD_00000165,CL_0021,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,379,Meta,2026-04-09 05:22:07,synced
+AUD_00000166,CL_0021,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,136,"Meta,Google",2026-06-06 03:34:21,synced
+AUD_00000167,CL_0021,Recent Refunds,Shopify,refund_created_30d = true,exclusion,385,Meta,2026-03-16 19:24:44,synced
+AUD_00000168,CL_0021,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,315,Google,2026-03-28 18:16:38,synced
+AUD_00000169,CL_0022,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,360,Google,2026-05-10 08:50:59,pending
+AUD_00000170,CL_0022,High LTV Customers,Shopify,lifetime_value > 500,targeting,384,Google,2026-06-03 13:44:07,partial
+AUD_00000171,CL_0022,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,163,Meta,2026-03-22 03:23:28,partial
+AUD_00000172,CL_0022,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,371,Meta,2026-06-07 17:16:39,synced
+AUD_00000173,CL_0022,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,163,Google,2026-05-21 05:55:35,synced
+AUD_00000174,CL_0022,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,327,Google,2026-04-26 02:44:25,pending
+AUD_00000175,CL_0022,Recent Refunds,Shopify,refund_created_30d = true,exclusion,79,"Meta,Google",2026-05-05 08:22:13,synced
+AUD_00000176,CL_0022,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,49,"Meta,Google",2026-06-08 14:18:23,synced
+AUD_00000177,CL_0023,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,286,"Meta,Google",2026-05-11 01:18:03,synced
+AUD_00000178,CL_0023,High LTV Customers,Shopify,lifetime_value > 500,targeting,275,"Meta,Google",2026-04-05 06:57:15,synced
+AUD_00000179,CL_0023,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,168,"Meta,Google",2026-06-04 17:58:45,pending
+AUD_00000180,CL_0023,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,124,"Meta,Google",2026-04-19 21:27:42,synced
+AUD_00000181,CL_0023,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,74,Google,2026-04-11 10:12:24,synced
+AUD_00000182,CL_0023,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,67,"Meta,Google",2026-05-22 11:03:50,synced
+AUD_00000183,CL_0023,Recent Refunds,Shopify,refund_created_30d = true,exclusion,87,Google,2026-04-13 22:56:03,partial
+AUD_00000184,CL_0023,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,157,Google,2026-05-15 11:48:13,synced
+AUD_00000185,CL_0024,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,122,"Meta,Google",2026-05-02 05:24:32,synced
+AUD_00000186,CL_0024,High LTV Customers,Shopify,lifetime_value > 500,targeting,356,Meta,2026-05-30 18:54:05,synced
+AUD_00000187,CL_0024,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,187,"Meta,Google",2026-04-29 06:46:44,synced
+AUD_00000188,CL_0024,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,216,Google,2026-03-24 02:00:21,synced
+AUD_00000189,CL_0024,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,370,Meta,2026-05-29 10:00:45,partial
+AUD_00000190,CL_0024,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,354,"Meta,Google",2026-06-04 08:12:04,pending
+AUD_00000191,CL_0024,Recent Refunds,Shopify,refund_created_30d = true,exclusion,319,Meta,2026-03-20 21:01:27,pending
+AUD_00000192,CL_0024,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,155,Meta,2026-04-12 00:41:59,synced
+AUD_00000193,CL_0025,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,387,"Meta,Google",2026-05-30 19:34:21,synced
+AUD_00000194,CL_0025,High LTV Customers,Shopify,lifetime_value > 500,targeting,320,"Meta,Google",2026-05-12 01:14:30,synced
+AUD_00000195,CL_0025,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,296,Meta,2026-04-25 21:26:25,synced
+AUD_00000196,CL_0025,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,166,"Meta,Google",2026-06-03 06:49:46,synced
+AUD_00000197,CL_0025,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,141,Google,2026-06-03 05:49:24,synced
+AUD_00000198,CL_0025,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,96,"Meta,Google",2026-04-22 22:22:34,synced
+AUD_00000199,CL_0025,Recent Refunds,Shopify,refund_created_30d = true,exclusion,272,Meta,2026-05-30 16:29:51,synced
+AUD_00000200,CL_0025,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,382,Google,2026-05-06 00:17:56,pending
+AUD_00000201,CL_0026,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,113,Meta,2026-05-17 09:10:36,synced
+AUD_00000202,CL_0026,High LTV Customers,Shopify,lifetime_value > 500,targeting,270,Meta,2026-05-11 11:45:11,failed
+AUD_00000203,CL_0026,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,192,"Meta,Google",2026-03-31 17:59:49,failed
+AUD_00000204,CL_0026,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,208,Google,2026-04-23 08:50:30,synced
+AUD_00000205,CL_0026,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,353,Meta,2026-05-14 00:57:35,synced
+AUD_00000206,CL_0026,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,341,"Meta,Google",2026-04-03 05:40:48,synced
+AUD_00000207,CL_0026,Recent Refunds,Shopify,refund_created_30d = true,exclusion,137,Meta,2026-05-19 15:47:02,partial
+AUD_00000208,CL_0026,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,99,Google,2026-05-31 06:29:00,failed
+AUD_00000209,CL_0027,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,245,Meta,2026-03-24 11:35:15,synced
+AUD_00000210,CL_0027,High LTV Customers,Shopify,lifetime_value > 500,targeting,301,Google,2026-04-30 16:38:05,synced
+AUD_00000211,CL_0027,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,321,"Meta,Google",2026-04-02 20:40:28,synced
+AUD_00000212,CL_0027,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,288,"Meta,Google",2026-04-18 09:52:47,synced
+AUD_00000213,CL_0027,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,315,Meta,2026-06-03 22:46:55,synced
+AUD_00000214,CL_0027,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,233,Google,2026-04-15 18:53:17,synced
+AUD_00000215,CL_0027,Recent Refunds,Shopify,refund_created_30d = true,exclusion,145,Google,2026-06-06 07:04:47,synced
+AUD_00000216,CL_0027,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,104,Google,2026-04-07 21:24:36,synced
+AUD_00000217,CL_0028,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,293,"Meta,Google",2026-04-07 19:55:05,synced
+AUD_00000218,CL_0028,High LTV Customers,Shopify,lifetime_value > 500,targeting,221,Meta,2026-05-17 09:40:33,synced
+AUD_00000219,CL_0028,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,128,"Meta,Google",2026-03-13 06:48:52,synced
+AUD_00000220,CL_0028,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,125,"Meta,Google",2026-05-11 08:21:35,synced
+AUD_00000221,CL_0028,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,207,Google,2026-03-14 02:48:54,synced
+AUD_00000222,CL_0028,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,329,Meta,2026-05-26 08:39:22,synced
+AUD_00000223,CL_0028,Recent Refunds,Shopify,refund_created_30d = true,exclusion,144,"Meta,Google",2026-04-27 11:02:37,pending
+AUD_00000224,CL_0028,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,326,Meta,2026-03-21 23:14:07,pending
+AUD_00000225,CL_0029,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,135,"Meta,Google",2026-05-01 09:39:51,pending
+AUD_00000226,CL_0029,High LTV Customers,Shopify,lifetime_value > 500,targeting,298,"Meta,Google",2026-05-26 19:43:32,synced
+AUD_00000227,CL_0029,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,316,Google,2026-05-12 11:37:24,partial
+AUD_00000228,CL_0029,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,213,Google,2026-04-20 16:23:43,synced
+AUD_00000229,CL_0029,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,224,Meta,2026-06-01 00:00:22,synced
+AUD_00000230,CL_0029,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,367,"Meta,Google",2026-05-31 16:48:30,synced
+AUD_00000231,CL_0029,Recent Refunds,Shopify,refund_created_30d = true,exclusion,222,"Meta,Google",2026-06-07 20:02:06,synced
+AUD_00000232,CL_0029,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,116,"Meta,Google",2026-04-20 18:12:45,synced
+AUD_00000233,CL_0030,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,299,Google,2026-05-18 13:31:22,synced
+AUD_00000234,CL_0030,High LTV Customers,Shopify,lifetime_value > 500,targeting,157,Meta,2026-03-30 21:35:57,pending
+AUD_00000235,CL_0030,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,378,"Meta,Google",2026-03-26 15:52:59,pending
+AUD_00000236,CL_0030,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,59,"Meta,Google",2026-06-03 03:00:36,synced
+AUD_00000237,CL_0030,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,213,Google,2026-04-02 20:30:55,partial
+AUD_00000238,CL_0030,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,212,"Meta,Google",2026-03-20 04:13:31,synced
+AUD_00000239,CL_0030,Recent Refunds,Shopify,refund_created_30d = true,exclusion,111,Google,2026-03-28 05:37:22,synced
+AUD_00000240,CL_0030,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,351,Meta,2026-06-04 23:04:09,synced
+AUD_00000241,CL_0031,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,92,Meta,2026-05-19 18:55:01,synced
+AUD_00000242,CL_0031,High LTV Customers,Shopify,lifetime_value > 500,targeting,89,"Meta,Google",2026-04-07 09:16:25,partial
+AUD_00000243,CL_0031,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,335,Google,2026-03-20 08:20:11,synced
+AUD_00000244,CL_0031,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,374,Meta,2026-03-15 16:21:45,synced
+AUD_00000245,CL_0031,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,80,Google,2026-06-05 22:12:42,synced
+AUD_00000246,CL_0031,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,81,Google,2026-03-22 02:10:49,synced
+AUD_00000247,CL_0031,Recent Refunds,Shopify,refund_created_30d = true,exclusion,136,Meta,2026-05-07 23:59:09,synced
+AUD_00000248,CL_0031,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,182,"Meta,Google",2026-03-24 02:19:03,synced
+AUD_00000249,CL_0032,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,302,"Meta,Google",2026-04-10 13:08:24,synced
+AUD_00000250,CL_0032,High LTV Customers,Shopify,lifetime_value > 500,targeting,224,Google,2026-03-25 06:48:17,synced
+AUD_00000251,CL_0032,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,304,"Meta,Google",2026-03-28 14:13:29,synced
+AUD_00000252,CL_0032,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,48,"Meta,Google",2026-04-04 10:28:03,synced
+AUD_00000253,CL_0032,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,108,Meta,2026-04-29 14:49:22,synced
+AUD_00000254,CL_0032,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,350,Meta,2026-05-31 03:03:55,synced
+AUD_00000255,CL_0032,Recent Refunds,Shopify,refund_created_30d = true,exclusion,80,Meta,2026-04-14 05:20:39,synced
+AUD_00000256,CL_0032,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,201,"Meta,Google",2026-05-24 22:43:28,synced
+AUD_00000257,CL_0033,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,264,"Meta,Google",2026-05-12 07:59:27,synced
+AUD_00000258,CL_0033,High LTV Customers,Shopify,lifetime_value > 500,targeting,244,"Meta,Google",2026-04-15 22:01:40,synced
+AUD_00000259,CL_0033,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,74,Google,2026-05-12 01:09:57,synced
+AUD_00000260,CL_0033,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,254,"Meta,Google",2026-05-05 23:04:26,synced
+AUD_00000261,CL_0033,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,224,"Meta,Google",2026-05-04 07:46:29,synced
+AUD_00000262,CL_0033,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,131,Meta,2026-04-06 00:27:15,partial
+AUD_00000263,CL_0033,Recent Refunds,Shopify,refund_created_30d = true,exclusion,164,Meta,2026-05-22 15:11:27,synced
+AUD_00000264,CL_0033,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,169,Meta,2026-04-21 05:38:56,failed
+AUD_00000265,CL_0034,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,181,Meta,2026-04-18 23:05:11,synced
+AUD_00000266,CL_0034,High LTV Customers,Shopify,lifetime_value > 500,targeting,389,"Meta,Google",2026-04-07 16:35:23,partial
+AUD_00000267,CL_0034,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,124,"Meta,Google",2026-03-21 00:35:05,synced
+AUD_00000268,CL_0034,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,397,Google,2026-04-28 14:31:04,synced
+AUD_00000269,CL_0034,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,109,"Meta,Google",2026-05-12 16:36:52,synced
+AUD_00000270,CL_0034,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,226,Google,2026-03-20 17:01:44,synced
+AUD_00000271,CL_0034,Recent Refunds,Shopify,refund_created_30d = true,exclusion,95,Google,2026-04-07 14:55:06,failed
+AUD_00000272,CL_0034,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,371,"Meta,Google",2026-04-29 08:09:13,synced
+AUD_00000273,CL_0035,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,253,"Meta,Google",2026-05-16 12:10:18,pending
+AUD_00000274,CL_0035,High LTV Customers,Shopify,lifetime_value > 500,targeting,322,"Meta,Google",2026-05-11 22:40:10,pending
+AUD_00000275,CL_0035,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,157,"Meta,Google",2026-06-08 23:52:30,synced
+AUD_00000276,CL_0035,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,248,"Meta,Google",2026-04-15 23:15:20,synced
+AUD_00000277,CL_0035,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,125,"Meta,Google",2026-04-11 07:11:15,pending
+AUD_00000278,CL_0035,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,190,Google,2026-03-22 14:10:24,synced
+AUD_00000279,CL_0035,Recent Refunds,Shopify,refund_created_30d = true,exclusion,189,Meta,2026-05-21 08:46:26,synced
+AUD_00000280,CL_0035,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,222,"Meta,Google",2026-05-29 13:02:11,synced
+AUD_00000281,CL_0036,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,372,Meta,2026-05-18 17:07:01,synced
+AUD_00000282,CL_0036,High LTV Customers,Shopify,lifetime_value > 500,targeting,302,Google,2026-05-21 03:23:56,synced
+AUD_00000283,CL_0036,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,206,"Meta,Google",2026-05-24 20:26:02,synced
+AUD_00000284,CL_0036,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,194,Meta,2026-05-04 06:18:47,synced
+AUD_00000285,CL_0036,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,329,Google,2026-04-22 22:03:56,synced
+AUD_00000286,CL_0036,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,115,"Meta,Google",2026-05-16 11:13:59,synced
+AUD_00000287,CL_0036,Recent Refunds,Shopify,refund_created_30d = true,exclusion,140,Meta,2026-05-02 18:31:01,synced
+AUD_00000288,CL_0036,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,375,Google,2026-03-23 05:35:15,pending
+AUD_00000289,CL_0037,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,271,Google,2026-05-20 12:29:36,synced
+AUD_00000290,CL_0037,High LTV Customers,Shopify,lifetime_value > 500,targeting,329,"Meta,Google",2026-05-13 12:16:36,synced
+AUD_00000291,CL_0037,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,178,"Meta,Google",2026-03-16 09:50:58,pending
+AUD_00000292,CL_0037,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,314,Google,2026-05-14 12:46:10,synced
+AUD_00000293,CL_0037,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,378,Meta,2026-05-28 16:27:13,synced
+AUD_00000294,CL_0037,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,140,"Meta,Google",2026-03-18 04:23:31,synced
+AUD_00000295,CL_0037,Recent Refunds,Shopify,refund_created_30d = true,exclusion,137,Meta,2026-03-18 10:17:08,synced
+AUD_00000296,CL_0037,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,325,Meta,2026-05-08 15:38:10,synced
+AUD_00000297,CL_0038,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,212,Google,2026-04-18 17:02:50,synced
+AUD_00000298,CL_0038,High LTV Customers,Shopify,lifetime_value > 500,targeting,185,"Meta,Google",2026-03-24 23:13:43,synced
+AUD_00000299,CL_0038,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,369,Meta,2026-06-08 16:55:44,synced
+AUD_00000300,CL_0038,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,122,Google,2026-04-05 07:30:02,synced
+AUD_00000301,CL_0038,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,107,Meta,2026-04-30 06:52:48,pending
+AUD_00000302,CL_0038,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,314,"Meta,Google",2026-05-16 22:10:37,synced
+AUD_00000303,CL_0038,Recent Refunds,Shopify,refund_created_30d = true,exclusion,131,Google,2026-04-06 23:28:28,synced
+AUD_00000304,CL_0038,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,260,Google,2026-05-19 01:34:37,synced
+AUD_00000305,CL_0039,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,332,Meta,2026-05-24 09:11:45,synced
+AUD_00000306,CL_0039,High LTV Customers,Shopify,lifetime_value > 500,targeting,282,Meta,2026-06-05 16:35:02,synced
+AUD_00000307,CL_0039,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,373,"Meta,Google",2026-03-14 00:36:34,synced
+AUD_00000308,CL_0039,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,225,Meta,2026-05-24 08:13:23,synced
+AUD_00000309,CL_0039,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,252,Google,2026-04-10 08:31:58,synced
+AUD_00000310,CL_0039,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,325,"Meta,Google",2026-05-10 01:28:54,synced
+AUD_00000311,CL_0039,Recent Refunds,Shopify,refund_created_30d = true,exclusion,215,Meta,2026-03-19 14:20:12,synced
+AUD_00000312,CL_0039,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,332,"Meta,Google",2026-05-15 10:36:57,synced
+AUD_00000313,CL_0040,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,327,Google,2026-03-23 00:06:23,synced
+AUD_00000314,CL_0040,High LTV Customers,Shopify,lifetime_value > 500,targeting,344,"Meta,Google",2026-04-04 20:08:21,synced
+AUD_00000315,CL_0040,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,151,Google,2026-05-13 00:57:30,synced
+AUD_00000316,CL_0040,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,169,Meta,2026-03-17 17:56:39,pending
+AUD_00000317,CL_0040,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,229,Google,2026-05-12 13:27:19,synced
+AUD_00000318,CL_0040,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,298,Google,2026-05-10 20:22:27,synced
+AUD_00000319,CL_0040,Recent Refunds,Shopify,refund_created_30d = true,exclusion,160,"Meta,Google",2026-05-16 20:17:11,synced
+AUD_00000320,CL_0040,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,141,Meta,2026-05-21 07:29:07,synced
+AUD_00000321,CL_0041,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,249,"Meta,Google",2026-03-13 01:37:43,synced
+AUD_00000322,CL_0041,High LTV Customers,Shopify,lifetime_value > 500,targeting,375,"Meta,Google",2026-03-14 02:04:05,synced
+AUD_00000323,CL_0041,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,352,Google,2026-05-16 22:47:41,synced
+AUD_00000324,CL_0041,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,307,Meta,2026-05-05 02:30:13,synced
+AUD_00000325,CL_0041,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,279,Google,2026-04-06 04:45:14,synced
+AUD_00000326,CL_0041,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,370,Google,2026-05-28 06:26:44,synced
+AUD_00000327,CL_0041,Recent Refunds,Shopify,refund_created_30d = true,exclusion,349,"Meta,Google",2026-03-20 11:59:46,synced
+AUD_00000328,CL_0041,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,69,Meta,2026-04-13 07:51:32,synced
+AUD_00000329,CL_0042,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,274,Meta,2026-03-13 19:51:55,partial
+AUD_00000330,CL_0042,High LTV Customers,Shopify,lifetime_value > 500,targeting,124,Meta,2026-05-29 07:42:47,synced
+AUD_00000331,CL_0042,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,241,Meta,2026-03-20 08:31:08,synced
+AUD_00000332,CL_0042,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,315,Google,2026-03-24 06:02:55,synced
+AUD_00000333,CL_0042,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,283,Meta,2026-04-23 19:56:33,pending
+AUD_00000334,CL_0042,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,125,Meta,2026-05-08 03:14:24,pending
+AUD_00000335,CL_0042,Recent Refunds,Shopify,refund_created_30d = true,exclusion,69,Meta,2026-03-16 03:57:27,synced
+AUD_00000336,CL_0042,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,268,Meta,2026-04-30 05:37:05,synced
+AUD_00000337,CL_0043,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,52,Google,2026-04-21 15:43:40,pending
+AUD_00000338,CL_0043,High LTV Customers,Shopify,lifetime_value > 500,targeting,159,"Meta,Google",2026-05-01 06:44:15,synced
+AUD_00000339,CL_0043,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,314,"Meta,Google",2026-03-13 19:53:12,partial
+AUD_00000340,CL_0043,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,362,Meta,2026-03-21 06:10:11,synced
+AUD_00000341,CL_0043,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,299,Google,2026-05-20 01:36:35,synced
+AUD_00000342,CL_0043,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,81,"Meta,Google",2026-06-03 06:14:28,synced
+AUD_00000343,CL_0043,Recent Refunds,Shopify,refund_created_30d = true,exclusion,360,"Meta,Google",2026-03-30 14:27:17,synced
+AUD_00000344,CL_0043,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,92,Meta,2026-05-16 18:12:30,pending
+AUD_00000345,CL_0044,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,218,"Meta,Google",2026-04-15 06:40:22,synced
+AUD_00000346,CL_0044,High LTV Customers,Shopify,lifetime_value > 500,targeting,269,"Meta,Google",2026-03-23 06:42:37,synced
+AUD_00000347,CL_0044,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,212,Meta,2026-05-21 02:48:21,synced
+AUD_00000348,CL_0044,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,210,Google,2026-03-22 05:14:30,synced
+AUD_00000349,CL_0044,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,99,Google,2026-03-29 21:27:50,synced
+AUD_00000350,CL_0044,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,202,Google,2026-05-29 06:29:16,synced
+AUD_00000351,CL_0044,Recent Refunds,Shopify,refund_created_30d = true,exclusion,245,Meta,2026-04-02 00:24:19,synced
+AUD_00000352,CL_0044,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,306,"Meta,Google",2026-06-05 14:20:16,synced
+AUD_00000353,CL_0045,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,367,Google,2026-04-06 05:04:25,partial
+AUD_00000354,CL_0045,High LTV Customers,Shopify,lifetime_value > 500,targeting,171,Google,2026-03-19 00:32:50,synced
+AUD_00000355,CL_0045,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,50,Google,2026-03-26 06:20:34,synced
+AUD_00000356,CL_0045,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,228,Google,2026-05-28 08:27:01,synced
+AUD_00000357,CL_0045,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,244,Meta,2026-05-01 21:03:22,synced
+AUD_00000358,CL_0045,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,235,Google,2026-04-11 20:49:05,partial
+AUD_00000359,CL_0045,Recent Refunds,Shopify,refund_created_30d = true,exclusion,339,"Meta,Google",2026-04-06 10:28:32,synced
+AUD_00000360,CL_0045,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,215,Meta,2026-05-06 07:50:59,synced
+AUD_00000361,CL_0046,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,259,Google,2026-04-14 12:49:43,synced
+AUD_00000362,CL_0046,High LTV Customers,Shopify,lifetime_value > 500,targeting,330,Google,2026-05-27 11:28:47,synced
+AUD_00000363,CL_0046,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,147,Google,2026-04-20 15:41:07,synced
+AUD_00000364,CL_0046,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,355,Meta,2026-05-19 18:26:35,synced
+AUD_00000365,CL_0046,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,286,Meta,2026-05-02 19:39:27,synced
+AUD_00000366,CL_0046,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,282,Meta,2026-05-07 18:18:26,partial
+AUD_00000367,CL_0046,Recent Refunds,Shopify,refund_created_30d = true,exclusion,99,"Meta,Google",2026-04-29 07:56:08,synced
+AUD_00000368,CL_0046,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,271,Meta,2026-05-06 15:59:59,failed
+AUD_00000369,CL_0047,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,237,"Meta,Google",2026-05-06 05:51:26,partial
+AUD_00000370,CL_0047,High LTV Customers,Shopify,lifetime_value > 500,targeting,203,"Meta,Google",2026-05-07 10:25:49,pending
+AUD_00000371,CL_0047,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,113,Google,2026-04-02 03:46:25,partial
+AUD_00000372,CL_0047,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,54,"Meta,Google",2026-04-20 08:38:24,synced
+AUD_00000373,CL_0047,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,190,Meta,2026-03-21 20:13:31,pending
+AUD_00000374,CL_0047,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,226,Meta,2026-04-02 11:42:26,synced
+AUD_00000375,CL_0047,Recent Refunds,Shopify,refund_created_30d = true,exclusion,209,Google,2026-06-03 21:29:44,synced
+AUD_00000376,CL_0047,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,346,"Meta,Google",2026-04-27 17:52:56,synced
+AUD_00000377,CL_0048,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,139,Google,2026-03-28 20:22:06,synced
+AUD_00000378,CL_0048,High LTV Customers,Shopify,lifetime_value > 500,targeting,313,Google,2026-03-15 00:59:35,synced
+AUD_00000379,CL_0048,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,137,Google,2026-03-27 20:42:35,synced
+AUD_00000380,CL_0048,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,282,Meta,2026-05-09 02:23:23,synced
+AUD_00000381,CL_0048,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,113,Meta,2026-05-02 18:42:08,synced
+AUD_00000382,CL_0048,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,307,"Meta,Google",2026-05-26 19:45:39,synced
+AUD_00000383,CL_0048,Recent Refunds,Shopify,refund_created_30d = true,exclusion,326,"Meta,Google",2026-04-06 19:46:05,synced
+AUD_00000384,CL_0048,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,90,"Meta,Google",2026-03-17 16:05:52,synced
+AUD_00000385,CL_0049,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,391,Meta,2026-06-08 03:05:49,synced
+AUD_00000386,CL_0049,High LTV Customers,Shopify,lifetime_value > 500,targeting,69,Meta,2026-03-26 16:30:55,synced
+AUD_00000387,CL_0049,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,134,"Meta,Google",2026-05-15 02:29:03,synced
+AUD_00000388,CL_0049,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,113,Meta,2026-03-12 12:20:20,synced
+AUD_00000389,CL_0049,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,89,Meta,2026-03-28 21:40:11,synced
+AUD_00000390,CL_0049,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,170,Meta,2026-05-19 11:27:33,failed
+AUD_00000391,CL_0049,Recent Refunds,Shopify,refund_created_30d = true,exclusion,317,Meta,2026-05-22 01:51:37,partial
+AUD_00000392,CL_0049,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,133,"Meta,Google",2026-03-31 00:54:36,synced
+AUD_00000393,CL_0050,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,123,"Meta,Google",2026-04-28 16:36:08,failed
+AUD_00000394,CL_0050,High LTV Customers,Shopify,lifetime_value > 500,targeting,197,Meta,2026-05-06 18:34:36,synced
+AUD_00000395,CL_0050,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,199,Google,2026-04-22 17:13:36,synced
+AUD_00000396,CL_0050,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,93,Meta,2026-04-14 21:47:54,synced
+AUD_00000397,CL_0050,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,146,"Meta,Google",2026-04-22 06:26:32,synced
+AUD_00000398,CL_0050,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,297,"Meta,Google",2026-05-27 00:26:01,synced
+AUD_00000399,CL_0050,Recent Refunds,Shopify,refund_created_30d = true,exclusion,249,Meta,2026-06-03 05:07:57,synced
+AUD_00000400,CL_0050,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,184,"Meta,Google",2026-05-03 13:33:48,synced
+AUD_00000401,CL_0051,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,371,Google,2026-05-21 03:35:22,synced
+AUD_00000402,CL_0051,High LTV Customers,Shopify,lifetime_value > 500,targeting,368,Meta,2026-05-09 09:59:32,synced
+AUD_00000403,CL_0051,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,246,"Meta,Google",2026-04-11 10:17:43,synced
+AUD_00000404,CL_0051,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,155,Google,2026-05-09 22:51:48,synced
+AUD_00000405,CL_0051,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,320,"Meta,Google",2026-05-17 18:37:06,partial
+AUD_00000406,CL_0051,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,330,Meta,2026-05-20 13:55:03,synced
+AUD_00000407,CL_0051,Recent Refunds,Shopify,refund_created_30d = true,exclusion,255,Meta,2026-03-12 15:27:55,synced
+AUD_00000408,CL_0051,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,170,"Meta,Google",2026-03-19 21:40:52,pending
+AUD_00000409,CL_0052,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,65,Google,2026-05-09 11:30:21,pending
+AUD_00000410,CL_0052,High LTV Customers,Shopify,lifetime_value > 500,targeting,311,Meta,2026-04-14 14:27:31,synced
+AUD_00000411,CL_0052,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,193,"Meta,Google",2026-04-06 16:04:02,synced
+AUD_00000412,CL_0052,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,159,Meta,2026-03-14 03:39:56,synced
+AUD_00000413,CL_0052,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,295,"Meta,Google",2026-04-30 06:35:49,synced
+AUD_00000414,CL_0052,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,238,Google,2026-05-06 19:31:56,failed
+AUD_00000415,CL_0052,Recent Refunds,Shopify,refund_created_30d = true,exclusion,306,Meta,2026-04-20 07:30:09,synced
+AUD_00000416,CL_0052,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,357,Google,2026-06-04 16:22:24,synced
+AUD_00000417,CL_0053,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,175,Meta,2026-04-03 22:50:01,pending
+AUD_00000418,CL_0053,High LTV Customers,Shopify,lifetime_value > 500,targeting,222,Meta,2026-05-16 01:05:03,synced
+AUD_00000419,CL_0053,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,153,"Meta,Google",2026-04-13 11:29:10,synced
+AUD_00000420,CL_0053,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,329,"Meta,Google",2026-03-20 01:54:07,synced
+AUD_00000421,CL_0053,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,208,Meta,2026-04-29 07:17:50,synced
+AUD_00000422,CL_0053,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,99,"Meta,Google",2026-04-06 05:15:44,synced
+AUD_00000423,CL_0053,Recent Refunds,Shopify,refund_created_30d = true,exclusion,358,Meta,2026-06-01 00:00:25,synced
+AUD_00000424,CL_0053,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,125,Meta,2026-05-16 18:24:31,synced
+AUD_00000425,CL_0054,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,341,Google,2026-03-21 07:05:30,synced
+AUD_00000426,CL_0054,High LTV Customers,Shopify,lifetime_value > 500,targeting,137,Google,2026-04-09 14:35:59,synced
+AUD_00000427,CL_0054,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,66,Meta,2026-03-12 18:17:24,synced
+AUD_00000428,CL_0054,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,137,"Meta,Google",2026-06-05 23:14:20,pending
+AUD_00000429,CL_0054,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,92,Google,2026-05-10 03:15:29,synced
+AUD_00000430,CL_0054,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,227,Google,2026-03-16 15:10:00,synced
+AUD_00000431,CL_0054,Recent Refunds,Shopify,refund_created_30d = true,exclusion,355,"Meta,Google",2026-03-28 06:42:03,pending
+AUD_00000432,CL_0054,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,117,Meta,2026-04-01 13:25:31,synced
+AUD_00000433,CL_0055,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,198,Meta,2026-05-03 15:15:25,synced
+AUD_00000434,CL_0055,High LTV Customers,Shopify,lifetime_value > 500,targeting,274,Google,2026-06-03 23:16:00,pending
+AUD_00000435,CL_0055,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,263,Google,2026-04-11 08:48:58,synced
+AUD_00000436,CL_0055,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,168,Meta,2026-04-25 01:53:07,synced
+AUD_00000437,CL_0055,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,310,Google,2026-04-04 01:29:44,synced
+AUD_00000438,CL_0055,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,296,"Meta,Google",2026-04-15 07:07:32,synced
+AUD_00000439,CL_0055,Recent Refunds,Shopify,refund_created_30d = true,exclusion,245,"Meta,Google",2026-04-10 18:57:33,failed
+AUD_00000440,CL_0055,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,280,Meta,2026-04-24 02:58:30,synced
+AUD_00000441,CL_0056,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,153,"Meta,Google",2026-05-22 17:09:42,synced
+AUD_00000442,CL_0056,High LTV Customers,Shopify,lifetime_value > 500,targeting,279,Google,2026-04-13 23:57:21,failed
+AUD_00000443,CL_0056,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,356,Google,2026-04-20 23:05:15,synced
+AUD_00000444,CL_0056,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,114,Meta,2026-05-10 02:00:28,synced
+AUD_00000445,CL_0056,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,111,"Meta,Google",2026-05-18 21:44:31,synced
+AUD_00000446,CL_0056,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,284,Meta,2026-03-30 23:11:49,synced
+AUD_00000447,CL_0056,Recent Refunds,Shopify,refund_created_30d = true,exclusion,126,"Meta,Google",2026-03-18 05:08:48,synced
+AUD_00000448,CL_0056,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,252,"Meta,Google",2026-05-22 12:28:33,synced
+AUD_00000449,CL_0057,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,340,"Meta,Google",2026-03-31 02:50:50,pending
+AUD_00000450,CL_0057,High LTV Customers,Shopify,lifetime_value > 500,targeting,216,"Meta,Google",2026-04-22 20:42:34,synced
+AUD_00000451,CL_0057,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,234,Google,2026-03-15 09:13:22,synced
+AUD_00000452,CL_0057,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,364,Google,2026-04-29 22:56:50,synced
+AUD_00000453,CL_0057,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,307,Meta,2026-04-14 15:12:00,synced
+AUD_00000454,CL_0057,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,327,"Meta,Google",2026-04-19 20:38:49,synced
+AUD_00000455,CL_0057,Recent Refunds,Shopify,refund_created_30d = true,exclusion,266,Google,2026-05-04 06:32:00,synced
+AUD_00000456,CL_0057,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,355,Google,2026-05-12 23:44:28,synced
+AUD_00000457,CL_0058,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,42,Meta,2026-04-14 11:01:01,synced
+AUD_00000458,CL_0058,High LTV Customers,Shopify,lifetime_value > 500,targeting,375,Meta,2026-05-02 23:56:59,synced
+AUD_00000459,CL_0058,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,98,"Meta,Google",2026-05-15 07:03:57,synced
+AUD_00000460,CL_0058,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,192,Meta,2026-05-19 19:29:10,synced
+AUD_00000461,CL_0058,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,65,"Meta,Google",2026-05-24 06:21:51,synced
+AUD_00000462,CL_0058,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,132,Meta,2026-03-13 00:55:34,synced
+AUD_00000463,CL_0058,Recent Refunds,Shopify,refund_created_30d = true,exclusion,350,Meta,2026-04-20 07:15:00,synced
+AUD_00000464,CL_0058,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,371,Meta,2026-06-02 01:21:07,synced
+AUD_00000465,CL_0059,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,110,Google,2026-03-29 13:31:24,synced
+AUD_00000466,CL_0059,High LTV Customers,Shopify,lifetime_value > 500,targeting,221,Meta,2026-03-25 13:20:25,synced
+AUD_00000467,CL_0059,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,62,"Meta,Google",2026-05-21 10:10:43,synced
+AUD_00000468,CL_0059,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,173,"Meta,Google",2026-04-20 23:59:36,synced
+AUD_00000469,CL_0059,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,169,Google,2026-05-28 19:57:36,synced
+AUD_00000470,CL_0059,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,347,"Meta,Google",2026-04-06 16:46:48,synced
+AUD_00000471,CL_0059,Recent Refunds,Shopify,refund_created_30d = true,exclusion,105,"Meta,Google",2026-06-08 00:30:30,synced
+AUD_00000472,CL_0059,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,130,Google,2026-05-14 23:22:07,synced
+AUD_00000473,CL_0060,Recent Buyers 30D,Shopify,purchased_in_last_30_days = true,exclusion,323,Meta,2026-04-05 08:30:35,synced
+AUD_00000474,CL_0060,High LTV Customers,Shopify,lifetime_value > 500,targeting,276,"Meta,Google",2026-04-30 21:03:57,synced
+AUD_00000475,CL_0060,Email Converted 7D,Klaviyo,clicked_email AND placed_order_7d,exclusion,273,Google,2026-05-01 23:25:31,synced
+AUD_00000476,CL_0060,Cart Abandoners 14D,Klaviyo,added_to_cart AND not_purchased_14d,targeting,341,Meta,2026-05-07 18:59:29,synced
+AUD_00000477,CL_0060,Dormant Buyers 180D,Shopify,last_order_at < now() - 180d,targeting,308,Meta,2026-06-01 02:11:25,synced
+AUD_00000478,CL_0060,Active Subscribers,Klaviyo,subscribed = true AND consent_email = true,targeting,270,Google,2026-05-03 10:36:26,synced
+AUD_00000479,CL_0060,Recent Refunds,Shopify,refund_created_30d = true,exclusion,365,Google,2026-04-04 14:07:19,synced
+AUD_00000480,CL_0060,VIP Lookalike Seed,WasteNot,lifetime_value > p90 AND order_count >= 3,targeting,57,Meta,2026-03-25 10:39:43,synced

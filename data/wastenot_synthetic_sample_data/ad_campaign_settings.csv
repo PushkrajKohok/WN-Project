@@ -1,0 +1,741 @@
+campaign_id,client_id,platform,campaign_name,objective,status,daily_budget,bid_strategy,attribution_window,created_at
+MC_00000001,CL_0001,Meta,Brand Search - Fitness - Scale,Brand Search,active,405.43,cost_cap,1d_click,2026-01-08 03:55:11
+MC_00000002,CL_0001,Meta,Retargeting - Fitness - Promo,Retargeting,active,625.91,cost_cap,data_driven,2026-02-16 04:08:33
+MC_00000003,CL_0001,Meta,Shopping - Fitness - Q2,Shopping,active,272.19,maximize_conversions,data_driven,2025-09-29 15:46:28
+MC_00000004,CL_0001,Meta,Shopping - Fitness - Promo,Shopping,active,295.22,target_roas,7d_click_1d_view,2025-12-14 08:30:13
+GC_00000005,CL_0001,Google,Lookalike - Fitness - Scale,Lookalike,active,733.23,maximize_conversions,7d_click,2025-08-28 17:52:11
+GC_00000006,CL_0001,Google,Lookalike - Fitness - Q2,Lookalike,active,425.11,lowest_cost,7d_click,2025-11-30 15:28:02
+GC_00000007,CL_0001,Google,Prospecting - Fitness - Promo,Prospecting,active,300.05,maximize_conversions,data_driven,2025-12-18 09:27:26
+GC_00000008,CL_0001,Google,Shopping - Fitness - Scale,Shopping,active,28.78,maximize_conversions,7d_click,2025-12-01 19:31:05
+GC_00000009,CL_0001,Google,Brand Search - Fitness - Promo,Brand Search,paused,765.23,cost_cap,data_driven,2025-09-02 01:51:31
+GC_00000010,CL_0001,Google,Prospecting - Fitness - Evergreen,Prospecting,active,47.57,lowest_cost,7d_click,2025-10-12 18:06:41
+GC_00000011,CL_0001,Google,Prospecting - Fitness - Scale,Prospecting,active,613.41,cost_cap,7d_click,2025-10-01 18:10:42
+GC_00000012,CL_0001,Google,Winback - Fitness - Promo,Winback,active,667.43,maximize_conversions,7d_click_1d_view,2025-08-13 16:40:36
+MC_00000013,CL_0002,Meta,Prospecting - Home Goods - Evergreen,Prospecting,active,2038.54,cost_cap,7d_click_1d_view,2025-11-30 02:12:41
+MC_00000014,CL_0002,Meta,Prospecting - Home Goods - Scale,Prospecting,active,1590.48,maximize_conversions,data_driven,2025-12-14 16:56:40
+MC_00000015,CL_0002,Meta,Retargeting - Home Goods - Scale,Retargeting,active,658.42,lowest_cost,1d_click,2025-07-15 19:58:28
+MC_00000016,CL_0002,Meta,Prospecting - Home Goods - Promo,Prospecting,active,711.90,cost_cap,data_driven,2025-10-26 12:55:25
+MC_00000017,CL_0002,Meta,Retargeting - Home Goods - Promo,Retargeting,limited,126.24,maximize_conversions,1d_click,2025-11-17 18:24:10
+MC_00000018,CL_0002,Meta,Retargeting - Home Goods - Evergreen,Retargeting,active,1966.89,lowest_cost,7d_click_1d_view,2025-12-05 21:54:20
+MC_00000019,CL_0002,Meta,Prospecting - Home Goods - Scale,Prospecting,active,399.86,maximize_conversions,7d_click_1d_view,2025-09-05 03:02:23
+MC_00000020,CL_0002,Meta,Winback - Home Goods - Promo,Winback,paused,2400.42,cost_cap,7d_click,2025-07-25 20:26:07
+GC_00000021,CL_0002,Google,Prospecting - Home Goods - Q2,Prospecting,active,313.74,lowest_cost,7d_click,2025-09-29 02:34:08
+GC_00000022,CL_0002,Google,Brand Search - Home Goods - Evergreen,Brand Search,limited,1253.37,cost_cap,data_driven,2025-08-03 17:14:50
+GC_00000023,CL_0002,Google,Brand Search - Home Goods - Promo,Brand Search,active,1293.24,lowest_cost,7d_click,2026-02-20 13:22:12
+GC_00000024,CL_0002,Google,Brand Search - Home Goods - Evergreen,Brand Search,paused,1674.89,cost_cap,7d_click_1d_view,2025-10-12 10:37:12
+GC_00000025,CL_0002,Google,Brand Search - Home Goods - Scale,Brand Search,active,969.66,target_roas,data_driven,2025-09-01 20:33:01
+GC_00000026,CL_0002,Google,Shopping - Home Goods - Promo,Shopping,learning,410.75,maximize_conversions,7d_click,2025-09-22 15:42:54
+GC_00000027,CL_0002,Google,Prospecting - Home Goods - Q2,Prospecting,active,177.08,lowest_cost,7d_click_1d_view,2025-12-02 11:08:22
+GC_00000028,CL_0002,Google,Winback - Home Goods - Scale,Winback,active,1354.50,lowest_cost,7d_click_1d_view,2026-01-05 13:02:09
+MC_00000029,CL_0003,Meta,Brand Search - Apparel - Q2,Brand Search,active,1415.91,cost_cap,7d_click,2026-01-05 06:14:50
+MC_00000030,CL_0003,Meta,Shopping - Apparel - Q2,Shopping,paused,3327.62,lowest_cost,7d_click,2026-01-01 17:07:07
+MC_00000031,CL_0003,Meta,Brand Search - Apparel - Promo,Brand Search,active,1742.63,lowest_cost,data_driven,2026-02-10 01:32:49
+MC_00000032,CL_0003,Meta,Prospecting - Apparel - Q2,Prospecting,active,611.15,maximize_conversions,7d_click_1d_view,2025-08-14 04:35:09
+MC_00000033,CL_0003,Meta,Prospecting - Apparel - Scale,Prospecting,active,985.82,target_roas,7d_click_1d_view,2025-12-29 19:12:49
+MC_00000034,CL_0003,Meta,Prospecting - Apparel - Q2,Prospecting,active,2928.92,cost_cap,data_driven,2025-10-17 06:09:06
+MC_00000035,CL_0003,Meta,Prospecting - Apparel - Promo,Prospecting,paused,3216.32,maximize_conversions,7d_click,2025-11-17 22:25:53
+GC_00000036,CL_0003,Google,Retargeting - Apparel - Scale,Retargeting,active,1284.46,lowest_cost,7d_click,2025-09-09 21:52:09
+GC_00000037,CL_0003,Google,Shopping - Apparel - Promo,Shopping,paused,1337.55,maximize_conversions,data_driven,2026-03-10 03:01:05
+GC_00000038,CL_0003,Google,Brand Search - Apparel - Q2,Brand Search,active,611.62,lowest_cost,7d_click,2025-11-21 07:11:14
+GC_00000039,CL_0003,Google,Prospecting - Apparel - Evergreen,Prospecting,paused,612.53,maximize_conversions,1d_click,2025-09-15 04:59:52
+GC_00000040,CL_0003,Google,Winback - Apparel - Evergreen,Winback,learning,948.01,cost_cap,data_driven,2025-07-26 10:26:26
+GC_00000041,CL_0003,Google,Winback - Apparel - Evergreen,Winback,active,1602.23,target_roas,data_driven,2025-11-12 21:57:50
+GC_00000042,CL_0003,Google,Retargeting - Apparel - Scale,Retargeting,active,517.99,cost_cap,7d_click_1d_view,2026-02-18 15:15:27
+MC_00000043,CL_0004,Meta,Retargeting - Pet Supplies - Promo,Retargeting,active,1557.65,maximize_conversions,1d_click,2026-02-13 23:57:23
+MC_00000044,CL_0004,Meta,Shopping - Pet Supplies - Promo,Shopping,active,1676.90,lowest_cost,data_driven,2025-07-31 16:46:02
+MC_00000045,CL_0004,Meta,Shopping - Pet Supplies - Q2,Shopping,active,2034.58,cost_cap,data_driven,2025-11-02 00:04:23
+MC_00000046,CL_0004,Meta,Shopping - Pet Supplies - Promo,Shopping,learning,1490.47,cost_cap,7d_click,2025-08-17 02:58:47
+MC_00000047,CL_0004,Meta,Winback - Pet Supplies - Evergreen,Winback,active,851.68,cost_cap,data_driven,2025-10-07 00:09:14
+MC_00000048,CL_0004,Meta,Lookalike - Pet Supplies - Evergreen,Lookalike,active,1967.89,cost_cap,7d_click,2026-01-10 10:48:28
+MC_00000049,CL_0004,Meta,Retargeting - Pet Supplies - Q2,Retargeting,paused,776.55,target_roas,1d_click,2025-09-10 14:43:00
+MC_00000050,CL_0004,Meta,Winback - Pet Supplies - Q2,Winback,active,1111.68,maximize_conversions,7d_click_1d_view,2025-11-15 14:31:05
+GC_00000051,CL_0004,Google,Brand Search - Pet Supplies - Evergreen,Brand Search,active,476.13,target_roas,7d_click_1d_view,2025-09-14 07:04:06
+GC_00000052,CL_0004,Google,Shopping - Pet Supplies - Evergreen,Shopping,active,2287.99,lowest_cost,7d_click,2025-11-26 22:24:12
+GC_00000053,CL_0004,Google,Brand Search - Pet Supplies - Scale,Brand Search,learning,147.77,lowest_cost,data_driven,2025-09-10 05:05:37
+GC_00000054,CL_0004,Google,Brand Search - Pet Supplies - Scale,Brand Search,active,1704.99,maximize_conversions,1d_click,2026-01-10 21:07:40
+GC_00000055,CL_0004,Google,Winback - Pet Supplies - Q2,Winback,active,977.54,lowest_cost,data_driven,2025-10-12 16:52:03
+MC_00000056,CL_0005,Meta,Shopping - Food & Beverage - Scale,Shopping,active,620.73,target_roas,data_driven,2026-01-26 11:24:49
+MC_00000057,CL_0005,Meta,Prospecting - Food & Beverage - Promo,Prospecting,active,370.82,cost_cap,7d_click,2025-09-02 17:21:54
+MC_00000058,CL_0005,Meta,Brand Search - Food & Beverage - Scale,Brand Search,paused,642.31,lowest_cost,7d_click_1d_view,2025-09-12 09:27:05
+MC_00000059,CL_0005,Meta,Prospecting - Food & Beverage - Evergreen,Prospecting,learning,336.75,maximize_conversions,7d_click_1d_view,2025-10-25 19:14:26
+MC_00000060,CL_0005,Meta,Retargeting - Food & Beverage - Scale,Retargeting,active,309.62,lowest_cost,7d_click_1d_view,2025-11-16 09:44:39
+MC_00000061,CL_0005,Meta,Shopping - Food & Beverage - Scale,Shopping,active,527.32,maximize_conversions,7d_click_1d_view,2026-01-02 10:23:39
+MC_00000062,CL_0005,Meta,Lookalike - Food & Beverage - Evergreen,Lookalike,active,659.22,maximize_conversions,7d_click_1d_view,2025-09-13 22:35:15
+GC_00000063,CL_0005,Google,Winback - Food & Beverage - Evergreen,Winback,active,141.40,cost_cap,1d_click,2025-12-13 05:01:24
+GC_00000064,CL_0005,Google,Shopping - Food & Beverage - Promo,Shopping,active,725.52,maximize_conversions,7d_click,2026-02-17 22:53:28
+GC_00000065,CL_0005,Google,Retargeting - Food & Beverage - Promo,Retargeting,active,336.00,target_roas,1d_click,2025-12-21 23:49:06
+GC_00000066,CL_0005,Google,Prospecting - Food & Beverage - Q2,Prospecting,learning,729.58,target_roas,1d_click,2025-12-19 08:59:32
+MC_00000067,CL_0006,Meta,Prospecting - Pet Supplies - Promo,Prospecting,active,1574.37,cost_cap,data_driven,2026-01-26 19:14:46
+MC_00000068,CL_0006,Meta,Retargeting - Pet Supplies - Evergreen,Retargeting,active,391.85,target_roas,7d_click,2025-09-13 05:33:25
+MC_00000069,CL_0006,Meta,Brand Search - Pet Supplies - Promo,Brand Search,active,597.09,lowest_cost,7d_click,2026-01-31 19:35:33
+MC_00000070,CL_0006,Meta,Lookalike - Pet Supplies - Promo,Lookalike,paused,1023.53,maximize_conversions,1d_click,2025-08-15 16:18:25
+MC_00000071,CL_0006,Meta,Shopping - Pet Supplies - Q2,Shopping,active,619.53,lowest_cost,data_driven,2026-01-21 12:07:33
+MC_00000072,CL_0006,Meta,Prospecting - Pet Supplies - Q2,Prospecting,paused,1494.77,maximize_conversions,data_driven,2025-09-21 22:30:22
+MC_00000073,CL_0006,Meta,Brand Search - Pet Supplies - Promo,Brand Search,active,693.32,cost_cap,7d_click,2026-01-03 09:34:48
+MC_00000074,CL_0006,Meta,Lookalike - Pet Supplies - Q2,Lookalike,active,119.01,lowest_cost,7d_click,2025-09-20 18:32:48
+GC_00000075,CL_0006,Google,Lookalike - Pet Supplies - Scale,Lookalike,active,1011.30,maximize_conversions,data_driven,2026-02-20 19:39:02
+GC_00000076,CL_0006,Google,Prospecting - Pet Supplies - Scale,Prospecting,active,338.44,cost_cap,7d_click,2026-02-21 13:39:45
+GC_00000077,CL_0006,Google,Winback - Pet Supplies - Evergreen,Winback,paused,1000.11,maximize_conversions,7d_click,2025-08-24 12:31:21
+GC_00000078,CL_0006,Google,Prospecting - Pet Supplies - Scale,Prospecting,active,1279.61,cost_cap,7d_click_1d_view,2025-08-09 01:40:39
+GC_00000079,CL_0006,Google,Prospecting - Pet Supplies - Scale,Prospecting,active,1591.96,cost_cap,7d_click_1d_view,2026-01-12 23:10:18
+GC_00000080,CL_0006,Google,Lookalike - Pet Supplies - Evergreen,Lookalike,active,146.47,lowest_cost,data_driven,2025-12-25 13:54:32
+MC_00000081,CL_0007,Meta,Prospecting - Fitness - Q2,Prospecting,learning,947.72,target_roas,7d_click_1d_view,2025-12-30 09:56:38
+MC_00000082,CL_0007,Meta,Shopping - Fitness - Q2,Shopping,paused,2312.47,cost_cap,data_driven,2025-09-25 17:18:17
+MC_00000083,CL_0007,Meta,Winback - Fitness - Q2,Winback,paused,1365.45,maximize_conversions,data_driven,2025-12-15 09:50:18
+MC_00000084,CL_0007,Meta,Shopping - Fitness - Evergreen,Shopping,active,2278.51,cost_cap,1d_click,2026-01-04 09:16:23
+GC_00000085,CL_0007,Google,Brand Search - Fitness - Evergreen,Brand Search,active,722.52,maximize_conversions,1d_click,2026-02-08 22:58:49
+GC_00000086,CL_0007,Google,Shopping - Fitness - Scale,Shopping,active,90.63,lowest_cost,data_driven,2025-11-26 19:23:38
+GC_00000087,CL_0007,Google,Winback - Fitness - Q2,Winback,limited,1456.41,lowest_cost,data_driven,2025-10-15 07:48:48
+GC_00000088,CL_0007,Google,Lookalike - Fitness - Scale,Lookalike,paused,1209.61,maximize_conversions,1d_click,2025-09-13 00:00:36
+MC_00000089,CL_0008,Meta,Brand Search - Home Goods - Q2,Brand Search,active,2964.20,cost_cap,data_driven,2026-03-08 23:13:43
+MC_00000090,CL_0008,Meta,Lookalike - Home Goods - Q2,Lookalike,active,2428.22,maximize_conversions,7d_click,2025-09-28 02:22:50
+MC_00000091,CL_0008,Meta,Shopping - Home Goods - Promo,Shopping,active,2401.41,cost_cap,7d_click,2025-10-06 18:26:16
+MC_00000092,CL_0008,Meta,Shopping - Home Goods - Scale,Shopping,active,1148.81,target_roas,7d_click_1d_view,2025-10-21 13:05:48
+MC_00000093,CL_0008,Meta,Prospecting - Home Goods - Evergreen,Prospecting,active,2740.55,target_roas,data_driven,2026-02-12 17:21:58
+MC_00000094,CL_0008,Meta,Shopping - Home Goods - Q2,Shopping,active,1077.97,target_roas,7d_click,2025-07-28 12:01:34
+MC_00000095,CL_0008,Meta,Winback - Home Goods - Scale,Winback,paused,806.52,lowest_cost,7d_click_1d_view,2025-12-23 01:03:44
+MC_00000096,CL_0008,Meta,Brand Search - Home Goods - Scale,Brand Search,active,1101.83,lowest_cost,7d_click,2025-07-20 09:34:55
+GC_00000097,CL_0008,Google,Retargeting - Home Goods - Promo,Retargeting,learning,2723.40,lowest_cost,7d_click_1d_view,2025-11-02 01:55:57
+GC_00000098,CL_0008,Google,Prospecting - Home Goods - Scale,Prospecting,active,3266.91,target_roas,7d_click_1d_view,2025-09-11 17:02:38
+GC_00000099,CL_0008,Google,Lookalike - Home Goods - Promo,Lookalike,active,646.77,cost_cap,data_driven,2025-12-09 20:38:43
+GC_00000100,CL_0008,Google,Retargeting - Home Goods - Q2,Retargeting,paused,1140.87,target_roas,7d_click,2026-02-27 04:01:37
+MC_00000101,CL_0009,Meta,Prospecting - Jewelry - Scale,Prospecting,active,1401.64,target_roas,7d_click_1d_view,2026-03-11 18:54:47
+MC_00000102,CL_0009,Meta,Brand Search - Jewelry - Scale,Brand Search,active,88.24,lowest_cost,7d_click,2025-12-21 11:55:45
+MC_00000103,CL_0009,Meta,Winback - Jewelry - Evergreen,Winback,active,671.06,target_roas,7d_click_1d_view,2025-09-15 02:47:32
+MC_00000104,CL_0009,Meta,Retargeting - Jewelry - Promo,Retargeting,limited,116.52,maximize_conversions,7d_click,2026-01-14 19:56:52
+MC_00000105,CL_0009,Meta,Prospecting - Jewelry - Scale,Prospecting,active,126.04,lowest_cost,1d_click,2025-10-31 01:30:23
+GC_00000106,CL_0009,Google,Brand Search - Jewelry - Promo,Brand Search,paused,1385.48,target_roas,1d_click,2025-11-05 23:37:55
+GC_00000107,CL_0009,Google,Winback - Jewelry - Promo,Winback,active,1088.86,maximize_conversions,1d_click,2025-10-17 23:42:08
+GC_00000108,CL_0009,Google,Lookalike - Jewelry - Promo,Lookalike,limited,1255.74,cost_cap,1d_click,2026-01-28 00:37:04
+GC_00000109,CL_0009,Google,Lookalike - Jewelry - Evergreen,Lookalike,active,136.12,lowest_cost,data_driven,2026-01-15 17:27:39
+GC_00000110,CL_0009,Google,Winback - Jewelry - Q2,Winback,active,480.45,lowest_cost,7d_click_1d_view,2025-10-15 07:51:00
+GC_00000111,CL_0009,Google,Lookalike - Jewelry - Promo,Lookalike,active,1510.66,target_roas,data_driven,2025-12-12 06:52:08
+GC_00000112,CL_0009,Google,Brand Search - Jewelry - Q2,Brand Search,active,1446.55,target_roas,data_driven,2025-08-20 04:23:37
+GC_00000113,CL_0009,Google,Brand Search - Jewelry - Q2,Brand Search,active,1456.96,lowest_cost,7d_click,2026-02-04 13:39:13
+MC_00000114,CL_0010,Meta,Lookalike - Supplements - Evergreen,Lookalike,active,2067.40,cost_cap,7d_click,2026-02-01 07:53:59
+MC_00000115,CL_0010,Meta,Brand Search - Supplements - Scale,Brand Search,active,281.00,lowest_cost,1d_click,2025-09-01 08:43:38
+MC_00000116,CL_0010,Meta,Winback - Supplements - Promo,Winback,paused,2206.07,maximize_conversions,7d_click,2025-09-28 01:10:10
+MC_00000117,CL_0010,Meta,Brand Search - Supplements - Scale,Brand Search,active,2539.45,cost_cap,1d_click,2025-10-21 23:19:01
+MC_00000118,CL_0010,Meta,Lookalike - Supplements - Scale,Lookalike,active,2684.57,maximize_conversions,7d_click_1d_view,2025-09-07 02:14:05
+MC_00000119,CL_0010,Meta,Winback - Supplements - Q2,Winback,limited,2202.36,lowest_cost,7d_click_1d_view,2025-09-21 01:41:02
+MC_00000120,CL_0010,Meta,Lookalike - Supplements - Evergreen,Lookalike,limited,1840.38,maximize_conversions,1d_click,2026-01-28 12:56:57
+MC_00000121,CL_0010,Meta,Winback - Supplements - Evergreen,Winback,active,1622.08,lowest_cost,1d_click,2026-03-06 09:52:30
+GC_00000122,CL_0010,Google,Shopping - Supplements - Evergreen,Shopping,limited,208.74,lowest_cost,1d_click,2025-07-16 12:23:57
+GC_00000123,CL_0010,Google,Brand Search - Supplements - Promo,Brand Search,active,3133.50,target_roas,data_driven,2025-11-28 04:37:53
+GC_00000124,CL_0010,Google,Shopping - Supplements - Promo,Shopping,active,414.30,cost_cap,7d_click_1d_view,2025-10-15 08:15:20
+GC_00000125,CL_0010,Google,Lookalike - Supplements - Evergreen,Lookalike,active,1606.48,cost_cap,7d_click_1d_view,2025-11-16 10:46:08
+GC_00000126,CL_0010,Google,Lookalike - Supplements - Evergreen,Lookalike,active,2883.70,target_roas,7d_click,2025-07-23 16:18:30
+MC_00000127,CL_0011,Meta,Prospecting - Beauty - Promo,Prospecting,active,640.26,cost_cap,data_driven,2025-10-04 14:44:33
+MC_00000128,CL_0011,Meta,Prospecting - Beauty - Promo,Prospecting,paused,2183.16,target_roas,1d_click,2025-08-11 10:37:55
+MC_00000129,CL_0011,Meta,Winback - Beauty - Q2,Winback,active,1063.89,maximize_conversions,7d_click,2025-08-18 06:59:00
+MC_00000130,CL_0011,Meta,Retargeting - Beauty - Evergreen,Retargeting,active,418.91,maximize_conversions,7d_click_1d_view,2025-12-05 02:45:57
+MC_00000131,CL_0011,Meta,Prospecting - Beauty - Evergreen,Prospecting,active,1422.36,target_roas,1d_click,2025-11-30 05:55:35
+GC_00000132,CL_0011,Google,Shopping - Beauty - Scale,Shopping,paused,1934.06,target_roas,1d_click,2025-07-25 12:08:30
+GC_00000133,CL_0011,Google,Prospecting - Beauty - Evergreen,Prospecting,active,729.12,lowest_cost,7d_click_1d_view,2025-12-31 19:28:07
+GC_00000134,CL_0011,Google,Retargeting - Beauty - Q2,Retargeting,active,2186.54,lowest_cost,7d_click_1d_view,2025-08-25 16:10:31
+GC_00000135,CL_0011,Google,Retargeting - Beauty - Q2,Retargeting,active,1646.54,target_roas,7d_click,2026-01-11 08:09:12
+GC_00000136,CL_0011,Google,Retargeting - Beauty - Scale,Retargeting,active,216.52,cost_cap,7d_click,2026-02-22 08:33:01
+MC_00000137,CL_0012,Meta,Brand Search - Supplements - Scale,Brand Search,learning,1758.51,maximize_conversions,data_driven,2025-11-06 11:52:10
+MC_00000138,CL_0012,Meta,Brand Search - Supplements - Evergreen,Brand Search,paused,1486.54,lowest_cost,data_driven,2026-01-03 00:58:05
+MC_00000139,CL_0012,Meta,Winback - Supplements - Q2,Winback,active,2326.47,lowest_cost,1d_click,2026-01-25 08:01:02
+MC_00000140,CL_0012,Meta,Prospecting - Supplements - Promo,Prospecting,active,1614.23,maximize_conversions,data_driven,2026-01-28 13:27:03
+MC_00000141,CL_0012,Meta,Winback - Supplements - Scale,Winback,paused,1321.71,cost_cap,data_driven,2025-11-15 10:01:21
+MC_00000142,CL_0012,Meta,Winback - Supplements - Evergreen,Winback,active,250.58,target_roas,7d_click_1d_view,2026-01-18 08:56:28
+MC_00000143,CL_0012,Meta,Prospecting - Supplements - Promo,Prospecting,active,1947.09,maximize_conversions,1d_click,2025-11-27 17:00:50
+MC_00000144,CL_0012,Meta,Winback - Supplements - Evergreen,Winback,active,348.37,target_roas,1d_click,2025-08-18 06:40:27
+GC_00000145,CL_0012,Google,Prospecting - Supplements - Q2,Prospecting,paused,1846.76,target_roas,data_driven,2026-01-16 16:40:39
+GC_00000146,CL_0012,Google,Retargeting - Supplements - Evergreen,Retargeting,active,1594.75,target_roas,1d_click,2026-01-16 02:03:45
+GC_00000147,CL_0012,Google,Shopping - Supplements - Promo,Shopping,active,1023.69,maximize_conversions,data_driven,2025-12-08 02:58:07
+GC_00000148,CL_0012,Google,Prospecting - Supplements - Evergreen,Prospecting,active,1001.63,cost_cap,1d_click,2025-10-29 02:17:55
+GC_00000149,CL_0012,Google,Prospecting - Supplements - Evergreen,Prospecting,active,675.70,target_roas,7d_click,2026-01-25 11:46:43
+GC_00000150,CL_0012,Google,Shopping - Supplements - Evergreen,Shopping,active,1403.45,cost_cap,data_driven,2025-11-18 23:05:47
+MC_00000151,CL_0013,Meta,Brand Search - Jewelry - Scale,Brand Search,active,854.09,maximize_conversions,1d_click,2025-11-29 14:45:20
+MC_00000152,CL_0013,Meta,Brand Search - Jewelry - Q2,Brand Search,active,1766.51,lowest_cost,7d_click,2026-01-27 17:21:21
+MC_00000153,CL_0013,Meta,Shopping - Jewelry - Evergreen,Shopping,active,647.01,lowest_cost,1d_click,2025-10-27 01:52:59
+MC_00000154,CL_0013,Meta,Winback - Jewelry - Q2,Winback,active,298.95,cost_cap,7d_click,2026-01-06 08:36:06
+MC_00000155,CL_0013,Meta,Shopping - Jewelry - Promo,Shopping,limited,1558.38,cost_cap,1d_click,2025-12-17 14:48:44
+GC_00000156,CL_0013,Google,Winback - Jewelry - Scale,Winback,active,236.64,lowest_cost,7d_click_1d_view,2025-11-05 11:54:58
+GC_00000157,CL_0013,Google,Retargeting - Jewelry - Scale,Retargeting,active,1147.26,maximize_conversions,7d_click_1d_view,2025-07-31 21:28:41
+GC_00000158,CL_0013,Google,Shopping - Jewelry - Evergreen,Shopping,learning,3222.21,maximize_conversions,1d_click,2025-08-24 20:17:54
+GC_00000159,CL_0013,Google,Shopping - Jewelry - Evergreen,Shopping,paused,1037.82,target_roas,7d_click_1d_view,2026-03-02 17:47:13
+MC_00000160,CL_0014,Meta,Lookalike - Baby - Promo,Lookalike,limited,1886.58,cost_cap,7d_click,2025-08-16 19:32:13
+MC_00000161,CL_0014,Meta,Lookalike - Baby - Q2,Lookalike,paused,925.19,target_roas,7d_click,2026-01-23 03:42:10
+MC_00000162,CL_0014,Meta,Lookalike - Baby - Q2,Lookalike,active,994.10,cost_cap,1d_click,2025-08-17 03:14:11
+MC_00000163,CL_0014,Meta,Brand Search - Baby - Q2,Brand Search,learning,1057.56,maximize_conversions,data_driven,2025-10-16 05:07:45
+MC_00000164,CL_0014,Meta,Prospecting - Baby - Scale,Prospecting,learning,840.34,cost_cap,data_driven,2025-07-17 19:08:31
+MC_00000165,CL_0014,Meta,Lookalike - Baby - Scale,Lookalike,paused,1144.18,maximize_conversions,7d_click_1d_view,2025-09-06 03:39:25
+MC_00000166,CL_0014,Meta,Retargeting - Baby - Scale,Retargeting,active,2898.14,target_roas,data_driven,2026-03-06 23:45:37
+GC_00000167,CL_0014,Google,Shopping - Baby - Scale,Shopping,active,683.40,maximize_conversions,data_driven,2025-11-05 18:09:53
+GC_00000168,CL_0014,Google,Brand Search - Baby - Q2,Brand Search,paused,919.30,cost_cap,1d_click,2025-10-28 06:59:46
+GC_00000169,CL_0014,Google,Prospecting - Baby - Evergreen,Prospecting,paused,2879.96,cost_cap,7d_click,2025-08-17 02:29:31
+GC_00000170,CL_0014,Google,Brand Search - Baby - Evergreen,Brand Search,active,2977.45,cost_cap,1d_click,2025-10-22 05:26:05
+MC_00000171,CL_0015,Meta,Retargeting - Jewelry - Q2,Retargeting,paused,1584.56,cost_cap,1d_click,2025-10-26 11:10:20
+MC_00000172,CL_0015,Meta,Shopping - Jewelry - Scale,Shopping,active,2901.01,cost_cap,data_driven,2026-01-31 20:38:07
+MC_00000173,CL_0015,Meta,Lookalike - Jewelry - Promo,Lookalike,active,3097.97,cost_cap,7d_click_1d_view,2026-02-26 16:07:41
+MC_00000174,CL_0015,Meta,Prospecting - Jewelry - Q2,Prospecting,active,258.77,target_roas,data_driven,2026-01-19 12:41:44
+MC_00000175,CL_0015,Meta,Shopping - Jewelry - Q2,Shopping,active,1790.96,target_roas,7d_click_1d_view,2026-01-26 05:48:25
+MC_00000176,CL_0015,Meta,Prospecting - Jewelry - Promo,Prospecting,paused,3332.92,target_roas,data_driven,2025-08-06 05:37:52
+MC_00000177,CL_0015,Meta,Winback - Jewelry - Promo,Winback,active,267.31,target_roas,7d_click_1d_view,2026-02-26 19:30:43
+MC_00000178,CL_0015,Meta,Retargeting - Jewelry - Evergreen,Retargeting,active,2407.93,cost_cap,data_driven,2025-12-18 14:37:39
+GC_00000179,CL_0015,Google,Prospecting - Jewelry - Scale,Prospecting,active,2061.47,maximize_conversions,7d_click,2025-08-30 23:56:30
+GC_00000180,CL_0015,Google,Brand Search - Jewelry - Evergreen,Brand Search,active,2074.09,cost_cap,data_driven,2025-10-08 12:11:34
+GC_00000181,CL_0015,Google,Retargeting - Jewelry - Scale,Retargeting,active,2365.67,target_roas,1d_click,2025-07-29 01:35:20
+GC_00000182,CL_0015,Google,Shopping - Jewelry - Q2,Shopping,paused,1118.05,cost_cap,7d_click_1d_view,2025-07-15 12:09:24
+GC_00000183,CL_0015,Google,Lookalike - Jewelry - Q2,Lookalike,learning,2781.93,cost_cap,1d_click,2025-09-07 16:04:59
+GC_00000184,CL_0015,Google,Brand Search - Jewelry - Scale,Brand Search,paused,1066.79,lowest_cost,data_driven,2026-01-31 08:08:47
+MC_00000185,CL_0016,Meta,Shopping - Home Goods - Scale,Shopping,active,587.39,lowest_cost,7d_click,2025-12-24 19:53:04
+MC_00000186,CL_0016,Meta,Retargeting - Home Goods - Q2,Retargeting,paused,532.35,target_roas,7d_click_1d_view,2025-08-09 06:55:47
+MC_00000187,CL_0016,Meta,Prospecting - Home Goods - Evergreen,Prospecting,active,586.01,lowest_cost,7d_click_1d_view,2025-10-14 23:35:18
+MC_00000188,CL_0016,Meta,Winback - Home Goods - Evergreen,Winback,active,778.71,target_roas,data_driven,2025-10-18 20:47:23
+MC_00000189,CL_0016,Meta,Retargeting - Home Goods - Q2,Retargeting,paused,304.11,target_roas,data_driven,2026-03-06 17:14:17
+MC_00000190,CL_0016,Meta,Prospecting - Home Goods - Q2,Prospecting,learning,534.35,cost_cap,1d_click,2025-07-28 17:09:03
+GC_00000191,CL_0016,Google,Retargeting - Home Goods - Promo,Retargeting,active,752.04,maximize_conversions,7d_click_1d_view,2025-10-27 23:32:49
+GC_00000192,CL_0016,Google,Brand Search - Home Goods - Promo,Brand Search,active,523.63,target_roas,7d_click,2025-07-18 20:44:53
+GC_00000193,CL_0016,Google,Brand Search - Home Goods - Promo,Brand Search,active,331.29,target_roas,7d_click,2025-10-16 16:41:24
+GC_00000194,CL_0016,Google,Brand Search - Home Goods - Q2,Brand Search,active,654.65,cost_cap,7d_click_1d_view,2025-10-09 06:01:15
+GC_00000195,CL_0016,Google,Shopping - Home Goods - Q2,Shopping,active,722.86,target_roas,7d_click,2026-01-21 13:14:30
+GC_00000196,CL_0016,Google,Brand Search - Home Goods - Evergreen,Brand Search,active,746.06,lowest_cost,data_driven,2026-01-07 16:22:50
+GC_00000197,CL_0016,Google,Brand Search - Home Goods - Q2,Brand Search,active,264.73,maximize_conversions,7d_click,2025-07-23 14:07:40
+MC_00000198,CL_0017,Meta,Shopping - Apparel - Q2,Shopping,limited,2442.97,lowest_cost,1d_click,2025-11-09 16:42:42
+MC_00000199,CL_0017,Meta,Retargeting - Apparel - Scale,Retargeting,active,954.87,lowest_cost,1d_click,2025-07-18 10:55:44
+MC_00000200,CL_0017,Meta,Shopping - Apparel - Evergreen,Shopping,active,992.01,maximize_conversions,7d_click_1d_view,2025-09-15 18:56:04
+MC_00000201,CL_0017,Meta,Retargeting - Apparel - Evergreen,Retargeting,active,242.39,maximize_conversions,data_driven,2025-08-02 07:31:08
+MC_00000202,CL_0017,Meta,Winback - Apparel - Q2,Winback,paused,1900.79,cost_cap,data_driven,2026-02-27 16:00:13
+MC_00000203,CL_0017,Meta,Retargeting - Apparel - Promo,Retargeting,paused,3054.56,maximize_conversions,data_driven,2025-12-22 10:49:50
+GC_00000204,CL_0017,Google,Winback - Apparel - Scale,Winback,limited,2883.58,maximize_conversions,7d_click_1d_view,2025-08-27 04:19:57
+GC_00000205,CL_0017,Google,Winback - Apparel - Q2,Winback,active,763.78,lowest_cost,1d_click,2025-10-11 15:22:01
+GC_00000206,CL_0017,Google,Lookalike - Apparel - Scale,Lookalike,paused,2858.17,lowest_cost,7d_click_1d_view,2025-09-23 16:35:55
+GC_00000207,CL_0017,Google,Lookalike - Apparel - Scale,Lookalike,active,2467.95,lowest_cost,data_driven,2025-08-07 09:23:31
+GC_00000208,CL_0017,Google,Retargeting - Apparel - Evergreen,Retargeting,active,2191.92,cost_cap,data_driven,2025-10-14 13:08:09
+GC_00000209,CL_0017,Google,Brand Search - Apparel - Scale,Brand Search,active,1181.79,maximize_conversions,data_driven,2026-02-05 20:15:03
+GC_00000210,CL_0017,Google,Winback - Apparel - Promo,Winback,active,1493.30,target_roas,1d_click,2025-12-08 17:56:16
+GC_00000211,CL_0017,Google,Brand Search - Apparel - Evergreen,Brand Search,active,1349.98,maximize_conversions,7d_click_1d_view,2025-11-05 20:18:51
+MC_00000212,CL_0018,Meta,Retargeting - Baby - Q2,Retargeting,active,1080.04,maximize_conversions,data_driven,2026-01-02 08:23:17
+MC_00000213,CL_0018,Meta,Brand Search - Baby - Promo,Brand Search,active,2052.54,target_roas,7d_click_1d_view,2026-01-20 20:50:11
+MC_00000214,CL_0018,Meta,Shopping - Baby - Scale,Shopping,paused,2456.05,cost_cap,1d_click,2025-11-10 20:30:53
+MC_00000215,CL_0018,Meta,Retargeting - Baby - Q2,Retargeting,paused,1926.54,target_roas,7d_click,2026-03-05 19:36:20
+MC_00000216,CL_0018,Meta,Lookalike - Baby - Q2,Lookalike,active,1079.67,maximize_conversions,data_driven,2025-09-03 05:00:14
+MC_00000217,CL_0018,Meta,Retargeting - Baby - Scale,Retargeting,active,1140.61,lowest_cost,1d_click,2025-12-06 04:41:18
+MC_00000218,CL_0018,Meta,Retargeting - Baby - Q2,Retargeting,active,909.58,lowest_cost,1d_click,2025-11-27 11:01:25
+MC_00000219,CL_0018,Meta,Lookalike - Baby - Q2,Lookalike,active,749.37,lowest_cost,data_driven,2025-12-06 10:18:40
+GC_00000220,CL_0018,Google,Brand Search - Baby - Promo,Brand Search,active,2168.14,lowest_cost,7d_click_1d_view,2025-09-02 22:20:01
+GC_00000221,CL_0018,Google,Retargeting - Baby - Promo,Retargeting,active,3192.88,maximize_conversions,data_driven,2025-10-18 13:07:45
+GC_00000222,CL_0018,Google,Lookalike - Baby - Scale,Lookalike,active,201.22,target_roas,7d_click,2025-12-02 20:47:00
+GC_00000223,CL_0018,Google,Retargeting - Baby - Promo,Retargeting,active,2079.89,lowest_cost,7d_click_1d_view,2025-07-25 17:33:05
+GC_00000224,CL_0018,Google,Lookalike - Baby - Evergreen,Lookalike,active,2095.29,target_roas,data_driven,2026-01-28 00:47:07
+GC_00000225,CL_0018,Google,Retargeting - Baby - Q2,Retargeting,active,2471.78,maximize_conversions,data_driven,2025-10-30 16:06:33
+GC_00000226,CL_0018,Google,Retargeting - Baby - Scale,Retargeting,active,1034.35,lowest_cost,data_driven,2026-01-11 06:35:37
+GC_00000227,CL_0018,Google,Retargeting - Baby - Promo,Retargeting,active,2047.11,target_roas,7d_click,2025-07-17 00:23:04
+MC_00000228,CL_0019,Meta,Retargeting - Fitness - Q2,Retargeting,active,698.23,target_roas,7d_click,2026-02-06 13:47:27
+MC_00000229,CL_0019,Meta,Lookalike - Fitness - Evergreen,Lookalike,active,591.56,maximize_conversions,7d_click_1d_view,2025-10-09 09:18:47
+MC_00000230,CL_0019,Meta,Winback - Fitness - Promo,Winback,active,831.72,cost_cap,data_driven,2025-08-28 20:11:45
+MC_00000231,CL_0019,Meta,Brand Search - Fitness - Scale,Brand Search,active,279.95,lowest_cost,data_driven,2025-09-10 21:19:10
+MC_00000232,CL_0019,Meta,Brand Search - Fitness - Evergreen,Brand Search,active,132.03,target_roas,1d_click,2025-10-30 04:24:17
+MC_00000233,CL_0019,Meta,Winback - Fitness - Evergreen,Winback,learning,251.84,maximize_conversions,1d_click,2025-10-24 07:02:50
+MC_00000234,CL_0019,Meta,Winback - Fitness - Q2,Winback,active,607.36,cost_cap,1d_click,2025-07-28 20:26:15
+GC_00000235,CL_0019,Google,Shopping - Fitness - Promo,Shopping,learning,395.84,maximize_conversions,data_driven,2025-10-02 01:13:30
+GC_00000236,CL_0019,Google,Lookalike - Fitness - Promo,Lookalike,paused,802.74,maximize_conversions,data_driven,2026-01-22 21:37:19
+GC_00000237,CL_0019,Google,Shopping - Fitness - Evergreen,Shopping,active,109.20,cost_cap,7d_click_1d_view,2025-08-18 19:36:49
+GC_00000238,CL_0019,Google,Prospecting - Fitness - Q2,Prospecting,paused,750.84,maximize_conversions,1d_click,2025-11-07 04:28:47
+MC_00000239,CL_0020,Meta,Prospecting - Beauty - Scale,Prospecting,active,2246.07,cost_cap,7d_click_1d_view,2025-12-02 13:05:07
+MC_00000240,CL_0020,Meta,Shopping - Beauty - Evergreen,Shopping,learning,545.77,maximize_conversions,1d_click,2025-08-08 01:22:25
+MC_00000241,CL_0020,Meta,Shopping - Beauty - Promo,Shopping,active,2060.80,lowest_cost,1d_click,2026-02-07 03:36:06
+MC_00000242,CL_0020,Meta,Shopping - Beauty - Evergreen,Shopping,active,1381.99,target_roas,7d_click_1d_view,2025-09-11 19:25:34
+MC_00000243,CL_0020,Meta,Retargeting - Beauty - Q2,Retargeting,learning,472.26,cost_cap,1d_click,2025-12-12 12:02:06
+MC_00000244,CL_0020,Meta,Lookalike - Beauty - Promo,Lookalike,learning,1431.73,target_roas,7d_click,2025-11-21 04:01:24
+GC_00000245,CL_0020,Google,Retargeting - Beauty - Evergreen,Retargeting,paused,427.99,cost_cap,data_driven,2025-07-21 05:16:34
+GC_00000246,CL_0020,Google,Prospecting - Beauty - Evergreen,Prospecting,paused,1102.47,lowest_cost,data_driven,2025-08-29 11:55:09
+GC_00000247,CL_0020,Google,Winback - Beauty - Evergreen,Winback,active,2035.59,target_roas,1d_click,2025-08-01 20:47:32
+GC_00000248,CL_0020,Google,Shopping - Beauty - Q2,Shopping,paused,2059.26,target_roas,1d_click,2025-10-24 06:50:33
+MC_00000249,CL_0021,Meta,Brand Search - Outdoor - Promo,Brand Search,active,2646.27,maximize_conversions,data_driven,2026-02-25 18:19:52
+MC_00000250,CL_0021,Meta,Winback - Outdoor - Scale,Winback,active,2034.41,lowest_cost,1d_click,2026-01-20 12:16:32
+MC_00000251,CL_0021,Meta,Brand Search - Outdoor - Q2,Brand Search,active,2026.07,lowest_cost,data_driven,2025-11-17 22:24:50
+MC_00000252,CL_0021,Meta,Prospecting - Outdoor - Promo,Prospecting,active,360.15,target_roas,7d_click,2025-08-07 00:25:50
+MC_00000253,CL_0021,Meta,Winback - Outdoor - Scale,Winback,active,2725.02,target_roas,7d_click_1d_view,2025-12-29 16:49:57
+GC_00000254,CL_0021,Google,Prospecting - Outdoor - Evergreen,Prospecting,paused,509.99,target_roas,1d_click,2025-09-24 07:40:05
+GC_00000255,CL_0021,Google,Prospecting - Outdoor - Scale,Prospecting,active,2404.38,cost_cap,7d_click_1d_view,2025-12-04 15:44:08
+GC_00000256,CL_0021,Google,Brand Search - Outdoor - Evergreen,Brand Search,learning,3001.21,lowest_cost,1d_click,2025-11-08 07:05:09
+GC_00000257,CL_0021,Google,Lookalike - Outdoor - Scale,Lookalike,paused,2795.71,lowest_cost,7d_click,2025-12-11 01:40:59
+GC_00000258,CL_0021,Google,Brand Search - Outdoor - Q2,Brand Search,active,768.16,maximize_conversions,1d_click,2025-09-19 11:17:12
+GC_00000259,CL_0021,Google,Shopping - Outdoor - Evergreen,Shopping,active,1549.78,cost_cap,1d_click,2026-02-14 00:32:15
+MC_00000260,CL_0022,Meta,Prospecting - Footwear - Evergreen,Prospecting,limited,1177.56,maximize_conversions,1d_click,2025-09-14 07:15:14
+MC_00000261,CL_0022,Meta,Shopping - Footwear - Scale,Shopping,learning,559.17,maximize_conversions,7d_click,2025-07-23 03:51:35
+MC_00000262,CL_0022,Meta,Shopping - Footwear - Evergreen,Shopping,active,111.71,target_roas,7d_click_1d_view,2026-02-12 18:45:38
+MC_00000263,CL_0022,Meta,Brand Search - Footwear - Promo,Brand Search,active,507.32,maximize_conversions,1d_click,2025-12-11 05:47:58
+MC_00000264,CL_0022,Meta,Retargeting - Footwear - Q2,Retargeting,paused,1264.19,target_roas,1d_click,2025-09-25 23:02:50
+MC_00000265,CL_0022,Meta,Lookalike - Footwear - Evergreen,Lookalike,active,468.72,lowest_cost,7d_click_1d_view,2025-07-24 03:24:53
+MC_00000266,CL_0022,Meta,Shopping - Footwear - Scale,Shopping,learning,1490.11,maximize_conversions,data_driven,2025-12-17 10:39:59
+GC_00000267,CL_0022,Google,Shopping - Footwear - Scale,Shopping,active,847.27,target_roas,7d_click,2025-09-28 13:20:50
+GC_00000268,CL_0022,Google,Prospecting - Footwear - Evergreen,Prospecting,paused,1405.57,cost_cap,data_driven,2026-01-10 12:54:28
+GC_00000269,CL_0022,Google,Shopping - Footwear - Scale,Shopping,active,395.00,lowest_cost,7d_click,2025-09-25 08:08:43
+GC_00000270,CL_0022,Google,Brand Search - Footwear - Evergreen,Brand Search,active,479.91,cost_cap,7d_click,2025-12-09 00:08:35
+GC_00000271,CL_0022,Google,Brand Search - Footwear - Promo,Brand Search,active,658.25,lowest_cost,7d_click_1d_view,2025-12-13 09:55:33
+GC_00000272,CL_0022,Google,Lookalike - Footwear - Scale,Lookalike,active,824.30,maximize_conversions,1d_click,2025-12-06 06:30:06
+MC_00000273,CL_0023,Meta,Retargeting - Jewelry - Evergreen,Retargeting,active,97.44,cost_cap,1d_click,2026-01-24 14:56:05
+MC_00000274,CL_0023,Meta,Lookalike - Jewelry - Evergreen,Lookalike,active,203.31,cost_cap,data_driven,2026-01-28 23:55:08
+MC_00000275,CL_0023,Meta,Shopping - Jewelry - Promo,Shopping,limited,1258.90,lowest_cost,7d_click,2026-02-06 06:52:23
+MC_00000276,CL_0023,Meta,Brand Search - Jewelry - Promo,Brand Search,active,1391.13,target_roas,7d_click_1d_view,2026-01-03 00:27:02
+MC_00000277,CL_0023,Meta,Winback - Jewelry - Promo,Winback,paused,163.98,maximize_conversions,7d_click,2025-09-25 05:26:09
+MC_00000278,CL_0023,Meta,Prospecting - Jewelry - Evergreen,Prospecting,active,181.25,maximize_conversions,7d_click_1d_view,2025-09-23 04:02:37
+GC_00000279,CL_0023,Google,Lookalike - Jewelry - Q2,Lookalike,active,188.96,maximize_conversions,7d_click,2026-02-24 18:16:25
+GC_00000280,CL_0023,Google,Retargeting - Jewelry - Evergreen,Retargeting,paused,177.48,target_roas,data_driven,2025-11-03 21:24:02
+GC_00000281,CL_0023,Google,Brand Search - Jewelry - Evergreen,Brand Search,active,559.32,maximize_conversions,7d_click,2025-07-25 04:01:51
+GC_00000282,CL_0023,Google,Lookalike - Jewelry - Promo,Lookalike,active,457.44,maximize_conversions,data_driven,2025-08-13 04:35:48
+MC_00000283,CL_0024,Meta,Winback - Apparel - Evergreen,Winback,active,1366.82,lowest_cost,1d_click,2025-11-13 20:47:29
+MC_00000284,CL_0024,Meta,Brand Search - Apparel - Evergreen,Brand Search,active,2399.46,lowest_cost,7d_click_1d_view,2025-12-22 01:46:30
+MC_00000285,CL_0024,Meta,Winback - Apparel - Scale,Winback,paused,2173.83,target_roas,7d_click_1d_view,2025-10-10 03:22:57
+MC_00000286,CL_0024,Meta,Winback - Apparel - Q2,Winback,active,1750.78,lowest_cost,7d_click,2025-08-02 16:42:08
+MC_00000287,CL_0024,Meta,Brand Search - Apparel - Scale,Brand Search,paused,270.86,target_roas,7d_click_1d_view,2026-03-10 17:29:16
+MC_00000288,CL_0024,Meta,Winback - Apparel - Q2,Winback,learning,1627.49,lowest_cost,7d_click,2025-09-04 23:46:09
+GC_00000289,CL_0024,Google,Prospecting - Apparel - Q2,Prospecting,active,2064.55,maximize_conversions,7d_click,2026-01-28 13:20:25
+GC_00000290,CL_0024,Google,Brand Search - Apparel - Promo,Brand Search,active,633.46,target_roas,data_driven,2025-08-23 11:11:32
+GC_00000291,CL_0024,Google,Brand Search - Apparel - Evergreen,Brand Search,active,1971.26,cost_cap,7d_click_1d_view,2025-10-11 16:04:14
+GC_00000292,CL_0024,Google,Retargeting - Apparel - Scale,Retargeting,active,1664.06,target_roas,1d_click,2025-11-06 09:21:35
+GC_00000293,CL_0024,Google,Shopping - Apparel - Q2,Shopping,active,1347.64,lowest_cost,7d_click,2026-01-12 00:22:57
+GC_00000294,CL_0024,Google,Lookalike - Apparel - Scale,Lookalike,active,2170.68,target_roas,7d_click_1d_view,2026-01-21 22:24:26
+MC_00000295,CL_0025,Meta,Shopping - Fitness - Promo,Shopping,active,242.64,target_roas,data_driven,2025-11-29 15:52:44
+MC_00000296,CL_0025,Meta,Brand Search - Fitness - Scale,Brand Search,learning,761.10,maximize_conversions,1d_click,2026-01-03 23:13:27
+MC_00000297,CL_0025,Meta,Retargeting - Fitness - Promo,Retargeting,learning,376.35,lowest_cost,7d_click,2026-02-27 14:57:45
+MC_00000298,CL_0025,Meta,Winback - Fitness - Q2,Winback,paused,1122.44,target_roas,1d_click,2025-07-22 00:17:16
+GC_00000299,CL_0025,Google,Brand Search - Fitness - Promo,Brand Search,active,1426.03,lowest_cost,1d_click,2025-08-07 17:10:17
+GC_00000300,CL_0025,Google,Winback - Fitness - Scale,Winback,active,153.78,target_roas,data_driven,2026-01-18 04:16:29
+GC_00000301,CL_0025,Google,Retargeting - Fitness - Evergreen,Retargeting,active,716.22,lowest_cost,data_driven,2025-07-15 11:31:22
+GC_00000302,CL_0025,Google,Shopping - Fitness - Promo,Shopping,active,269.98,target_roas,7d_click,2025-10-22 15:00:24
+MC_00000303,CL_0026,Meta,Prospecting - Supplements - Evergreen,Prospecting,active,4043.99,lowest_cost,1d_click,2025-08-04 05:22:55
+MC_00000304,CL_0026,Meta,Prospecting - Supplements - Promo,Prospecting,active,289.30,cost_cap,7d_click_1d_view,2025-09-19 04:47:16
+MC_00000305,CL_0026,Meta,Winback - Supplements - Q2,Winback,active,2238.74,target_roas,7d_click,2025-08-29 14:30:46
+MC_00000306,CL_0026,Meta,Retargeting - Supplements - Evergreen,Retargeting,active,3459.36,lowest_cost,data_driven,2026-02-04 14:16:52
+MC_00000307,CL_0026,Meta,Brand Search - Supplements - Q2,Brand Search,active,809.58,target_roas,1d_click,2025-08-01 21:34:53
+MC_00000308,CL_0026,Meta,Winback - Supplements - Q2,Winback,active,2749.48,maximize_conversions,7d_click_1d_view,2026-02-07 03:40:12
+GC_00000309,CL_0026,Google,Retargeting - Supplements - Scale,Retargeting,active,3128.83,lowest_cost,1d_click,2025-09-03 03:47:05
+GC_00000310,CL_0026,Google,Shopping - Supplements - Q2,Shopping,active,2655.30,cost_cap,1d_click,2026-01-03 19:40:02
+GC_00000311,CL_0026,Google,Shopping - Supplements - Promo,Shopping,active,2573.15,lowest_cost,1d_click,2026-02-06 09:24:39
+GC_00000312,CL_0026,Google,Shopping - Supplements - Scale,Shopping,active,1151.02,target_roas,data_driven,2025-12-21 05:18:23
+GC_00000313,CL_0026,Google,Retargeting - Supplements - Q2,Retargeting,active,2974.34,maximize_conversions,1d_click,2025-11-17 11:51:44
+GC_00000314,CL_0026,Google,Winback - Supplements - Q2,Winback,active,2892.02,target_roas,1d_click,2025-12-02 09:06:48
+MC_00000315,CL_0027,Meta,Shopping - Beauty - Promo,Shopping,paused,1451.27,target_roas,1d_click,2025-11-17 08:06:53
+MC_00000316,CL_0027,Meta,Lookalike - Beauty - Q2,Lookalike,active,1115.53,target_roas,1d_click,2025-12-23 05:08:31
+MC_00000317,CL_0027,Meta,Brand Search - Beauty - Q2,Brand Search,active,4045.47,maximize_conversions,7d_click,2025-10-27 04:49:20
+MC_00000318,CL_0027,Meta,Lookalike - Beauty - Scale,Lookalike,learning,2450.94,maximize_conversions,7d_click_1d_view,2025-07-28 20:20:58
+GC_00000319,CL_0027,Google,Winback - Beauty - Q2,Winback,active,4045.23,target_roas,7d_click_1d_view,2025-10-18 05:35:53
+GC_00000320,CL_0027,Google,Prospecting - Beauty - Q2,Prospecting,active,3221.27,maximize_conversions,7d_click,2025-10-13 21:38:05
+GC_00000321,CL_0027,Google,Shopping - Beauty - Promo,Shopping,learning,2987.89,target_roas,1d_click,2026-01-01 05:50:57
+GC_00000322,CL_0027,Google,Lookalike - Beauty - Q2,Lookalike,active,2993.09,cost_cap,7d_click,2025-12-13 12:09:06
+GC_00000323,CL_0027,Google,Retargeting - Beauty - Q2,Retargeting,active,1999.22,maximize_conversions,1d_click,2026-03-09 19:12:01
+MC_00000324,CL_0028,Meta,Shopping - Home Goods - Promo,Shopping,active,1468.80,cost_cap,1d_click,2025-07-18 14:43:04
+MC_00000325,CL_0028,Meta,Lookalike - Home Goods - Evergreen,Lookalike,learning,1327.00,lowest_cost,data_driven,2025-11-18 17:13:45
+MC_00000326,CL_0028,Meta,Retargeting - Home Goods - Promo,Retargeting,learning,1165.81,lowest_cost,7d_click_1d_view,2025-11-22 05:18:16
+MC_00000327,CL_0028,Meta,Shopping - Home Goods - Scale,Shopping,active,1368.83,target_roas,7d_click,2025-10-16 06:28:05
+MC_00000328,CL_0028,Meta,Winback - Home Goods - Q2,Winback,active,448.15,lowest_cost,data_driven,2025-12-20 19:42:58
+MC_00000329,CL_0028,Meta,Winback - Home Goods - Promo,Winback,active,512.78,target_roas,data_driven,2026-03-01 17:17:22
+MC_00000330,CL_0028,Meta,Prospecting - Home Goods - Q2,Prospecting,active,427.65,target_roas,7d_click_1d_view,2025-08-06 07:45:48
+GC_00000331,CL_0028,Google,Lookalike - Home Goods - Q2,Lookalike,paused,781.25,lowest_cost,7d_click_1d_view,2026-02-04 18:39:26
+GC_00000332,CL_0028,Google,Shopping - Home Goods - Evergreen,Shopping,active,2322.32,lowest_cost,1d_click,2026-01-13 05:43:41
+GC_00000333,CL_0028,Google,Retargeting - Home Goods - Promo,Retargeting,active,2336.15,maximize_conversions,data_driven,2025-11-27 03:16:24
+GC_00000334,CL_0028,Google,Winback - Home Goods - Promo,Winback,paused,241.35,target_roas,7d_click_1d_view,2025-12-15 12:35:12
+GC_00000335,CL_0028,Google,Lookalike - Home Goods - Scale,Lookalike,active,1377.40,cost_cap,1d_click,2025-09-25 11:18:18
+GC_00000336,CL_0028,Google,Brand Search - Home Goods - Q2,Brand Search,learning,2177.70,maximize_conversions,1d_click,2025-08-31 21:27:05
+GC_00000337,CL_0028,Google,Brand Search - Home Goods - Scale,Brand Search,active,2477.04,cost_cap,data_driven,2025-10-22 17:46:14
+GC_00000338,CL_0028,Google,Shopping - Home Goods - Promo,Shopping,active,613.32,target_roas,data_driven,2025-08-27 03:09:28
+MC_00000339,CL_0029,Meta,Winback - Pet Supplies - Promo,Winback,active,1614.41,lowest_cost,7d_click,2026-01-02 23:20:00
+MC_00000340,CL_0029,Meta,Retargeting - Pet Supplies - Scale,Retargeting,limited,439.73,target_roas,7d_click_1d_view,2026-02-05 13:40:35
+MC_00000341,CL_0029,Meta,Winback - Pet Supplies - Promo,Winback,paused,3128.23,cost_cap,data_driven,2026-03-11 23:42:14
+MC_00000342,CL_0029,Meta,Retargeting - Pet Supplies - Promo,Retargeting,active,868.93,maximize_conversions,data_driven,2025-10-30 09:17:33
+MC_00000343,CL_0029,Meta,Retargeting - Pet Supplies - Promo,Retargeting,learning,1773.98,maximize_conversions,data_driven,2025-10-11 07:34:41
+MC_00000344,CL_0029,Meta,Winback - Pet Supplies - Q2,Winback,active,3013.04,maximize_conversions,7d_click_1d_view,2026-02-21 21:28:16
+MC_00000345,CL_0029,Meta,Prospecting - Pet Supplies - Evergreen,Prospecting,learning,1195.55,cost_cap,7d_click,2025-12-19 04:14:07
+MC_00000346,CL_0029,Meta,Lookalike - Pet Supplies - Evergreen,Lookalike,active,2056.70,lowest_cost,7d_click,2025-09-16 21:47:13
+GC_00000347,CL_0029,Google,Lookalike - Pet Supplies - Promo,Lookalike,active,2457.73,target_roas,7d_click_1d_view,2026-01-14 19:20:01
+GC_00000348,CL_0029,Google,Winback - Pet Supplies - Promo,Winback,active,1532.71,target_roas,7d_click_1d_view,2026-03-07 23:35:05
+GC_00000349,CL_0029,Google,Winback - Pet Supplies - Evergreen,Winback,active,1845.99,maximize_conversions,data_driven,2026-01-02 10:23:09
+GC_00000350,CL_0029,Google,Shopping - Pet Supplies - Q2,Shopping,learning,654.90,cost_cap,data_driven,2026-01-17 05:10:58
+GC_00000351,CL_0029,Google,Retargeting - Pet Supplies - Promo,Retargeting,active,2183.60,cost_cap,data_driven,2025-12-09 21:50:15
+GC_00000352,CL_0029,Google,Retargeting - Pet Supplies - Promo,Retargeting,paused,1195.32,target_roas,data_driven,2025-08-27 13:42:27
+GC_00000353,CL_0029,Google,Retargeting - Pet Supplies - Promo,Retargeting,limited,1896.68,target_roas,1d_click,2026-01-28 12:04:54
+GC_00000354,CL_0029,Google,Lookalike - Pet Supplies - Q2,Lookalike,paused,1105.51,target_roas,7d_click_1d_view,2026-01-04 22:26:01
+MC_00000355,CL_0030,Meta,Prospecting - Pet Supplies - Promo,Prospecting,active,1698.32,target_roas,data_driven,2025-07-20 06:29:43
+MC_00000356,CL_0030,Meta,Prospecting - Pet Supplies - Q2,Prospecting,active,740.36,target_roas,1d_click,2026-02-03 22:14:25
+MC_00000357,CL_0030,Meta,Prospecting - Pet Supplies - Promo,Prospecting,paused,1036.60,lowest_cost,7d_click,2025-07-19 04:51:04
+MC_00000358,CL_0030,Meta,Prospecting - Pet Supplies - Evergreen,Prospecting,active,1197.46,maximize_conversions,7d_click,2025-08-29 13:39:53
+MC_00000359,CL_0030,Meta,Winback - Pet Supplies - Evergreen,Winback,active,1219.51,cost_cap,7d_click_1d_view,2025-07-26 17:45:10
+GC_00000360,CL_0030,Google,Shopping - Pet Supplies - Promo,Shopping,paused,1734.59,cost_cap,7d_click_1d_view,2025-10-18 09:34:39
+GC_00000361,CL_0030,Google,Winback - Pet Supplies - Promo,Winback,active,1300.69,cost_cap,data_driven,2025-12-07 21:18:23
+GC_00000362,CL_0030,Google,Shopping - Pet Supplies - Evergreen,Shopping,active,1209.69,cost_cap,data_driven,2025-09-02 06:00:41
+GC_00000363,CL_0030,Google,Shopping - Pet Supplies - Q2,Shopping,paused,339.02,lowest_cost,7d_click,2025-10-21 18:48:10
+GC_00000364,CL_0030,Google,Shopping - Pet Supplies - Q2,Shopping,active,754.77,target_roas,7d_click,2025-10-27 11:38:20
+GC_00000365,CL_0030,Google,Shopping - Pet Supplies - Evergreen,Shopping,active,814.49,target_roas,7d_click,2025-08-16 05:30:45
+GC_00000366,CL_0030,Google,Brand Search - Pet Supplies - Q2,Brand Search,active,1016.90,target_roas,data_driven,2025-12-30 00:27:13
+MC_00000367,CL_0031,Meta,Brand Search - Jewelry - Scale,Brand Search,active,767.82,lowest_cost,data_driven,2025-10-02 01:40:23
+MC_00000368,CL_0031,Meta,Winback - Jewelry - Evergreen,Winback,paused,2376.19,target_roas,data_driven,2026-01-08 07:58:36
+MC_00000369,CL_0031,Meta,Retargeting - Jewelry - Evergreen,Retargeting,active,2440.41,lowest_cost,7d_click,2025-10-17 08:50:49
+MC_00000370,CL_0031,Meta,Winback - Jewelry - Q2,Winback,active,2756.65,lowest_cost,7d_click_1d_view,2025-11-11 21:02:42
+MC_00000371,CL_0031,Meta,Lookalike - Jewelry - Promo,Lookalike,active,3156.67,lowest_cost,1d_click,2025-11-07 08:55:25
+MC_00000372,CL_0031,Meta,Lookalike - Jewelry - Q2,Lookalike,active,987.55,cost_cap,data_driven,2025-12-27 17:01:30
+GC_00000373,CL_0031,Google,Winback - Jewelry - Promo,Winback,active,3181.42,lowest_cost,7d_click_1d_view,2026-02-07 21:05:11
+GC_00000374,CL_0031,Google,Shopping - Jewelry - Promo,Shopping,active,176.03,maximize_conversions,data_driven,2025-07-31 08:45:38
+GC_00000375,CL_0031,Google,Retargeting - Jewelry - Evergreen,Retargeting,active,2955.33,maximize_conversions,7d_click,2026-03-04 02:46:49
+GC_00000376,CL_0031,Google,Lookalike - Jewelry - Q2,Lookalike,active,183.22,maximize_conversions,7d_click,2025-11-23 09:49:02
+GC_00000377,CL_0031,Google,Winback - Jewelry - Evergreen,Winback,paused,597.25,cost_cap,7d_click_1d_view,2025-07-15 03:08:27
+GC_00000378,CL_0031,Google,Retargeting - Jewelry - Evergreen,Retargeting,active,2040.18,cost_cap,7d_click_1d_view,2025-07-18 13:12:41
+MC_00000379,CL_0032,Meta,Winback - Apparel - Scale,Winback,paused,767.37,maximize_conversions,data_driven,2025-08-04 21:18:34
+MC_00000380,CL_0032,Meta,Winback - Apparel - Promo,Winback,paused,1302.23,target_roas,1d_click,2025-10-11 09:17:04
+MC_00000381,CL_0032,Meta,Prospecting - Apparel - Evergreen,Prospecting,active,1335.73,maximize_conversions,data_driven,2026-01-09 20:31:39
+MC_00000382,CL_0032,Meta,Prospecting - Apparel - Scale,Prospecting,active,314.47,target_roas,7d_click,2026-01-15 02:10:26
+MC_00000383,CL_0032,Meta,Winback - Apparel - Evergreen,Winback,active,1450.41,cost_cap,1d_click,2026-02-27 14:09:09
+GC_00000384,CL_0032,Google,Brand Search - Apparel - Evergreen,Brand Search,paused,145.27,target_roas,7d_click_1d_view,2025-12-16 21:25:42
+GC_00000385,CL_0032,Google,Brand Search - Apparel - Evergreen,Brand Search,active,1596.85,lowest_cost,data_driven,2025-08-09 20:58:33
+GC_00000386,CL_0032,Google,Retargeting - Apparel - Q2,Retargeting,limited,694.36,cost_cap,7d_click_1d_view,2025-11-21 16:07:26
+GC_00000387,CL_0032,Google,Brand Search - Apparel - Evergreen,Brand Search,active,1570.04,maximize_conversions,data_driven,2025-08-08 15:39:56
+GC_00000388,CL_0032,Google,Retargeting - Apparel - Evergreen,Retargeting,paused,1033.61,target_roas,1d_click,2025-08-27 10:02:30
+MC_00000389,CL_0033,Meta,Shopping - Apparel - Scale,Shopping,active,2652.11,lowest_cost,1d_click,2025-10-24 03:45:29
+MC_00000390,CL_0033,Meta,Brand Search - Apparel - Evergreen,Brand Search,active,2499.08,target_roas,data_driven,2025-11-01 16:36:38
+MC_00000391,CL_0033,Meta,Brand Search - Apparel - Evergreen,Brand Search,paused,2590.18,maximize_conversions,1d_click,2025-11-22 07:46:39
+MC_00000392,CL_0033,Meta,Retargeting - Apparel - Evergreen,Retargeting,active,2514.67,lowest_cost,7d_click_1d_view,2025-10-30 14:19:01
+MC_00000393,CL_0033,Meta,Shopping - Apparel - Promo,Shopping,paused,2518.57,target_roas,7d_click_1d_view,2026-02-27 09:01:22
+MC_00000394,CL_0033,Meta,Shopping - Apparel - Evergreen,Shopping,active,1485.25,target_roas,7d_click_1d_view,2025-10-29 21:08:48
+MC_00000395,CL_0033,Meta,Prospecting - Apparel - Q2,Prospecting,active,482.93,target_roas,1d_click,2026-01-19 02:26:02
+GC_00000396,CL_0033,Google,Brand Search - Apparel - Q2,Brand Search,learning,1083.12,lowest_cost,1d_click,2025-08-11 22:58:55
+GC_00000397,CL_0033,Google,Prospecting - Apparel - Q2,Prospecting,active,116.38,target_roas,data_driven,2025-10-14 00:30:44
+GC_00000398,CL_0033,Google,Brand Search - Apparel - Q2,Brand Search,active,3001.93,cost_cap,data_driven,2025-09-10 16:34:21
+GC_00000399,CL_0033,Google,Prospecting - Apparel - Q2,Prospecting,active,3047.88,maximize_conversions,data_driven,2025-09-03 17:50:45
+GC_00000400,CL_0033,Google,Shopping - Apparel - Scale,Shopping,active,174.38,maximize_conversions,7d_click_1d_view,2025-12-09 03:35:15
+GC_00000401,CL_0033,Google,Brand Search - Apparel - Promo,Brand Search,active,2045.80,maximize_conversions,7d_click,2026-02-23 21:27:40
+MC_00000402,CL_0034,Meta,Brand Search - Footwear - Q2,Brand Search,active,2436.26,cost_cap,7d_click,2026-01-19 16:36:48
+MC_00000403,CL_0034,Meta,Winback - Footwear - Scale,Winback,active,1552.20,maximize_conversions,data_driven,2025-08-28 15:50:44
+MC_00000404,CL_0034,Meta,Prospecting - Footwear - Q2,Prospecting,active,246.72,maximize_conversions,data_driven,2025-09-08 17:35:01
+MC_00000405,CL_0034,Meta,Winback - Footwear - Promo,Winback,paused,468.71,target_roas,data_driven,2025-07-31 14:38:55
+MC_00000406,CL_0034,Meta,Prospecting - Footwear - Q2,Prospecting,active,3007.09,lowest_cost,1d_click,2025-12-14 01:13:06
+GC_00000407,CL_0034,Google,Winback - Footwear - Q2,Winback,active,717.00,cost_cap,7d_click,2025-11-26 17:17:55
+GC_00000408,CL_0034,Google,Shopping - Footwear - Q2,Shopping,active,1023.20,lowest_cost,7d_click_1d_view,2025-07-16 11:10:30
+GC_00000409,CL_0034,Google,Prospecting - Footwear - Promo,Prospecting,active,613.72,lowest_cost,1d_click,2025-07-15 14:31:57
+GC_00000410,CL_0034,Google,Retargeting - Footwear - Q2,Retargeting,active,759.92,target_roas,7d_click_1d_view,2025-12-03 04:41:27
+MC_00000411,CL_0035,Meta,Lookalike - Footwear - Q2,Lookalike,active,475.56,cost_cap,data_driven,2026-03-07 00:22:57
+MC_00000412,CL_0035,Meta,Retargeting - Footwear - Promo,Retargeting,learning,552.37,target_roas,data_driven,2025-09-23 05:07:27
+MC_00000413,CL_0035,Meta,Prospecting - Footwear - Scale,Prospecting,active,47.76,lowest_cost,1d_click,2026-02-24 11:11:59
+MC_00000414,CL_0035,Meta,Shopping - Footwear - Q2,Shopping,active,69.23,target_roas,7d_click_1d_view,2025-07-24 04:11:28
+MC_00000415,CL_0035,Meta,Winback - Footwear - Promo,Winback,limited,776.14,cost_cap,7d_click_1d_view,2025-09-30 20:26:44
+MC_00000416,CL_0035,Meta,Shopping - Footwear - Promo,Shopping,paused,442.12,cost_cap,7d_click,2026-02-01 05:48:11
+GC_00000417,CL_0035,Google,Winback - Footwear - Evergreen,Winback,active,140.43,lowest_cost,1d_click,2026-01-22 21:01:07
+GC_00000418,CL_0035,Google,Prospecting - Footwear - Q2,Prospecting,active,228.54,cost_cap,data_driven,2025-11-14 18:28:10
+GC_00000419,CL_0035,Google,Lookalike - Footwear - Q2,Lookalike,active,685.55,lowest_cost,7d_click_1d_view,2026-02-07 11:14:28
+GC_00000420,CL_0035,Google,Retargeting - Footwear - Scale,Retargeting,active,575.07,lowest_cost,7d_click_1d_view,2025-08-30 20:34:02
+GC_00000421,CL_0035,Google,Winback - Footwear - Promo,Winback,active,466.86,maximize_conversions,1d_click,2025-11-30 06:42:42
+MC_00000422,CL_0036,Meta,Winback - Food & Beverage - Promo,Winback,learning,1789.93,maximize_conversions,data_driven,2025-10-24 06:06:15
+MC_00000423,CL_0036,Meta,Prospecting - Food & Beverage - Evergreen,Prospecting,active,1092.89,maximize_conversions,data_driven,2025-09-07 21:37:45
+MC_00000424,CL_0036,Meta,Winback - Food & Beverage - Evergreen,Winback,paused,1289.55,cost_cap,7d_click_1d_view,2025-09-05 22:12:41
+MC_00000425,CL_0036,Meta,Shopping - Food & Beverage - Promo,Shopping,active,278.43,maximize_conversions,data_driven,2026-02-23 08:47:02
+MC_00000426,CL_0036,Meta,Winback - Food & Beverage - Q2,Winback,active,1624.62,maximize_conversions,7d_click_1d_view,2025-11-13 15:23:28
+MC_00000427,CL_0036,Meta,Brand Search - Food & Beverage - Evergreen,Brand Search,active,244.88,lowest_cost,1d_click,2026-01-03 06:41:04
+MC_00000428,CL_0036,Meta,Shopping - Food & Beverage - Q2,Shopping,paused,1851.69,cost_cap,1d_click,2025-08-25 19:15:45
+GC_00000429,CL_0036,Google,Prospecting - Food & Beverage - Evergreen,Prospecting,active,1900.03,cost_cap,data_driven,2025-09-11 04:22:23
+GC_00000430,CL_0036,Google,Brand Search - Food & Beverage - Promo,Brand Search,active,1489.00,maximize_conversions,7d_click,2025-12-10 02:19:26
+GC_00000431,CL_0036,Google,Shopping - Food & Beverage - Scale,Shopping,active,148.31,lowest_cost,1d_click,2025-12-10 16:51:45
+GC_00000432,CL_0036,Google,Retargeting - Food & Beverage - Evergreen,Retargeting,active,448.94,cost_cap,data_driven,2025-12-18 07:12:35
+GC_00000433,CL_0036,Google,Shopping - Food & Beverage - Scale,Shopping,active,1532.52,lowest_cost,7d_click_1d_view,2025-10-12 18:30:57
+GC_00000434,CL_0036,Google,Retargeting - Food & Beverage - Promo,Retargeting,active,1049.50,target_roas,1d_click,2026-01-22 19:55:44
+MC_00000435,CL_0037,Meta,Brand Search - Pet Supplies - Q2,Brand Search,paused,211.43,lowest_cost,data_driven,2025-07-23 06:19:22
+MC_00000436,CL_0037,Meta,Lookalike - Pet Supplies - Scale,Lookalike,active,1955.97,lowest_cost,7d_click,2025-08-14 12:13:17
+MC_00000437,CL_0037,Meta,Shopping - Pet Supplies - Q2,Shopping,active,1408.21,target_roas,1d_click,2025-12-27 22:30:54
+MC_00000438,CL_0037,Meta,Shopping - Pet Supplies - Promo,Shopping,active,1246.34,lowest_cost,1d_click,2025-12-10 14:45:30
+MC_00000439,CL_0037,Meta,Brand Search - Pet Supplies - Scale,Brand Search,active,798.74,cost_cap,data_driven,2025-09-30 18:08:06
+GC_00000440,CL_0037,Google,Lookalike - Pet Supplies - Evergreen,Lookalike,active,641.25,target_roas,data_driven,2025-07-30 17:01:42
+GC_00000441,CL_0037,Google,Shopping - Pet Supplies - Q2,Shopping,limited,2341.12,lowest_cost,data_driven,2025-08-10 02:54:49
+GC_00000442,CL_0037,Google,Lookalike - Pet Supplies - Evergreen,Lookalike,paused,434.16,cost_cap,1d_click,2025-10-09 09:22:27
+GC_00000443,CL_0037,Google,Lookalike - Pet Supplies - Evergreen,Lookalike,learning,1070.75,lowest_cost,1d_click,2025-10-20 08:43:39
+MC_00000444,CL_0038,Meta,Brand Search - Home Goods - Promo,Brand Search,limited,2442.87,target_roas,1d_click,2026-01-14 01:50:42
+MC_00000445,CL_0038,Meta,Prospecting - Home Goods - Q2,Prospecting,active,1212.50,target_roas,1d_click,2025-11-17 23:57:01
+MC_00000446,CL_0038,Meta,Winback - Home Goods - Scale,Winback,active,1573.45,cost_cap,7d_click,2026-03-03 02:35:08
+MC_00000447,CL_0038,Meta,Brand Search - Home Goods - Promo,Brand Search,learning,343.97,cost_cap,data_driven,2025-07-30 04:57:45
+MC_00000448,CL_0038,Meta,Retargeting - Home Goods - Evergreen,Retargeting,paused,1508.44,lowest_cost,7d_click,2025-11-30 07:18:17
+MC_00000449,CL_0038,Meta,Winback - Home Goods - Evergreen,Winback,active,923.01,target_roas,data_driven,2025-07-26 22:49:39
+MC_00000450,CL_0038,Meta,Brand Search - Home Goods - Scale,Brand Search,active,862.90,lowest_cost,1d_click,2025-08-23 16:19:18
+MC_00000451,CL_0038,Meta,Brand Search - Home Goods - Q2,Brand Search,active,2189.14,lowest_cost,data_driven,2025-12-22 00:32:29
+GC_00000452,CL_0038,Google,Retargeting - Home Goods - Promo,Retargeting,active,1570.33,cost_cap,data_driven,2026-03-08 02:12:41
+GC_00000453,CL_0038,Google,Winback - Home Goods - Promo,Winback,learning,2277.98,cost_cap,data_driven,2025-10-20 01:30:24
+GC_00000454,CL_0038,Google,Lookalike - Home Goods - Q2,Lookalike,active,1048.49,cost_cap,data_driven,2025-11-28 22:10:27
+GC_00000455,CL_0038,Google,Lookalike - Home Goods - Promo,Lookalike,active,1529.27,maximize_conversions,7d_click_1d_view,2025-08-16 01:18:11
+GC_00000456,CL_0038,Google,Retargeting - Home Goods - Scale,Retargeting,learning,1400.75,lowest_cost,1d_click,2026-01-24 21:51:59
+GC_00000457,CL_0038,Google,Retargeting - Home Goods - Promo,Retargeting,active,1525.47,cost_cap,data_driven,2026-01-04 01:07:01
+MC_00000458,CL_0039,Meta,Winback - Consumer Electronics - Q2,Winback,learning,675.59,target_roas,7d_click,2026-01-05 03:37:14
+MC_00000459,CL_0039,Meta,Lookalike - Consumer Electronics - Promo,Lookalike,active,1058.36,maximize_conversions,7d_click_1d_view,2025-09-14 00:43:01
+MC_00000460,CL_0039,Meta,Brand Search - Consumer Electronics - Evergreen,Brand Search,active,459.45,maximize_conversions,data_driven,2026-03-02 10:01:37
+MC_00000461,CL_0039,Meta,Lookalike - Consumer Electronics - Q2,Lookalike,active,1959.39,maximize_conversions,7d_click_1d_view,2026-01-06 08:25:48
+MC_00000462,CL_0039,Meta,Brand Search - Consumer Electronics - Scale,Brand Search,active,1788.74,lowest_cost,7d_click_1d_view,2025-10-23 22:45:00
+MC_00000463,CL_0039,Meta,Shopping - Consumer Electronics - Scale,Shopping,active,1634.47,target_roas,1d_click,2025-07-30 02:38:34
+MC_00000464,CL_0039,Meta,Winback - Consumer Electronics - Promo,Winback,active,1898.56,maximize_conversions,1d_click,2025-09-19 14:44:25
+MC_00000465,CL_0039,Meta,Prospecting - Consumer Electronics - Q2,Prospecting,learning,117.78,cost_cap,1d_click,2025-09-23 18:00:42
+GC_00000466,CL_0039,Google,Brand Search - Consumer Electronics - Evergreen,Brand Search,active,1710.31,maximize_conversions,1d_click,2026-01-23 19:55:43
+GC_00000467,CL_0039,Google,Lookalike - Consumer Electronics - Evergreen,Lookalike,active,1990.29,target_roas,7d_click,2026-01-14 02:49:55
+GC_00000468,CL_0039,Google,Winback - Consumer Electronics - Q2,Winback,active,197.78,target_roas,data_driven,2025-11-01 02:23:48
+GC_00000469,CL_0039,Google,Lookalike - Consumer Electronics - Evergreen,Lookalike,active,2043.99,cost_cap,data_driven,2025-09-06 23:32:04
+GC_00000470,CL_0039,Google,Brand Search - Consumer Electronics - Q2,Brand Search,learning,2043.45,target_roas,7d_click_1d_view,2026-01-17 02:45:31
+GC_00000471,CL_0039,Google,Lookalike - Consumer Electronics - Evergreen,Lookalike,active,1664.68,lowest_cost,1d_click,2025-12-17 18:49:09
+GC_00000472,CL_0039,Google,Brand Search - Consumer Electronics - Q2,Brand Search,active,1706.08,lowest_cost,data_driven,2025-09-18 10:50:17
+MC_00000473,CL_0040,Meta,Winback - Home Goods - Q2,Winback,active,2053.92,lowest_cost,data_driven,2025-10-20 11:25:17
+MC_00000474,CL_0040,Meta,Winback - Home Goods - Evergreen,Winback,paused,216.09,lowest_cost,7d_click_1d_view,2025-12-28 22:32:04
+MC_00000475,CL_0040,Meta,Lookalike - Home Goods - Q2,Lookalike,active,1448.02,target_roas,data_driven,2026-03-08 02:36:20
+MC_00000476,CL_0040,Meta,Brand Search - Home Goods - Scale,Brand Search,learning,1512.06,maximize_conversions,data_driven,2026-01-09 00:35:14
+MC_00000477,CL_0040,Meta,Prospecting - Home Goods - Scale,Prospecting,paused,208.29,lowest_cost,7d_click,2025-12-25 04:02:19
+MC_00000478,CL_0040,Meta,Retargeting - Home Goods - Evergreen,Retargeting,active,467.43,lowest_cost,7d_click_1d_view,2025-08-11 10:07:17
+MC_00000479,CL_0040,Meta,Brand Search - Home Goods - Evergreen,Brand Search,active,1588.73,cost_cap,7d_click,2026-01-16 14:36:11
+MC_00000480,CL_0040,Meta,Brand Search - Home Goods - Scale,Brand Search,active,837.48,maximize_conversions,7d_click,2025-07-17 08:17:10
+GC_00000481,CL_0040,Google,Winback - Home Goods - Q2,Winback,active,1340.69,maximize_conversions,7d_click,2026-02-19 05:53:09
+GC_00000482,CL_0040,Google,Shopping - Home Goods - Scale,Shopping,active,1207.86,target_roas,1d_click,2025-10-06 22:37:08
+GC_00000483,CL_0040,Google,Shopping - Home Goods - Evergreen,Shopping,active,736.30,maximize_conversions,7d_click_1d_view,2025-11-02 00:26:32
+GC_00000484,CL_0040,Google,Shopping - Home Goods - Evergreen,Shopping,active,440.48,lowest_cost,1d_click,2025-12-16 16:05:35
+GC_00000485,CL_0040,Google,Lookalike - Home Goods - Evergreen,Lookalike,active,1975.62,maximize_conversions,7d_click_1d_view,2026-01-31 00:51:57
+MC_00000486,CL_0041,Meta,Shopping - Outdoor - Promo,Shopping,paused,2139.63,target_roas,7d_click,2025-11-21 17:46:03
+MC_00000487,CL_0041,Meta,Winback - Outdoor - Scale,Winback,learning,2116.49,maximize_conversions,data_driven,2026-02-26 07:00:29
+MC_00000488,CL_0041,Meta,Winback - Outdoor - Evergreen,Winback,paused,2207.45,cost_cap,7d_click,2026-01-16 21:32:08
+MC_00000489,CL_0041,Meta,Brand Search - Outdoor - Q2,Brand Search,active,2408.39,lowest_cost,7d_click,2025-07-27 18:13:05
+MC_00000490,CL_0041,Meta,Brand Search - Outdoor - Promo,Brand Search,active,2458.29,lowest_cost,data_driven,2025-09-28 19:07:17
+GC_00000491,CL_0041,Google,Lookalike - Outdoor - Evergreen,Lookalike,active,1712.56,maximize_conversions,7d_click_1d_view,2025-11-08 13:31:36
+GC_00000492,CL_0041,Google,Lookalike - Outdoor - Scale,Lookalike,active,2091.04,target_roas,7d_click,2025-09-18 06:30:02
+GC_00000493,CL_0041,Google,Winback - Outdoor - Promo,Winback,active,1854.28,maximize_conversions,1d_click,2025-08-17 11:06:03
+GC_00000494,CL_0041,Google,Lookalike - Outdoor - Evergreen,Lookalike,active,2279.74,maximize_conversions,7d_click_1d_view,2025-09-24 04:59:09
+GC_00000495,CL_0041,Google,Winback - Outdoor - Q2,Winback,active,2069.82,maximize_conversions,7d_click_1d_view,2025-11-22 01:58:19
+GC_00000496,CL_0041,Google,Shopping - Outdoor - Evergreen,Shopping,active,1173.41,cost_cap,7d_click_1d_view,2026-02-21 03:56:22
+GC_00000497,CL_0041,Google,Lookalike - Outdoor - Q2,Lookalike,active,711.48,lowest_cost,7d_click_1d_view,2025-11-14 04:43:34
+MC_00000498,CL_0042,Meta,Winback - Food & Beverage - Q2,Winback,active,108.03,maximize_conversions,1d_click,2026-02-10 11:10:14
+MC_00000499,CL_0042,Meta,Winback - Food & Beverage - Q2,Winback,active,1898.10,maximize_conversions,7d_click,2025-08-25 14:17:00
+MC_00000500,CL_0042,Meta,Prospecting - Food & Beverage - Q2,Prospecting,active,1927.39,target_roas,1d_click,2025-08-19 12:34:56
+MC_00000501,CL_0042,Meta,Brand Search - Food & Beverage - Q2,Brand Search,active,907.04,cost_cap,7d_click,2025-07-29 13:14:42
+MC_00000502,CL_0042,Meta,Lookalike - Food & Beverage - Q2,Lookalike,paused,1150.14,maximize_conversions,data_driven,2025-11-03 12:18:50
+MC_00000503,CL_0042,Meta,Brand Search - Food & Beverage - Q2,Brand Search,learning,562.08,maximize_conversions,data_driven,2025-12-09 14:20:17
+MC_00000504,CL_0042,Meta,Winback - Food & Beverage - Promo,Winback,active,817.05,cost_cap,7d_click,2026-01-28 02:21:57
+GC_00000505,CL_0042,Google,Winback - Food & Beverage - Q2,Winback,active,2100.98,target_roas,7d_click_1d_view,2025-11-08 09:23:33
+GC_00000506,CL_0042,Google,Lookalike - Food & Beverage - Promo,Lookalike,paused,1012.27,maximize_conversions,data_driven,2025-07-16 05:31:34
+GC_00000507,CL_0042,Google,Lookalike - Food & Beverage - Scale,Lookalike,active,402.38,maximize_conversions,7d_click,2025-10-18 00:34:20
+GC_00000508,CL_0042,Google,Retargeting - Food & Beverage - Promo,Retargeting,active,2148.21,cost_cap,7d_click_1d_view,2026-01-25 07:45:42
+GC_00000509,CL_0042,Google,Retargeting - Food & Beverage - Q2,Retargeting,active,1434.54,maximize_conversions,data_driven,2025-11-15 08:31:58
+GC_00000510,CL_0042,Google,Lookalike - Food & Beverage - Evergreen,Lookalike,active,2444.85,cost_cap,1d_click,2025-10-31 10:09:05
+GC_00000511,CL_0042,Google,Prospecting - Food & Beverage - Promo,Prospecting,active,2187.09,target_roas,7d_click_1d_view,2026-01-04 16:03:57
+GC_00000512,CL_0042,Google,Prospecting - Food & Beverage - Q2,Prospecting,paused,2155.19,maximize_conversions,7d_click,2025-10-11 22:56:07
+MC_00000513,CL_0043,Meta,Brand Search - Footwear - Promo,Brand Search,limited,1599.13,cost_cap,1d_click,2025-08-30 03:45:43
+MC_00000514,CL_0043,Meta,Brand Search - Footwear - Promo,Brand Search,active,2023.03,lowest_cost,7d_click_1d_view,2025-11-10 22:59:35
+MC_00000515,CL_0043,Meta,Lookalike - Footwear - Promo,Lookalike,active,1993.50,maximize_conversions,7d_click_1d_view,2025-09-18 04:16:49
+MC_00000516,CL_0043,Meta,Lookalike - Footwear - Q2,Lookalike,active,2865.69,target_roas,7d_click,2025-08-14 14:31:18
+MC_00000517,CL_0043,Meta,Shopping - Footwear - Scale,Shopping,active,1629.83,maximize_conversions,7d_click,2025-11-20 05:18:29
+MC_00000518,CL_0043,Meta,Brand Search - Footwear - Q2,Brand Search,active,1043.17,maximize_conversions,7d_click,2025-09-19 18:25:01
+MC_00000519,CL_0043,Meta,Retargeting - Footwear - Q2,Retargeting,active,2559.48,maximize_conversions,data_driven,2025-11-30 09:03:52
+MC_00000520,CL_0043,Meta,Brand Search - Footwear - Evergreen,Brand Search,active,573.07,maximize_conversions,1d_click,2026-02-01 09:07:40
+GC_00000521,CL_0043,Google,Lookalike - Footwear - Evergreen,Lookalike,active,2773.17,maximize_conversions,7d_click_1d_view,2025-11-11 11:48:56
+GC_00000522,CL_0043,Google,Winback - Footwear - Evergreen,Winback,active,1389.15,lowest_cost,1d_click,2025-10-14 23:55:50
+GC_00000523,CL_0043,Google,Prospecting - Footwear - Evergreen,Prospecting,learning,2048.39,cost_cap,7d_click,2025-11-25 03:31:37
+GC_00000524,CL_0043,Google,Shopping - Footwear - Scale,Shopping,active,184.91,target_roas,1d_click,2026-02-14 04:56:03
+GC_00000525,CL_0043,Google,Retargeting - Footwear - Scale,Retargeting,learning,2960.27,lowest_cost,data_driven,2025-10-23 13:40:07
+MC_00000526,CL_0044,Meta,Winback - Jewelry - Evergreen,Winback,learning,173.02,maximize_conversions,data_driven,2025-07-31 13:42:32
+MC_00000527,CL_0044,Meta,Winback - Jewelry - Promo,Winback,active,358.90,target_roas,data_driven,2025-11-11 01:40:11
+MC_00000528,CL_0044,Meta,Winback - Jewelry - Scale,Winback,active,436.26,maximize_conversions,7d_click,2026-02-06 15:57:50
+MC_00000529,CL_0044,Meta,Brand Search - Jewelry - Scale,Brand Search,active,171.18,lowest_cost,1d_click,2026-01-15 19:01:42
+MC_00000530,CL_0044,Meta,Winback - Jewelry - Evergreen,Winback,active,547.55,cost_cap,data_driven,2026-01-29 17:19:46
+MC_00000531,CL_0044,Meta,Shopping - Jewelry - Evergreen,Shopping,active,331.46,cost_cap,7d_click,2025-10-01 23:48:32
+MC_00000532,CL_0044,Meta,Lookalike - Jewelry - Scale,Lookalike,active,351.09,lowest_cost,7d_click,2026-03-03 15:11:43
+MC_00000533,CL_0044,Meta,Brand Search - Jewelry - Q2,Brand Search,active,212.10,cost_cap,7d_click_1d_view,2026-01-07 07:28:33
+GC_00000534,CL_0044,Google,Retargeting - Jewelry - Evergreen,Retargeting,active,199.30,cost_cap,7d_click_1d_view,2025-12-10 09:52:18
+GC_00000535,CL_0044,Google,Winback - Jewelry - Q2,Winback,active,58.45,target_roas,7d_click_1d_view,2025-11-03 05:22:28
+GC_00000536,CL_0044,Google,Lookalike - Jewelry - Evergreen,Lookalike,learning,396.79,maximize_conversions,1d_click,2026-02-11 08:42:08
+GC_00000537,CL_0044,Google,Prospecting - Jewelry - Scale,Prospecting,active,361.60,target_roas,data_driven,2025-10-23 05:04:16
+GC_00000538,CL_0044,Google,Retargeting - Jewelry - Q2,Retargeting,paused,615.96,cost_cap,7d_click,2025-09-30 02:31:42
+GC_00000539,CL_0044,Google,Lookalike - Jewelry - Evergreen,Lookalike,active,516.70,lowest_cost,7d_click_1d_view,2026-02-10 01:52:40
+GC_00000540,CL_0044,Google,Shopping - Jewelry - Q2,Shopping,active,265.58,lowest_cost,7d_click,2026-01-13 22:27:57
+GC_00000541,CL_0044,Google,Retargeting - Jewelry - Scale,Retargeting,active,710.81,maximize_conversions,data_driven,2025-08-18 05:20:54
+MC_00000542,CL_0045,Meta,Winback - Apparel - Evergreen,Winback,active,1204.38,maximize_conversions,data_driven,2025-07-30 21:59:03
+MC_00000543,CL_0045,Meta,Retargeting - Apparel - Evergreen,Retargeting,active,1348.01,lowest_cost,7d_click_1d_view,2025-12-13 12:01:17
+MC_00000544,CL_0045,Meta,Brand Search - Apparel - Promo,Brand Search,learning,1052.61,maximize_conversions,7d_click_1d_view,2025-10-31 22:48:49
+MC_00000545,CL_0045,Meta,Lookalike - Apparel - Evergreen,Lookalike,active,313.35,target_roas,7d_click,2025-10-03 16:17:00
+MC_00000546,CL_0045,Meta,Winback - Apparel - Evergreen,Winback,active,1327.65,maximize_conversions,1d_click,2025-12-30 08:20:26
+MC_00000547,CL_0045,Meta,Winback - Apparel - Promo,Winback,learning,1153.99,cost_cap,data_driven,2026-01-02 02:01:51
+GC_00000548,CL_0045,Google,Lookalike - Apparel - Evergreen,Lookalike,limited,295.44,maximize_conversions,7d_click_1d_view,2025-12-31 07:54:03
+GC_00000549,CL_0045,Google,Lookalike - Apparel - Q2,Lookalike,active,1467.86,cost_cap,7d_click,2025-12-23 12:32:30
+GC_00000550,CL_0045,Google,Shopping - Apparel - Promo,Shopping,active,175.07,lowest_cost,data_driven,2025-12-24 14:22:10
+GC_00000551,CL_0045,Google,Lookalike - Apparel - Q2,Lookalike,active,824.41,lowest_cost,1d_click,2025-12-23 02:20:29
+GC_00000552,CL_0045,Google,Brand Search - Apparel - Evergreen,Brand Search,active,648.64,target_roas,1d_click,2025-09-13 19:33:06
+MC_00000553,CL_0046,Meta,Prospecting - Outdoor - Promo,Prospecting,active,230.85,maximize_conversions,data_driven,2025-07-26 17:40:12
+MC_00000554,CL_0046,Meta,Retargeting - Outdoor - Promo,Retargeting,active,470.73,lowest_cost,1d_click,2025-10-10 23:27:48
+MC_00000555,CL_0046,Meta,Lookalike - Outdoor - Scale,Lookalike,active,3121.93,cost_cap,data_driven,2025-09-17 21:40:46
+MC_00000556,CL_0046,Meta,Lookalike - Outdoor - Promo,Lookalike,active,2639.55,cost_cap,7d_click,2025-08-25 00:28:10
+MC_00000557,CL_0046,Meta,Winback - Outdoor - Promo,Winback,paused,3288.17,lowest_cost,data_driven,2026-02-27 03:23:17
+MC_00000558,CL_0046,Meta,Brand Search - Outdoor - Promo,Brand Search,active,1236.89,target_roas,7d_click,2026-03-08 04:30:43
+MC_00000559,CL_0046,Meta,Prospecting - Outdoor - Promo,Prospecting,active,2343.80,lowest_cost,7d_click_1d_view,2026-01-22 09:46:06
+GC_00000560,CL_0046,Google,Retargeting - Outdoor - Evergreen,Retargeting,active,1724.68,lowest_cost,7d_click,2025-12-21 08:58:07
+GC_00000561,CL_0046,Google,Retargeting - Outdoor - Promo,Retargeting,paused,534.09,lowest_cost,7d_click,2025-09-13 02:25:03
+GC_00000562,CL_0046,Google,Lookalike - Outdoor - Scale,Lookalike,active,401.10,maximize_conversions,data_driven,2025-11-21 18:01:25
+GC_00000563,CL_0046,Google,Retargeting - Outdoor - Promo,Retargeting,active,3067.73,lowest_cost,7d_click,2025-08-11 11:18:26
+GC_00000564,CL_0046,Google,Prospecting - Outdoor - Scale,Prospecting,active,592.36,target_roas,7d_click_1d_view,2025-12-22 00:40:00
+MC_00000565,CL_0047,Meta,Retargeting - Apparel - Q2,Retargeting,active,1075.78,cost_cap,1d_click,2025-08-02 10:00:12
+MC_00000566,CL_0047,Meta,Prospecting - Apparel - Evergreen,Prospecting,active,276.25,lowest_cost,data_driven,2025-11-18 07:44:14
+MC_00000567,CL_0047,Meta,Prospecting - Apparel - Scale,Prospecting,active,1660.96,lowest_cost,1d_click,2026-01-22 12:40:11
+MC_00000568,CL_0047,Meta,Retargeting - Apparel - Scale,Retargeting,active,1141.82,target_roas,data_driven,2026-03-02 17:32:41
+GC_00000569,CL_0047,Google,Prospecting - Apparel - Evergreen,Prospecting,active,1540.29,target_roas,7d_click_1d_view,2026-01-05 14:25:03
+GC_00000570,CL_0047,Google,Lookalike - Apparel - Scale,Lookalike,active,945.96,cost_cap,7d_click,2025-10-29 20:50:36
+GC_00000571,CL_0047,Google,Prospecting - Apparel - Scale,Prospecting,limited,875.39,lowest_cost,data_driven,2025-12-14 02:58:16
+GC_00000572,CL_0047,Google,Shopping - Apparel - Evergreen,Shopping,active,1608.49,lowest_cost,1d_click,2025-11-09 12:41:44
+GC_00000573,CL_0047,Google,Retargeting - Apparel - Scale,Retargeting,active,99.60,maximize_conversions,data_driven,2025-11-02 14:10:52
+GC_00000574,CL_0047,Google,Lookalike - Apparel - Scale,Lookalike,active,972.27,maximize_conversions,7d_click_1d_view,2025-09-22 08:12:03
+GC_00000575,CL_0047,Google,Lookalike - Apparel - Q2,Lookalike,active,1559.05,target_roas,7d_click,2025-12-07 11:04:32
+MC_00000576,CL_0048,Meta,Shopping - Supplements - Promo,Shopping,active,530.88,maximize_conversions,7d_click_1d_view,2025-10-02 07:14:21
+MC_00000577,CL_0048,Meta,Retargeting - Supplements - Evergreen,Retargeting,learning,824.18,maximize_conversions,7d_click,2025-12-14 03:04:15
+MC_00000578,CL_0048,Meta,Prospecting - Supplements - Evergreen,Prospecting,active,355.62,maximize_conversions,1d_click,2026-03-08 23:10:36
+MC_00000579,CL_0048,Meta,Brand Search - Supplements - Evergreen,Brand Search,active,616.25,target_roas,1d_click,2025-08-21 21:24:00
+MC_00000580,CL_0048,Meta,Shopping - Supplements - Q2,Shopping,active,558.90,maximize_conversions,data_driven,2025-10-01 01:14:45
+MC_00000581,CL_0048,Meta,Brand Search - Supplements - Promo,Brand Search,active,449.60,target_roas,data_driven,2026-02-18 17:04:10
+MC_00000582,CL_0048,Meta,Winback - Supplements - Scale,Winback,active,523.57,lowest_cost,1d_click,2025-09-18 22:47:42
+MC_00000583,CL_0048,Meta,Winback - Supplements - Evergreen,Winback,active,126.77,maximize_conversions,7d_click_1d_view,2026-01-28 16:28:42
+GC_00000584,CL_0048,Google,Shopping - Supplements - Evergreen,Shopping,active,628.95,lowest_cost,1d_click,2025-12-22 02:18:53
+GC_00000585,CL_0048,Google,Shopping - Supplements - Promo,Shopping,active,134.18,lowest_cost,1d_click,2026-01-31 12:40:38
+GC_00000586,CL_0048,Google,Retargeting - Supplements - Q2,Retargeting,active,186.18,target_roas,7d_click_1d_view,2025-07-27 09:07:12
+GC_00000587,CL_0048,Google,Prospecting - Supplements - Promo,Prospecting,active,822.43,target_roas,data_driven,2026-03-08 02:54:56
+GC_00000588,CL_0048,Google,Retargeting - Supplements - Evergreen,Retargeting,active,558.04,target_roas,data_driven,2025-07-19 09:03:58
+GC_00000589,CL_0048,Google,Retargeting - Supplements - Evergreen,Retargeting,active,332.27,target_roas,7d_click_1d_view,2026-02-09 15:42:03
+GC_00000590,CL_0048,Google,Retargeting - Supplements - Scale,Retargeting,active,682.29,cost_cap,7d_click_1d_view,2025-09-28 09:08:42
+MC_00000591,CL_0049,Meta,Prospecting - Beauty - Evergreen,Prospecting,active,1399.38,cost_cap,1d_click,2026-03-03 20:12:49
+MC_00000592,CL_0049,Meta,Prospecting - Beauty - Scale,Prospecting,active,1199.02,cost_cap,1d_click,2025-12-13 09:00:21
+MC_00000593,CL_0049,Meta,Brand Search - Beauty - Evergreen,Brand Search,active,178.96,maximize_conversions,7d_click_1d_view,2025-07-21 23:16:47
+MC_00000594,CL_0049,Meta,Retargeting - Beauty - Promo,Retargeting,active,2379.97,target_roas,data_driven,2025-10-10 03:43:27
+GC_00000595,CL_0049,Google,Retargeting - Beauty - Q2,Retargeting,active,1095.92,cost_cap,7d_click_1d_view,2025-12-12 06:32:52
+GC_00000596,CL_0049,Google,Brand Search - Beauty - Q2,Brand Search,active,471.32,maximize_conversions,1d_click,2025-08-08 20:31:20
+GC_00000597,CL_0049,Google,Shopping - Beauty - Promo,Shopping,active,1422.74,maximize_conversions,7d_click,2025-11-27 10:09:49
+GC_00000598,CL_0049,Google,Brand Search - Beauty - Evergreen,Brand Search,active,1341.33,maximize_conversions,7d_click_1d_view,2025-09-30 00:48:01
+GC_00000599,CL_0049,Google,Winback - Beauty - Scale,Winback,active,1108.89,cost_cap,7d_click,2026-02-21 13:48:24
+GC_00000600,CL_0049,Google,Brand Search - Beauty - Promo,Brand Search,paused,954.25,target_roas,7d_click,2025-08-01 05:51:17
+GC_00000601,CL_0049,Google,Prospecting - Beauty - Scale,Prospecting,active,1884.23,maximize_conversions,1d_click,2026-03-04 17:17:06
+GC_00000602,CL_0049,Google,Prospecting - Beauty - Scale,Prospecting,active,1108.51,target_roas,7d_click,2025-10-06 09:30:35
+MC_00000603,CL_0050,Meta,Retargeting - Home Goods - Q2,Retargeting,active,949.32,lowest_cost,7d_click,2025-09-27 02:37:30
+MC_00000604,CL_0050,Meta,Winback - Home Goods - Promo,Winback,active,581.91,maximize_conversions,7d_click_1d_view,2026-01-14 23:02:20
+MC_00000605,CL_0050,Meta,Retargeting - Home Goods - Scale,Retargeting,active,78.11,maximize_conversions,7d_click_1d_view,2026-03-02 02:39:22
+MC_00000606,CL_0050,Meta,Shopping - Home Goods - Promo,Shopping,active,1522.73,lowest_cost,1d_click,2025-07-16 20:20:58
+MC_00000607,CL_0050,Meta,Shopping - Home Goods - Promo,Shopping,learning,697.60,target_roas,7d_click_1d_view,2025-09-03 09:34:18
+GC_00000608,CL_0050,Google,Prospecting - Home Goods - Q2,Prospecting,active,137.49,lowest_cost,7d_click_1d_view,2026-01-23 05:14:39
+GC_00000609,CL_0050,Google,Lookalike - Home Goods - Scale,Lookalike,paused,946.91,lowest_cost,7d_click,2025-08-21 23:42:02
+GC_00000610,CL_0050,Google,Lookalike - Home Goods - Q2,Lookalike,active,625.34,target_roas,1d_click,2025-08-20 06:03:33
+GC_00000611,CL_0050,Google,Prospecting - Home Goods - Q2,Prospecting,active,1237.44,lowest_cost,1d_click,2025-09-30 06:37:23
+GC_00000612,CL_0050,Google,Prospecting - Home Goods - Scale,Prospecting,active,1485.43,cost_cap,1d_click,2025-12-02 19:54:05
+GC_00000613,CL_0050,Google,Shopping - Home Goods - Evergreen,Shopping,active,1193.14,lowest_cost,7d_click,2025-11-18 23:11:12
+GC_00000614,CL_0050,Google,Lookalike - Home Goods - Scale,Lookalike,limited,1098.09,lowest_cost,7d_click,2025-08-09 19:35:35
+MC_00000615,CL_0051,Meta,Retargeting - Supplements - Promo,Retargeting,active,2112.09,lowest_cost,7d_click,2025-12-16 01:59:32
+MC_00000616,CL_0051,Meta,Winback - Supplements - Promo,Winback,active,1029.55,target_roas,1d_click,2025-07-23 16:39:47
+MC_00000617,CL_0051,Meta,Brand Search - Supplements - Evergreen,Brand Search,paused,1438.47,cost_cap,1d_click,2025-09-01 20:37:44
+MC_00000618,CL_0051,Meta,Shopping - Supplements - Q2,Shopping,active,2416.97,target_roas,7d_click,2026-03-11 16:32:08
+MC_00000619,CL_0051,Meta,Brand Search - Supplements - Promo,Brand Search,active,1106.04,maximize_conversions,7d_click,2025-09-08 21:17:11
+MC_00000620,CL_0051,Meta,Lookalike - Supplements - Evergreen,Lookalike,learning,1275.50,lowest_cost,1d_click,2025-11-30 19:39:37
+MC_00000621,CL_0051,Meta,Winback - Supplements - Promo,Winback,active,2425.32,target_roas,7d_click,2025-10-04 18:18:44
+MC_00000622,CL_0051,Meta,Prospecting - Supplements - Q2,Prospecting,paused,1940.72,maximize_conversions,7d_click,2025-09-13 18:38:05
+GC_00000623,CL_0051,Google,Brand Search - Supplements - Evergreen,Brand Search,paused,1906.92,cost_cap,1d_click,2025-11-06 02:37:37
+GC_00000624,CL_0051,Google,Shopping - Supplements - Scale,Shopping,paused,191.36,cost_cap,1d_click,2025-11-01 22:41:05
+GC_00000625,CL_0051,Google,Brand Search - Supplements - Scale,Brand Search,active,1237.38,maximize_conversions,7d_click,2025-11-03 14:10:07
+GC_00000626,CL_0051,Google,Shopping - Supplements - Q2,Shopping,active,1805.17,cost_cap,7d_click_1d_view,2025-07-19 05:36:54
+GC_00000627,CL_0051,Google,Lookalike - Supplements - Q2,Lookalike,active,1495.72,cost_cap,1d_click,2025-09-01 15:14:35
+GC_00000628,CL_0051,Google,Shopping - Supplements - Promo,Shopping,active,1186.13,target_roas,7d_click_1d_view,2026-01-08 01:49:57
+MC_00000629,CL_0052,Meta,Lookalike - Food & Beverage - Evergreen,Lookalike,active,2956.05,target_roas,data_driven,2025-09-27 18:53:18
+MC_00000630,CL_0052,Meta,Prospecting - Food & Beverage - Scale,Prospecting,active,2754.36,maximize_conversions,data_driven,2026-01-15 08:05:10
+MC_00000631,CL_0052,Meta,Prospecting - Food & Beverage - Promo,Prospecting,active,2980.28,lowest_cost,7d_click,2025-10-08 19:01:34
+MC_00000632,CL_0052,Meta,Retargeting - Food & Beverage - Scale,Retargeting,paused,406.46,target_roas,1d_click,2025-09-13 01:10:06
+MC_00000633,CL_0052,Meta,Retargeting - Food & Beverage - Scale,Retargeting,active,1473.48,lowest_cost,7d_click_1d_view,2025-12-18 07:59:03
+MC_00000634,CL_0052,Meta,Lookalike - Food & Beverage - Promo,Lookalike,active,427.37,maximize_conversions,1d_click,2025-10-25 22:14:01
+MC_00000635,CL_0052,Meta,Brand Search - Food & Beverage - Evergreen,Brand Search,active,2157.06,cost_cap,7d_click,2025-09-01 09:54:16
+MC_00000636,CL_0052,Meta,Retargeting - Food & Beverage - Scale,Retargeting,active,3328.65,cost_cap,7d_click_1d_view,2025-12-16 08:24:08
+GC_00000637,CL_0052,Google,Winback - Food & Beverage - Promo,Winback,active,2054.03,maximize_conversions,data_driven,2025-12-12 23:17:02
+GC_00000638,CL_0052,Google,Brand Search - Food & Beverage - Promo,Brand Search,active,1956.27,maximize_conversions,data_driven,2025-10-30 14:29:11
+GC_00000639,CL_0052,Google,Winback - Food & Beverage - Promo,Winback,active,1723.10,lowest_cost,data_driven,2025-10-06 20:13:42
+GC_00000640,CL_0052,Google,Winback - Food & Beverage - Scale,Winback,active,1890.04,target_roas,data_driven,2025-12-17 02:11:18
+GC_00000641,CL_0052,Google,Prospecting - Food & Beverage - Scale,Prospecting,active,801.20,target_roas,data_driven,2025-08-10 19:24:12
+GC_00000642,CL_0052,Google,Prospecting - Food & Beverage - Scale,Prospecting,paused,2824.99,lowest_cost,7d_click,2026-01-29 04:53:23
+GC_00000643,CL_0052,Google,Retargeting - Food & Beverage - Q2,Retargeting,paused,901.66,maximize_conversions,7d_click_1d_view,2025-10-05 16:23:16
+GC_00000644,CL_0052,Google,Winback - Food & Beverage - Q2,Winback,active,3330.05,lowest_cost,7d_click,2025-10-20 20:08:08
+MC_00000645,CL_0053,Meta,Brand Search - Beauty - Scale,Brand Search,learning,492.05,target_roas,7d_click,2025-10-01 23:21:43
+MC_00000646,CL_0053,Meta,Prospecting - Beauty - Evergreen,Prospecting,active,272.86,maximize_conversions,1d_click,2025-09-10 07:48:33
+MC_00000647,CL_0053,Meta,Prospecting - Beauty - Scale,Prospecting,learning,483.51,target_roas,7d_click_1d_view,2025-10-14 23:00:12
+MC_00000648,CL_0053,Meta,Winback - Beauty - Evergreen,Winback,active,1332.98,target_roas,7d_click_1d_view,2025-07-27 09:08:05
+MC_00000649,CL_0053,Meta,Retargeting - Beauty - Scale,Retargeting,paused,226.39,cost_cap,7d_click,2025-09-07 14:43:29
+GC_00000650,CL_0053,Google,Prospecting - Beauty - Scale,Prospecting,active,2420.88,lowest_cost,data_driven,2026-03-02 11:19:12
+GC_00000651,CL_0053,Google,Winback - Beauty - Q2,Winback,active,255.15,target_roas,1d_click,2025-09-21 09:05:06
+GC_00000652,CL_0053,Google,Retargeting - Beauty - Q2,Retargeting,active,886.11,cost_cap,7d_click_1d_view,2026-02-11 05:17:24
+GC_00000653,CL_0053,Google,Prospecting - Beauty - Q2,Prospecting,paused,1581.43,lowest_cost,data_driven,2025-10-14 03:37:38
+GC_00000654,CL_0053,Google,Prospecting - Beauty - Q2,Prospecting,active,546.20,lowest_cost,1d_click,2025-07-30 21:31:02
+MC_00000655,CL_0054,Meta,Shopping - Footwear - Evergreen,Shopping,active,969.02,maximize_conversions,7d_click_1d_view,2025-10-08 16:16:49
+MC_00000656,CL_0054,Meta,Retargeting - Footwear - Scale,Retargeting,active,969.35,maximize_conversions,data_driven,2025-07-30 19:25:21
+MC_00000657,CL_0054,Meta,Lookalike - Footwear - Promo,Lookalike,paused,1362.06,maximize_conversions,7d_click,2025-09-14 22:02:43
+MC_00000658,CL_0054,Meta,Winback - Footwear - Evergreen,Winback,active,985.74,target_roas,7d_click_1d_view,2025-11-08 16:12:33
+MC_00000659,CL_0054,Meta,Shopping - Footwear - Promo,Shopping,learning,2090.44,maximize_conversions,7d_click_1d_view,2026-01-13 16:55:21
+GC_00000660,CL_0054,Google,Lookalike - Footwear - Evergreen,Lookalike,active,1914.65,target_roas,data_driven,2025-07-27 15:22:10
+GC_00000661,CL_0054,Google,Shopping - Footwear - Promo,Shopping,active,1782.12,target_roas,7d_click,2026-01-02 01:15:13
+GC_00000662,CL_0054,Google,Shopping - Footwear - Promo,Shopping,active,468.29,cost_cap,data_driven,2025-10-08 16:50:06
+GC_00000663,CL_0054,Google,Lookalike - Footwear - Q2,Lookalike,active,1544.39,lowest_cost,7d_click,2026-02-03 23:23:29
+GC_00000664,CL_0054,Google,Prospecting - Footwear - Q2,Prospecting,active,1253.81,maximize_conversions,7d_click_1d_view,2025-09-03 06:16:31
+MC_00000665,CL_0055,Meta,Retargeting - Baby - Evergreen,Retargeting,paused,280.33,maximize_conversions,1d_click,2026-01-11 18:24:57
+MC_00000666,CL_0055,Meta,Brand Search - Baby - Evergreen,Brand Search,active,166.45,cost_cap,7d_click,2026-02-11 07:20:49
+MC_00000667,CL_0055,Meta,Retargeting - Baby - Q2,Retargeting,paused,835.89,maximize_conversions,1d_click,2025-12-07 04:09:49
+MC_00000668,CL_0055,Meta,Shopping - Baby - Q2,Shopping,active,1025.91,target_roas,7d_click_1d_view,2025-12-20 04:39:33
+MC_00000669,CL_0055,Meta,Shopping - Baby - Evergreen,Shopping,active,1398.32,target_roas,7d_click,2026-01-22 14:04:51
+MC_00000670,CL_0055,Meta,Winback - Baby - Scale,Winback,paused,291.22,cost_cap,data_driven,2025-10-04 10:37:53
+MC_00000671,CL_0055,Meta,Retargeting - Baby - Scale,Retargeting,active,80.25,target_roas,7d_click_1d_view,2026-01-07 11:40:54
+MC_00000672,CL_0055,Meta,Winback - Baby - Q2,Winback,learning,447.87,maximize_conversions,7d_click,2025-08-18 23:14:16
+GC_00000673,CL_0055,Google,Winback - Baby - Q2,Winback,learning,800.41,target_roas,7d_click_1d_view,2025-09-23 16:25:55
+GC_00000674,CL_0055,Google,Winback - Baby - Scale,Winback,active,649.10,target_roas,7d_click_1d_view,2026-01-23 20:48:13
+GC_00000675,CL_0055,Google,Winback - Baby - Q2,Winback,active,595.71,maximize_conversions,1d_click,2025-12-16 19:58:10
+GC_00000676,CL_0055,Google,Lookalike - Baby - Evergreen,Lookalike,active,246.58,lowest_cost,1d_click,2025-09-05 01:57:15
+GC_00000677,CL_0055,Google,Winback - Baby - Scale,Winback,active,798.95,lowest_cost,7d_click,2026-02-10 14:09:06
+GC_00000678,CL_0055,Google,Lookalike - Baby - Q2,Lookalike,active,645.73,target_roas,data_driven,2025-08-27 07:54:39
+GC_00000679,CL_0055,Google,Winback - Baby - Promo,Winback,paused,1092.20,cost_cap,data_driven,2026-01-24 10:55:49
+MC_00000680,CL_0056,Meta,Brand Search - Pet Supplies - Q2,Brand Search,active,1299.18,lowest_cost,7d_click,2026-03-06 23:11:21
+MC_00000681,CL_0056,Meta,Prospecting - Pet Supplies - Promo,Prospecting,active,824.47,lowest_cost,1d_click,2025-07-16 08:05:06
+MC_00000682,CL_0056,Meta,Lookalike - Pet Supplies - Scale,Lookalike,active,441.49,maximize_conversions,7d_click,2026-01-07 02:02:13
+MC_00000683,CL_0056,Meta,Winback - Pet Supplies - Evergreen,Winback,active,971.02,cost_cap,7d_click_1d_view,2025-08-24 07:21:43
+MC_00000684,CL_0056,Meta,Winback - Pet Supplies - Q2,Winback,active,1091.65,cost_cap,7d_click,2025-08-31 10:10:50
+MC_00000685,CL_0056,Meta,Prospecting - Pet Supplies - Scale,Prospecting,paused,491.21,maximize_conversions,1d_click,2026-02-10 09:06:20
+MC_00000686,CL_0056,Meta,Brand Search - Pet Supplies - Evergreen,Brand Search,learning,1201.78,maximize_conversions,7d_click_1d_view,2025-09-03 07:35:59
+GC_00000687,CL_0056,Google,Prospecting - Pet Supplies - Evergreen,Prospecting,active,377.40,target_roas,7d_click,2025-12-30 21:39:42
+GC_00000688,CL_0056,Google,Retargeting - Pet Supplies - Q2,Retargeting,active,466.53,lowest_cost,data_driven,2026-02-17 06:27:11
+GC_00000689,CL_0056,Google,Shopping - Pet Supplies - Scale,Shopping,active,576.71,target_roas,7d_click_1d_view,2026-03-09 18:00:34
+GC_00000690,CL_0056,Google,Shopping - Pet Supplies - Evergreen,Shopping,active,214.20,maximize_conversions,7d_click_1d_view,2025-08-24 11:05:33
+GC_00000691,CL_0056,Google,Winback - Pet Supplies - Promo,Winback,paused,315.66,target_roas,1d_click,2025-08-10 00:17:35
+GC_00000692,CL_0056,Google,Prospecting - Pet Supplies - Q2,Prospecting,active,1487.15,cost_cap,7d_click,2025-07-24 11:12:57
+GC_00000693,CL_0056,Google,Shopping - Pet Supplies - Scale,Shopping,active,598.11,cost_cap,7d_click,2025-12-19 06:33:03
+GC_00000694,CL_0056,Google,Shopping - Pet Supplies - Evergreen,Shopping,active,1032.24,maximize_conversions,7d_click,2025-12-09 17:22:18
+MC_00000695,CL_0057,Meta,Retargeting - Home Goods - Evergreen,Retargeting,active,1636.40,maximize_conversions,data_driven,2025-11-02 23:34:40
+MC_00000696,CL_0057,Meta,Shopping - Home Goods - Evergreen,Shopping,active,406.68,lowest_cost,1d_click,2025-10-28 20:37:59
+MC_00000697,CL_0057,Meta,Shopping - Home Goods - Scale,Shopping,active,1058.21,cost_cap,7d_click_1d_view,2026-01-12 18:06:53
+MC_00000698,CL_0057,Meta,Lookalike - Home Goods - Evergreen,Lookalike,active,1252.19,maximize_conversions,1d_click,2025-08-27 07:28:00
+GC_00000699,CL_0057,Google,Prospecting - Home Goods - Scale,Prospecting,active,1146.50,cost_cap,7d_click_1d_view,2025-11-23 20:53:22
+GC_00000700,CL_0057,Google,Shopping - Home Goods - Q2,Shopping,active,1637.13,lowest_cost,data_driven,2025-07-25 12:03:57
+GC_00000701,CL_0057,Google,Lookalike - Home Goods - Promo,Lookalike,active,481.50,lowest_cost,data_driven,2025-12-01 22:15:42
+GC_00000702,CL_0057,Google,Winback - Home Goods - Scale,Winback,active,1937.54,maximize_conversions,7d_click_1d_view,2025-11-30 08:49:11
+GC_00000703,CL_0057,Google,Prospecting - Home Goods - Scale,Prospecting,active,1412.80,maximize_conversions,data_driven,2026-03-07 18:30:43
+GC_00000704,CL_0057,Google,Prospecting - Home Goods - Scale,Prospecting,active,1375.44,maximize_conversions,1d_click,2025-08-02 01:36:33
+GC_00000705,CL_0057,Google,Prospecting - Home Goods - Evergreen,Prospecting,active,2258.86,maximize_conversions,data_driven,2025-12-07 01:50:13
+MC_00000706,CL_0058,Meta,Brand Search - Pet Supplies - Evergreen,Brand Search,active,1651.26,cost_cap,data_driven,2025-10-06 12:17:04
+MC_00000707,CL_0058,Meta,Retargeting - Pet Supplies - Evergreen,Retargeting,active,1316.99,maximize_conversions,7d_click_1d_view,2025-07-25 07:07:01
+MC_00000708,CL_0058,Meta,Shopping - Pet Supplies - Scale,Shopping,paused,1337.49,maximize_conversions,1d_click,2026-02-24 22:56:53
+MC_00000709,CL_0058,Meta,Brand Search - Pet Supplies - Scale,Brand Search,active,1274.11,maximize_conversions,7d_click,2026-01-14 09:55:16
+GC_00000710,CL_0058,Google,Brand Search - Pet Supplies - Q2,Brand Search,active,753.02,maximize_conversions,1d_click,2026-01-05 01:46:38
+GC_00000711,CL_0058,Google,Brand Search - Pet Supplies - Promo,Brand Search,active,989.86,lowest_cost,data_driven,2026-01-06 19:19:00
+GC_00000712,CL_0058,Google,Retargeting - Pet Supplies - Q2,Retargeting,active,2153.30,target_roas,7d_click_1d_view,2025-09-17 01:19:59
+GC_00000713,CL_0058,Google,Lookalike - Pet Supplies - Promo,Lookalike,active,416.46,cost_cap,1d_click,2026-01-09 12:05:26
+GC_00000714,CL_0058,Google,Shopping - Pet Supplies - Q2,Shopping,active,1999.14,maximize_conversions,1d_click,2025-09-19 15:04:02
+GC_00000715,CL_0058,Google,Prospecting - Pet Supplies - Scale,Prospecting,active,1300.65,cost_cap,7d_click_1d_view,2025-09-21 09:43:04
+GC_00000716,CL_0058,Google,Prospecting - Pet Supplies - Evergreen,Prospecting,learning,2221.97,lowest_cost,7d_click,2026-02-13 06:04:12
+GC_00000717,CL_0058,Google,Prospecting - Pet Supplies - Q2,Prospecting,learning,1541.58,maximize_conversions,7d_click_1d_view,2025-07-31 11:06:53
+MC_00000718,CL_0059,Meta,Prospecting - Home Goods - Q2,Prospecting,active,213.53,target_roas,7d_click,2025-07-22 04:18:14
+MC_00000719,CL_0059,Meta,Retargeting - Home Goods - Scale,Retargeting,active,718.52,maximize_conversions,7d_click,2025-11-17 06:13:18
+MC_00000720,CL_0059,Meta,Prospecting - Home Goods - Scale,Prospecting,active,1588.30,maximize_conversions,1d_click,2025-08-03 17:08:00
+MC_00000721,CL_0059,Meta,Prospecting - Home Goods - Promo,Prospecting,active,922.94,target_roas,7d_click,2025-12-21 00:51:08
+MC_00000722,CL_0059,Meta,Winback - Home Goods - Scale,Winback,paused,718.89,maximize_conversions,7d_click_1d_view,2025-11-01 15:05:38
+MC_00000723,CL_0059,Meta,Retargeting - Home Goods - Evergreen,Retargeting,active,1030.52,target_roas,1d_click,2025-09-13 03:18:20
+MC_00000724,CL_0059,Meta,Prospecting - Home Goods - Q2,Prospecting,paused,666.57,maximize_conversions,data_driven,2025-10-25 17:57:58
+MC_00000725,CL_0059,Meta,Shopping - Home Goods - Evergreen,Shopping,active,1192.16,target_roas,data_driven,2026-01-03 19:36:19
+GC_00000726,CL_0059,Google,Lookalike - Home Goods - Promo,Lookalike,active,1555.59,lowest_cost,data_driven,2026-03-07 11:38:52
+GC_00000727,CL_0059,Google,Winback - Home Goods - Evergreen,Winback,active,1119.50,target_roas,data_driven,2025-12-05 07:10:32
+GC_00000728,CL_0059,Google,Lookalike - Home Goods - Promo,Lookalike,active,956.21,lowest_cost,data_driven,2025-08-18 00:22:16
+GC_00000729,CL_0059,Google,Brand Search - Home Goods - Scale,Brand Search,active,705.08,target_roas,7d_click_1d_view,2026-01-20 15:48:57
+GC_00000730,CL_0059,Google,Winback - Home Goods - Scale,Winback,active,1203.45,maximize_conversions,7d_click,2026-03-04 14:26:26
+GC_00000731,CL_0059,Google,Shopping - Home Goods - Scale,Shopping,active,342.97,lowest_cost,1d_click,2025-11-06 07:36:25
+GC_00000732,CL_0059,Google,Lookalike - Home Goods - Q2,Lookalike,active,650.26,target_roas,data_driven,2025-08-09 00:42:23
+MC_00000733,CL_0060,Meta,Retargeting - Beauty - Evergreen,Retargeting,learning,2017.22,maximize_conversions,7d_click,2025-08-08 22:32:11
+MC_00000734,CL_0060,Meta,Prospecting - Beauty - Scale,Prospecting,active,1197.42,cost_cap,1d_click,2025-10-19 18:42:40
+MC_00000735,CL_0060,Meta,Winback - Beauty - Evergreen,Winback,active,1513.83,cost_cap,7d_click_1d_view,2025-11-13 07:44:47
+MC_00000736,CL_0060,Meta,Prospecting - Beauty - Promo,Prospecting,active,3097.42,target_roas,data_driven,2026-01-12 05:41:52
+GC_00000737,CL_0060,Google,Brand Search - Beauty - Scale,Brand Search,active,1305.91,lowest_cost,7d_click_1d_view,2026-03-04 12:19:17
+GC_00000738,CL_0060,Google,Lookalike - Beauty - Q2,Lookalike,active,1605.81,maximize_conversions,data_driven,2026-02-19 05:53:14
+GC_00000739,CL_0060,Google,Winback - Beauty - Scale,Winback,active,3149.62,maximize_conversions,7d_click_1d_view,2025-12-18 17:22:15
+GC_00000740,CL_0060,Google,Prospecting - Beauty - Q2,Prospecting,active,2669.73,target_roas,7d_click_1d_view,2026-02-21 19:11:33

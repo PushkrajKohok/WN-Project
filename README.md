@@ -1,0 +1,372 @@
+# WasteNot Always-On Intelligence Layer
+
+A polished full-stack demonstration of an always-on multi-agent RAG (Retrieval-Augmented Generation) intelligence layer for an AI-powered ad optimization platform. The system continuously ingests eCommerce and advertising data, runs a multi-agent workflow to scan client campaigns, targets, and audience sync status, compares performance against vertical benchmarks in a Knowledge Graph (GraphRAG), and surfaces optimization recommendations with Corrective RAG verification guardrails.
+
+---
+
+## Technical Architecture
+
+The WasteNot Always-On Intelligence Layer implements four modern architectural paradigms to achieve high-accuracy, privacy-compliant ad recommendations:
+
+```
+                  ┌──────────────────────────────────────────────┐
+                  │          eCommerce & Advertising API         │
+                  │        (Shopify, Klaviyo, Meta, Google)      │
+                  └──────────────────────┬───────────────────────┘
+                                         │ Ingest & Sync
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │            Data Ingestion Engine             │
+                  │   - CSV Parser (clients, orders, daily logs) │
+                  │   - Schema Validator & Drift Detector        │
+                  └──────────────────────┬───────────────────────┘
+                                         │ Structured / Semantic
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │                 Database                     │
+                  │     Postgres (Supabase) + pgvector (RAG)      │
+                  └──────────────┬────────────────┬──────────────┘
+                                 │                │
+             Hybrid SQL / Vector │                │ Graph Edges
+                                 ▼                ▼
+                  ┌──────────────────────┐┌──────────────────────┐
+                  │      Hybrid RAG      ││    Knowledge Graph   │
+                  │   SQL Query Builder  ││  (GraphRAG edges matching│
+                  │   + Vector Search    ││   cross-client lists)│
+                  └──────────────┬───────┘└───────┬──────────────┘
+                                 │                │
+                                 ▼                ▼
+                  ┌──────────────────────────────────────────────┐
+                  │             Multi-Agent System               │
+                  │ 1. Data Scout         2. Pattern Miner       │
+                  │ 3. Rec Engine         4. Risk Grader         │
+                  │ 5. Action Executor    6. Human Interface     │
+                  └──────────────────────┬───────────────────────┘
+                                         │ Validate
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │         Corrective RAG Guardrails            │
+                  │   - Spend & Confidence Risk Valuation        │
+                  │   - Automatic Rollback Strategy Handler      │
+                  └──────────────────────┬───────────────────────┘
+                                         │ Dispatch
+                                         ▼
+                  ┌──────────────────────────────────────────────┐
+                  │          Polished Command Center             │
+                  │       Next.js 16 Dashboard & Operations      │
+                  └──────────────────────────────────────────────┘
+```
+
+1. **Agentic RAG**: A network of specialized AI agents working together:
+   - **Data Scout**: Periodically scans client accounts, integrations, and daily campaign logs to find issues (e.g., stale audience syncs, falling CTRs).
+   - **Pattern Miner**: Identifies network-effect insights by matching campaign shapes against anonymized cross-client benchmarks.
+   - **Recommendation Engine**: Combines scout findings with historical playbooks to propose optimizations.
+   - **Evidence & Risk Grader**: Runs Corrective RAG validation checks, checking the reliability of underlying database evidence before actioning.
+   - **Action Executor**: Automatically updates ad campaigns for low-risk actions or queues high-risk ones.
+   - **Human Interface**: Escalates budget-impacting or high-risk optimizations to human account managers.
+2. **Graph-Hybrid RAG**: Combines the precision of relational SQL queries (for campaign trends), semantic similarity vector searches (for playbook resolution via `pgvector`), and structural networks (GraphRAG matching current actions against vertical benchmarks in `knowledge_graph_edges.csv`).
+3. **Corrective RAG Guardrails**: Validation rules that grade recommendation reliability and check compliance settings (e.g. daily budget pause limits, confidence limits) before executing changes.
+4. **Auto-Rollback Trigger**: Monitors campaigns post-optimization and automatically reverts configurations if key metrics (like CTR or ROAS) drop below a pre-configured threshold.
+
+---
+
+## Tech Stack
+
+- **Frontend**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, Recharts (visual charts), Lucide Icons.
+- **Backend**: FastAPI (Python 3.10+), Pydantic (data models), Uvicorn (ASGI server).
+- **Database**: PostgreSQL (Supabase) with `pgvector` for document embeddings.
+- **Mock Fallback**: Full client-side and server-side fallback datasets to ensure immediate app utility without requiring database connection strings.
+
+---
+
+## Folder Structure
+
+```
+WN-Project/
+├── apps/
+│   ├── web/                     # Next.js frontend app
+│   │   ├── src/app/             # Next.js routing pages
+│   │   └── src/lib/             # Frontend utility & mock databases
+│   └── api/                     # FastAPI backend
+│       ├── main.py              # Main router & stubs
+│       └── mock_data.py         # Backend mock records
+├── data/
+│   └── sample/                  # Ingestion dataset CSV inputs
+├── db/
+│   └── schema.sql               # Database DDL schema for Postgres
+├── scripts/
+│   └── generate_wastenot_synthetic_data.py  # Script to generate synthetic data
+├── docs/                        # Technical specifications & notes
+└── README.md                    # Core repository documentation
+```
+
+---
+
+## Local Setup Instructions
+
+### Prerequisites
+- Node.js (v18.0+)
+- Python (v3.10+)
+- Docker Desktop or another local Postgres instance (optional for database-backed mode)
+
+### 1. Backend Setup (FastAPI)
+Navigate to the api folder, set up a virtual environment, and install dependencies:
+```bash
+cd apps/api
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the FastAPI developer server:
+```bash
+uvicorn main:app --reload --port 8000
+```
+The API documentation will be available at: http://localhost:8000/docs
+Health check endpoint: http://localhost:8000/health
+
+### 2. Database Setup
+
+The app now supports real Postgres/Supabase ingestion while keeping mock fallback data when the database is unavailable.
+
+Copy the example environment file and set `DATABASE_URL`:
+```bash
+cp .env.example .env
+export DATABASE_URL=postgresql://postgres:postgres@localhost:5432/wastenot
+```
+
+For Supabase, use the pooled or direct Postgres connection string:
+```env
+DATABASE_URL=postgresql://postgres:[PASSWORD]@[HOST]:5432/postgres
+```
+
+### 3. Local Postgres With Docker
+
+Start Postgres:
+```bash
+docker compose up -d
+```
+
+Initialize the schema:
+```bash
+psql "$DATABASE_URL" -f db/schema.sql
+```
+
+The `docker-compose.yml` file creates:
+- database: `wastenot`
+- user: `postgres`
+- password: `postgres`
+- port: `5432`
+- persistent volume: `wastenot-postgres-data`
+
+### 4. Synthetic Data Generation And Ingestion
+
+The repo includes the uploaded sample package under `data/wastenot_synthetic_sample_data` and the generator at `scripts/generate_wastenot_synthetic_data.py`.
+
+Ingest the uploaded sample:
+```bash
+python scripts/ingest_wastenot_data.py \
+  --data-dir ./data/wastenot_synthetic_sample_data \
+  --database-url "$DATABASE_URL" \
+  --reset
+```
+
+Generate first, then ingest:
+```bash
+python scripts/ingest_wastenot_data.py \
+  --generate \
+  --data-dir ./data/generated_default \
+  --clients 60 \
+  --customers-per-client 800 \
+  --days 90 \
+  --seed 42 \
+  --database-url "$DATABASE_URL" \
+  --reset
+```
+
+Small demo ingestion:
+```bash
+python scripts/ingest_wastenot_data.py \
+  --generate \
+  --data-dir ./data/generated_small \
+  --clients 10 \
+  --customers-per-client 200 \
+  --days 30 \
+  --seed 7 \
+  --database-url "$DATABASE_URL" \
+  --reset
+```
+
+Verify rows loaded:
+```bash
+psql "$DATABASE_URL" -c "select job_id, status, row_counts from ingestion_jobs order by started_at desc limit 1;"
+psql "$DATABASE_URL" -c "select count(*) from recommendation_records;"
+```
+
+### 5. Frontend Setup (Next.js)
+Navigate to the web folder and install dependencies:
+```bash
+cd apps/web
+npm install
+```
+
+Run the Next.js development server:
+```bash
+npm run dev
+```
+Open http://localhost:3000 to access the Dashboard.
+
+The frontend reads `NEXT_PUBLIC_API_URL` and falls back to `http://localhost:8000`.
+
+---
+
+## Environment Variables
+
+### Frontend (`apps/web/.env.local` or root `.env`):
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+### Backend (`apps/api/.env`):
+```env
+DATABASE_URL=postgresql://postgres:your-supabase-password@db.supabase.co:5432/postgres
+OPENAI_API_KEY=your-openai-api-key
+```
+
+`OPENAI_API_KEY` is reserved for future RAG/agent steps; this step does not call OpenAI APIs.
+
+---
+
+## Step 2 — Database Schema & Data Ingestion
+
+### Data Mapping to the WasteNot Product Brief
+- **Client Source Data**: `clients`, `products`, `customers`, `shopify_orders`, and `shopify_order_items` represent internal business context that the agents query to determine LTV and purchase cycle.
+- **Ad Platform Integrations**: `ad_campaign_settings`, `ad_adsets`, and `ad_performance_daily` track daily advertising spend, clicks, impression shares, and conversions.
+- **WasteNot intelligence and Outcomes**: `audience_segments`, `audience_memberships`, `recommendation_records`, and `optimization_history` store custom segmentation cohorts built by our engines and record the execution or rollback audit path of every automated action.
+- **Cross-Client Patterns**: `cross_client_benchmarks` and `knowledge_graph_edges` power the GraphRAG framework, linking local campaigns to vertical average lifts.
+- **RAG Context**: `rag_documents` acts as the document pool for semantic playbook matching.
+- **Schema Drift & Data Quality**: `schema_versions` logs schema alterations across integrated customer accounts.
+
+> [!NOTE]
+> pgvector embeddings for `rag_documents` are scaffolded as an optional/commented property in `db/schema.sql` for implementation in later RAG retrieval steps.
+> Real third-party API integrations (Shopify, Klaviyo, Meta, Google) are mocked at this stage.
+
+---
+---
+
+## FastAPI Data Endpoints
+
+- `POST /data/generate`: starts a background generator job and returns `job_id`.
+- `POST /data/ingest`: starts a background ingestion job and returns `job_id`.
+- `GET /data/jobs/{job_id}`: returns status, timestamps, row counts, and errors.
+- `GET /data/manifest`: returns the latest ingestion job or sample `manifest.json`.
+- `GET /settings/ingestion-frequency`: returns current ingestion cadence.
+- `PATCH /settings/ingestion-frequency`: updates cadence settings.
+- `GET /dashboard/summary`: returns database-backed KPIs when available.
+- `GET /recommendations` and `GET /recommendations/{id}`: read `recommendation_records` with benchmark/RAG context.
+- `GET /patterns`: reads `cross_client_benchmarks` and `knowledge_graph_edges`.
+- `GET /actions`: reads `optimization_history`.
+- `GET /agents/logs`: reads public `agent_logs` or generated public summaries.
+
+The Data & Ingestion Control page calls these endpoints directly. If the API or database is unavailable, the UI keeps using local mock data so the demo remains navigable.
+
+---
+
+## App Pages & Routes
+
+1. `/dashboard`: Command center showing wasted spend saved, active alerts, trend line, and priority recommendations needing approval.
+2. `/recommendations`: queue list of all active recommendations with platform, client, risk, and status filters.
+3. `/recommendations/[id]`: Breakdown details for specific optimizations showing SQL evidence, GraphRAG matches, playbook matches, risk evaluations, and the agent execution trace.
+4. `/agents`: Interactive dashboard displaying agent run metrics, execution states, and concise system logs.
+5. `/data`: Ingestion frequency configuration bar, preset selector, and interactive pipeline runner.
+6. `/patterns`: Cross-client vertical benchmarking metrics and knowledge graph relationship explorer.
+7. `/actions`: Action audit logs and interactive manual rollback buttons.
+8. `/guardrails`: Adjustable threshold sliders, compliance checklists, and editable execution list.
+
+---
+
+## Current Status & Roadmap
+
+### Completed Features (Pass 1)
+- [x] Monorepo codebase setup and package dependencies configured.
+- [x] Polished dark theme style guides and glassmorphic animations.
+- [x] Navigation sidebar app shell.
+- [x] Dashboard KPI cards and 7-day Area Chart.
+- [x] Recommendation queue listing with query search.
+- [x] Deep dive recommendation details with multi-RAG validation tabs and step timeline logs.
+- [x] Agent workbench control console and status activity panels.
+- [x] Data frequency controls and synthetic presets generation module.
+- [x] Network benchmarking indexer and Graph edge tracing panel.
+- [x] Action rollback triggers and configuration state log audits.
+- [x] Slider threshold controls and compliance lists.
+- [x] FastAPI web server endpoints for routing requests.
+- [x] Relational Supabase database schema matching the core datasets.
+- [x] Database population schema and ingestion pipeline for uploaded synthetic CSV files.
+- [x] FastAPI database-first endpoints with mock fallback.
+- [x] Data & Ingestion UI connected to generation, ingestion, job status, manifest, and settings endpoints.
+
+### Next Steps
+- [x] Implement live database connection queries for dashboard summaries, recommendations, patterns, actions, and ingestion status.
+- [ ] Connect the synthetic data generation CLI to the FastAPI background jobs queue.
+- [x] Connect the synthetic data generation CLI to FastAPI background jobs.
+- [ ] Integrate OpenAI LLM models to write real recommendation descriptions.
+- [ ] Add LangGraph workflows to orchestrate active scanning cycles.
+- [ ] Add RAG retrieval over `rag_documents`.
+- [ ] Add recommendation detail evidence drawer.
+- [ ] Add Agent Workbench live job logs.
+- [ ] Add dashboard metric trend lines directly from database history.
+
+### Known Issues
+
+- pgvector embeddings are scaffolded but not generated yet.
+- Agent reasoning is still simulated/public-summary based; hidden chain-of-thought is not exposed.
+- Real Meta, Google, Shopify, and Klaviyo APIs are not connected yet.
+- The local environment used for this pass did not have Docker or `psycopg` preinstalled, so database ingestion should be run after installing `apps/api/requirements.txt` and starting Postgres.
+
+---
+
+## Privacy & Synthetic Data Statement
+To preserve advertiser confidentiality, client accounts are insulated in separate database tables. The RAG Pattern Miner is restricted to reading aggregated, anonymized vertical metrics (averages grouped across client categories and spend bands) rather than inspecting raw customer logs or transaction identifiers.
+
+---
+
+## Change Log
+
+### Step 1: Foundation Setup (2026-06-10)
+- **Files Changed**:
+  - `apps/web/*`: Next.js initialization, TypeScript configurations, App Shell, global styles, pages.
+  - `apps/api/*`: FastAPI app, router endpoints, mock dataset schemas.
+  - `db/schema.sql`: DDL schema for PostgreSQL database setup.
+  - `README.md`: Created detailed project explanation.
+- **Features Added**: Initialized monorepo structure, built 8 UI pages with dark-mode dashboard styling, and configured API routing paths.
+- **Known Issues**: Generation script integration is currently mock-only. Database calls fall back to local JSON modules.
+- **Next Steps**: Validate local Next.js and FastAPI server runs, compile build commands.
+
+### Step 2 — Database schema and ingestion pipeline (2026-06-10)
+- **Files Changed**:
+  - `db/schema.sql`
+  - `scripts/ingest_wastenot_data.py`
+  - `docker-compose.yml`
+  - `.env.example`
+  - `apps/api/app/db.py`
+  - `apps/api/app/routes/data.py`
+  - `apps/api/app/services/ingestion_service.py`
+  - `apps/api/requirements.txt`
+  - `README.md`
+- **Features Added**:
+  - Local Postgres setup (docker-compose.yml)
+  - Postgres/Supabase-compatible schema
+  - Synthetic CSV ingestion script (scripts/ingest_wastenot_data.py)
+  - Ingestion job tracking (ingestion_jobs table)
+  - Data generation endpoint
+  - Data ingestion endpoint
+  - Ingestion frequency persistence
+- **Known Issues**:
+  - RAG embeddings are not generated yet.
+  - Agent reasoning is still simulated.
+  - Frontend data page may still need full live job polling in the next step.
+  - Real ad platform API actions are not connected.
+- **Next Steps**:
+  - Connect `/data` frontend page to real generate/ingest endpoints.
+  - Show live ingestion job status and row counts.
+  - Replace dashboard mock data with database-backed summary endpoint.

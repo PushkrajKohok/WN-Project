@@ -1,0 +1,901 @@
+product_id,client_id,sku,product_name,product_category,price,margin_pct,active_flag
+P_CL_0001_001,CL_0001,0001-001-A83,Daily Band,Fitness,40.03,0.4039,true
+P_CL_0001_002,CL_0001,0001-002-I71,Premium Band,Fitness,27.74,0.4744,true
+P_CL_0001_003,CL_0001,0001-003-Z82,Daily Mat,Fitness,39.30,0.3270,true
+P_CL_0001_004,CL_0001,0001-004-T86,Pro Bottle,Fitness,31.18,0.3551,true
+P_CL_0001_005,CL_0001,0001-005-N49,Pro Roller,Fitness,29.60,0.4342,true
+P_CL_0001_006,CL_0001,0001-006-G90,Classic Mat,Fitness,46.47,0.3629,true
+P_CL_0001_007,CL_0001,0001-007-O98,Pro Band,Fitness,59.03,0.4040,true
+P_CL_0001_008,CL_0001,0001-008-W68,Premium Dumbbell,Fitness,38.50,0.4475,false
+P_CL_0001_009,CL_0001,0001-009-R38,Ultra Bottle,Fitness,49.49,0.4917,true
+P_CL_0001_010,CL_0001,0001-010-Z49,Pro Mat,Fitness,61.30,0.4598,true
+P_CL_0001_011,CL_0001,0001-011-M44,Eco Dumbbell,Fitness,37.34,0.4180,true
+P_CL_0001_012,CL_0001,0001-012-N51,Pro Bottle,Fitness,69.05,0.3601,true
+P_CL_0001_013,CL_0001,0001-013-I83,Core Bottle,Fitness,59.21,0.4626,true
+P_CL_0001_014,CL_0001,0001-014-I33,Pro Bottle,Fitness,41.91,0.3972,true
+P_CL_0001_015,CL_0001,0001-015-D30,Essential Mat,Fitness,37.28,0.3923,true
+P_CL_0002_001,CL_0002,0002-001-R14,Signature Planter,Home Goods,36.89,0.5471,true
+P_CL_0002_002,CL_0002,0002-002-A94,Eco Lamp,Home Goods,20.01,0.6219,true
+P_CL_0002_003,CL_0002,0002-003-Y73,Signature Candle,Home Goods,51.03,0.6815,true
+P_CL_0002_004,CL_0002,0002-004-P25,Core Candle,Home Goods,50.48,0.7241,true
+P_CL_0002_005,CL_0002,0002-005-J80,Core Throw,Home Goods,53.66,0.6400,true
+P_CL_0002_006,CL_0002,0002-006-P47,Eco Lamp,Home Goods,54.46,0.6706,true
+P_CL_0002_007,CL_0002,0002-007-H68,Eco Planter,Home Goods,41.50,0.5584,true
+P_CL_0002_008,CL_0002,0002-008-I63,Essential Candle,Home Goods,53.54,0.7163,true
+P_CL_0002_009,CL_0002,0002-009-J85,Pro Lamp,Home Goods,34.50,0.7293,true
+P_CL_0002_010,CL_0002,0002-010-Y79,Performance Throw,Home Goods,32.99,0.6206,true
+P_CL_0002_011,CL_0002,0002-011-H83,Performance Throw,Home Goods,30.17,0.5762,true
+P_CL_0002_012,CL_0002,0002-012-M59,Ultra Lamp,Home Goods,25.32,0.6286,true
+P_CL_0002_013,CL_0002,0002-013-K22,Signature Candle,Home Goods,33.15,0.5494,true
+P_CL_0002_014,CL_0002,0002-014-E19,Signature Lamp,Home Goods,22.40,0.6858,true
+P_CL_0002_015,CL_0002,0002-015-U20,Essential Candle,Home Goods,42.34,0.7000,true
+P_CL_0003_001,CL_0003,0003-001-P79,Core Jacket,Apparel,20.84,0.4404,true
+P_CL_0003_002,CL_0003,0003-002-X21,Performance Jogger,Apparel,19.48,0.5126,true
+P_CL_0003_003,CL_0003,0003-003-B51,Core Tee,Apparel,45.61,0.3756,true
+P_CL_0003_004,CL_0003,0003-004-N82,Ultra Hoodie,Apparel,39.55,0.3509,true
+P_CL_0003_005,CL_0003,0003-005-E39,Signature Jacket,Apparel,49.98,0.4445,true
+P_CL_0003_006,CL_0003,0003-006-O46,Eco Tee,Apparel,68.47,0.3485,true
+P_CL_0003_007,CL_0003,0003-007-W42,Signature Jogger,Apparel,28.76,0.4860,true
+P_CL_0003_008,CL_0003,0003-008-D40,Performance Jacket,Apparel,72.50,0.4313,true
+P_CL_0003_009,CL_0003,0003-009-A82,Core Jogger,Apparel,88.30,0.4990,true
+P_CL_0003_010,CL_0003,0003-010-H87,Essential Jogger,Apparel,32.55,0.3607,true
+P_CL_0003_011,CL_0003,0003-011-E90,Premium Jogger,Apparel,43.14,0.4976,true
+P_CL_0003_012,CL_0003,0003-012-B84,Essential Jogger,Apparel,25.08,0.4634,true
+P_CL_0003_013,CL_0003,0003-013-Z79,Essential Jogger,Apparel,53.28,0.4231,true
+P_CL_0003_014,CL_0003,0003-014-P47,Essential Hoodie,Apparel,68.75,0.4777,true
+P_CL_0003_015,CL_0003,0003-015-X96,Performance Tee,Apparel,96.69,0.5104,true
+P_CL_0004_001,CL_0004,0004-001-M11,Daily Harness,Pet Supplies,94.72,0.7757,true
+P_CL_0004_002,CL_0004,0004-002-D96,Classic Harness,Pet Supplies,83.91,0.7627,true
+P_CL_0004_003,CL_0004,0004-003-T38,Premium Bowl,Pet Supplies,44.84,0.7955,true
+P_CL_0004_004,CL_0004,0004-004-B48,Signature Harness,Pet Supplies,67.20,0.6916,true
+P_CL_0004_005,CL_0004,0004-005-O57,Eco Bowl,Pet Supplies,100.41,0.7522,true
+P_CL_0004_006,CL_0004,0004-006-T62,Daily Toy,Pet Supplies,36.65,0.6749,true
+P_CL_0004_007,CL_0004,0004-007-H56,Premium Bed,Pet Supplies,47.03,0.8646,true
+P_CL_0004_008,CL_0004,0004-008-O21,Classic Harness,Pet Supplies,97.92,0.7967,true
+P_CL_0004_009,CL_0004,0004-009-K41,Ultra Treat,Pet Supplies,150.13,0.8258,true
+P_CL_0004_010,CL_0004,0004-010-K28,Pro Bowl,Pet Supplies,97.55,0.6690,true
+P_CL_0004_011,CL_0004,0004-011-R42,Ultra Toy,Pet Supplies,84.97,0.6904,true
+P_CL_0004_012,CL_0004,0004-012-K12,Ultra Toy,Pet Supplies,113.87,0.7215,true
+P_CL_0004_013,CL_0004,0004-013-X18,Signature Bed,Pet Supplies,57.04,0.7581,true
+P_CL_0004_014,CL_0004,0004-014-B94,Eco Bowl,Pet Supplies,58.93,0.7287,true
+P_CL_0004_015,CL_0004,0004-015-P61,Performance Treat,Pet Supplies,104.10,0.8056,true
+P_CL_0005_001,CL_0005,0005-001-C26,Daily Sauce,Food & Beverage,161.57,0.7985,true
+P_CL_0005_002,CL_0005,0005-002-T77,Daily Tea,Food & Beverage,115.63,0.7643,true
+P_CL_0005_003,CL_0005,0005-003-Y80,Classic Coffee,Food & Beverage,99.58,0.7596,true
+P_CL_0005_004,CL_0005,0005-004-O61,Performance Sauce,Food & Beverage,125.75,0.8195,true
+P_CL_0005_005,CL_0005,0005-005-P18,Premium Tea,Food & Beverage,72.86,0.8400,true
+P_CL_0005_006,CL_0005,0005-006-L26,Eco Coffee,Food & Beverage,86.70,0.6856,false
+P_CL_0005_007,CL_0005,0005-007-V64,Core Bar,Food & Beverage,120.22,0.8673,true
+P_CL_0005_008,CL_0005,0005-008-Q37,Ultra Tea,Food & Beverage,145.14,0.8049,true
+P_CL_0005_009,CL_0005,0005-009-I83,Classic Coffee,Food & Beverage,93.35,0.8350,true
+P_CL_0005_010,CL_0005,0005-010-U81,Core Bar,Food & Beverage,80.94,0.7954,true
+P_CL_0005_011,CL_0005,0005-011-K54,Core Tea,Food & Beverage,136.70,0.7099,true
+P_CL_0005_012,CL_0005,0005-012-X91,Core Sauce,Food & Beverage,172.76,0.6920,true
+P_CL_0005_013,CL_0005,0005-013-X51,Pro Sauce,Food & Beverage,86.35,0.7928,true
+P_CL_0005_014,CL_0005,0005-014-T16,Premium Snack,Food & Beverage,141.57,0.7280,true
+P_CL_0005_015,CL_0005,0005-015-Q24,Essential Sauce,Food & Beverage,71.90,0.7596,true
+P_CL_0006_001,CL_0006,0006-001-V49,Core Bowl,Pet Supplies,84.47,0.3677,false
+P_CL_0006_002,CL_0006,0006-002-E42,Daily Treat,Pet Supplies,118.15,0.3892,true
+P_CL_0006_003,CL_0006,0006-003-M78,Classic Bed,Pet Supplies,113.93,0.4237,true
+P_CL_0006_004,CL_0006,0006-004-A68,Premium Harness,Pet Supplies,117.02,0.4960,true
+P_CL_0006_005,CL_0006,0006-005-U63,Daily Bowl,Pet Supplies,78.87,0.3466,true
+P_CL_0006_006,CL_0006,0006-006-W56,Premium Harness,Pet Supplies,121.67,0.4109,true
+P_CL_0006_007,CL_0006,0006-007-Q20,Performance Bed,Pet Supplies,65.62,0.4977,true
+P_CL_0006_008,CL_0006,0006-008-D77,Eco Toy,Pet Supplies,98.98,0.3624,true
+P_CL_0006_009,CL_0006,0006-009-U28,Classic Harness,Pet Supplies,85.09,0.3442,true
+P_CL_0006_010,CL_0006,0006-010-F90,Signature Toy,Pet Supplies,73.31,0.4164,true
+P_CL_0006_011,CL_0006,0006-011-S92,Pro Bowl,Pet Supplies,53.20,0.3882,false
+P_CL_0006_012,CL_0006,0006-012-J45,Pro Harness,Pet Supplies,122.58,0.3348,true
+P_CL_0006_013,CL_0006,0006-013-B17,Essential Harness,Pet Supplies,87.67,0.4899,true
+P_CL_0006_014,CL_0006,0006-014-R15,Signature Treat,Pet Supplies,50.36,0.5054,true
+P_CL_0006_015,CL_0006,0006-015-P74,Ultra Toy,Pet Supplies,88.07,0.5151,true
+P_CL_0007_001,CL_0007,0007-001-B41,Signature Dumbbell,Fitness,101.48,0.7819,true
+P_CL_0007_002,CL_0007,0007-002-L46,Performance Bottle,Fitness,149.23,0.6655,true
+P_CL_0007_003,CL_0007,0007-003-K22,Eco Bottle,Fitness,133.43,0.7194,true
+P_CL_0007_004,CL_0007,0007-004-K20,Pro Bottle,Fitness,61.17,0.7164,true
+P_CL_0007_005,CL_0007,0007-005-T20,Daily Dumbbell,Fitness,65.26,0.6955,true
+P_CL_0007_006,CL_0007,0007-006-V99,Eco Dumbbell,Fitness,57.27,0.6024,true
+P_CL_0007_007,CL_0007,0007-007-G53,Signature Bottle,Fitness,99.95,0.6221,false
+P_CL_0007_008,CL_0007,0007-008-Z22,Eco Band,Fitness,155.19,0.7379,true
+P_CL_0007_009,CL_0007,0007-009-E86,Performance Bottle,Fitness,129.55,0.6146,true
+P_CL_0007_010,CL_0007,0007-010-F66,Core Bottle,Fitness,114.15,0.6659,true
+P_CL_0007_011,CL_0007,0007-011-Z67,Classic Band,Fitness,42.40,0.6905,true
+P_CL_0007_012,CL_0007,0007-012-G57,Pro Roller,Fitness,50.18,0.7806,true
+P_CL_0007_013,CL_0007,0007-013-F35,Pro Dumbbell,Fitness,56.74,0.6114,true
+P_CL_0007_014,CL_0007,0007-014-R23,Eco Roller,Fitness,76.28,0.7539,true
+P_CL_0007_015,CL_0007,0007-015-N21,Classic Band,Fitness,129.47,0.7470,true
+P_CL_0008_001,CL_0008,0008-001-M74,Essential Lamp,Home Goods,40.82,0.5119,false
+P_CL_0008_002,CL_0008,0008-002-W93,Essential Organizer,Home Goods,49.97,0.6230,true
+P_CL_0008_003,CL_0008,0008-003-P99,Ultra Organizer,Home Goods,35.43,0.6165,true
+P_CL_0008_004,CL_0008,0008-004-E80,Pro Candle,Home Goods,72.09,0.5703,true
+P_CL_0008_005,CL_0008,0008-005-D16,Classic Organizer,Home Goods,54.85,0.5487,true
+P_CL_0008_006,CL_0008,0008-006-R12,Eco Planter,Home Goods,67.24,0.5797,true
+P_CL_0008_007,CL_0008,0008-007-T55,Classic Organizer,Home Goods,33.51,0.5788,true
+P_CL_0008_008,CL_0008,0008-008-R74,Eco Lamp,Home Goods,24.77,0.5755,true
+P_CL_0008_009,CL_0008,0008-009-M57,Daily Planter,Home Goods,81.34,0.6142,true
+P_CL_0008_010,CL_0008,0008-010-Y84,Essential Lamp,Home Goods,45.08,0.4914,true
+P_CL_0008_011,CL_0008,0008-011-F97,Signature Organizer,Home Goods,19.50,0.6609,true
+P_CL_0008_012,CL_0008,0008-012-O14,Daily Throw,Home Goods,49.11,0.5050,true
+P_CL_0008_013,CL_0008,0008-013-J75,Performance Lamp,Home Goods,54.35,0.6625,true
+P_CL_0008_014,CL_0008,0008-014-Y16,Essential Organizer,Home Goods,58.17,0.5193,true
+P_CL_0008_015,CL_0008,0008-015-X66,Performance Planter,Home Goods,25.38,0.5325,true
+P_CL_0009_001,CL_0009,0009-001-C64,Premium Earring,Jewelry,120.36,0.5078,false
+P_CL_0009_002,CL_0009,0009-002-K23,Premium Necklace,Jewelry,81.17,0.4873,true
+P_CL_0009_003,CL_0009,0009-003-L67,Core Earring,Jewelry,61.96,0.5671,true
+P_CL_0009_004,CL_0009,0009-004-I91,Core Charm,Jewelry,92.13,0.4367,true
+P_CL_0009_005,CL_0009,0009-005-A28,Pro Bracelet,Jewelry,102.22,0.5573,true
+P_CL_0009_006,CL_0009,0009-006-Y92,Essential Necklace,Jewelry,138.22,0.4941,false
+P_CL_0009_007,CL_0009,0009-007-L66,Premium Ring,Jewelry,69.65,0.5365,true
+P_CL_0009_008,CL_0009,0009-008-I41,Premium Earring,Jewelry,65.42,0.4269,true
+P_CL_0009_009,CL_0009,0009-009-I67,Classic Charm,Jewelry,94.93,0.6210,true
+P_CL_0009_010,CL_0009,0009-010-E19,Signature Earring,Jewelry,125.89,0.4562,true
+P_CL_0009_011,CL_0009,0009-011-V54,Premium Ring,Jewelry,154.98,0.5317,true
+P_CL_0009_012,CL_0009,0009-012-W99,Ultra Bracelet,Jewelry,66.98,0.5804,true
+P_CL_0009_013,CL_0009,0009-013-P13,Essential Ring,Jewelry,80.45,0.5325,true
+P_CL_0009_014,CL_0009,0009-014-C18,Daily Charm,Jewelry,125.34,0.5013,true
+P_CL_0009_015,CL_0009,0009-015-C26,Essential Earring,Jewelry,106.83,0.5502,true
+P_CL_0010_001,CL_0010,0010-001-Y80,Pro Vitamin,Supplements,19.02,0.4505,false
+P_CL_0010_002,CL_0010,0010-002-Q29,Daily Creatine,Supplements,36.03,0.4470,true
+P_CL_0010_003,CL_0010,0010-003-Q46,Premium Greens,Supplements,22.02,0.4642,true
+P_CL_0010_004,CL_0010,0010-004-C74,Ultra Vitamin,Supplements,26.78,0.5325,true
+P_CL_0010_005,CL_0010,0010-005-X87,Essential Greens,Supplements,18.22,0.5826,true
+P_CL_0010_006,CL_0010,0010-006-I93,Classic Protein,Supplements,51.08,0.5675,true
+P_CL_0010_007,CL_0010,0010-007-U79,Daily Protein,Supplements,24.05,0.5425,true
+P_CL_0010_008,CL_0010,0010-008-C98,Core Greens,Supplements,20.28,0.4457,true
+P_CL_0010_009,CL_0010,0010-009-T28,Essential Creatine,Supplements,30.40,0.5864,true
+P_CL_0010_010,CL_0010,0010-010-R23,Essential Collagen,Supplements,24.71,0.4624,true
+P_CL_0010_011,CL_0010,0010-011-D16,Daily Creatine,Supplements,38.75,0.6032,true
+P_CL_0010_012,CL_0010,0010-012-K83,Essential Creatine,Supplements,36.65,0.4521,true
+P_CL_0010_013,CL_0010,0010-013-J73,Core Vitamin,Supplements,25.41,0.4321,true
+P_CL_0010_014,CL_0010,0010-014-B46,Signature Creatine,Supplements,21.81,0.5336,true
+P_CL_0010_015,CL_0010,0010-015-A23,Performance Creatine,Supplements,38.96,0.4409,true
+P_CL_0011_001,CL_0011,0011-001-S81,Classic Cream,Beauty,61.61,0.4688,true
+P_CL_0011_002,CL_0011,0011-002-Y80,Daily Toner,Beauty,107.82,0.5614,true
+P_CL_0011_003,CL_0011,0011-003-Z53,Eco Mask,Beauty,149.89,0.5841,true
+P_CL_0011_004,CL_0011,0011-004-M74,Core Cleanser,Beauty,81.57,0.4054,true
+P_CL_0011_005,CL_0011,0011-005-Q27,Essential Cream,Beauty,62.15,0.5826,true
+P_CL_0011_006,CL_0011,0011-006-X48,Pro Toner,Beauty,65.40,0.4636,true
+P_CL_0011_007,CL_0011,0011-007-A57,Essential Mask,Beauty,69.22,0.5311,false
+P_CL_0011_008,CL_0011,0011-008-X98,Core Mask,Beauty,97.36,0.5157,true
+P_CL_0011_009,CL_0011,0011-009-F77,Pro Mask,Beauty,81.30,0.5512,true
+P_CL_0011_010,CL_0011,0011-010-W24,Classic Cleanser,Beauty,112.50,0.4001,true
+P_CL_0011_011,CL_0011,0011-011-T70,Core Cleanser,Beauty,105.33,0.5375,true
+P_CL_0011_012,CL_0011,0011-012-V71,Eco Mask,Beauty,130.21,0.4717,false
+P_CL_0011_013,CL_0011,0011-013-Y97,Daily Toner,Beauty,58.66,0.5183,true
+P_CL_0011_014,CL_0011,0011-014-J38,Daily Cleanser,Beauty,126.90,0.5505,true
+P_CL_0011_015,CL_0011,0011-015-Z45,Daily Toner,Beauty,76.32,0.4207,true
+P_CL_0012_001,CL_0012,0012-001-M54,Ultra Creatine,Supplements,120.32,0.5264,true
+P_CL_0012_002,CL_0012,0012-002-P37,Classic Protein,Supplements,93.97,0.6339,true
+P_CL_0012_003,CL_0012,0012-003-E23,Pro Vitamin,Supplements,91.98,0.6165,true
+P_CL_0012_004,CL_0012,0012-004-B22,Performance Protein,Supplements,54.12,0.5344,true
+P_CL_0012_005,CL_0012,0012-005-R30,Performance Greens,Supplements,149.56,0.5989,true
+P_CL_0012_006,CL_0012,0012-006-K46,Core Creatine,Supplements,118.80,0.6499,true
+P_CL_0012_007,CL_0012,0012-007-X14,Ultra Vitamin,Supplements,180.50,0.5519,true
+P_CL_0012_008,CL_0012,0012-008-X47,Core Protein,Supplements,49.51,0.4702,true
+P_CL_0012_009,CL_0012,0012-009-K46,Signature Protein,Supplements,90.89,0.6661,true
+P_CL_0012_010,CL_0012,0012-010-I34,Premium Creatine,Supplements,94.53,0.5344,true
+P_CL_0012_011,CL_0012,0012-011-A53,Daily Collagen,Supplements,105.16,0.5819,true
+P_CL_0012_012,CL_0012,0012-012-N75,Essential Greens,Supplements,75.15,0.4856,true
+P_CL_0012_013,CL_0012,0012-013-P51,Classic Greens,Supplements,53.72,0.4697,true
+P_CL_0012_014,CL_0012,0012-014-X83,Core Creatine,Supplements,101.60,0.5206,true
+P_CL_0012_015,CL_0012,0012-015-D69,Daily Greens,Supplements,140.46,0.5002,true
+P_CL_0013_001,CL_0013,0013-001-L88,Classic Bracelet,Jewelry,33.61,0.3419,true
+P_CL_0013_002,CL_0013,0013-002-T57,Performance Necklace,Jewelry,39.59,0.4385,true
+P_CL_0013_003,CL_0013,0013-003-V86,Premium Charm,Jewelry,66.24,0.4032,true
+P_CL_0013_004,CL_0013,0013-004-S24,Core Bracelet,Jewelry,72.86,0.4639,true
+P_CL_0013_005,CL_0013,0013-005-Q66,Premium Necklace,Jewelry,71.07,0.4342,true
+P_CL_0013_006,CL_0013,0013-006-Q67,Core Earring,Jewelry,106.88,0.3888,true
+P_CL_0013_007,CL_0013,0013-007-J12,Performance Earring,Jewelry,41.00,0.3490,true
+P_CL_0013_008,CL_0013,0013-008-B64,Essential Necklace,Jewelry,53.92,0.4382,true
+P_CL_0013_009,CL_0013,0013-009-B46,Performance Ring,Jewelry,83.47,0.3341,true
+P_CL_0013_010,CL_0013,0013-010-M67,Performance Earring,Jewelry,88.58,0.3732,true
+P_CL_0013_011,CL_0013,0013-011-R60,Eco Charm,Jewelry,96.38,0.3236,false
+P_CL_0013_012,CL_0013,0013-012-J69,Eco Ring,Jewelry,49.35,0.3829,true
+P_CL_0013_013,CL_0013,0013-013-X24,Core Necklace,Jewelry,74.37,0.4600,true
+P_CL_0013_014,CL_0013,0013-014-C22,Pro Ring,Jewelry,92.62,0.3048,true
+P_CL_0013_015,CL_0013,0013-015-R37,Core Ring,Jewelry,98.24,0.3261,false
+P_CL_0014_001,CL_0014,0014-001-X83,Essential Bottle,Baby,29.47,0.5699,true
+P_CL_0014_002,CL_0014,0014-002-Q38,Performance Onesie,Baby,58.46,0.5145,true
+P_CL_0014_003,CL_0014,0014-003-F90,Performance Toy,Baby,9.64,0.5656,true
+P_CL_0014_004,CL_0014,0014-004-K99,Performance Onesie,Baby,18.48,0.5361,true
+P_CL_0014_005,CL_0014,0014-005-P40,Classic Bottle,Baby,15.71,0.5145,true
+P_CL_0014_006,CL_0014,0014-006-R77,Ultra Carrier,Baby,8.00,0.5321,true
+P_CL_0014_007,CL_0014,0014-007-O57,Premium Onesie,Baby,22.14,0.5615,true
+P_CL_0014_008,CL_0014,0014-008-C34,Pro Blanket,Baby,35.51,0.5993,true
+P_CL_0014_009,CL_0014,0014-009-K48,Core Carrier,Baby,33.17,0.4968,true
+P_CL_0014_010,CL_0014,0014-010-W87,Classic Blanket,Baby,28.76,0.5337,true
+P_CL_0014_011,CL_0014,0014-011-M69,Eco Onesie,Baby,9.95,0.5841,true
+P_CL_0014_012,CL_0014,0014-012-X70,Essential Onesie,Baby,29.53,0.6373,true
+P_CL_0014_013,CL_0014,0014-013-H28,Core Carrier,Baby,50.89,0.5066,false
+P_CL_0014_014,CL_0014,0014-014-H58,Pro Toy,Baby,27.28,0.6211,true
+P_CL_0014_015,CL_0014,0014-015-P92,Signature Onesie,Baby,46.07,0.5466,true
+P_CL_0015_001,CL_0015,0015-001-R92,Core Bracelet,Jewelry,110.56,0.5264,true
+P_CL_0015_002,CL_0015,0015-002-V16,Core Ring,Jewelry,41.23,0.5041,true
+P_CL_0015_003,CL_0015,0015-003-O57,Core Necklace,Jewelry,136.44,0.5452,true
+P_CL_0015_004,CL_0015,0015-004-V72,Core Charm,Jewelry,77.90,0.4229,true
+P_CL_0015_005,CL_0015,0015-005-J12,Eco Ring,Jewelry,131.19,0.5842,true
+P_CL_0015_006,CL_0015,0015-006-D77,Ultra Necklace,Jewelry,97.31,0.4698,true
+P_CL_0015_007,CL_0015,0015-007-L61,Signature Bracelet,Jewelry,67.68,0.5346,false
+P_CL_0015_008,CL_0015,0015-008-C93,Core Necklace,Jewelry,122.50,0.4403,true
+P_CL_0015_009,CL_0015,0015-009-C73,Performance Charm,Jewelry,66.96,0.5506,true
+P_CL_0015_010,CL_0015,0015-010-B39,Classic Ring,Jewelry,42.24,0.6019,true
+P_CL_0015_011,CL_0015,0015-011-I79,Pro Charm,Jewelry,95.92,0.5532,true
+P_CL_0015_012,CL_0015,0015-012-G85,Ultra Bracelet,Jewelry,138.18,0.5721,true
+P_CL_0015_013,CL_0015,0015-013-S59,Eco Earring,Jewelry,57.29,0.4879,true
+P_CL_0015_014,CL_0015,0015-014-W20,Eco Necklace,Jewelry,96.49,0.5707,true
+P_CL_0015_015,CL_0015,0015-015-Y88,Pro Ring,Jewelry,100.79,0.5009,true
+P_CL_0016_001,CL_0016,0016-001-Z67,Signature Lamp,Home Goods,52.09,0.5486,true
+P_CL_0016_002,CL_0016,0016-002-C89,Daily Planter,Home Goods,65.08,0.6626,true
+P_CL_0016_003,CL_0016,0016-003-M91,Ultra Lamp,Home Goods,64.27,0.6509,true
+P_CL_0016_004,CL_0016,0016-004-Y44,Premium Lamp,Home Goods,121.48,0.5295,true
+P_CL_0016_005,CL_0016,0016-005-Q62,Premium Planter,Home Goods,62.54,0.5083,true
+P_CL_0016_006,CL_0016,0016-006-A47,Performance Lamp,Home Goods,74.61,0.5806,true
+P_CL_0016_007,CL_0016,0016-007-H83,Eco Candle,Home Goods,21.55,0.5369,true
+P_CL_0016_008,CL_0016,0016-008-F65,Daily Throw,Home Goods,86.06,0.5872,true
+P_CL_0016_009,CL_0016,0016-009-H90,Signature Lamp,Home Goods,90.11,0.6218,true
+P_CL_0016_010,CL_0016,0016-010-T58,Essential Lamp,Home Goods,116.54,0.5910,true
+P_CL_0016_011,CL_0016,0016-011-K87,Classic Candle,Home Goods,99.87,0.5988,true
+P_CL_0016_012,CL_0016,0016-012-P83,Classic Planter,Home Goods,46.46,0.5682,true
+P_CL_0016_013,CL_0016,0016-013-S35,Pro Planter,Home Goods,105.95,0.7025,true
+P_CL_0016_014,CL_0016,0016-014-G66,Daily Candle,Home Goods,105.80,0.6693,true
+P_CL_0016_015,CL_0016,0016-015-E91,Daily Planter,Home Goods,22.82,0.5514,true
+P_CL_0017_001,CL_0017,0017-001-P84,Performance Jacket,Apparel,64.21,0.6446,false
+P_CL_0017_002,CL_0017,0017-002-Z56,Eco Jacket,Apparel,56.36,0.6565,true
+P_CL_0017_003,CL_0017,0017-003-U88,Core Tee,Apparel,30.80,0.6503,true
+P_CL_0017_004,CL_0017,0017-004-K65,Premium Jacket,Apparel,24.01,0.5398,true
+P_CL_0017_005,CL_0017,0017-005-H67,Essential Legging,Apparel,21.80,0.6159,true
+P_CL_0017_006,CL_0017,0017-006-E54,Core Legging,Apparel,32.35,0.6343,true
+P_CL_0017_007,CL_0017,0017-007-J53,Signature Tee,Apparel,66.38,0.6946,true
+P_CL_0017_008,CL_0017,0017-008-O99,Signature Jogger,Apparel,42.14,0.6015,true
+P_CL_0017_009,CL_0017,0017-009-Z31,Classic Tee,Apparel,64.91,0.6409,true
+P_CL_0017_010,CL_0017,0017-010-O39,Performance Jogger,Apparel,45.76,0.6637,true
+P_CL_0017_011,CL_0017,0017-011-O85,Performance Jacket,Apparel,45.43,0.6155,true
+P_CL_0017_012,CL_0017,0017-012-W18,Pro Hoodie,Apparel,30.57,0.5581,true
+P_CL_0017_013,CL_0017,0017-013-V72,Eco Hoodie,Apparel,49.98,0.7309,true
+P_CL_0017_014,CL_0017,0017-014-S24,Essential Jacket,Apparel,44.94,0.6081,true
+P_CL_0017_015,CL_0017,0017-015-T85,Premium Hoodie,Apparel,32.78,0.6721,true
+P_CL_0018_001,CL_0018,0018-001-F57,Ultra Bottle,Baby,29.95,0.5376,true
+P_CL_0018_002,CL_0018,0018-002-R98,Ultra Bottle,Baby,21.51,0.5464,true
+P_CL_0018_003,CL_0018,0018-003-O89,Core Bottle,Baby,44.01,0.6085,false
+P_CL_0018_004,CL_0018,0018-004-Q93,Signature Carrier,Baby,49.70,0.5172,true
+P_CL_0018_005,CL_0018,0018-005-C82,Core Carrier,Baby,13.53,0.5946,true
+P_CL_0018_006,CL_0018,0018-006-O82,Signature Blanket,Baby,32.54,0.5453,true
+P_CL_0018_007,CL_0018,0018-007-R56,Eco Blanket,Baby,36.07,0.5999,true
+P_CL_0018_008,CL_0018,0018-008-U41,Daily Carrier,Baby,33.04,0.6104,true
+P_CL_0018_009,CL_0018,0018-009-C66,Premium Onesie,Baby,34.36,0.5905,true
+P_CL_0018_010,CL_0018,0018-010-N31,Pro Toy,Baby,33.34,0.4632,true
+P_CL_0018_011,CL_0018,0018-011-S54,Eco Bottle,Baby,17.20,0.4916,true
+P_CL_0018_012,CL_0018,0018-012-Q96,Premium Onesie,Baby,20.01,0.4625,true
+P_CL_0018_013,CL_0018,0018-013-I93,Ultra Carrier,Baby,32.58,0.5757,true
+P_CL_0018_014,CL_0018,0018-014-V60,Signature Bottle,Baby,32.36,0.4638,true
+P_CL_0018_015,CL_0018,0018-015-C91,Premium Carrier,Baby,22.85,0.5160,true
+P_CL_0019_001,CL_0019,0019-001-Y21,Signature Dumbbell,Fitness,67.90,0.4240,true
+P_CL_0019_002,CL_0019,0019-002-M37,Performance Mat,Fitness,79.54,0.4620,true
+P_CL_0019_003,CL_0019,0019-003-S72,Essential Dumbbell,Fitness,60.18,0.4758,true
+P_CL_0019_004,CL_0019,0019-004-Z68,Core Mat,Fitness,160.32,0.3218,true
+P_CL_0019_005,CL_0019,0019-005-W26,Daily Roller,Fitness,121.53,0.3288,false
+P_CL_0019_006,CL_0019,0019-006-L42,Premium Dumbbell,Fitness,134.64,0.3714,true
+P_CL_0019_007,CL_0019,0019-007-Y39,Performance Band,Fitness,116.56,0.4281,true
+P_CL_0019_008,CL_0019,0019-008-C26,Pro Mat,Fitness,94.40,0.3422,true
+P_CL_0019_009,CL_0019,0019-009-N98,Ultra Mat,Fitness,143.27,0.3925,true
+P_CL_0019_010,CL_0019,0019-010-D23,Essential Mat,Fitness,90.06,0.3705,true
+P_CL_0019_011,CL_0019,0019-011-V28,Premium Roller,Fitness,78.60,0.4031,true
+P_CL_0019_012,CL_0019,0019-012-X37,Ultra Band,Fitness,86.76,0.4810,true
+P_CL_0019_013,CL_0019,0019-013-Y25,Pro Roller,Fitness,83.28,0.4430,true
+P_CL_0019_014,CL_0019,0019-014-E41,Daily Roller,Fitness,115.10,0.4259,true
+P_CL_0019_015,CL_0019,0019-015-W13,Daily Bottle,Fitness,57.13,0.3381,true
+P_CL_0020_001,CL_0020,0020-001-J92,Core Cleanser,Beauty,15.41,0.8365,true
+P_CL_0020_002,CL_0020,0020-002-T19,Eco Cleanser,Beauty,32.24,0.8574,true
+P_CL_0020_003,CL_0020,0020-003-E59,Pro Cream,Beauty,24.83,0.7639,true
+P_CL_0020_004,CL_0020,0020-004-A85,Premium Cleanser,Beauty,32.56,0.6825,true
+P_CL_0020_005,CL_0020,0020-005-M74,Daily Serum,Beauty,16.72,0.8054,true
+P_CL_0020_006,CL_0020,0020-006-R88,Ultra Toner,Beauty,20.65,0.7352,true
+P_CL_0020_007,CL_0020,0020-007-Z29,Eco Mask,Beauty,25.35,0.7451,true
+P_CL_0020_008,CL_0020,0020-008-H17,Classic Serum,Beauty,16.32,0.6969,true
+P_CL_0020_009,CL_0020,0020-009-B49,Ultra Toner,Beauty,30.43,0.7036,true
+P_CL_0020_010,CL_0020,0020-010-Z43,Ultra Serum,Beauty,42.78,0.7541,true
+P_CL_0020_011,CL_0020,0020-011-D13,Essential Cream,Beauty,20.28,0.8411,true
+P_CL_0020_012,CL_0020,0020-012-P68,Eco Serum,Beauty,41.00,0.7517,true
+P_CL_0020_013,CL_0020,0020-013-F42,Premium Mask,Beauty,33.88,0.8586,true
+P_CL_0020_014,CL_0020,0020-014-A41,Core Serum,Beauty,31.33,0.7741,true
+P_CL_0020_015,CL_0020,0020-015-B80,Performance Cleanser,Beauty,34.75,0.7246,true
+P_CL_0021_001,CL_0021,0021-001-Q96,Core Tent,Outdoor,31.15,0.4538,true
+P_CL_0021_002,CL_0021,0021-002-C69,Daily Pack,Outdoor,18.87,0.5726,true
+P_CL_0021_003,CL_0021,0021-003-S48,Pro Pack,Outdoor,24.76,0.4664,true
+P_CL_0021_004,CL_0021,0021-004-Y35,Eco Cooler,Outdoor,16.25,0.5700,true
+P_CL_0021_005,CL_0021,0021-005-U98,Core Pack,Outdoor,23.20,0.6081,true
+P_CL_0021_006,CL_0021,0021-006-X49,Premium Cooler,Outdoor,18.48,0.4589,false
+P_CL_0021_007,CL_0021,0021-007-W45,Premium Cooler,Outdoor,38.97,0.4267,true
+P_CL_0021_008,CL_0021,0021-008-L68,Premium Jacket,Outdoor,30.24,0.5341,true
+P_CL_0021_009,CL_0021,0021-009-E40,Daily Cooler,Outdoor,27.25,0.4701,true
+P_CL_0021_010,CL_0021,0021-010-X51,Essential Cooler,Outdoor,16.84,0.5085,true
+P_CL_0021_011,CL_0021,0021-011-D31,Signature Bottle,Outdoor,30.67,0.5111,true
+P_CL_0021_012,CL_0021,0021-012-Y36,Signature Jacket,Outdoor,22.17,0.4796,true
+P_CL_0021_013,CL_0021,0021-013-W99,Pro Pack,Outdoor,33.45,0.4260,true
+P_CL_0021_014,CL_0021,0021-014-W41,Essential Tent,Outdoor,25.76,0.4971,true
+P_CL_0021_015,CL_0021,0021-015-M67,Eco Tent,Outdoor,28.24,0.5675,true
+P_CL_0022_001,CL_0022,0022-001-Z27,Premium Boot,Footwear,125.93,0.2786,true
+P_CL_0022_002,CL_0022,0022-002-U92,Premium Trainer,Footwear,131.63,0.3927,true
+P_CL_0022_003,CL_0022,0022-003-C35,Signature Runner,Footwear,119.72,0.4381,true
+P_CL_0022_004,CL_0022,0022-004-S65,Performance Sandal,Footwear,129.92,0.3754,true
+P_CL_0022_005,CL_0022,0022-005-G33,Daily Boot,Footwear,114.92,0.3322,true
+P_CL_0022_006,CL_0022,0022-006-P62,Eco Runner,Footwear,58.81,0.3720,true
+P_CL_0022_007,CL_0022,0022-007-G92,Eco Boot,Footwear,101.07,0.3260,false
+P_CL_0022_008,CL_0022,0022-008-L71,Eco Sneaker,Footwear,109.52,0.4325,true
+P_CL_0022_009,CL_0022,0022-009-M44,Ultra Sneaker,Footwear,85.92,0.2814,true
+P_CL_0022_010,CL_0022,0022-010-P77,Essential Runner,Footwear,69.60,0.4296,false
+P_CL_0022_011,CL_0022,0022-011-V40,Daily Trainer,Footwear,119.22,0.3829,true
+P_CL_0022_012,CL_0022,0022-012-Z59,Essential Runner,Footwear,100.26,0.4632,false
+P_CL_0022_013,CL_0022,0022-013-S50,Essential Trainer,Footwear,108.00,0.4590,true
+P_CL_0022_014,CL_0022,0022-014-G73,Eco Sandal,Footwear,41.10,0.3380,true
+P_CL_0022_015,CL_0022,0022-015-T38,Core Runner,Footwear,122.09,0.3815,true
+P_CL_0023_001,CL_0023,0023-001-Z51,Core Charm,Jewelry,153.36,0.2839,true
+P_CL_0023_002,CL_0023,0023-002-Q56,Premium Necklace,Jewelry,109.73,0.3542,false
+P_CL_0023_003,CL_0023,0023-003-F65,Signature Earring,Jewelry,82.17,0.4093,true
+P_CL_0023_004,CL_0023,0023-004-T55,Classic Charm,Jewelry,104.42,0.4126,true
+P_CL_0023_005,CL_0023,0023-005-X10,Pro Earring,Jewelry,111.13,0.3578,false
+P_CL_0023_006,CL_0023,0023-006-T50,Pro Charm,Jewelry,141.02,0.3237,true
+P_CL_0023_007,CL_0023,0023-007-K31,Premium Earring,Jewelry,135.05,0.4438,true
+P_CL_0023_008,CL_0023,0023-008-I36,Classic Bracelet,Jewelry,85.64,0.4181,true
+P_CL_0023_009,CL_0023,0023-009-N31,Performance Ring,Jewelry,109.34,0.3781,true
+P_CL_0023_010,CL_0023,0023-010-P83,Classic Charm,Jewelry,116.84,0.3120,true
+P_CL_0023_011,CL_0023,0023-011-C53,Ultra Ring,Jewelry,92.54,0.4571,true
+P_CL_0023_012,CL_0023,0023-012-C53,Pro Ring,Jewelry,148.78,0.4766,true
+P_CL_0023_013,CL_0023,0023-013-N30,Core Ring,Jewelry,85.91,0.2998,true
+P_CL_0023_014,CL_0023,0023-014-R79,Daily Necklace,Jewelry,79.54,0.4116,true
+P_CL_0023_015,CL_0023,0023-015-E16,Essential Ring,Jewelry,108.59,0.2803,true
+P_CL_0024_001,CL_0024,0024-001-D13,Classic Legging,Apparel,59.56,0.4202,true
+P_CL_0024_002,CL_0024,0024-002-P72,Daily Tee,Apparel,97.58,0.4042,true
+P_CL_0024_003,CL_0024,0024-003-M57,Ultra Hoodie,Apparel,101.34,0.4752,true
+P_CL_0024_004,CL_0024,0024-004-E99,Premium Jacket,Apparel,100.63,0.4031,true
+P_CL_0024_005,CL_0024,0024-005-Y85,Classic Legging,Apparel,58.83,0.4967,true
+P_CL_0024_006,CL_0024,0024-006-P83,Classic Legging,Apparel,43.49,0.4813,true
+P_CL_0024_007,CL_0024,0024-007-Q83,Pro Tee,Apparel,65.19,0.4155,false
+P_CL_0024_008,CL_0024,0024-008-Z34,Ultra Jacket,Apparel,143.59,0.3945,true
+P_CL_0024_009,CL_0024,0024-009-U28,Pro Jacket,Apparel,89.54,0.4376,true
+P_CL_0024_010,CL_0024,0024-010-I76,Signature Tee,Apparel,85.05,0.5694,true
+P_CL_0024_011,CL_0024,0024-011-Z63,Premium Legging,Apparel,60.88,0.4689,true
+P_CL_0024_012,CL_0024,0024-012-D82,Premium Legging,Apparel,76.70,0.5431,true
+P_CL_0024_013,CL_0024,0024-013-I59,Signature Jogger,Apparel,55.19,0.5004,true
+P_CL_0024_014,CL_0024,0024-014-W61,Core Hoodie,Apparel,102.77,0.4652,true
+P_CL_0024_015,CL_0024,0024-015-P44,Essential Hoodie,Apparel,129.31,0.3900,true
+P_CL_0025_001,CL_0025,0025-001-V22,Classic Dumbbell,Fitness,32.41,0.5440,false
+P_CL_0025_002,CL_0025,0025-002-K44,Performance Roller,Fitness,9.85,0.6381,true
+P_CL_0025_003,CL_0025,0025-003-Y76,Essential Roller,Fitness,33.01,0.6813,true
+P_CL_0025_004,CL_0025,0025-004-W74,Performance Band,Fitness,25.69,0.5442,true
+P_CL_0025_005,CL_0025,0025-005-B41,Core Bottle,Fitness,38.76,0.6084,true
+P_CL_0025_006,CL_0025,0025-006-O74,Performance Band,Fitness,37.01,0.6442,true
+P_CL_0025_007,CL_0025,0025-007-P85,Eco Mat,Fitness,22.26,0.5871,true
+P_CL_0025_008,CL_0025,0025-008-W21,Daily Dumbbell,Fitness,19.56,0.5226,true
+P_CL_0025_009,CL_0025,0025-009-H96,Classic Bottle,Fitness,19.64,0.5709,true
+P_CL_0025_010,CL_0025,0025-010-Y97,Core Mat,Fitness,21.60,0.6119,true
+P_CL_0025_011,CL_0025,0025-011-Z49,Daily Band,Fitness,25.27,0.6019,true
+P_CL_0025_012,CL_0025,0025-012-G69,Daily Dumbbell,Fitness,23.66,0.6525,true
+P_CL_0025_013,CL_0025,0025-013-L81,Pro Roller,Fitness,42.42,0.6389,true
+P_CL_0025_014,CL_0025,0025-014-K45,Essential Mat,Fitness,24.01,0.6894,true
+P_CL_0025_015,CL_0025,0025-015-B86,Performance Dumbbell,Fitness,25.63,0.6492,true
+P_CL_0026_001,CL_0026,0026-001-J43,Performance Protein,Supplements,48.52,0.3987,true
+P_CL_0026_002,CL_0026,0026-002-X38,Eco Vitamin,Supplements,40.13,0.4455,true
+P_CL_0026_003,CL_0026,0026-003-F94,Eco Collagen,Supplements,51.29,0.3540,true
+P_CL_0026_004,CL_0026,0026-004-F97,Essential Greens,Supplements,44.25,0.4487,true
+P_CL_0026_005,CL_0026,0026-005-J63,Essential Greens,Supplements,30.00,0.3921,true
+P_CL_0026_006,CL_0026,0026-006-S84,Pro Creatine,Supplements,17.62,0.3320,true
+P_CL_0026_007,CL_0026,0026-007-V58,Eco Vitamin,Supplements,82.35,0.3775,true
+P_CL_0026_008,CL_0026,0026-008-S68,Ultra Greens,Supplements,80.23,0.3811,true
+P_CL_0026_009,CL_0026,0026-009-U32,Essential Protein,Supplements,68.86,0.4447,true
+P_CL_0026_010,CL_0026,0026-010-F72,Premium Collagen,Supplements,73.36,0.3437,true
+P_CL_0026_011,CL_0026,0026-011-P59,Core Creatine,Supplements,42.46,0.3253,true
+P_CL_0026_012,CL_0026,0026-012-Q34,Core Collagen,Supplements,58.79,0.4531,true
+P_CL_0026_013,CL_0026,0026-013-L49,Ultra Greens,Supplements,55.64,0.3383,true
+P_CL_0026_014,CL_0026,0026-014-J68,Eco Collagen,Supplements,78.79,0.4371,true
+P_CL_0026_015,CL_0026,0026-015-P55,Classic Greens,Supplements,52.77,0.3508,true
+P_CL_0027_001,CL_0027,0027-001-G12,Pro Toner,Beauty,54.19,0.3969,true
+P_CL_0027_002,CL_0027,0027-002-U42,Eco Serum,Beauty,57.86,0.4206,true
+P_CL_0027_003,CL_0027,0027-003-W24,Performance Serum,Beauty,27.95,0.3849,true
+P_CL_0027_004,CL_0027,0027-004-E36,Core Cream,Beauty,31.70,0.3562,true
+P_CL_0027_005,CL_0027,0027-005-D75,Pro Mask,Beauty,35.76,0.3195,true
+P_CL_0027_006,CL_0027,0027-006-T35,Daily Serum,Beauty,29.80,0.4623,false
+P_CL_0027_007,CL_0027,0027-007-P36,Signature Cream,Beauty,27.44,0.3621,true
+P_CL_0027_008,CL_0027,0027-008-S95,Signature Serum,Beauty,26.89,0.3258,true
+P_CL_0027_009,CL_0027,0027-009-U39,Signature Mask,Beauty,44.68,0.4937,true
+P_CL_0027_010,CL_0027,0027-010-F15,Daily Toner,Beauty,32.21,0.3680,true
+P_CL_0027_011,CL_0027,0027-011-B11,Ultra Toner,Beauty,38.25,0.4287,true
+P_CL_0027_012,CL_0027,0027-012-T44,Premium Cream,Beauty,32.30,0.3705,true
+P_CL_0027_013,CL_0027,0027-013-M98,Signature Serum,Beauty,40.95,0.4560,true
+P_CL_0027_014,CL_0027,0027-014-W17,Ultra Cleanser,Beauty,44.11,0.3167,true
+P_CL_0027_015,CL_0027,0027-015-M55,Pro Toner,Beauty,24.23,0.3018,true
+P_CL_0028_001,CL_0028,0028-001-P24,Performance Throw,Home Goods,57.96,0.7274,true
+P_CL_0028_002,CL_0028,0028-002-X83,Pro Organizer,Home Goods,117.40,0.6841,false
+P_CL_0028_003,CL_0028,0028-003-W99,Pro Organizer,Home Goods,50.96,0.6583,true
+P_CL_0028_004,CL_0028,0028-004-E81,Pro Throw,Home Goods,55.33,0.6502,true
+P_CL_0028_005,CL_0028,0028-005-P73,Ultra Throw,Home Goods,46.40,0.6543,true
+P_CL_0028_006,CL_0028,0028-006-R92,Performance Throw,Home Goods,72.44,0.7200,true
+P_CL_0028_007,CL_0028,0028-007-S67,Premium Planter,Home Goods,87.63,0.8106,true
+P_CL_0028_008,CL_0028,0028-008-M62,Core Lamp,Home Goods,48.53,0.7507,true
+P_CL_0028_009,CL_0028,0028-009-T91,Daily Lamp,Home Goods,51.27,0.8173,true
+P_CL_0028_010,CL_0028,0028-010-H68,Essential Planter,Home Goods,45.98,0.7513,true
+P_CL_0028_011,CL_0028,0028-011-L67,Premium Planter,Home Goods,60.92,0.6588,true
+P_CL_0028_012,CL_0028,0028-012-J80,Eco Lamp,Home Goods,94.81,0.7141,true
+P_CL_0028_013,CL_0028,0028-013-W62,Premium Throw,Home Goods,30.58,0.6902,true
+P_CL_0028_014,CL_0028,0028-014-Z34,Essential Lamp,Home Goods,36.29,0.6609,true
+P_CL_0028_015,CL_0028,0028-015-O68,Pro Candle,Home Goods,103.14,0.8305,true
+P_CL_0029_001,CL_0029,0029-001-N84,Signature Bed,Pet Supplies,57.16,0.6249,true
+P_CL_0029_002,CL_0029,0029-002-F26,Premium Toy,Pet Supplies,20.84,0.5175,true
+P_CL_0029_003,CL_0029,0029-003-W41,Daily Harness,Pet Supplies,18.11,0.5196,true
+P_CL_0029_004,CL_0029,0029-004-E27,Performance Harness,Pet Supplies,54.06,0.5605,true
+P_CL_0029_005,CL_0029,0029-005-W80,Classic Bowl,Pet Supplies,37.78,0.4802,true
+P_CL_0029_006,CL_0029,0029-006-V26,Ultra Harness,Pet Supplies,15.43,0.5408,true
+P_CL_0029_007,CL_0029,0029-007-S83,Performance Harness,Pet Supplies,32.30,0.5748,true
+P_CL_0029_008,CL_0029,0029-008-N11,Eco Bowl,Pet Supplies,32.26,0.4613,true
+P_CL_0029_009,CL_0029,0029-009-F46,Daily Treat,Pet Supplies,36.90,0.4693,true
+P_CL_0029_010,CL_0029,0029-010-R14,Essential Harness,Pet Supplies,60.82,0.6028,true
+P_CL_0029_011,CL_0029,0029-011-H75,Daily Bowl,Pet Supplies,28.14,0.5786,true
+P_CL_0029_012,CL_0029,0029-012-Z97,Essential Bed,Pet Supplies,28.64,0.6332,true
+P_CL_0029_013,CL_0029,0029-013-O38,Essential Harness,Pet Supplies,58.80,0.5910,true
+P_CL_0029_014,CL_0029,0029-014-X34,Daily Bowl,Pet Supplies,34.52,0.5298,false
+P_CL_0029_015,CL_0029,0029-015-M15,Performance Treat,Pet Supplies,52.57,0.4958,true
+P_CL_0030_001,CL_0030,0030-001-I10,Essential Toy,Pet Supplies,40.00,0.4759,false
+P_CL_0030_002,CL_0030,0030-002-U88,Daily Treat,Pet Supplies,44.01,0.4807,true
+P_CL_0030_003,CL_0030,0030-003-W50,Eco Harness,Pet Supplies,51.51,0.4266,true
+P_CL_0030_004,CL_0030,0030-004-M21,Essential Treat,Pet Supplies,32.93,0.4268,true
+P_CL_0030_005,CL_0030,0030-005-J37,Pro Harness,Pet Supplies,46.73,0.4887,false
+P_CL_0030_006,CL_0030,0030-006-U88,Pro Treat,Pet Supplies,43.63,0.4314,true
+P_CL_0030_007,CL_0030,0030-007-Z24,Performance Harness,Pet Supplies,41.59,0.4339,true
+P_CL_0030_008,CL_0030,0030-008-Z75,Signature Treat,Pet Supplies,28.95,0.4800,true
+P_CL_0030_009,CL_0030,0030-009-C22,Ultra Toy,Pet Supplies,31.64,0.5769,true
+P_CL_0030_010,CL_0030,0030-010-Y37,Performance Bowl,Pet Supplies,63.97,0.5497,true
+P_CL_0030_011,CL_0030,0030-011-C97,Ultra Bed,Pet Supplies,34.89,0.3874,true
+P_CL_0030_012,CL_0030,0030-012-R19,Pro Treat,Pet Supplies,61.84,0.5469,true
+P_CL_0030_013,CL_0030,0030-013-U61,Performance Bed,Pet Supplies,41.26,0.4459,true
+P_CL_0030_014,CL_0030,0030-014-Y84,Core Treat,Pet Supplies,25.55,0.5228,true
+P_CL_0030_015,CL_0030,0030-015-Z97,Daily Bowl,Pet Supplies,38.80,0.5039,true
+P_CL_0031_001,CL_0031,0031-001-F78,Classic Earring,Jewelry,100.92,0.6754,true
+P_CL_0031_002,CL_0031,0031-002-U28,Daily Charm,Jewelry,101.26,0.7836,true
+P_CL_0031_003,CL_0031,0031-003-E25,Core Bracelet,Jewelry,110.68,0.6491,true
+P_CL_0031_004,CL_0031,0031-004-C49,Classic Charm,Jewelry,89.78,0.7978,true
+P_CL_0031_005,CL_0031,0031-005-E30,Ultra Bracelet,Jewelry,149.46,0.6923,true
+P_CL_0031_006,CL_0031,0031-006-V82,Core Necklace,Jewelry,102.78,0.8184,false
+P_CL_0031_007,CL_0031,0031-007-C42,Premium Charm,Jewelry,75.48,0.6876,true
+P_CL_0031_008,CL_0031,0031-008-V93,Classic Bracelet,Jewelry,95.09,0.6681,true
+P_CL_0031_009,CL_0031,0031-009-J98,Pro Necklace,Jewelry,75.60,0.6786,true
+P_CL_0031_010,CL_0031,0031-010-F10,Essential Bracelet,Jewelry,75.91,0.6973,true
+P_CL_0031_011,CL_0031,0031-011-K71,Signature Earring,Jewelry,87.22,0.7372,true
+P_CL_0031_012,CL_0031,0031-012-F92,Pro Earring,Jewelry,111.56,0.6645,true
+P_CL_0031_013,CL_0031,0031-013-U19,Premium Necklace,Jewelry,81.00,0.8265,true
+P_CL_0031_014,CL_0031,0031-014-S61,Pro Ring,Jewelry,105.82,0.6907,true
+P_CL_0031_015,CL_0031,0031-015-Y29,Essential Bracelet,Jewelry,111.32,0.7266,true
+P_CL_0032_001,CL_0032,0032-001-J27,Signature Legging,Apparel,80.29,0.7217,true
+P_CL_0032_002,CL_0032,0032-002-Z88,Ultra Jogger,Apparel,71.44,0.7729,true
+P_CL_0032_003,CL_0032,0032-003-S94,Ultra Hoodie,Apparel,86.96,0.7687,true
+P_CL_0032_004,CL_0032,0032-004-I57,Classic Jogger,Apparel,145.51,0.6301,true
+P_CL_0032_005,CL_0032,0032-005-O15,Core Jogger,Apparel,86.80,0.8176,true
+P_CL_0032_006,CL_0032,0032-006-S79,Pro Legging,Apparel,80.47,0.6563,true
+P_CL_0032_007,CL_0032,0032-007-C76,Daily Jogger,Apparel,125.69,0.6968,true
+P_CL_0032_008,CL_0032,0032-008-Z71,Pro Legging,Apparel,110.32,0.6228,true
+P_CL_0032_009,CL_0032,0032-009-C75,Daily Jacket,Apparel,107.19,0.6638,true
+P_CL_0032_010,CL_0032,0032-010-N52,Premium Jogger,Apparel,101.49,0.7178,true
+P_CL_0032_011,CL_0032,0032-011-U62,Core Hoodie,Apparel,58.07,0.6702,true
+P_CL_0032_012,CL_0032,0032-012-S28,Core Legging,Apparel,122.40,0.6548,false
+P_CL_0032_013,CL_0032,0032-013-T82,Core Legging,Apparel,65.72,0.7972,true
+P_CL_0032_014,CL_0032,0032-014-P71,Ultra Jogger,Apparel,77.28,0.6654,true
+P_CL_0032_015,CL_0032,0032-015-Y33,Pro Hoodie,Apparel,107.78,0.7534,true
+P_CL_0033_001,CL_0033,0033-001-M59,Ultra Jogger,Apparel,65.67,0.4696,true
+P_CL_0033_002,CL_0033,0033-002-E87,Premium Legging,Apparel,79.28,0.4834,true
+P_CL_0033_003,CL_0033,0033-003-D21,Signature Legging,Apparel,152.29,0.5798,true
+P_CL_0033_004,CL_0033,0033-004-Y96,Performance Legging,Apparel,50.36,0.5523,true
+P_CL_0033_005,CL_0033,0033-005-P58,Essential Tee,Apparel,34.49,0.5657,true
+P_CL_0033_006,CL_0033,0033-006-E42,Signature Legging,Apparel,160.76,0.6011,true
+P_CL_0033_007,CL_0033,0033-007-G10,Core Tee,Apparel,131.35,0.5635,true
+P_CL_0033_008,CL_0033,0033-008-G98,Essential Tee,Apparel,89.30,0.5297,true
+P_CL_0033_009,CL_0033,0033-009-N82,Essential Jacket,Apparel,85.06,0.5703,false
+P_CL_0033_010,CL_0033,0033-010-N80,Eco Jacket,Apparel,125.70,0.5444,true
+P_CL_0033_011,CL_0033,0033-011-Y60,Ultra Legging,Apparel,127.20,0.6189,true
+P_CL_0033_012,CL_0033,0033-012-W30,Premium Hoodie,Apparel,97.70,0.4908,true
+P_CL_0033_013,CL_0033,0033-013-B30,Performance Jogger,Apparel,51.87,0.6408,true
+P_CL_0033_014,CL_0033,0033-014-P86,Performance Tee,Apparel,54.22,0.4655,true
+P_CL_0033_015,CL_0033,0033-015-M88,Eco Jogger,Apparel,162.00,0.5052,false
+P_CL_0034_001,CL_0034,0034-001-F91,Signature Runner,Footwear,64.41,0.5097,true
+P_CL_0034_002,CL_0034,0034-002-Q99,Classic Sneaker,Footwear,120.70,0.5449,true
+P_CL_0034_003,CL_0034,0034-003-A30,Premium Sandal,Footwear,104.90,0.6213,true
+P_CL_0034_004,CL_0034,0034-004-A18,Premium Sandal,Footwear,60.34,0.5318,true
+P_CL_0034_005,CL_0034,0034-005-L54,Daily Sneaker,Footwear,68.20,0.4672,false
+P_CL_0034_006,CL_0034,0034-006-N74,Premium Boot,Footwear,47.19,0.5336,true
+P_CL_0034_007,CL_0034,0034-007-Z75,Daily Sandal,Footwear,53.14,0.5971,true
+P_CL_0034_008,CL_0034,0034-008-P41,Essential Sneaker,Footwear,80.97,0.6141,true
+P_CL_0034_009,CL_0034,0034-009-A71,Premium Boot,Footwear,68.24,0.4735,true
+P_CL_0034_010,CL_0034,0034-010-L76,Eco Trainer,Footwear,72.74,0.4238,true
+P_CL_0034_011,CL_0034,0034-011-M96,Essential Trainer,Footwear,111.79,0.4371,false
+P_CL_0034_012,CL_0034,0034-012-F97,Classic Boot,Footwear,97.91,0.5217,true
+P_CL_0034_013,CL_0034,0034-013-G39,Classic Trainer,Footwear,87.11,0.5889,true
+P_CL_0034_014,CL_0034,0034-014-V94,Signature Sandal,Footwear,141.66,0.5447,true
+P_CL_0034_015,CL_0034,0034-015-P57,Pro Sneaker,Footwear,86.37,0.4850,true
+P_CL_0035_001,CL_0035,0035-001-Q45,Performance Sneaker,Footwear,8.00,0.6326,true
+P_CL_0035_002,CL_0035,0035-002-N71,Eco Runner,Footwear,54.32,0.5947,true
+P_CL_0035_003,CL_0035,0035-003-K98,Core Trainer,Footwear,66.19,0.5906,true
+P_CL_0035_004,CL_0035,0035-004-L88,Daily Sneaker,Footwear,86.53,0.6256,true
+P_CL_0035_005,CL_0035,0035-005-P64,Classic Sandal,Footwear,45.13,0.6720,true
+P_CL_0035_006,CL_0035,0035-006-I67,Ultra Sandal,Footwear,34.08,0.7025,false
+P_CL_0035_007,CL_0035,0035-007-R65,Performance Trainer,Footwear,38.85,0.6274,true
+P_CL_0035_008,CL_0035,0035-008-A32,Performance Trainer,Footwear,31.63,0.6881,false
+P_CL_0035_009,CL_0035,0035-009-I81,Pro Sneaker,Footwear,45.96,0.5977,true
+P_CL_0035_010,CL_0035,0035-010-I70,Premium Trainer,Footwear,92.90,0.6782,true
+P_CL_0035_011,CL_0035,0035-011-L12,Performance Sandal,Footwear,37.66,0.6124,true
+P_CL_0035_012,CL_0035,0035-012-S93,Eco Sneaker,Footwear,60.49,0.6231,true
+P_CL_0035_013,CL_0035,0035-013-O20,Performance Sandal,Footwear,39.24,0.7109,true
+P_CL_0035_014,CL_0035,0035-014-U53,Performance Trainer,Footwear,40.24,0.7145,true
+P_CL_0035_015,CL_0035,0035-015-U47,Daily Runner,Footwear,71.59,0.7093,true
+P_CL_0036_001,CL_0036,0036-001-L85,Eco Sauce,Food & Beverage,84.04,0.8474,true
+P_CL_0036_002,CL_0036,0036-002-I99,Premium Snack,Food & Beverage,76.90,0.6964,true
+P_CL_0036_003,CL_0036,0036-003-P80,Core Coffee,Food & Beverage,135.46,0.6596,true
+P_CL_0036_004,CL_0036,0036-004-M49,Classic Coffee,Food & Beverage,113.42,0.7038,true
+P_CL_0036_005,CL_0036,0036-005-F13,Core Snack,Food & Beverage,110.55,0.7870,true
+P_CL_0036_006,CL_0036,0036-006-I80,Signature Tea,Food & Beverage,26.08,0.6813,false
+P_CL_0036_007,CL_0036,0036-007-T68,Pro Bar,Food & Beverage,119.37,0.7413,true
+P_CL_0036_008,CL_0036,0036-008-Z21,Signature Bar,Food & Beverage,83.71,0.7159,true
+P_CL_0036_009,CL_0036,0036-009-A76,Ultra Snack,Food & Beverage,119.26,0.7231,true
+P_CL_0036_010,CL_0036,0036-010-J11,Performance Coffee,Food & Beverage,39.90,0.8139,true
+P_CL_0036_011,CL_0036,0036-011-G62,Eco Coffee,Food & Beverage,82.90,0.7417,true
+P_CL_0036_012,CL_0036,0036-012-U40,Eco Sauce,Food & Beverage,69.00,0.8072,true
+P_CL_0036_013,CL_0036,0036-013-X78,Daily Tea,Food & Beverage,108.38,0.7369,true
+P_CL_0036_014,CL_0036,0036-014-O44,Pro Snack,Food & Beverage,132.75,0.7527,true
+P_CL_0036_015,CL_0036,0036-015-R12,Ultra Snack,Food & Beverage,141.25,0.8488,true
+P_CL_0037_001,CL_0037,0037-001-E11,Signature Toy,Pet Supplies,72.81,0.4225,true
+P_CL_0037_002,CL_0037,0037-002-O99,Core Bed,Pet Supplies,48.35,0.4451,true
+P_CL_0037_003,CL_0037,0037-003-P33,Classic Toy,Pet Supplies,131.87,0.5582,true
+P_CL_0037_004,CL_0037,0037-004-D41,Performance Bed,Pet Supplies,61.95,0.5333,true
+P_CL_0037_005,CL_0037,0037-005-V36,Signature Treat,Pet Supplies,111.62,0.4569,false
+P_CL_0037_006,CL_0037,0037-006-X15,Eco Harness,Pet Supplies,107.83,0.4833,true
+P_CL_0037_007,CL_0037,0037-007-G24,Classic Harness,Pet Supplies,144.26,0.5057,true
+P_CL_0037_008,CL_0037,0037-008-S25,Performance Toy,Pet Supplies,44.25,0.5369,true
+P_CL_0037_009,CL_0037,0037-009-E57,Premium Treat,Pet Supplies,70.50,0.4288,true
+P_CL_0037_010,CL_0037,0037-010-Y90,Core Bowl,Pet Supplies,69.37,0.3911,true
+P_CL_0037_011,CL_0037,0037-011-R92,Essential Bowl,Pet Supplies,82.18,0.5402,true
+P_CL_0037_012,CL_0037,0037-012-M55,Ultra Toy,Pet Supplies,146.69,0.4292,true
+P_CL_0037_013,CL_0037,0037-013-S33,Eco Bed,Pet Supplies,60.02,0.4486,true
+P_CL_0037_014,CL_0037,0037-014-T80,Ultra Harness,Pet Supplies,61.84,0.3929,true
+P_CL_0037_015,CL_0037,0037-015-Y91,Eco Harness,Pet Supplies,48.05,0.4549,true
+P_CL_0038_001,CL_0038,0038-001-L89,Classic Lamp,Home Goods,65.96,0.4435,true
+P_CL_0038_002,CL_0038,0038-002-Y80,Ultra Candle,Home Goods,73.09,0.5020,true
+P_CL_0038_003,CL_0038,0038-003-Q94,Premium Organizer,Home Goods,135.97,0.3882,false
+P_CL_0038_004,CL_0038,0038-004-D14,Pro Throw,Home Goods,67.03,0.5078,true
+P_CL_0038_005,CL_0038,0038-005-W85,Daily Planter,Home Goods,96.70,0.3892,true
+P_CL_0038_006,CL_0038,0038-006-C69,Core Lamp,Home Goods,146.27,0.4516,true
+P_CL_0038_007,CL_0038,0038-007-Z17,Pro Planter,Home Goods,49.59,0.4326,true
+P_CL_0038_008,CL_0038,0038-008-Q22,Premium Lamp,Home Goods,73.55,0.5244,true
+P_CL_0038_009,CL_0038,0038-009-V41,Pro Throw,Home Goods,106.99,0.5045,true
+P_CL_0038_010,CL_0038,0038-010-L96,Signature Candle,Home Goods,103.89,0.5199,true
+P_CL_0038_011,CL_0038,0038-011-F80,Performance Lamp,Home Goods,119.89,0.4803,true
+P_CL_0038_012,CL_0038,0038-012-K80,Essential Candle,Home Goods,40.26,0.5484,true
+P_CL_0038_013,CL_0038,0038-013-K87,Classic Planter,Home Goods,68.48,0.4920,true
+P_CL_0038_014,CL_0038,0038-014-O60,Core Candle,Home Goods,57.63,0.5247,false
+P_CL_0038_015,CL_0038,0038-015-E48,Core Candle,Home Goods,169.45,0.4395,true
+P_CL_0039_001,CL_0039,0039-001-I80,Eco Speaker,Consumer Electronics,106.47,0.6518,false
+P_CL_0039_002,CL_0039,0039-002-O55,Ultra Cable,Consumer Electronics,68.54,0.5682,true
+P_CL_0039_003,CL_0039,0039-003-S61,Pro Stand,Consumer Electronics,75.72,0.7241,true
+P_CL_0039_004,CL_0039,0039-004-F72,Pro Speaker,Consumer Electronics,63.31,0.7044,true
+P_CL_0039_005,CL_0039,0039-005-Y17,Essential Speaker,Consumer Electronics,100.03,0.6101,true
+P_CL_0039_006,CL_0039,0039-006-D39,Pro Case,Consumer Electronics,33.21,0.7262,true
+P_CL_0039_007,CL_0039,0039-007-S29,Essential Case,Consumer Electronics,80.14,0.6410,true
+P_CL_0039_008,CL_0039,0039-008-M67,Pro Charger,Consumer Electronics,52.79,0.6556,true
+P_CL_0039_009,CL_0039,0039-009-C70,Pro Case,Consumer Electronics,67.27,0.6896,true
+P_CL_0039_010,CL_0039,0039-010-Q65,Ultra Speaker,Consumer Electronics,94.76,0.6929,true
+P_CL_0039_011,CL_0039,0039-011-T77,Classic Cable,Consumer Electronics,56.82,0.5890,true
+P_CL_0039_012,CL_0039,0039-012-S21,Premium Case,Consumer Electronics,63.34,0.6748,true
+P_CL_0039_013,CL_0039,0039-013-Y49,Ultra Speaker,Consumer Electronics,68.49,0.7380,true
+P_CL_0039_014,CL_0039,0039-014-O15,Classic Case,Consumer Electronics,74.65,0.5804,true
+P_CL_0039_015,CL_0039,0039-015-E46,Core Charger,Consumer Electronics,121.43,0.6092,true
+P_CL_0040_001,CL_0040,0040-001-A52,Classic Organizer,Home Goods,43.53,0.4179,true
+P_CL_0040_002,CL_0040,0040-002-X28,Core Candle,Home Goods,34.10,0.3452,true
+P_CL_0040_003,CL_0040,0040-003-F17,Daily Candle,Home Goods,63.27,0.3100,true
+P_CL_0040_004,CL_0040,0040-004-M94,Daily Organizer,Home Goods,52.38,0.4025,true
+P_CL_0040_005,CL_0040,0040-005-A47,Performance Organizer,Home Goods,26.77,0.3161,true
+P_CL_0040_006,CL_0040,0040-006-C33,Classic Lamp,Home Goods,15.69,0.3700,true
+P_CL_0040_007,CL_0040,0040-007-Q49,Essential Lamp,Home Goods,54.90,0.3679,true
+P_CL_0040_008,CL_0040,0040-008-H74,Daily Lamp,Home Goods,32.73,0.4323,true
+P_CL_0040_009,CL_0040,0040-009-A81,Daily Planter,Home Goods,36.75,0.3150,true
+P_CL_0040_010,CL_0040,0040-010-V88,Classic Planter,Home Goods,38.59,0.3534,true
+P_CL_0040_011,CL_0040,0040-011-T52,Signature Planter,Home Goods,30.39,0.3783,true
+P_CL_0040_012,CL_0040,0040-012-E49,Eco Throw,Home Goods,30.92,0.4518,true
+P_CL_0040_013,CL_0040,0040-013-S30,Essential Throw,Home Goods,26.33,0.2835,true
+P_CL_0040_014,CL_0040,0040-014-A50,Performance Lamp,Home Goods,48.70,0.4621,true
+P_CL_0040_015,CL_0040,0040-015-G23,Ultra Organizer,Home Goods,43.66,0.3068,true
+P_CL_0041_001,CL_0041,0041-001-T39,Classic Jacket,Outdoor,53.60,0.3899,true
+P_CL_0041_002,CL_0041,0041-002-T70,Essential Cooler,Outdoor,95.54,0.2892,true
+P_CL_0041_003,CL_0041,0041-003-Y11,Daily Cooler,Outdoor,113.44,0.4424,true
+P_CL_0041_004,CL_0041,0041-004-C32,Signature Bottle,Outdoor,72.84,0.4258,true
+P_CL_0041_005,CL_0041,0041-005-Y15,Pro Tent,Outdoor,79.47,0.3995,true
+P_CL_0041_006,CL_0041,0041-006-X83,Pro Tent,Outdoor,74.96,0.3596,true
+P_CL_0041_007,CL_0041,0041-007-B41,Eco Pack,Outdoor,45.20,0.3600,false
+P_CL_0041_008,CL_0041,0041-008-Q90,Core Pack,Outdoor,88.90,0.2904,true
+P_CL_0041_009,CL_0041,0041-009-J88,Core Tent,Outdoor,64.84,0.3904,true
+P_CL_0041_010,CL_0041,0041-010-O21,Eco Cooler,Outdoor,76.68,0.2750,true
+P_CL_0041_011,CL_0041,0041-011-F68,Pro Jacket,Outdoor,93.66,0.4317,true
+P_CL_0041_012,CL_0041,0041-012-K98,Ultra Cooler,Outdoor,128.47,0.3961,true
+P_CL_0041_013,CL_0041,0041-013-W59,Eco Pack,Outdoor,64.95,0.3748,true
+P_CL_0041_014,CL_0041,0041-014-Y31,Essential Jacket,Outdoor,83.18,0.3655,true
+P_CL_0041_015,CL_0041,0041-015-B63,Daily Bottle,Outdoor,129.49,0.3143,true
+P_CL_0042_001,CL_0042,0042-001-F25,Ultra Sauce,Food & Beverage,67.23,0.8069,true
+P_CL_0042_002,CL_0042,0042-002-Z10,Pro Tea,Food & Beverage,57.57,0.7913,true
+P_CL_0042_003,CL_0042,0042-003-O62,Signature Bar,Food & Beverage,39.89,0.6307,true
+P_CL_0042_004,CL_0042,0042-004-G16,Ultra Snack,Food & Beverage,31.91,0.6445,true
+P_CL_0042_005,CL_0042,0042-005-B95,Pro Coffee,Food & Beverage,75.35,0.7824,true
+P_CL_0042_006,CL_0042,0042-006-V46,Pro Coffee,Food & Beverage,61.38,0.7470,true
+P_CL_0042_007,CL_0042,0042-007-F68,Pro Bar,Food & Beverage,39.91,0.6868,true
+P_CL_0042_008,CL_0042,0042-008-Y64,Eco Tea,Food & Beverage,67.08,0.6278,true
+P_CL_0042_009,CL_0042,0042-009-I52,Eco Coffee,Food & Beverage,26.93,0.6976,true
+P_CL_0042_010,CL_0042,0042-010-U77,Premium Snack,Food & Beverage,54.36,0.7115,true
+P_CL_0042_011,CL_0042,0042-011-K43,Eco Tea,Food & Beverage,57.97,0.7298,true
+P_CL_0042_012,CL_0042,0042-012-P73,Ultra Snack,Food & Beverage,23.71,0.7915,true
+P_CL_0042_013,CL_0042,0042-013-A25,Core Tea,Food & Beverage,33.09,0.7078,true
+P_CL_0042_014,CL_0042,0042-014-K54,Eco Snack,Food & Beverage,47.33,0.7760,true
+P_CL_0042_015,CL_0042,0042-015-I18,Daily Snack,Food & Beverage,38.84,0.6749,true
+P_CL_0043_001,CL_0043,0043-001-S88,Core Runner,Footwear,101.28,0.5345,true
+P_CL_0043_002,CL_0043,0043-002-P70,Core Sandal,Footwear,76.18,0.4972,true
+P_CL_0043_003,CL_0043,0043-003-Z62,Core Boot,Footwear,44.20,0.5351,true
+P_CL_0043_004,CL_0043,0043-004-A36,Pro Sandal,Footwear,71.62,0.5052,true
+P_CL_0043_005,CL_0043,0043-005-K58,Eco Sandal,Footwear,138.02,0.5366,true
+P_CL_0043_006,CL_0043,0043-006-D49,Essential Boot,Footwear,131.96,0.5101,true
+P_CL_0043_007,CL_0043,0043-007-J37,Eco Runner,Footwear,80.46,0.4286,true
+P_CL_0043_008,CL_0043,0043-008-C66,Eco Runner,Footwear,85.75,0.3731,true
+P_CL_0043_009,CL_0043,0043-009-Q49,Essential Sneaker,Footwear,94.59,0.3968,true
+P_CL_0043_010,CL_0043,0043-010-E36,Core Sneaker,Footwear,87.78,0.4600,true
+P_CL_0043_011,CL_0043,0043-011-T21,Essential Sneaker,Footwear,108.40,0.4615,true
+P_CL_0043_012,CL_0043,0043-012-X49,Core Sneaker,Footwear,70.84,0.4836,true
+P_CL_0043_013,CL_0043,0043-013-K66,Premium Trainer,Footwear,96.25,0.4226,true
+P_CL_0043_014,CL_0043,0043-014-T81,Eco Runner,Footwear,137.83,0.3886,true
+P_CL_0043_015,CL_0043,0043-015-J83,Classic Sneaker,Footwear,109.64,0.4024,true
+P_CL_0044_001,CL_0044,0044-001-B26,Core Bracelet,Jewelry,71.38,0.4098,true
+P_CL_0044_002,CL_0044,0044-002-W86,Pro Ring,Jewelry,73.61,0.4416,true
+P_CL_0044_003,CL_0044,0044-003-J52,Classic Earring,Jewelry,59.02,0.4583,true
+P_CL_0044_004,CL_0044,0044-004-S26,Premium Charm,Jewelry,103.17,0.4783,true
+P_CL_0044_005,CL_0044,0044-005-J97,Signature Earring,Jewelry,70.31,0.4098,false
+P_CL_0044_006,CL_0044,0044-006-M33,Essential Necklace,Jewelry,22.27,0.4735,true
+P_CL_0044_007,CL_0044,0044-007-C70,Premium Earring,Jewelry,37.01,0.3860,true
+P_CL_0044_008,CL_0044,0044-008-Q23,Performance Necklace,Jewelry,57.32,0.4792,true
+P_CL_0044_009,CL_0044,0044-009-C48,Eco Bracelet,Jewelry,68.76,0.4079,true
+P_CL_0044_010,CL_0044,0044-010-M18,Essential Necklace,Jewelry,16.86,0.3573,true
+P_CL_0044_011,CL_0044,0044-011-N82,Essential Earring,Jewelry,35.76,0.4246,true
+P_CL_0044_012,CL_0044,0044-012-D85,Pro Ring,Jewelry,41.85,0.4083,true
+P_CL_0044_013,CL_0044,0044-013-M18,Pro Earring,Jewelry,49.62,0.3374,true
+P_CL_0044_014,CL_0044,0044-014-G27,Pro Earring,Jewelry,62.04,0.4964,true
+P_CL_0044_015,CL_0044,0044-015-V29,Signature Ring,Jewelry,43.62,0.4220,true
+P_CL_0045_001,CL_0045,0045-001-J82,Daily Legging,Apparel,122.21,0.6849,false
+P_CL_0045_002,CL_0045,0045-002-S11,Pro Jogger,Apparel,125.06,0.6985,true
+P_CL_0045_003,CL_0045,0045-003-B10,Eco Hoodie,Apparel,131.71,0.6654,true
+P_CL_0045_004,CL_0045,0045-004-H65,Pro Jogger,Apparel,102.01,0.5801,true
+P_CL_0045_005,CL_0045,0045-005-F70,Ultra Jacket,Apparel,95.98,0.5388,true
+P_CL_0045_006,CL_0045,0045-006-E46,Ultra Jogger,Apparel,89.57,0.5281,true
+P_CL_0045_007,CL_0045,0045-007-E20,Ultra Tee,Apparel,169.09,0.6296,true
+P_CL_0045_008,CL_0045,0045-008-W87,Performance Jacket,Apparel,56.03,0.6258,true
+P_CL_0045_009,CL_0045,0045-009-F64,Pro Jacket,Apparel,77.75,0.5027,true
+P_CL_0045_010,CL_0045,0045-010-I62,Eco Hoodie,Apparel,96.83,0.6165,true
+P_CL_0045_011,CL_0045,0045-011-P98,Premium Tee,Apparel,95.41,0.5296,true
+P_CL_0045_012,CL_0045,0045-012-C76,Pro Jogger,Apparel,94.95,0.5189,true
+P_CL_0045_013,CL_0045,0045-013-T16,Essential Tee,Apparel,59.44,0.6082,true
+P_CL_0045_014,CL_0045,0045-014-P83,Essential Jacket,Apparel,94.90,0.5854,false
+P_CL_0045_015,CL_0045,0045-015-X48,Pro Jogger,Apparel,178.43,0.5533,true
+P_CL_0046_001,CL_0046,0046-001-B94,Daily Jacket,Outdoor,129.92,0.6466,true
+P_CL_0046_002,CL_0046,0046-002-Z45,Daily Tent,Outdoor,96.67,0.5113,true
+P_CL_0046_003,CL_0046,0046-003-D87,Ultra Tent,Outdoor,147.14,0.6668,true
+P_CL_0046_004,CL_0046,0046-004-H72,Ultra Cooler,Outdoor,116.29,0.6447,true
+P_CL_0046_005,CL_0046,0046-005-E86,Ultra Tent,Outdoor,99.27,0.6523,true
+P_CL_0046_006,CL_0046,0046-006-U31,Classic Cooler,Outdoor,76.26,0.6004,true
+P_CL_0046_007,CL_0046,0046-007-Y24,Core Pack,Outdoor,104.08,0.5183,true
+P_CL_0046_008,CL_0046,0046-008-H58,Performance Tent,Outdoor,137.33,0.5797,true
+P_CL_0046_009,CL_0046,0046-009-Z67,Performance Cooler,Outdoor,125.84,0.6205,false
+P_CL_0046_010,CL_0046,0046-010-N88,Daily Pack,Outdoor,108.68,0.5518,true
+P_CL_0046_011,CL_0046,0046-011-S60,Signature Pack,Outdoor,105.83,0.6394,true
+P_CL_0046_012,CL_0046,0046-012-F50,Eco Jacket,Outdoor,42.39,0.4869,true
+P_CL_0046_013,CL_0046,0046-013-D77,Premium Pack,Outdoor,137.31,0.6219,true
+P_CL_0046_014,CL_0046,0046-014-B86,Classic Tent,Outdoor,139.32,0.6749,true
+P_CL_0046_015,CL_0046,0046-015-T26,Performance Pack,Outdoor,136.27,0.6161,true
+P_CL_0047_001,CL_0047,0047-001-F42,Daily Legging,Apparel,75.35,0.7048,false
+P_CL_0047_002,CL_0047,0047-002-I64,Essential Jacket,Apparel,75.78,0.6629,true
+P_CL_0047_003,CL_0047,0047-003-B43,Daily Jogger,Apparel,58.45,0.6470,true
+P_CL_0047_004,CL_0047,0047-004-F92,Signature Hoodie,Apparel,93.51,0.6331,true
+P_CL_0047_005,CL_0047,0047-005-W43,Premium Jacket,Apparel,82.14,0.6184,true
+P_CL_0047_006,CL_0047,0047-006-A73,Ultra Jogger,Apparel,36.10,0.7420,true
+P_CL_0047_007,CL_0047,0047-007-M83,Core Tee,Apparel,74.53,0.7145,false
+P_CL_0047_008,CL_0047,0047-008-M18,Eco Jacket,Apparel,121.38,0.6566,true
+P_CL_0047_009,CL_0047,0047-009-K97,Daily Jacket,Apparel,58.89,0.6915,true
+P_CL_0047_010,CL_0047,0047-010-K20,Signature Tee,Apparel,83.05,0.7635,true
+P_CL_0047_011,CL_0047,0047-011-G48,Performance Hoodie,Apparel,135.58,0.7907,true
+P_CL_0047_012,CL_0047,0047-012-U66,Classic Jogger,Apparel,93.46,0.6394,true
+P_CL_0047_013,CL_0047,0047-013-U49,Signature Legging,Apparel,80.33,0.7182,true
+P_CL_0047_014,CL_0047,0047-014-A14,Essential Jacket,Apparel,88.79,0.6226,true
+P_CL_0047_015,CL_0047,0047-015-Q68,Eco Tee,Apparel,101.48,0.6412,true
+P_CL_0048_001,CL_0048,0048-001-E72,Core Protein,Supplements,76.85,0.4847,true
+P_CL_0048_002,CL_0048,0048-002-U16,Daily Protein,Supplements,49.88,0.5546,true
+P_CL_0048_003,CL_0048,0048-003-S18,Premium Vitamin,Supplements,53.17,0.4133,true
+P_CL_0048_004,CL_0048,0048-004-Z96,Performance Vitamin,Supplements,55.43,0.4553,false
+P_CL_0048_005,CL_0048,0048-005-K37,Core Vitamin,Supplements,29.91,0.5091,true
+P_CL_0048_006,CL_0048,0048-006-L80,Ultra Protein,Supplements,49.72,0.4782,false
+P_CL_0048_007,CL_0048,0048-007-Z90,Pro Protein,Supplements,50.66,0.4657,true
+P_CL_0048_008,CL_0048,0048-008-W93,Pro Creatine,Supplements,82.36,0.5679,true
+P_CL_0048_009,CL_0048,0048-009-G28,Daily Creatine,Supplements,36.90,0.4951,true
+P_CL_0048_010,CL_0048,0048-010-P88,Premium Greens,Supplements,43.95,0.5159,true
+P_CL_0048_011,CL_0048,0048-011-R40,Classic Collagen,Supplements,45.17,0.4140,true
+P_CL_0048_012,CL_0048,0048-012-Q38,Signature Protein,Supplements,56.55,0.5446,true
+P_CL_0048_013,CL_0048,0048-013-D29,Signature Collagen,Supplements,39.74,0.4900,true
+P_CL_0048_014,CL_0048,0048-014-I52,Pro Protein,Supplements,57.25,0.5515,true
+P_CL_0048_015,CL_0048,0048-015-B78,Ultra Protein,Supplements,63.47,0.4221,true
+P_CL_0049_001,CL_0049,0049-001-S84,Essential Mask,Beauty,45.41,0.7431,true
+P_CL_0049_002,CL_0049,0049-002-D51,Classic Cream,Beauty,27.09,0.6789,true
+P_CL_0049_003,CL_0049,0049-003-P16,Performance Cleanser,Beauty,30.65,0.6883,false
+P_CL_0049_004,CL_0049,0049-004-L27,Signature Toner,Beauty,42.14,0.8033,true
+P_CL_0049_005,CL_0049,0049-005-B45,Ultra Cream,Beauty,41.07,0.6815,true
+P_CL_0049_006,CL_0049,0049-006-K38,Daily Toner,Beauty,42.32,0.7800,true
+P_CL_0049_007,CL_0049,0049-007-H21,Performance Mask,Beauty,13.25,0.8307,true
+P_CL_0049_008,CL_0049,0049-008-O45,Core Cleanser,Beauty,21.07,0.8053,true
+P_CL_0049_009,CL_0049,0049-009-S29,Pro Cleanser,Beauty,28.65,0.8390,true
+P_CL_0049_010,CL_0049,0049-010-P74,Core Serum,Beauty,42.42,0.7444,true
+P_CL_0049_011,CL_0049,0049-011-A98,Performance Serum,Beauty,28.06,0.8493,true
+P_CL_0049_012,CL_0049,0049-012-C12,Signature Cream,Beauty,41.21,0.7931,true
+P_CL_0049_013,CL_0049,0049-013-O69,Ultra Toner,Beauty,20.94,0.8341,true
+P_CL_0049_014,CL_0049,0049-014-W91,Core Cream,Beauty,22.87,0.8314,true
+P_CL_0049_015,CL_0049,0049-015-W88,Eco Cream,Beauty,22.91,0.7743,true
+P_CL_0050_001,CL_0050,0050-001-K17,Eco Lamp,Home Goods,46.44,0.4934,true
+P_CL_0050_002,CL_0050,0050-002-L56,Ultra Lamp,Home Goods,42.49,0.4339,true
+P_CL_0050_003,CL_0050,0050-003-G27,Essential Candle,Home Goods,39.74,0.3520,true
+P_CL_0050_004,CL_0050,0050-004-W36,Classic Planter,Home Goods,30.54,0.3684,true
+P_CL_0050_005,CL_0050,0050-005-I16,Premium Candle,Home Goods,14.10,0.3789,true
+P_CL_0050_006,CL_0050,0050-006-V78,Daily Candle,Home Goods,44.65,0.3947,true
+P_CL_0050_007,CL_0050,0050-007-O21,Premium Lamp,Home Goods,55.96,0.3824,true
+P_CL_0050_008,CL_0050,0050-008-P29,Classic Lamp,Home Goods,48.33,0.4084,true
+P_CL_0050_009,CL_0050,0050-009-V79,Ultra Organizer,Home Goods,51.13,0.3991,true
+P_CL_0050_010,CL_0050,0050-010-H76,Essential Lamp,Home Goods,58.32,0.3866,true
+P_CL_0050_011,CL_0050,0050-011-V99,Eco Organizer,Home Goods,42.75,0.4727,true
+P_CL_0050_012,CL_0050,0050-012-Z43,Classic Organizer,Home Goods,39.86,0.4011,false
+P_CL_0050_013,CL_0050,0050-013-J68,Ultra Lamp,Home Goods,44.10,0.4280,true
+P_CL_0050_014,CL_0050,0050-014-W95,Ultra Candle,Home Goods,58.69,0.3366,true
+P_CL_0050_015,CL_0050,0050-015-O43,Essential Organizer,Home Goods,31.05,0.3412,true
+P_CL_0051_001,CL_0051,0051-001-O79,Ultra Protein,Supplements,94.59,0.4271,true
+P_CL_0051_002,CL_0051,0051-002-P28,Signature Protein,Supplements,97.76,0.5060,true
+P_CL_0051_003,CL_0051,0051-003-P47,Pro Vitamin,Supplements,51.14,0.4538,true
+P_CL_0051_004,CL_0051,0051-004-D71,Core Creatine,Supplements,135.31,0.3483,true
+P_CL_0051_005,CL_0051,0051-005-L21,Essential Collagen,Supplements,131.94,0.3314,true
+P_CL_0051_006,CL_0051,0051-006-Z45,Classic Vitamin,Supplements,80.04,0.3249,true
+P_CL_0051_007,CL_0051,0051-007-M34,Signature Creatine,Supplements,139.89,0.3840,true
+P_CL_0051_008,CL_0051,0051-008-L60,Ultra Protein,Supplements,54.79,0.4636,true
+P_CL_0051_009,CL_0051,0051-009-O81,Premium Creatine,Supplements,97.65,0.3635,true
+P_CL_0051_010,CL_0051,0051-010-J30,Performance Creatine,Supplements,95.37,0.4661,true
+P_CL_0051_011,CL_0051,0051-011-Q52,Premium Vitamin,Supplements,97.72,0.5070,true
+P_CL_0051_012,CL_0051,0051-012-N91,Daily Creatine,Supplements,148.39,0.4033,true
+P_CL_0051_013,CL_0051,0051-013-M47,Eco Vitamin,Supplements,86.80,0.4185,true
+P_CL_0051_014,CL_0051,0051-014-J73,Eco Collagen,Supplements,84.62,0.4684,true
+P_CL_0051_015,CL_0051,0051-015-U70,Premium Protein,Supplements,114.90,0.4512,true
+P_CL_0052_001,CL_0052,0052-001-W92,Classic Sauce,Food & Beverage,139.75,0.3854,true
+P_CL_0052_002,CL_0052,0052-002-S71,Pro Sauce,Food & Beverage,92.90,0.4669,true
+P_CL_0052_003,CL_0052,0052-003-D57,Eco Sauce,Food & Beverage,76.49,0.5263,true
+P_CL_0052_004,CL_0052,0052-004-W27,Essential Tea,Food & Beverage,130.56,0.4124,true
+P_CL_0052_005,CL_0052,0052-005-L16,Daily Sauce,Food & Beverage,83.61,0.4380,true
+P_CL_0052_006,CL_0052,0052-006-D86,Ultra Coffee,Food & Beverage,85.52,0.4884,true
+P_CL_0052_007,CL_0052,0052-007-W98,Essential Tea,Food & Beverage,89.73,0.3989,true
+P_CL_0052_008,CL_0052,0052-008-P62,Essential Snack,Food & Beverage,114.42,0.5639,true
+P_CL_0052_009,CL_0052,0052-009-H34,Eco Snack,Food & Beverage,112.55,0.5024,true
+P_CL_0052_010,CL_0052,0052-010-Z24,Performance Bar,Food & Beverage,60.12,0.4718,true
+P_CL_0052_011,CL_0052,0052-011-P54,Daily Snack,Food & Beverage,33.66,0.5179,true
+P_CL_0052_012,CL_0052,0052-012-K32,Daily Sauce,Food & Beverage,37.47,0.3855,true
+P_CL_0052_013,CL_0052,0052-013-W28,Classic Snack,Food & Beverage,97.92,0.4412,true
+P_CL_0052_014,CL_0052,0052-014-A71,Performance Coffee,Food & Beverage,90.95,0.3882,true
+P_CL_0052_015,CL_0052,0052-015-P25,Daily Bar,Food & Beverage,69.60,0.3884,true
+P_CL_0053_001,CL_0053,0053-001-G85,Classic Serum,Beauty,93.79,0.6406,true
+P_CL_0053_002,CL_0053,0053-002-X45,Pro Serum,Beauty,82.42,0.6732,true
+P_CL_0053_003,CL_0053,0053-003-C22,Pro Mask,Beauty,60.33,0.7562,true
+P_CL_0053_004,CL_0053,0053-004-F78,Core Cleanser,Beauty,55.00,0.7983,true
+P_CL_0053_005,CL_0053,0053-005-W85,Ultra Cleanser,Beauty,91.17,0.6915,false
+P_CL_0053_006,CL_0053,0053-006-M64,Classic Cleanser,Beauty,57.37,0.7065,true
+P_CL_0053_007,CL_0053,0053-007-Y56,Daily Cream,Beauty,147.62,0.7150,true
+P_CL_0053_008,CL_0053,0053-008-M46,Signature Cream,Beauty,107.53,0.7237,true
+P_CL_0053_009,CL_0053,0053-009-N34,Premium Toner,Beauty,67.05,0.7826,true
+P_CL_0053_010,CL_0053,0053-010-V72,Premium Cream,Beauty,168.00,0.6829,true
+P_CL_0053_011,CL_0053,0053-011-D31,Premium Serum,Beauty,109.52,0.6763,true
+P_CL_0053_012,CL_0053,0053-012-M25,Classic Cleanser,Beauty,114.74,0.7712,true
+P_CL_0053_013,CL_0053,0053-013-Y92,Performance Cream,Beauty,85.68,0.6748,true
+P_CL_0053_014,CL_0053,0053-014-Q45,Ultra Toner,Beauty,40.71,0.7572,true
+P_CL_0053_015,CL_0053,0053-015-A22,Core Cream,Beauty,106.48,0.7697,true
+P_CL_0054_001,CL_0054,0054-001-M87,Essential Runner,Footwear,83.71,0.6356,true
+P_CL_0054_002,CL_0054,0054-002-P69,Classic Runner,Footwear,43.69,0.6638,true
+P_CL_0054_003,CL_0054,0054-003-K79,Eco Sneaker,Footwear,62.16,0.6086,true
+P_CL_0054_004,CL_0054,0054-004-M66,Signature Boot,Footwear,62.12,0.6123,true
+P_CL_0054_005,CL_0054,0054-005-F72,Performance Sandal,Footwear,61.11,0.6320,true
+P_CL_0054_006,CL_0054,0054-006-R97,Eco Boot,Footwear,37.23,0.7195,true
+P_CL_0054_007,CL_0054,0054-007-M43,Signature Trainer,Footwear,56.21,0.7233,true
+P_CL_0054_008,CL_0054,0054-008-S15,Ultra Sandal,Footwear,52.17,0.7725,true
+P_CL_0054_009,CL_0054,0054-009-U53,Performance Sneaker,Footwear,104.55,0.6246,true
+P_CL_0054_010,CL_0054,0054-010-H92,Daily Sandal,Footwear,79.31,0.7236,true
+P_CL_0054_011,CL_0054,0054-011-D53,Ultra Runner,Footwear,54.13,0.6090,true
+P_CL_0054_012,CL_0054,0054-012-N44,Core Boot,Footwear,40.91,0.7443,true
+P_CL_0054_013,CL_0054,0054-013-M51,Pro Sandal,Footwear,79.12,0.6246,true
+P_CL_0054_014,CL_0054,0054-014-K31,Pro Trainer,Footwear,46.85,0.6650,false
+P_CL_0054_015,CL_0054,0054-015-Z19,Eco Trainer,Footwear,63.70,0.6479,true
+P_CL_0055_001,CL_0055,0055-001-X21,Pro Onesie,Baby,45.43,0.4319,true
+P_CL_0055_002,CL_0055,0055-002-Q70,Performance Blanket,Baby,81.18,0.4549,true
+P_CL_0055_003,CL_0055,0055-003-K35,Performance Onesie,Baby,68.49,0.4935,true
+P_CL_0055_004,CL_0055,0055-004-R33,Core Carrier,Baby,94.39,0.5386,true
+P_CL_0055_005,CL_0055,0055-005-X69,Daily Bottle,Baby,83.92,0.6004,true
+P_CL_0055_006,CL_0055,0055-006-N82,Core Toy,Baby,107.16,0.5175,true
+P_CL_0055_007,CL_0055,0055-007-N62,Essential Bottle,Baby,95.14,0.5850,true
+P_CL_0055_008,CL_0055,0055-008-I46,Ultra Bottle,Baby,29.74,0.4643,true
+P_CL_0055_009,CL_0055,0055-009-Z49,Signature Carrier,Baby,98.60,0.5101,false
+P_CL_0055_010,CL_0055,0055-010-B35,Ultra Carrier,Baby,73.08,0.4675,true
+P_CL_0055_011,CL_0055,0055-011-X72,Core Onesie,Baby,85.23,0.4241,true
+P_CL_0055_012,CL_0055,0055-012-C62,Essential Onesie,Baby,104.12,0.5473,true
+P_CL_0055_013,CL_0055,0055-013-D83,Eco Carrier,Baby,56.29,0.5996,true
+P_CL_0055_014,CL_0055,0055-014-Q42,Signature Toy,Baby,47.66,0.5899,true
+P_CL_0055_015,CL_0055,0055-015-X59,Classic Blanket,Baby,50.48,0.6001,true
+P_CL_0056_001,CL_0056,0056-001-I66,Performance Treat,Pet Supplies,125.72,0.5230,true
+P_CL_0056_002,CL_0056,0056-002-R64,Signature Bed,Pet Supplies,67.83,0.6086,false
+P_CL_0056_003,CL_0056,0056-003-W57,Daily Toy,Pet Supplies,72.45,0.4763,false
+P_CL_0056_004,CL_0056,0056-004-B98,Classic Bowl,Pet Supplies,108.90,0.5227,true
+P_CL_0056_005,CL_0056,0056-005-V25,Eco Harness,Pet Supplies,24.48,0.6455,true
+P_CL_0056_006,CL_0056,0056-006-I48,Premium Bed,Pet Supplies,153.03,0.6594,true
+P_CL_0056_007,CL_0056,0056-007-F66,Essential Harness,Pet Supplies,82.59,0.6480,true
+P_CL_0056_008,CL_0056,0056-008-Y72,Signature Bed,Pet Supplies,58.30,0.6195,false
+P_CL_0056_009,CL_0056,0056-009-D30,Daily Harness,Pet Supplies,69.12,0.5734,true
+P_CL_0056_010,CL_0056,0056-010-W13,Core Bowl,Pet Supplies,46.91,0.6004,true
+P_CL_0056_011,CL_0056,0056-011-E10,Performance Bed,Pet Supplies,54.74,0.5121,true
+P_CL_0056_012,CL_0056,0056-012-Y93,Ultra Bowl,Pet Supplies,116.65,0.6415,true
+P_CL_0056_013,CL_0056,0056-013-X27,Daily Harness,Pet Supplies,92.46,0.5068,true
+P_CL_0056_014,CL_0056,0056-014-F60,Performance Harness,Pet Supplies,64.68,0.6611,true
+P_CL_0056_015,CL_0056,0056-015-A81,Pro Toy,Pet Supplies,129.80,0.5974,true
+P_CL_0057_001,CL_0057,0057-001-M89,Performance Planter,Home Goods,78.02,0.3775,true
+P_CL_0057_002,CL_0057,0057-002-S25,Core Organizer,Home Goods,74.34,0.4011,true
+P_CL_0057_003,CL_0057,0057-003-G34,Daily Planter,Home Goods,39.49,0.3150,true
+P_CL_0057_004,CL_0057,0057-004-G86,Classic Throw,Home Goods,66.28,0.4564,true
+P_CL_0057_005,CL_0057,0057-005-J43,Classic Throw,Home Goods,59.50,0.3809,true
+P_CL_0057_006,CL_0057,0057-006-U68,Premium Organizer,Home Goods,63.42,0.2595,true
+P_CL_0057_007,CL_0057,0057-007-M64,Pro Organizer,Home Goods,37.81,0.3086,true
+P_CL_0057_008,CL_0057,0057-008-H70,Essential Lamp,Home Goods,100.32,0.4567,false
+P_CL_0057_009,CL_0057,0057-009-Q89,Performance Candle,Home Goods,54.58,0.3179,true
+P_CL_0057_010,CL_0057,0057-010-R15,Pro Organizer,Home Goods,84.85,0.2933,true
+P_CL_0057_011,CL_0057,0057-011-K77,Performance Planter,Home Goods,52.99,0.2858,true
+P_CL_0057_012,CL_0057,0057-012-P45,Essential Lamp,Home Goods,40.45,0.4426,true
+P_CL_0057_013,CL_0057,0057-013-K65,Ultra Organizer,Home Goods,58.47,0.3205,false
+P_CL_0057_014,CL_0057,0057-014-V91,Signature Throw,Home Goods,48.28,0.2680,true
+P_CL_0057_015,CL_0057,0057-015-O65,Premium Throw,Home Goods,73.17,0.4564,false
+P_CL_0058_001,CL_0058,0058-001-W81,Signature Treat,Pet Supplies,64.82,0.6624,true
+P_CL_0058_002,CL_0058,0058-002-F31,Eco Toy,Pet Supplies,108.50,0.7353,true
+P_CL_0058_003,CL_0058,0058-003-A77,Pro Bowl,Pet Supplies,93.26,0.6069,false
+P_CL_0058_004,CL_0058,0058-004-A46,Premium Toy,Pet Supplies,36.88,0.6496,true
+P_CL_0058_005,CL_0058,0058-005-E13,Premium Treat,Pet Supplies,21.07,0.6628,true
+P_CL_0058_006,CL_0058,0058-006-A52,Core Bed,Pet Supplies,81.31,0.7020,false
+P_CL_0058_007,CL_0058,0058-007-X82,Ultra Harness,Pet Supplies,39.84,0.6131,true
+P_CL_0058_008,CL_0058,0058-008-T58,Premium Harness,Pet Supplies,74.90,0.6506,true
+P_CL_0058_009,CL_0058,0058-009-G30,Performance Bed,Pet Supplies,89.25,0.7267,true
+P_CL_0058_010,CL_0058,0058-010-Z49,Pro Toy,Pet Supplies,69.06,0.5971,true
+P_CL_0058_011,CL_0058,0058-011-P67,Performance Harness,Pet Supplies,60.76,0.6661,true
+P_CL_0058_012,CL_0058,0058-012-F65,Performance Bed,Pet Supplies,74.97,0.5894,true
+P_CL_0058_013,CL_0058,0058-013-U97,Ultra Bed,Pet Supplies,59.88,0.7569,true
+P_CL_0058_014,CL_0058,0058-014-Z71,Daily Bowl,Pet Supplies,82.07,0.6005,true
+P_CL_0058_015,CL_0058,0058-015-Q64,Daily Harness,Pet Supplies,49.28,0.6845,true
+P_CL_0059_001,CL_0059,0059-001-O94,Pro Lamp,Home Goods,80.27,0.7094,true
+P_CL_0059_002,CL_0059,0059-002-Q12,Premium Candle,Home Goods,155.64,0.6949,true
+P_CL_0059_003,CL_0059,0059-003-W48,Essential Throw,Home Goods,111.77,0.6642,true
+P_CL_0059_004,CL_0059,0059-004-I53,Ultra Planter,Home Goods,106.42,0.5890,true
+P_CL_0059_005,CL_0059,0059-005-A10,Performance Candle,Home Goods,119.05,0.5701,true
+P_CL_0059_006,CL_0059,0059-006-M94,Pro Planter,Home Goods,86.86,0.6920,true
+P_CL_0059_007,CL_0059,0059-007-M48,Premium Candle,Home Goods,102.36,0.5718,true
+P_CL_0059_008,CL_0059,0059-008-W34,Core Lamp,Home Goods,52.11,0.5886,true
+P_CL_0059_009,CL_0059,0059-009-G21,Daily Throw,Home Goods,81.34,0.7007,true
+P_CL_0059_010,CL_0059,0059-010-F29,Signature Planter,Home Goods,135.86,0.7396,true
+P_CL_0059_011,CL_0059,0059-011-M16,Essential Planter,Home Goods,111.69,0.5484,true
+P_CL_0059_012,CL_0059,0059-012-P84,Pro Planter,Home Goods,111.57,0.6930,false
+P_CL_0059_013,CL_0059,0059-013-T96,Signature Lamp,Home Goods,74.53,0.5932,true
+P_CL_0059_014,CL_0059,0059-014-K80,Premium Lamp,Home Goods,117.79,0.6004,true
+P_CL_0059_015,CL_0059,0059-015-O99,Performance Planter,Home Goods,124.79,0.5510,true
+P_CL_0060_001,CL_0060,0060-001-O39,Eco Cleanser,Beauty,42.71,0.4239,true
+P_CL_0060_002,CL_0060,0060-002-O26,Daily Cream,Beauty,54.03,0.5246,true
+P_CL_0060_003,CL_0060,0060-003-V93,Essential Toner,Beauty,27.14,0.5392,true
+P_CL_0060_004,CL_0060,0060-004-V71,Ultra Cleanser,Beauty,45.60,0.4147,true
+P_CL_0060_005,CL_0060,0060-005-N73,Daily Toner,Beauty,99.23,0.4269,true
+P_CL_0060_006,CL_0060,0060-006-F74,Core Serum,Beauty,59.71,0.5414,true
+P_CL_0060_007,CL_0060,0060-007-D81,Classic Serum,Beauty,69.81,0.4773,false
+P_CL_0060_008,CL_0060,0060-008-E98,Eco Cream,Beauty,47.51,0.5009,true
+P_CL_0060_009,CL_0060,0060-009-O68,Premium Serum,Beauty,24.77,0.5749,true
+P_CL_0060_010,CL_0060,0060-010-B74,Premium Mask,Beauty,68.13,0.4134,true
+P_CL_0060_011,CL_0060,0060-011-F47,Signature Cleanser,Beauty,33.80,0.5324,true
+P_CL_0060_012,CL_0060,0060-012-D35,Signature Serum,Beauty,57.81,0.5739,true
+P_CL_0060_013,CL_0060,0060-013-Z70,Essential Serum,Beauty,85.77,0.4374,true
+P_CL_0060_014,CL_0060,0060-014-V41,Ultra Cream,Beauty,60.73,0.5306,true
+P_CL_0060_015,CL_0060,0060-015-N62,Performance Cleanser,Beauty,62.54,0.5596,false

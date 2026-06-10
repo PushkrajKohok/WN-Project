@@ -1,0 +1,11 @@
+schema_event_id,source_system,table_name,schema_version,detected_at,drift_type,added_columns,removed_columns,action_taken,status
+SCHEMA_000001,Shopify,orders,v4.4,2026-04-14 01:23:31,added_column,"[""attribution_model""]",[],quarantined,needs_review
+SCHEMA_000002,Shopify,customers,v2.6,2026-04-18 03:48:17,enum_expansion,[],[],accepted,needs_review
+SCHEMA_000003,Klaviyo,events,v2.2,2026-04-08 08:01:19,none,[],[],accepted,needs_review
+SCHEMA_000004,Meta,campaigns,v2.3,2026-03-22 14:40:31,none,[],[],accepted,monitoring
+SCHEMA_000005,Meta,adsets,v1.8,2026-04-25 12:27:18,none,[],[],alerted_data_scout,monitoring
+SCHEMA_000006,Google,campaigns,v2.5,2026-03-24 15:12:49,none,[],[],mapped_to_canonical,monitoring
+SCHEMA_000007,WasteNot,audience_segments,v1.7,2026-04-23 19:18:43,added_column,[],[],alerted_data_scout,resolved
+SCHEMA_000008,WasteNot,optimization_history,v2.5,2026-05-02 21:39:47,added_column,[],[],quarantined,needs_review
+SCHEMA_000009,WasteNot,recommendation_records,v4.1,2026-04-21 08:19:17,none,[],[],mapped_to_canonical,resolved
+SCHEMA_000010,Snowflake,client_marts,v4.4,2026-05-22 07:28:01,none,[],[],quarantined,needs_review

@@ -1,0 +1,301 @@
+benchmark_id,anonymized_cohort_id,brand_category,monthly_ad_spend_band,strategy,primary_metric,avg_lift_pct,median_lift_pct,sample_size,confidence_score,privacy_level,generated_at
+BM_00000001,COHORT_0d9e51af07,Consumer Electronics,$100k-$250k,Remove recent refund customers from retargeting,ROAS,0.0578,0.0522,26,0.6526,aggregated_only,2026-05-24 03:25:19
+BM_00000002,COHORT_ea5c47dbd9,Beauty,$10k-$25k,Remove recent refund customers from retargeting,Contribution Margin,0.1794,0.1811,11,0.6251,k_anonymized,2026-05-04 05:08:16
+BM_00000003,COHORT_c65f1ca9d6,Jewelry,$100k-$250k,Create VIP lookalike seed from top decile LTV,CPA,0.1311,0.1479,10,0.8169,aggregated_only,2026-05-29 04:28:38
+BM_00000004,COHORT_28f39bcbf6,Home Goods,$10k-$25k,Suppress Klaviyo converters from paid search,ROAS,0.0890,0.0764,23,0.7557,aggregated_only,2026-06-01 20:55:56
+BM_00000005,COHORT_4a38736204,Beauty,$250k+,Remove recent refund customers from retargeting,Wasted Spend,0.1393,0.1416,22,0.6702,internal_firewalled,2026-06-05 19:52:36
+BM_00000006,COHORT_f9fc34a59c,Pet Supplies,$100k-$250k,Suppress Klaviyo converters from paid search,Wasted Spend,0.0972,0.1136,22,0.7501,aggregated_only,2026-04-20 16:37:56
+BM_00000007,COHORT_7976374ba5,Beauty,$100k-$250k,Pause brand search for recent email clickers,ROAS,0.0207,0.0342,35,0.6409,aggregated_only,2026-03-21 14:15:37
+BM_00000008,COHORT_e0d9618496,Food & Beverage,$25k-$50k,Use product-category exclusions for repeat buyers,MER,0.1605,0.1588,63,0.6239,aggregated_only,2026-05-24 14:08:20
+BM_00000009,COHORT_740b832647,Supplements,$250k+,Suppress Klaviyo converters from paid search,Wasted Spend,0.1165,0.1145,72,0.6463,k_anonymized,2026-05-22 18:54:52
+BM_00000010,COHORT_d73701b78a,Fitness,$100k-$250k,Use product-category exclusions for repeat buyers,ROAS,0.0789,0.0881,45,0.7431,aggregated_only,2026-03-22 15:21:23
+BM_00000011,COHORT_75a44f7281,Consumer Electronics,$250k+,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.1324,0.1406,30,0.7565,internal_firewalled,2026-04-04 12:11:06
+BM_00000012,COHORT_fd9154e92d,Footwear,$50k-$100k,Create VIP lookalike seed from top decile LTV,CAC,0.0702,0.0768,30,0.6234,k_anonymized,2026-03-29 17:41:52
+BM_00000013,COHORT_f6a8bc36e4,Consumer Electronics,$25k-$50k,Create VIP lookalike seed from top decile LTV,CAC,0.0729,0.0819,50,0.5732,aggregated_only,2026-05-16 17:40:26
+BM_00000014,COHORT_1b503b8101,Jewelry,$250k+,Increase budget on prospecting when MER is stable,Contribution Margin,0.0931,0.0763,23,0.5890,internal_firewalled,2026-05-14 13:45:57
+BM_00000015,COHORT_630daf6dfe,Home Goods,$250k+,"Split cart abandoners into 1D, 7D, 14D windows",MER,0.0560,0.0500,24,0.7769,internal_firewalled,2026-04-03 16:10:03
+BM_00000016,COHORT_db8317af31,Food & Beverage,$25k-$50k,Exclude 30-day purchasers from retargeting,Contribution Margin,0.1476,0.1544,69,0.7941,aggregated_only,2026-04-12 18:37:55
+BM_00000017,COHORT_1ec71ab245,Baby,$50k-$100k,Refresh fatigued retargeting audiences weekly,MER,0.1643,0.1458,45,0.7710,aggregated_only,2026-05-23 07:27:32
+BM_00000018,COHORT_44631ab1fa,Food & Beverage,$50k-$100k,Remove recent refund customers from retargeting,Contribution Margin,0.1705,0.1739,75,0.6149,k_anonymized,2026-06-08 08:11:28
+BM_00000019,COHORT_9e0df59158,Jewelry,$100k-$250k,Increase budget on prospecting when MER is stable,Contribution Margin,0.0387,0.0535,9,0.7550,k_anonymized,2026-04-22 02:03:08
+BM_00000020,COHORT_15bbeaf2ff,Consumer Electronics,$100k-$250k,Suppress Klaviyo converters from paid search,CPA,0.0709,0.0709,20,0.7243,internal_firewalled,2026-05-15 13:01:42
+BM_00000021,COHORT_96d0404e1b,Consumer Electronics,$100k-$250k,Refresh fatigued retargeting audiences weekly,Contribution Margin,0.1194,0.1095,59,0.7514,aggregated_only,2026-04-05 09:29:25
+BM_00000022,COHORT_5d90b2616b,Footwear,$25k-$50k,Pause brand search for recent email clickers,CPA,0.0393,0.0386,74,0.6027,aggregated_only,2026-05-04 16:23:42
+BM_00000023,COHORT_97210d4862,Food & Beverage,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.0855,0.0976,9,0.6810,aggregated_only,2026-04-11 06:11:27
+BM_00000024,COHORT_17d535ac11,Home Goods,$50k-$100k,Refresh fatigued retargeting audiences weekly,MER,0.1499,0.1613,54,0.7345,aggregated_only,2026-04-06 05:00:20
+BM_00000025,COHORT_75a44f7281,Consumer Electronics,$250k+,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.0652,0.0638,52,0.8012,k_anonymized,2026-04-12 08:22:19
+BM_00000026,COHORT_d96cf474bd,Footwear,$25k-$50k,Create VIP lookalike seed from top decile LTV,ROAS,0.0444,0.0292,71,0.5507,aggregated_only,2026-05-17 04:44:39
+BM_00000027,COHORT_b736495c5b,Beauty,$100k-$250k,Increase budget on prospecting when MER is stable,CPA,0.1289,0.1239,41,0.6087,k_anonymized,2026-05-17 07:46:33
+BM_00000028,COHORT_1b2e7e597f,Consumer Electronics,$10k-$25k,Remove recent refund customers from retargeting,Contribution Margin,0.0227,0.0234,73,0.6202,internal_firewalled,2026-03-14 15:24:35
+BM_00000029,COHORT_89eb16ae4d,Food & Beverage,$50k-$100k,Use product-category exclusions for repeat buyers,CAC,0.0738,0.0608,68,0.8272,internal_firewalled,2026-05-20 22:57:51
+BM_00000030,COHORT_14e6c4e536,Jewelry,$50k-$100k,Remove recent refund customers from retargeting,ROAS,0.1727,0.1815,8,0.7722,internal_firewalled,2026-05-20 16:04:24
+BM_00000031,COHORT_c51e878853,Fitness,$25k-$50k,Use product-category exclusions for repeat buyers,Contribution Margin,0.1463,0.1657,62,0.6670,internal_firewalled,2026-06-02 23:42:25
+BM_00000032,COHORT_d8c6cbe243,Beauty,$100k-$250k,Use product-category exclusions for repeat buyers,MER,0.1451,0.1367,71,0.8556,k_anonymized,2026-06-06 23:42:11
+BM_00000033,COHORT_f6c486f87c,Beauty,$50k-$100k,Suppress Klaviyo converters from paid search,ROAS,0.0259,0.0217,40,0.9167,k_anonymized,2026-04-25 07:16:57
+BM_00000034,COHORT_00ea61238e,Pet Supplies,$250k+,Create VIP lookalike seed from top decile LTV,Contribution Margin,0.1008,0.0848,26,0.7034,k_anonymized,2026-03-30 19:27:50
+BM_00000035,COHORT_55b6c1bacd,Fitness,$100k-$250k,"Split cart abandoners into 1D, 7D, 14D windows",MER,0.1492,0.1592,72,0.7486,k_anonymized,2026-05-12 12:16:57
+BM_00000036,COHORT_e8eab4128d,Baby,$25k-$50k,Remove recent refund customers from retargeting,MER,0.0392,0.0381,64,0.7076,k_anonymized,2026-05-11 14:06:51
+BM_00000037,COHORT_7a66ea221d,Outdoor,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.1324,0.1453,75,0.6239,k_anonymized,2026-05-10 18:37:44
+BM_00000038,COHORT_20aa230bac,Home Goods,$250k+,Suppress Klaviyo converters from paid search,Wasted Spend,0.0678,0.0659,40,0.7580,internal_firewalled,2026-04-13 19:39:08
+BM_00000039,COHORT_9031402611,Fitness,$25k-$50k,Create VIP lookalike seed from top decile LTV,Contribution Margin,0.1754,0.1867,67,0.9138,internal_firewalled,2026-04-24 09:05:28
+BM_00000040,COHORT_a12218b0ca,Fitness,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.0783,0.0952,9,0.8202,internal_firewalled,2026-05-09 20:27:25
+BM_00000041,COHORT_f5458e6267,Apparel,$25k-$50k,Suppress Klaviyo converters from paid search,Wasted Spend,0.0959,0.0792,32,0.8903,aggregated_only,2026-05-23 09:50:16
+BM_00000042,COHORT_f89fd4921c,Outdoor,$25k-$50k,Refresh fatigued retargeting audiences weekly,ROAS,0.0295,0.0240,52,0.8405,aggregated_only,2026-05-28 15:48:12
+BM_00000043,COHORT_dc6ab4aaad,Pet Supplies,$25k-$50k,Increase budget on prospecting when MER is stable,Contribution Margin,0.1717,0.1743,29,0.8628,k_anonymized,2026-04-14 14:00:08
+BM_00000044,COHORT_a40d2bd530,Outdoor,$10k-$25k,Reduce spend on high-frequency low-ROAS ad sets,MER,0.1511,0.1344,45,0.9150,aggregated_only,2026-03-28 20:38:21
+BM_00000045,COHORT_a3e9edfeb2,Jewelry,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.0865,0.0726,21,0.7767,internal_firewalled,2026-04-28 22:53:07
+BM_00000046,COHORT_3f22efdf80,Outdoor,$25k-$50k,Suppress Klaviyo converters from paid search,Wasted Spend,0.0540,0.0515,19,0.6082,aggregated_only,2026-05-17 08:24:51
+BM_00000047,COHORT_da54382a78,Baby,$50k-$100k,Suppress Klaviyo converters from paid search,Contribution Margin,0.1450,0.1619,22,0.7344,aggregated_only,2026-04-25 10:30:40
+BM_00000048,COHORT_004f6e4f82,Fitness,$250k+,Refresh fatigued retargeting audiences weekly,Wasted Spend,0.0524,0.0333,36,0.6196,internal_firewalled,2026-05-17 02:22:52
+BM_00000049,COHORT_6ef8668017,Consumer Electronics,$10k-$25k,Create VIP lookalike seed from top decile LTV,CPA,0.0450,0.0257,58,0.6219,aggregated_only,2026-05-05 12:15:17
+BM_00000050,COHORT_d3cb66b3f5,Food & Beverage,$250k+,Increase budget on prospecting when MER is stable,ROAS,0.1064,0.1258,11,0.6043,k_anonymized,2026-06-05 21:24:35
+BM_00000051,COHORT_bf3605d269,Outdoor,$50k-$100k,Suppress Klaviyo converters from paid search,Wasted Spend,0.1759,0.1587,49,0.6977,internal_firewalled,2026-05-31 08:56:38
+BM_00000052,COHORT_28f39bcbf6,Home Goods,$10k-$25k,Suppress Klaviyo converters from paid search,Wasted Spend,0.1447,0.1387,13,0.9052,aggregated_only,2026-05-31 16:22:02
+BM_00000053,COHORT_769ef92d50,Consumer Electronics,$100k-$250k,Increase budget on prospecting when MER is stable,CPA,0.1738,0.1815,75,0.7038,k_anonymized,2026-03-14 03:17:44
+BM_00000054,COHORT_8258fa2548,Outdoor,$10k-$25k,Use product-category exclusions for repeat buyers,CPA,0.0370,0.0424,31,0.8250,internal_firewalled,2026-06-01 09:55:54
+BM_00000055,COHORT_0b8021cb0c,Footwear,$250k+,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.0765,0.0656,48,0.6658,internal_firewalled,2026-06-03 18:40:43
+BM_00000056,COHORT_0a9ebc745f,Supplements,$25k-$50k,Refresh fatigued retargeting audiences weekly,ROAS,0.0245,0.0339,18,0.9179,internal_firewalled,2026-05-21 09:02:42
+BM_00000057,COHORT_4aee65e0e7,Outdoor,$10k-$25k,Create VIP lookalike seed from top decile LTV,CPA,0.1175,0.1234,72,0.5659,k_anonymized,2026-06-01 23:14:20
+BM_00000058,COHORT_1203adcd9f,Pet Supplies,$10k-$25k,Use product-category exclusions for repeat buyers,CPA,0.1755,0.1740,17,0.5646,aggregated_only,2026-04-08 17:30:35
+BM_00000059,COHORT_7f0c70f078,Beauty,$250k+,Use product-category exclusions for repeat buyers,ROAS,0.1655,0.1771,74,0.5996,k_anonymized,2026-04-26 14:18:50
+BM_00000060,COHORT_4d76042822,Pet Supplies,$100k-$250k,Refresh fatigued retargeting audiences weekly,CAC,0.0692,0.0532,10,0.5661,k_anonymized,2026-05-10 04:31:58
+BM_00000061,COHORT_da41f4b5fc,Outdoor,$50k-$100k,Increase budget on prospecting when MER is stable,Contribution Margin,0.0552,0.0546,42,0.6619,k_anonymized,2026-04-29 23:57:28
+BM_00000062,COHORT_3194107cba,Supplements,$10k-$25k,Pause brand search for recent email clickers,CAC,0.1044,0.1212,23,0.7194,aggregated_only,2026-04-23 01:14:17
+BM_00000063,COHORT_8fbee96346,Beauty,$10k-$25k,Increase budget on prospecting when MER is stable,CPA,0.0820,0.0677,51,0.8277,aggregated_only,2026-04-18 10:43:45
+BM_00000064,COHORT_8dffcb8d57,Supplements,$10k-$25k,Remove recent refund customers from retargeting,Contribution Margin,0.1665,0.1534,23,0.5651,internal_firewalled,2026-04-16 11:10:24
+BM_00000065,COHORT_e876f38e47,Fitness,$10k-$25k,Pause brand search for recent email clickers,CAC,0.0330,0.0514,48,0.6635,internal_firewalled,2026-04-30 00:36:41
+BM_00000066,COHORT_f63a6f5181,Baby,$50k-$100k,Use product-category exclusions for repeat buyers,CAC,0.0795,0.0719,69,0.7816,internal_firewalled,2026-04-15 12:12:58
+BM_00000067,COHORT_b16596f333,Supplements,$100k-$250k,Remove recent refund customers from retargeting,CAC,0.1473,0.1534,61,0.6234,aggregated_only,2026-04-22 23:39:24
+BM_00000068,COHORT_66384b0d15,Supplements,$25k-$50k,Increase budget on prospecting when MER is stable,CAC,0.0603,0.0796,33,0.6178,k_anonymized,2026-04-24 13:08:25
+BM_00000069,COHORT_e7267cf04e,Outdoor,$250k+,Pause brand search for recent email clickers,Contribution Margin,0.1478,0.1467,56,0.7249,internal_firewalled,2026-04-18 22:18:50
+BM_00000070,COHORT_93e927660d,Jewelry,$100k-$250k,Use product-category exclusions for repeat buyers,ROAS,0.0267,0.0408,17,0.8617,aggregated_only,2026-05-18 01:01:52
+BM_00000071,COHORT_59e6fb5bd4,Supplements,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.1008,0.0934,14,0.9177,aggregated_only,2026-04-12 05:38:27
+BM_00000072,COHORT_89193848e2,Food & Beverage,$50k-$100k,Refresh fatigued retargeting audiences weekly,CPA,0.1590,0.1634,73,0.6105,aggregated_only,2026-03-21 15:40:07
+BM_00000073,COHORT_ec19a7c778,Beauty,$50k-$100k,Pause brand search for recent email clickers,ROAS,0.0690,0.0535,64,0.6583,internal_firewalled,2026-04-17 02:10:01
+BM_00000074,COHORT_93e927660d,Jewelry,$100k-$250k,Use product-category exclusions for repeat buyers,MER,0.1761,0.1813,64,0.8045,aggregated_only,2026-05-02 19:49:55
+BM_00000075,COHORT_f1d5adde73,Footwear,$250k+,Use product-category exclusions for repeat buyers,CPA,0.0628,0.0636,69,0.7215,internal_firewalled,2026-03-20 20:50:47
+BM_00000076,COHORT_5627cf663f,Fitness,$10k-$25k,Use product-category exclusions for repeat buyers,Wasted Spend,0.1107,0.0989,17,0.6837,internal_firewalled,2026-04-24 02:29:32
+BM_00000077,COHORT_71c12ce41c,Baby,$25k-$50k,Suppress Klaviyo converters from paid search,ROAS,0.1555,0.1450,9,0.6218,internal_firewalled,2026-05-23 11:28:18
+BM_00000078,COHORT_a2c80b8f58,Supplements,$10k-$25k,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.0709,0.0571,62,0.6867,aggregated_only,2026-05-31 11:08:42
+BM_00000079,COHORT_769ef92d50,Consumer Electronics,$100k-$250k,Increase budget on prospecting when MER is stable,Contribution Margin,0.1425,0.1581,50,0.8153,aggregated_only,2026-04-28 18:49:54
+BM_00000080,COHORT_90e3d40299,Beauty,$25k-$50k,Use product-category exclusions for repeat buyers,Contribution Margin,0.1043,0.1168,31,0.7674,k_anonymized,2026-05-25 10:22:17
+BM_00000081,COHORT_2e441f1759,Pet Supplies,$250k+,Use product-category exclusions for repeat buyers,ROAS,0.0259,0.0122,29,0.9150,aggregated_only,2026-06-03 20:40:36
+BM_00000082,COHORT_64e51cc638,Footwear,$25k-$50k,Suppress Klaviyo converters from paid search,ROAS,0.0333,0.0365,33,0.8175,aggregated_only,2026-05-04 05:48:32
+BM_00000083,COHORT_4429a0d83d,Apparel,$10k-$25k,Refresh fatigued retargeting audiences weekly,CAC,0.0610,0.0666,64,0.7718,internal_firewalled,2026-06-01 12:34:56
+BM_00000084,COHORT_d7577d4ef2,Apparel,$250k+,Create VIP lookalike seed from top decile LTV,CAC,0.0285,0.0383,60,0.8983,k_anonymized,2026-03-22 07:10:33
+BM_00000085,COHORT_b5714b8f2e,Apparel,$10k-$25k,Pause brand search for recent email clickers,MER,0.1057,0.0908,69,0.6158,aggregated_only,2026-04-18 10:46:25
+BM_00000086,COHORT_f6a8bc36e4,Consumer Electronics,$25k-$50k,Create VIP lookalike seed from top decile LTV,MER,0.0664,0.0600,38,0.6081,internal_firewalled,2026-05-03 19:43:41
+BM_00000087,COHORT_6fc69b927f,Pet Supplies,$250k+,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.0346,0.0189,75,0.5721,internal_firewalled,2026-05-25 21:29:05
+BM_00000088,COHORT_96e6bcfa57,Pet Supplies,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.0225,0.0367,48,0.8692,internal_firewalled,2026-05-28 00:43:01
+BM_00000089,COHORT_febbf34d06,Beauty,$50k-$100k,Refresh fatigued retargeting audiences weekly,MER,0.1000,0.0980,43,0.7201,aggregated_only,2026-04-18 11:55:04
+BM_00000090,COHORT_59fb39a3bc,Baby,$250k+,Refresh fatigued retargeting audiences weekly,Contribution Margin,0.0459,0.0556,15,0.9050,internal_firewalled,2026-05-25 15:17:27
+BM_00000091,COHORT_0d27e78b69,Beauty,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",MER,0.0585,0.0627,48,0.7185,internal_firewalled,2026-05-30 16:04:37
+BM_00000092,COHORT_ee93a1566f,Fitness,$50k-$100k,Use product-category exclusions for repeat buyers,ROAS,0.0680,0.0778,25,0.6413,aggregated_only,2026-04-22 23:06:04
+BM_00000093,COHORT_f2af498bd0,Pet Supplies,$10k-$25k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.1207,0.1229,14,0.5976,k_anonymized,2026-04-12 03:04:01
+BM_00000094,COHORT_374cbaefa6,Supplements,$250k+,Create VIP lookalike seed from top decile LTV,Contribution Margin,0.0898,0.1068,18,0.6040,aggregated_only,2026-05-08 11:00:07
+BM_00000095,COHORT_fd07738361,Food & Beverage,$250k+,Use product-category exclusions for repeat buyers,CAC,0.1082,0.1078,11,0.8852,aggregated_only,2026-05-25 01:08:38
+BM_00000096,COHORT_902aab74f8,Supplements,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.1276,0.1439,29,0.8161,k_anonymized,2026-04-08 21:51:47
+BM_00000097,COHORT_df1561e69f,Jewelry,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",Wasted Spend,0.0703,0.0780,11,0.5937,internal_firewalled,2026-04-23 22:56:07
+BM_00000098,COHORT_f240dae66f,Baby,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",CAC,0.0749,0.0727,72,0.7858,internal_firewalled,2026-04-15 23:20:59
+BM_00000099,COHORT_ccb04c2ff8,Apparel,$250k+,Exclude 30-day purchasers from retargeting,CPA,0.1260,0.1227,66,0.5565,k_anonymized,2026-03-22 19:42:38
+BM_00000100,COHORT_62365c72f7,Baby,$10k-$25k,Suppress Klaviyo converters from paid search,CPA,0.1613,0.1650,66,0.7165,internal_firewalled,2026-04-13 19:59:20
+BM_00000101,COHORT_939bb736ec,Footwear,$10k-$25k,Use product-category exclusions for repeat buyers,Wasted Spend,0.0786,0.0724,64,0.5516,aggregated_only,2026-05-31 15:32:26
+BM_00000102,COHORT_33ab98b9a1,Supplements,$250k+,"Split cart abandoners into 1D, 7D, 14D windows",Contribution Margin,0.1307,0.1136,44,0.7779,aggregated_only,2026-04-13 13:13:49
+BM_00000103,COHORT_604404c82a,Fitness,$100k-$250k,Refresh fatigued retargeting audiences weekly,ROAS,0.1438,0.1528,30,0.5671,k_anonymized,2026-06-08 05:12:22
+BM_00000104,COHORT_d330f5e1af,Footwear,$100k-$250k,Suppress Klaviyo converters from paid search,Wasted Spend,0.1698,0.1833,46,0.7489,aggregated_only,2026-05-02 22:21:18
+BM_00000105,COHORT_b827704465,Supplements,$10k-$25k,Use product-category exclusions for repeat buyers,Wasted Spend,0.0703,0.0849,63,0.7708,internal_firewalled,2026-05-29 04:55:16
+BM_00000106,COHORT_d7ce18c618,Food & Beverage,$100k-$250k,Use product-category exclusions for repeat buyers,MER,0.0863,0.0969,39,0.5695,k_anonymized,2026-04-03 00:53:57
+BM_00000107,COHORT_22ff3e49fd,Consumer Electronics,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.1012,0.1172,67,0.6472,k_anonymized,2026-04-18 00:17:08
+BM_00000108,COHORT_b16596f333,Supplements,$100k-$250k,Remove recent refund customers from retargeting,Wasted Spend,0.1277,0.1205,20,0.6815,internal_firewalled,2026-04-11 12:47:33
+BM_00000109,COHORT_dc3a8f25fe,Beauty,$250k+,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.0301,0.0448,8,0.8019,k_anonymized,2026-05-19 02:18:41
+BM_00000110,COHORT_ee93a1566f,Fitness,$50k-$100k,Use product-category exclusions for repeat buyers,Wasted Spend,0.1228,0.1270,67,0.6805,aggregated_only,2026-05-06 12:37:26
+BM_00000111,COHORT_894aafa705,Pet Supplies,$25k-$50k,Create VIP lookalike seed from top decile LTV,CAC,0.0879,0.1041,49,0.7606,k_anonymized,2026-05-01 07:24:19
+BM_00000112,COHORT_353f6f0639,Fitness,$250k+,Remove recent refund customers from retargeting,MER,0.1113,0.1181,72,0.8394,internal_firewalled,2026-05-11 14:55:48
+BM_00000113,COHORT_cceec204b2,Home Goods,$100k-$250k,Exclude 30-day purchasers from retargeting,ROAS,0.0372,0.0504,40,0.8292,aggregated_only,2026-03-15 19:00:04
+BM_00000114,COHORT_f20938f8d0,Consumer Electronics,$25k-$50k,Increase budget on prospecting when MER is stable,ROAS,0.0304,0.0327,54,0.6583,internal_firewalled,2026-03-17 11:41:27
+BM_00000115,COHORT_58035546d5,Baby,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",Wasted Spend,0.1674,0.1618,22,0.5844,internal_firewalled,2026-03-23 05:29:21
+BM_00000116,COHORT_00e94be057,Food & Beverage,$100k-$250k,Pause brand search for recent email clickers,ROAS,0.0850,0.0887,37,0.6379,aggregated_only,2026-04-09 16:09:49
+BM_00000117,COHORT_f58eb66c18,Supplements,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.1042,0.0878,52,0.7014,k_anonymized,2026-05-27 00:35:00
+BM_00000118,COHORT_ae36fefb53,Beauty,$100k-$250k,Suppress Klaviyo converters from paid search,Contribution Margin,0.1285,0.1429,61,0.8765,internal_firewalled,2026-03-27 09:00:09
+BM_00000119,COHORT_6b25f6243a,Footwear,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.1714,0.1690,30,0.7828,internal_firewalled,2026-05-31 22:59:01
+BM_00000120,COHORT_34a3a55f54,Pet Supplies,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.1288,0.1240,38,0.5801,internal_firewalled,2026-06-08 05:23:58
+BM_00000121,COHORT_45ad9b9457,Apparel,$10k-$25k,Exclude 30-day purchasers from retargeting,Contribution Margin,0.0495,0.0544,19,0.6169,k_anonymized,2026-04-15 03:56:36
+BM_00000122,COHORT_d51b051096,Fitness,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.1615,0.1540,21,0.8318,internal_firewalled,2026-05-15 15:50:49
+BM_00000123,COHORT_0a9ebc745f,Supplements,$25k-$50k,Refresh fatigued retargeting audiences weekly,CPA,0.0366,0.0419,55,0.7606,aggregated_only,2026-05-29 14:32:19
+BM_00000124,COHORT_b736495c5b,Beauty,$100k-$250k,Increase budget on prospecting when MER is stable,Contribution Margin,0.0426,0.0481,63,0.6454,k_anonymized,2026-04-25 08:59:01
+BM_00000125,COHORT_728df4b5ad,Supplements,$100k-$250k,Exclude 30-day purchasers from retargeting,Contribution Margin,0.1055,0.1197,34,0.7821,aggregated_only,2026-03-23 18:28:15
+BM_00000126,COHORT_fa2d17458e,Fitness,$100k-$250k,Create VIP lookalike seed from top decile LTV,ROAS,0.1021,0.1041,24,0.8277,aggregated_only,2026-04-08 04:39:13
+BM_00000127,COHORT_15a2d69d72,Home Goods,$250k+,Use product-category exclusions for repeat buyers,Wasted Spend,0.1027,0.1008,35,0.8355,internal_firewalled,2026-05-12 06:15:37
+BM_00000128,COHORT_0bdaa09923,Food & Beverage,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",Wasted Spend,0.0545,0.0482,46,0.5729,aggregated_only,2026-05-04 18:51:43
+BM_00000129,COHORT_2b87b668c8,Jewelry,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.0830,0.0824,72,0.6411,internal_firewalled,2026-04-27 07:40:44
+BM_00000130,COHORT_a12218b0ca,Fitness,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.1458,0.1508,9,0.7553,internal_firewalled,2026-05-13 12:09:25
+BM_00000131,COHORT_f75fdf7765,Supplements,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",Contribution Margin,0.0255,0.0437,72,0.7375,k_anonymized,2026-04-06 04:42:29
+BM_00000132,COHORT_f291719326,Footwear,$250k+,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.0979,0.0873,47,0.7891,k_anonymized,2026-04-27 04:04:52
+BM_00000133,COHORT_44631ab1fa,Food & Beverage,$50k-$100k,Remove recent refund customers from retargeting,Contribution Margin,0.1521,0.1392,20,0.6726,k_anonymized,2026-06-03 22:54:02
+BM_00000134,COHORT_59c7a1d077,Home Goods,$50k-$100k,Use product-category exclusions for repeat buyers,Contribution Margin,0.1466,0.1285,67,0.6869,internal_firewalled,2026-04-05 08:41:15
+BM_00000135,COHORT_420b88d0f8,Fitness,$100k-$250k,Exclude 30-day purchasers from retargeting,CPA,0.1433,0.1517,46,0.6250,aggregated_only,2026-06-06 01:45:31
+BM_00000136,COHORT_45ad9b9457,Apparel,$10k-$25k,Exclude 30-day purchasers from retargeting,CPA,0.1342,0.1426,75,0.7862,k_anonymized,2026-03-27 18:11:09
+BM_00000137,COHORT_dc6ab4aaad,Pet Supplies,$25k-$50k,Increase budget on prospecting when MER is stable,MER,0.1253,0.1231,41,0.7580,internal_firewalled,2026-05-07 23:25:12
+BM_00000138,COHORT_58035546d5,Baby,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CAC,0.1107,0.1288,20,0.7641,aggregated_only,2026-05-29 08:56:35
+BM_00000139,COHORT_42351a3ac2,Footwear,$250k+,Increase budget on prospecting when MER is stable,ROAS,0.0824,0.0899,72,0.7501,internal_firewalled,2026-05-10 10:55:10
+BM_00000140,COHORT_96e6bcfa57,Pet Supplies,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.1403,0.1419,55,0.6417,internal_firewalled,2026-04-04 23:26:30
+BM_00000141,COHORT_803d4048ed,Outdoor,$100k-$250k,Exclude 30-day purchasers from retargeting,Wasted Spend,0.0738,0.0737,19,0.8570,internal_firewalled,2026-04-28 10:38:48
+BM_00000142,COHORT_a481ef3afb,Baby,$250k+,Remove recent refund customers from retargeting,CAC,0.1291,0.1328,21,0.7750,internal_firewalled,2026-03-18 00:53:02
+BM_00000143,COHORT_17776f8d36,Consumer Electronics,$25k-$50k,Refresh fatigued retargeting audiences weekly,ROAS,0.1212,0.1329,36,0.6660,aggregated_only,2026-06-04 03:55:28
+BM_00000144,COHORT_5a05021efb,Footwear,$25k-$50k,Remove recent refund customers from retargeting,ROAS,0.1496,0.1613,17,0.8551,aggregated_only,2026-04-12 21:01:35
+BM_00000145,COHORT_d0f5de7844,Apparel,$250k+,Increase budget on prospecting when MER is stable,Wasted Spend,0.1088,0.1222,62,0.6746,aggregated_only,2026-05-24 22:23:42
+BM_00000146,COHORT_21f4e75146,Consumer Electronics,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.0564,0.0691,9,0.6470,internal_firewalled,2026-05-23 17:45:55
+BM_00000147,COHORT_7ed15d372e,Supplements,$25k-$50k,Create VIP lookalike seed from top decile LTV,CAC,0.1343,0.1404,38,0.5757,internal_firewalled,2026-04-26 17:04:46
+BM_00000148,COHORT_b0499f32b0,Pet Supplies,$25k-$50k,Refresh fatigued retargeting audiences weekly,MER,0.1005,0.0929,37,0.7062,k_anonymized,2026-06-07 10:07:29
+BM_00000149,COHORT_0a9ebc745f,Supplements,$25k-$50k,Refresh fatigued retargeting audiences weekly,ROAS,0.1148,0.1241,9,0.7001,aggregated_only,2026-04-23 16:59:38
+BM_00000150,COHORT_6e84348af3,Pet Supplies,$50k-$100k,Suppress Klaviyo converters from paid search,ROAS,0.1475,0.1573,54,0.9011,aggregated_only,2026-05-14 04:11:48
+BM_00000151,COHORT_4429a0d83d,Apparel,$10k-$25k,Refresh fatigued retargeting audiences weekly,CAC,0.1650,0.1497,21,0.7153,internal_firewalled,2026-05-08 15:45:40
+BM_00000152,COHORT_b814f46895,Fitness,$25k-$50k,Remove recent refund customers from retargeting,ROAS,0.0471,0.0611,20,0.7063,internal_firewalled,2026-04-23 20:44:30
+BM_00000153,COHORT_dfd23c17fe,Fitness,$10k-$25k,Create VIP lookalike seed from top decile LTV,MER,0.0807,0.0883,74,0.8544,internal_firewalled,2026-03-20 13:34:33
+BM_00000154,COHORT_b45d8c2e09,Consumer Electronics,$10k-$25k,Increase budget on prospecting when MER is stable,CAC,0.1459,0.1625,51,0.6739,k_anonymized,2026-03-16 10:16:37
+BM_00000155,COHORT_8846e56922,Supplements,$250k+,Increase budget on prospecting when MER is stable,Wasted Spend,0.0701,0.0537,72,0.7957,k_anonymized,2026-04-05 08:24:59
+BM_00000156,COHORT_064b7b6904,Outdoor,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",MER,0.0998,0.0888,49,0.6625,k_anonymized,2026-04-07 12:44:20
+BM_00000157,COHORT_e7267cf04e,Outdoor,$250k+,Pause brand search for recent email clickers,Contribution Margin,0.0467,0.0575,34,0.9168,k_anonymized,2026-04-10 09:39:47
+BM_00000158,COHORT_9c15e4c498,Apparel,$100k-$250k,Pause brand search for recent email clickers,Contribution Margin,0.1558,0.1410,66,0.8463,aggregated_only,2026-04-22 02:01:04
+BM_00000159,COHORT_3049507bfc,Home Goods,$25k-$50k,Increase budget on prospecting when MER is stable,CPA,0.1346,0.1377,16,0.8246,k_anonymized,2026-06-05 19:59:56
+BM_00000160,COHORT_6b25f6243a,Footwear,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.0607,0.0769,73,0.8577,k_anonymized,2026-05-12 05:34:39
+BM_00000161,COHORT_2e95d099c7,Consumer Electronics,$50k-$100k,Pause brand search for recent email clickers,MER,0.0683,0.0677,36,0.7780,k_anonymized,2026-04-08 11:56:01
+BM_00000162,COHORT_13bf0bd178,Consumer Electronics,$250k+,"Split cart abandoners into 1D, 7D, 14D windows",ROAS,0.0507,0.0582,65,0.5545,internal_firewalled,2026-04-30 09:31:36
+BM_00000163,COHORT_35e2d24c9b,Footwear,$10k-$25k,Increase budget on prospecting when MER is stable,Contribution Margin,0.1399,0.1223,70,0.7150,aggregated_only,2026-05-15 21:48:16
+BM_00000164,COHORT_67befe761a,Home Goods,$100k-$250k,Suppress Klaviyo converters from paid search,ROAS,0.1677,0.1693,34,0.6501,aggregated_only,2026-03-30 19:41:23
+BM_00000165,COHORT_f8f2d5606e,Footwear,$250k+,Exclude 30-day purchasers from retargeting,ROAS,0.0897,0.0755,37,0.6762,internal_firewalled,2026-04-05 22:00:48
+BM_00000166,COHORT_8e3e13ba69,Pet Supplies,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.1688,0.1529,12,0.7208,k_anonymized,2026-03-22 08:18:02
+BM_00000167,COHORT_f75fdf7765,Supplements,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.1519,0.1430,41,0.9151,aggregated_only,2026-03-26 10:05:58
+BM_00000168,COHORT_0d1783e9a7,Supplements,$10k-$25k,Create VIP lookalike seed from top decile LTV,CPA,0.0981,0.1093,53,0.5690,aggregated_only,2026-05-12 04:43:18
+BM_00000169,COHORT_3c3acbe6f1,Supplements,$100k-$250k,Create VIP lookalike seed from top decile LTV,MER,0.0549,0.0465,20,0.9063,internal_firewalled,2026-04-11 03:05:15
+BM_00000170,COHORT_58035546d5,Baby,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CAC,0.1678,0.1514,53,0.7409,aggregated_only,2026-03-30 00:37:33
+BM_00000171,COHORT_f018bee5c8,Pet Supplies,$25k-$50k,Remove recent refund customers from retargeting,CPA,0.0704,0.0760,72,0.5955,aggregated_only,2026-03-31 00:20:56
+BM_00000172,COHORT_e595836131,Baby,$250k+,Suppress Klaviyo converters from paid search,CAC,0.0645,0.0485,15,0.9177,internal_firewalled,2026-04-07 01:35:03
+BM_00000173,COHORT_1b55cf0d3b,Beauty,$50k-$100k,Remove recent refund customers from retargeting,ROAS,0.1301,0.1312,8,0.5917,k_anonymized,2026-05-07 13:00:36
+BM_00000174,COHORT_766e4d3e3d,Beauty,$25k-$50k,Increase budget on prospecting when MER is stable,ROAS,0.0590,0.0425,66,0.5907,k_anonymized,2026-03-16 15:23:46
+BM_00000175,COHORT_1b2e7e597f,Consumer Electronics,$10k-$25k,Remove recent refund customers from retargeting,CPA,0.1036,0.0878,72,0.5818,k_anonymized,2026-03-23 01:17:41
+BM_00000176,COHORT_2706b9b8ce,Outdoor,$10k-$25k,Increase budget on prospecting when MER is stable,ROAS,0.0706,0.0761,51,0.7492,aggregated_only,2026-05-30 18:48:09
+BM_00000177,COHORT_3f22efdf80,Outdoor,$25k-$50k,Suppress Klaviyo converters from paid search,CAC,0.0321,0.0465,23,0.6353,aggregated_only,2026-05-28 20:31:59
+BM_00000178,COHORT_800b91dfad,Fitness,$250k+,Increase budget on prospecting when MER is stable,MER,0.1189,0.1082,24,0.8266,internal_firewalled,2026-05-21 01:19:58
+BM_00000179,COHORT_3c76d4e50d,Apparel,$50k-$100k,Use product-category exclusions for repeat buyers,Wasted Spend,0.0434,0.0467,41,0.7901,aggregated_only,2026-04-21 08:54:19
+BM_00000180,COHORT_d674b58950,Jewelry,$10k-$25k,Remove recent refund customers from retargeting,CAC,0.1091,0.1022,75,0.8797,k_anonymized,2026-04-22 21:02:32
+BM_00000181,COHORT_0ae1c72911,Fitness,$50k-$100k,Remove recent refund customers from retargeting,ROAS,0.0293,0.0142,32,0.5742,k_anonymized,2026-04-13 14:37:00
+BM_00000182,COHORT_d5c0bc9282,Supplements,$10k-$25k,Increase budget on prospecting when MER is stable,Wasted Spend,0.1091,0.1181,62,0.7134,internal_firewalled,2026-05-11 00:02:48
+BM_00000183,COHORT_ad9ebdf1f2,Apparel,$10k-$25k,Use product-category exclusions for repeat buyers,Contribution Margin,0.1016,0.1026,9,0.6130,k_anonymized,2026-04-23 08:13:12
+BM_00000184,COHORT_90a7191d97,Pet Supplies,$50k-$100k,Remove recent refund customers from retargeting,CAC,0.0300,0.0135,49,0.6607,aggregated_only,2026-03-27 15:57:08
+BM_00000185,COHORT_cccfccd1bd,Pet Supplies,$50k-$100k,Create VIP lookalike seed from top decile LTV,Wasted Spend,0.1423,0.1446,73,0.7547,k_anonymized,2026-03-31 11:27:24
+BM_00000186,COHORT_67befe761a,Home Goods,$100k-$250k,Suppress Klaviyo converters from paid search,ROAS,0.1283,0.1087,29,0.8449,aggregated_only,2026-05-10 11:48:33
+BM_00000187,COHORT_f7e1701842,Pet Supplies,$100k-$250k,Create VIP lookalike seed from top decile LTV,Wasted Spend,0.1374,0.1384,37,0.6583,aggregated_only,2026-03-30 18:32:55
+BM_00000188,COHORT_415bc5e20d,Food & Beverage,$10k-$25k,Create VIP lookalike seed from top decile LTV,MER,0.0773,0.0854,63,0.7754,internal_firewalled,2026-03-26 01:02:35
+BM_00000189,COHORT_9e8f93c910,Food & Beverage,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.0206,0.0240,67,0.5673,aggregated_only,2026-04-24 07:31:29
+BM_00000190,COHORT_0d9e51af07,Consumer Electronics,$100k-$250k,Remove recent refund customers from retargeting,ROAS,0.1799,0.1976,32,0.8852,k_anonymized,2026-05-25 17:00:20
+BM_00000191,COHORT_766e4d3e3d,Beauty,$25k-$50k,Increase budget on prospecting when MER is stable,MER,0.0295,0.0237,24,0.7426,aggregated_only,2026-04-03 00:31:12
+BM_00000192,COHORT_44631ab1fa,Food & Beverage,$50k-$100k,Remove recent refund customers from retargeting,CAC,0.1551,0.1571,63,0.9046,internal_firewalled,2026-05-14 04:35:19
+BM_00000193,COHORT_4190b584dd,Jewelry,$250k+,Exclude 30-day purchasers from retargeting,Wasted Spend,0.1331,0.1447,45,0.7729,k_anonymized,2026-06-04 04:38:35
+BM_00000194,COHORT_97210d4862,Food & Beverage,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.0317,0.0301,50,0.7560,internal_firewalled,2026-04-29 00:04:08
+BM_00000195,COHORT_844f027c46,Baby,$100k-$250k,Suppress Klaviyo converters from paid search,CAC,0.0872,0.1008,29,0.6484,k_anonymized,2026-03-26 03:12:20
+BM_00000196,COHORT_2e95d099c7,Consumer Electronics,$50k-$100k,Pause brand search for recent email clickers,ROAS,0.1314,0.1373,13,0.6655,k_anonymized,2026-05-29 09:30:07
+BM_00000197,COHORT_0665f6f2bb,Supplements,$250k+,Refresh fatigued retargeting audiences weekly,CAC,0.0505,0.0516,40,0.5521,aggregated_only,2026-04-03 20:52:20
+BM_00000198,COHORT_a12218b0ca,Fitness,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.1205,0.1097,34,0.8627,k_anonymized,2026-05-29 07:12:50
+BM_00000199,COHORT_3273e69f2b,Jewelry,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.1052,0.0937,72,0.8200,k_anonymized,2026-05-22 17:52:58
+BM_00000200,COHORT_89e05f6ca1,Consumer Electronics,$10k-$25k,Exclude 30-day purchasers from retargeting,CAC,0.0699,0.0686,58,0.7297,k_anonymized,2026-03-20 19:56:01
+BM_00000201,COHORT_14e6c4e536,Jewelry,$50k-$100k,Remove recent refund customers from retargeting,Contribution Margin,0.1434,0.1527,17,0.8743,k_anonymized,2026-05-22 22:23:02
+BM_00000202,COHORT_7637e5b090,Home Goods,$50k-$100k,Suppress Klaviyo converters from paid search,CPA,0.0948,0.0913,60,0.7829,aggregated_only,2026-03-16 11:37:42
+BM_00000203,COHORT_86089470ee,Home Goods,$250k+,Increase budget on prospecting when MER is stable,MER,0.0376,0.0386,54,0.8614,aggregated_only,2026-05-31 16:53:53
+BM_00000204,COHORT_8fe8bcb204,Jewelry,$250k+,Create VIP lookalike seed from top decile LTV,Wasted Spend,0.0286,0.0164,51,0.8081,internal_firewalled,2026-05-23 16:22:30
+BM_00000205,COHORT_d51f33ed9a,Outdoor,$100k-$250k,"Split cart abandoners into 1D, 7D, 14D windows",MER,0.1531,0.1438,42,0.7435,aggregated_only,2026-06-08 16:14:58
+BM_00000206,COHORT_b736495c5b,Beauty,$100k-$250k,Increase budget on prospecting when MER is stable,Wasted Spend,0.1211,0.1314,20,0.7788,internal_firewalled,2026-04-19 20:17:52
+BM_00000207,COHORT_064b7b6904,Outdoor,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",Contribution Margin,0.0500,0.0537,59,0.6047,internal_firewalled,2026-06-04 09:20:00
+BM_00000208,COHORT_2b417dcf8c,Home Goods,$25k-$50k,Suppress Klaviyo converters from paid search,Wasted Spend,0.0414,0.0563,20,0.5583,internal_firewalled,2026-03-23 08:01:36
+BM_00000209,COHORT_e4b0f808ee,Jewelry,$25k-$50k,Refresh fatigued retargeting audiences weekly,Wasted Spend,0.0601,0.0800,9,0.7499,aggregated_only,2026-04-12 04:07:49
+BM_00000210,COHORT_f9fc34a59c,Pet Supplies,$100k-$250k,Suppress Klaviyo converters from paid search,ROAS,0.1045,0.0973,15,0.8107,aggregated_only,2026-05-02 22:07:20
+BM_00000211,COHORT_7f3ac0d7c6,Jewelry,$25k-$50k,Create VIP lookalike seed from top decile LTV,Wasted Spend,0.1398,0.1562,55,0.5572,aggregated_only,2026-05-28 15:39:05
+BM_00000212,COHORT_6bf0ae8eab,Outdoor,$50k-$100k,Remove recent refund customers from retargeting,MER,0.1614,0.1466,45,0.8221,aggregated_only,2026-05-23 20:24:10
+BM_00000213,COHORT_6471c7af7b,Fitness,$25k-$50k,Suppress Klaviyo converters from paid search,Wasted Spend,0.1130,0.1068,61,0.7972,internal_firewalled,2026-03-18 23:12:53
+BM_00000214,COHORT_d96cf474bd,Footwear,$25k-$50k,Create VIP lookalike seed from top decile LTV,ROAS,0.0287,0.0120,72,0.6193,aggregated_only,2026-05-19 00:16:25
+BM_00000215,COHORT_d51f33ed9a,Outdoor,$100k-$250k,"Split cart abandoners into 1D, 7D, 14D windows",CAC,0.1070,0.1085,45,0.8347,k_anonymized,2026-05-17 09:55:09
+BM_00000216,COHORT_96d0404e1b,Consumer Electronics,$100k-$250k,Refresh fatigued retargeting audiences weekly,ROAS,0.0836,0.1026,16,0.7645,internal_firewalled,2026-04-18 17:30:19
+BM_00000217,COHORT_b964d6e75f,Jewelry,$100k-$250k,Pause brand search for recent email clickers,Wasted Spend,0.0288,0.0246,69,0.9031,k_anonymized,2026-04-18 07:58:50
+BM_00000218,COHORT_a1c22c9fad,Jewelry,$10k-$25k,Increase budget on prospecting when MER is stable,ROAS,0.0980,0.1130,23,0.6290,internal_firewalled,2026-06-04 19:00:18
+BM_00000219,COHORT_a3fa7c714c,Baby,$250k+,Create VIP lookalike seed from top decile LTV,CAC,0.0374,0.0545,51,0.6447,aggregated_only,2026-05-12 01:52:08
+BM_00000220,COHORT_9031402611,Fitness,$25k-$50k,Create VIP lookalike seed from top decile LTV,CPA,0.1520,0.1557,10,0.5724,aggregated_only,2026-05-10 10:14:20
+BM_00000221,COHORT_fbef1276d2,Beauty,$100k-$250k,Refresh fatigued retargeting audiences weekly,ROAS,0.0741,0.0874,65,0.7292,internal_firewalled,2026-06-04 13:37:21
+BM_00000222,COHORT_3137f585db,Outdoor,$25k-$50k,Pause brand search for recent email clickers,CAC,0.1304,0.1104,47,0.9088,k_anonymized,2026-04-05 00:25:32
+BM_00000223,COHORT_e2883b40e9,Fitness,$250k+,Create VIP lookalike seed from top decile LTV,ROAS,0.0281,0.0227,8,0.7072,internal_firewalled,2026-04-13 03:21:35
+BM_00000224,COHORT_02fedcdb43,Footwear,$100k-$250k,"Split cart abandoners into 1D, 7D, 14D windows",ROAS,0.0477,0.0393,14,0.6246,internal_firewalled,2026-03-29 07:52:49
+BM_00000225,COHORT_2dd006736c,Supplements,$250k+,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.1687,0.1702,66,0.6163,internal_firewalled,2026-05-30 13:14:27
+BM_00000226,COHORT_71848bfbb4,Baby,$50k-$100k,Remove recent refund customers from retargeting,ROAS,0.1727,0.1781,51,0.5889,k_anonymized,2026-04-09 07:19:47
+BM_00000227,COHORT_1e42e5b1ee,Home Goods,$10k-$25k,Increase budget on prospecting when MER is stable,Wasted Spend,0.1520,0.1600,48,0.5831,internal_firewalled,2026-04-19 14:23:05
+BM_00000228,COHORT_6d55ea2830,Home Goods,$25k-$50k,Exclude 30-day purchasers from retargeting,MER,0.1772,0.1720,56,0.6407,internal_firewalled,2026-05-07 07:56:14
+BM_00000229,COHORT_7f0c70f078,Beauty,$250k+,Use product-category exclusions for repeat buyers,CPA,0.0625,0.0713,30,0.6463,internal_firewalled,2026-05-17 14:04:34
+BM_00000230,COHORT_cdf796867a,Pet Supplies,$50k-$100k,Exclude 30-day purchasers from retargeting,CAC,0.1486,0.1668,27,0.7373,k_anonymized,2026-06-04 06:31:58
+BM_00000231,COHORT_1f4d114543,Jewelry,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.0400,0.0419,27,0.7656,aggregated_only,2026-03-31 07:16:22
+BM_00000232,COHORT_7f0c70f078,Beauty,$250k+,Use product-category exclusions for repeat buyers,ROAS,0.0966,0.1001,62,0.7585,aggregated_only,2026-03-16 22:24:26
+BM_00000233,COHORT_260a916231,Fitness,$250k+,Suppress Klaviyo converters from paid search,ROAS,0.1455,0.1451,75,0.8727,internal_firewalled,2026-06-03 20:22:12
+BM_00000234,COHORT_8cb695a3e6,Home Goods,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",Contribution Margin,0.0806,0.0980,43,0.6828,k_anonymized,2026-03-20 23:11:19
+BM_00000235,COHORT_a3e4be01d6,Jewelry,$25k-$50k,Pause brand search for recent email clickers,Wasted Spend,0.0451,0.0349,15,0.7649,k_anonymized,2026-05-01 22:45:13
+BM_00000236,COHORT_01aa0ce640,Outdoor,$250k+,"Split cart abandoners into 1D, 7D, 14D windows",Wasted Spend,0.1477,0.1464,59,0.8701,k_anonymized,2026-03-19 00:49:51
+BM_00000237,COHORT_89bfc3d98a,Pet Supplies,$100k-$250k,Pause brand search for recent email clickers,CAC,0.0529,0.0510,32,0.9149,k_anonymized,2026-05-14 17:31:25
+BM_00000238,COHORT_857d48b3b9,Pet Supplies,$100k-$250k,Use product-category exclusions for repeat buyers,CAC,0.1483,0.1463,69,0.9011,aggregated_only,2026-06-03 04:58:21
+BM_00000239,COHORT_abae2a90f7,Apparel,$10k-$25k,Create VIP lookalike seed from top decile LTV,ROAS,0.1335,0.1237,25,0.8630,aggregated_only,2026-04-24 05:16:27
+BM_00000240,COHORT_78d0373c20,Food & Beverage,$250k+,Refresh fatigued retargeting audiences weekly,MER,0.1765,0.1683,30,0.6422,internal_firewalled,2026-03-13 03:40:53
+BM_00000241,COHORT_112557dccf,Fitness,$10k-$25k,Exclude 30-day purchasers from retargeting,CPA,0.1399,0.1293,26,0.8965,k_anonymized,2026-04-03 11:15:49
+BM_00000242,COHORT_fec0682509,Beauty,$25k-$50k,Refresh fatigued retargeting audiences weekly,Contribution Margin,0.0465,0.0626,15,0.8405,k_anonymized,2026-04-29 19:21:42
+BM_00000243,COHORT_95d117e361,Food & Beverage,$25k-$50k,Pause brand search for recent email clickers,CPA,0.0559,0.0483,11,0.6834,aggregated_only,2026-03-24 09:53:49
+BM_00000244,COHORT_112557dccf,Fitness,$10k-$25k,Exclude 30-day purchasers from retargeting,Contribution Margin,0.1748,0.1834,13,0.8138,aggregated_only,2026-05-09 19:46:56
+BM_00000245,COHORT_cf25f33ead,Supplements,$50k-$100k,Exclude 30-day purchasers from retargeting,MER,0.0540,0.0473,26,0.8448,internal_firewalled,2026-05-03 21:39:43
+BM_00000246,COHORT_fa2bd33119,Outdoor,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.1290,0.1354,58,0.6258,k_anonymized,2026-05-13 07:11:40
+BM_00000247,COHORT_c3ba45ac72,Apparel,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",Wasted Spend,0.0298,0.0335,30,0.6718,k_anonymized,2026-06-01 09:32:35
+BM_00000248,COHORT_d67b5d0daa,Apparel,$100k-$250k,Exclude 30-day purchasers from retargeting,Contribution Margin,0.1096,0.1272,25,0.6336,internal_firewalled,2026-04-15 09:01:01
+BM_00000249,COHORT_f5458e6267,Apparel,$25k-$50k,Suppress Klaviyo converters from paid search,ROAS,0.1448,0.1579,29,0.6715,aggregated_only,2026-04-27 22:29:16
+BM_00000250,COHORT_954b6c7b69,Fitness,$250k+,Pause brand search for recent email clickers,ROAS,0.1615,0.1614,33,0.9134,aggregated_only,2026-04-23 15:34:20
+BM_00000251,COHORT_939bb736ec,Footwear,$10k-$25k,Use product-category exclusions for repeat buyers,CAC,0.0600,0.0433,36,0.8034,internal_firewalled,2026-06-03 04:02:10
+BM_00000252,COHORT_09cd866962,Outdoor,$250k+,Use product-category exclusions for repeat buyers,ROAS,0.0249,0.0248,58,0.6062,internal_firewalled,2026-04-09 09:37:45
+BM_00000253,COHORT_eb9f0445cf,Fitness,$25k-$50k,Refresh fatigued retargeting audiences weekly,CAC,0.1700,0.1881,36,0.8000,k_anonymized,2026-05-06 12:33:25
+BM_00000254,COHORT_96e6bcfa57,Pet Supplies,$50k-$100k,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.1470,0.1309,28,0.6402,k_anonymized,2026-04-29 10:38:44
+BM_00000255,COHORT_4de3b142da,Home Goods,$10k-$25k,Reduce spend on high-frequency low-ROAS ad sets,Contribution Margin,0.0925,0.0731,52,0.6692,k_anonymized,2026-03-15 15:58:16
+BM_00000256,COHORT_43cf92369d,Outdoor,$250k+,Create VIP lookalike seed from top decile LTV,CAC,0.1591,0.1788,28,0.6240,k_anonymized,2026-05-16 18:04:16
+BM_00000257,COHORT_5041d5d008,Beauty,$10k-$25k,Create VIP lookalike seed from top decile LTV,ROAS,0.1681,0.1538,69,0.5851,aggregated_only,2026-05-25 01:06:24
+BM_00000258,COHORT_9e8f93c910,Food & Beverage,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,MER,0.0913,0.1010,32,0.8271,aggregated_only,2026-06-07 11:34:13
+BM_00000259,COHORT_f39554a5f8,Home Goods,$25k-$50k,Create VIP lookalike seed from top decile LTV,ROAS,0.1759,0.1601,8,0.8401,aggregated_only,2026-03-31 10:42:53
+BM_00000260,COHORT_aeb28c3f26,Food & Beverage,$250k+,Suppress Klaviyo converters from paid search,MER,0.1595,0.1750,34,0.8475,internal_firewalled,2026-03-24 09:38:31
+BM_00000261,COHORT_18e96dc3de,Food & Beverage,$50k-$100k,Increase budget on prospecting when MER is stable,CAC,0.0844,0.0923,26,0.7367,k_anonymized,2026-04-29 09:04:49
+BM_00000262,COHORT_c99749862a,Home Goods,$10k-$25k,Exclude 30-day purchasers from retargeting,CPA,0.0500,0.0506,22,0.7917,aggregated_only,2026-05-27 20:29:35
+BM_00000263,COHORT_d330f5e1af,Footwear,$100k-$250k,Suppress Klaviyo converters from paid search,Wasted Spend,0.0709,0.0849,57,0.6283,internal_firewalled,2026-03-23 13:02:19
+BM_00000264,COHORT_6ef0871ff2,Outdoor,$10k-$25k,Remove recent refund customers from retargeting,ROAS,0.1285,0.1138,23,0.8787,k_anonymized,2026-03-29 02:22:15
+BM_00000265,COHORT_18e96dc3de,Food & Beverage,$50k-$100k,Increase budget on prospecting when MER is stable,CAC,0.0713,0.0600,50,0.6125,k_anonymized,2026-04-06 21:48:53
+BM_00000266,COHORT_28f39bcbf6,Home Goods,$10k-$25k,Suppress Klaviyo converters from paid search,MER,0.0524,0.0571,14,0.5623,k_anonymized,2026-04-29 22:33:35
+BM_00000267,COHORT_27dab3b468,Outdoor,$100k-$250k,Increase budget on prospecting when MER is stable,Wasted Spend,0.0328,0.0136,27,0.7190,internal_firewalled,2026-05-07 01:08:14
+BM_00000268,COHORT_c9fbd55c7e,Beauty,$100k-$250k,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.0980,0.0873,33,0.6726,k_anonymized,2026-04-02 11:43:12
+BM_00000269,COHORT_4c1fa8b72b,Apparel,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CPA,0.1136,0.1173,56,0.8244,aggregated_only,2026-03-24 15:40:00
+BM_00000270,COHORT_7923d8ea34,Apparel,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,CPA,0.0937,0.1137,44,0.6055,k_anonymized,2026-05-05 22:34:46
+BM_00000271,COHORT_3273e69f2b,Jewelry,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,ROAS,0.1070,0.1093,38,0.6428,aggregated_only,2026-04-13 02:59:56
+BM_00000272,COHORT_f9fc34a59c,Pet Supplies,$100k-$250k,Suppress Klaviyo converters from paid search,Contribution Margin,0.1302,0.1457,30,0.6064,internal_firewalled,2026-04-26 20:13:06
+BM_00000273,COHORT_8670d1c2b4,Home Goods,$100k-$250k,Create VIP lookalike seed from top decile LTV,Contribution Margin,0.0640,0.0651,58,0.7593,aggregated_only,2026-04-30 22:35:43
+BM_00000274,COHORT_c36f3538c2,Home Goods,$10k-$25k,Use product-category exclusions for repeat buyers,Wasted Spend,0.1051,0.1100,40,0.7605,internal_firewalled,2026-04-24 18:04:55
+BM_00000275,COHORT_90e3d40299,Beauty,$25k-$50k,Use product-category exclusions for repeat buyers,CAC,0.1493,0.1435,51,0.7629,internal_firewalled,2026-03-23 04:19:54
+BM_00000276,COHORT_c65f1ca9d6,Jewelry,$100k-$250k,Create VIP lookalike seed from top decile LTV,ROAS,0.1068,0.1058,41,0.8207,internal_firewalled,2026-05-01 23:24:19
+BM_00000277,COHORT_64d574666d,Beauty,$250k+,Exclude 30-day purchasers from retargeting,MER,0.0702,0.0733,53,0.6866,internal_firewalled,2026-04-27 14:23:02
+BM_00000278,COHORT_48733d86f7,Consumer Electronics,$50k-$100k,Refresh fatigued retargeting audiences weekly,ROAS,0.0210,0.0376,64,0.7377,internal_firewalled,2026-04-23 15:08:35
+BM_00000279,COHORT_8efc7baac5,Consumer Electronics,$25k-$50k,Remove recent refund customers from retargeting,ROAS,0.1675,0.1682,29,0.7855,internal_firewalled,2026-06-03 07:08:51
+BM_00000280,COHORT_86089470ee,Home Goods,$250k+,Increase budget on prospecting when MER is stable,MER,0.0226,0.0233,12,0.7095,k_anonymized,2026-06-05 20:27:30
+BM_00000281,COHORT_fd64730563,Pet Supplies,$25k-$50k,Pause brand search for recent email clickers,Contribution Margin,0.0717,0.0575,23,0.5570,k_anonymized,2026-05-16 10:39:04
+BM_00000282,COHORT_cd819f3878,Home Goods,$50k-$100k,Pause brand search for recent email clickers,Contribution Margin,0.1542,0.1613,61,0.6352,aggregated_only,2026-04-08 01:51:29
+BM_00000283,COHORT_ffbb5cd41f,Outdoor,$10k-$25k,Refresh fatigued retargeting audiences weekly,Contribution Margin,0.0383,0.0342,48,0.9096,aggregated_only,2026-05-17 17:07:51
+BM_00000284,COHORT_e8eab4128d,Baby,$25k-$50k,Remove recent refund customers from retargeting,MER,0.1789,0.1701,74,0.5855,k_anonymized,2026-04-20 02:06:37
+BM_00000285,COHORT_2aad308a61,Baby,$100k-$250k,Use product-category exclusions for repeat buyers,CAC,0.1039,0.0942,44,0.8067,k_anonymized,2026-05-10 20:33:00
+BM_00000286,COHORT_546be70a7c,Footwear,$250k+,Remove recent refund customers from retargeting,Wasted Spend,0.1507,0.1380,29,0.6327,k_anonymized,2026-04-07 03:08:25
+BM_00000287,COHORT_82258ca975,Apparel,$250k+,Remove recent refund customers from retargeting,Wasted Spend,0.0515,0.0684,15,0.8154,k_anonymized,2026-04-14 10:30:28
+BM_00000288,COHORT_59e6fb5bd4,Supplements,$25k-$50k,Reduce spend on high-frequency low-ROAS ad sets,Wasted Spend,0.1377,0.1256,27,0.6895,k_anonymized,2026-05-28 20:26:34
+BM_00000289,COHORT_f9fc34a59c,Pet Supplies,$100k-$250k,Suppress Klaviyo converters from paid search,Contribution Margin,0.0432,0.0376,75,0.5946,internal_firewalled,2026-04-30 08:34:50
+BM_00000290,COHORT_35e2d24c9b,Footwear,$10k-$25k,Increase budget on prospecting when MER is stable,MER,0.1002,0.1123,50,0.7261,internal_firewalled,2026-04-10 14:25:52
+BM_00000291,COHORT_00df9db613,Baby,$250k+,Pause brand search for recent email clickers,Contribution Margin,0.0361,0.0406,25,0.6142,k_anonymized,2026-04-07 12:05:45
+BM_00000292,COHORT_3eefbb4d1f,Consumer Electronics,$50k-$100k,"Split cart abandoners into 1D, 7D, 14D windows",ROAS,0.1577,0.1412,68,0.5884,internal_firewalled,2026-03-15 11:43:57
+BM_00000293,COHORT_09cd866962,Outdoor,$250k+,Use product-category exclusions for repeat buyers,MER,0.1430,0.1427,30,0.7271,k_anonymized,2026-03-21 14:14:44
+BM_00000294,COHORT_22ff3e49fd,Consumer Electronics,$10k-$25k,"Split cart abandoners into 1D, 7D, 14D windows",CAC,0.1399,0.1390,23,0.7097,aggregated_only,2026-03-31 07:49:51
+BM_00000295,COHORT_abe874eedd,Apparel,$25k-$50k,Use product-category exclusions for repeat buyers,ROAS,0.1005,0.1166,24,0.5843,k_anonymized,2026-04-04 01:37:27
+BM_00000296,COHORT_2b87b668c8,Jewelry,$100k-$250k,Reduce spend on high-frequency low-ROAS ad sets,CAC,0.0870,0.0940,61,0.7322,k_anonymized,2026-03-18 17:24:17
+BM_00000297,COHORT_c58ff0e0f9,Pet Supplies,$25k-$50k,Exclude 30-day purchasers from retargeting,Wasted Spend,0.1161,0.1145,54,0.6121,k_anonymized,2026-03-28 20:49:14
+BM_00000298,COHORT_11ddd7bf7f,Consumer Electronics,$10k-$25k,Pause brand search for recent email clickers,ROAS,0.0263,0.0369,34,0.7021,k_anonymized,2026-05-02 02:57:03
+BM_00000299,COHORT_d0f5de7844,Apparel,$250k+,Increase budget on prospecting when MER is stable,MER,0.0946,0.0768,54,0.8104,k_anonymized,2026-05-03 11:40:01
+BM_00000300,COHORT_3e5ed0d1ca,Outdoor,$250k+,Refresh fatigued retargeting audiences weekly,CPA,0.0641,0.0491,53,0.7452,k_anonymized,2026-03-21 11:33:34

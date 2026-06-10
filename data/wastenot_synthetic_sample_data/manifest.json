@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-06-10 01:15:18",
+  "seed": 42,
+  "clients": 60,
+  "customers_per_client": 800,
+  "products_per_client": 15,
+  "days": 90,
+  "date_start": "2026-03-11",
+  "date_end": "2026-06-08",
+  "row_counts": {
+    "clients.csv": 60,
+    "products.csv": 900,
+    "customers.csv": 48000,
+    "shopify_orders.csv": 25150,
+    "shopify_order_items.csv": 36641,
+    "klaviyo_events.csv": 160743,
+    "ad_campaign_settings.csv": 740,
+    "ad_adsets.csv": 2597,
+    "ad_performance_daily.csv": 233730,
+    "audience_segments.csv": 480,
+    "audience_memberships.csv": 85744,
+    "optimization_history.csv": 2898,
+    "cross_client_benchmarks.csv": 300,
+    "recommendation_records.csv": 1195,
+    "knowledge_graph_edges.csv": 2786,
+    "rag_documents.csv": 2760,
+    "schema_versions.csv": 10
+  }
+}

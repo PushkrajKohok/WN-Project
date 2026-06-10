@@ -1,0 +1,61 @@
+client_id,brand_name,brand_category,monthly_ad_spend_band,avg_order_value,gross_margin_pct,shopify_store_domain,klaviyo_account_id,meta_account_id,google_ads_customer_id,snowflake_schema,created_at,data_consent_status
+CL_0001,Swift Fitness Works 001,Fitness,$10k-$25k,70.51,0.4100,swift-fitness-works-001.myshopify.com,KV_86d70c3a6a,act_9963334018,532-132-1488,CLIENT_0001_MART,2025-04-20 19:19:26,active
+CL_0002,North Home Collective 002,Home Goods,$50k-$100k,63.83,0.6295,north-home-collective-002.myshopify.com,KV_9ce9ac708e,act_2801823908,559-703-5557,CLIENT_0002_MART,2025-10-09 15:13:20,active
+CL_0003,Bright Apparel House 003,Apparel,$100k-$250k,84.34,0.4169,bright-apparel-house-003.myshopify.com,KV_cf6616fe93,act_2445662585,194-489-2584,CLIENT_0003_MART,2026-01-02 12:16:50,active
+CL_0004,North Pet Goods 004,Pet Supplies,$50k-$100k,112.75,0.7684,north-pet-goods-004.myshopify.com,KV_7ac78ac43b,act_9928378856,400-949-6925,CLIENT_0004_MART,2025-08-06 00:11:45,active
+CL_0005,Pure Food Studio 005,Food & Beverage,$10k-$25k,147.09,0.7736,pure-food-studio-005.myshopify.com,KV_72ed75d200,act_5728765136,384-564-6977,CLIENT_0005_MART,2026-02-07 04:08:19,active
+CL_0006,Ever Pet Co 006,Pet Supplies,$25k-$50k,123.32,0.4236,ever-pet-co-006.myshopify.com,KV_fb12865e5a,act_2051454923,573-488-5422,CLIENT_0006_MART,2025-12-20 03:57:14,paused
+CL_0007,Urban Fitness Market 007,Fitness,$50k-$100k,157.21,0.6837,urban-fitness-market-007.myshopify.com,KV_52e9812d97,act_4529615275,924-423-7572,CLIENT_0007_MART,2025-06-08 22:52:56,active
+CL_0008,Wild Home Market 008,Home Goods,$100k-$250k,65.83,0.5647,wild-home-market-008.myshopify.com,KV_1fd3238981,act_2970753705,371-242-5040,CLIENT_0008_MART,2026-02-18 13:50:39,active
+CL_0009,Wild Jewelry House 009,Jewelry,$25k-$50k,165.18,0.5217,wild-jewelry-house-009.myshopify.com,KV_6f4e7e7fc3,act_3119634399,873-148-2796,CLIENT_0009_MART,2025-06-05 04:13:02,active
+CL_0010,Bold Supplements Club 010,Supplements,$100k-$250k,44.21,0.5141,bold-supplements-club-010.myshopify.com,KV_d7b842d731,act_7567496105,666-981-1188,CLIENT_0010_MART,2025-09-09 18:32:27,active
+CL_0011,True Beauty Works 011,Beauty,$50k-$100k,146.45,0.4963,true-beauty-works-011.myshopify.com,KV_210cb93e1a,act_2867302554,564-103-5315,CLIENT_0011_MART,2025-07-03 23:37:09,paused
+CL_0012,Peak Supplements Works 012,Supplements,$50k-$100k,157.04,0.5683,peak-supplements-works-012.myshopify.com,KV_886dac2006,act_5951406973,880-265-9837,CLIENT_0012_MART,2025-05-28 05:59:08,restricted
+CL_0013,Wild Jewelry Market 013,Jewelry,$100k-$250k,105.85,0.3981,wild-jewelry-market-013.myshopify.com,KV_f6de19c417,act_2320763135,159-346-2290,CLIENT_0013_MART,2025-07-30 23:13:32,active
+CL_0014,True Baby Supply 014,Baby,$100k-$250k,53.62,0.5544,true-baby-supply-014.myshopify.com,KV_61df459919,act_6004182187,640-993-7932,CLIENT_0014_MART,2025-10-11 12:32:26,restricted
+CL_0015,Swift Jewelry Studio 015,Jewelry,$100k-$250k,138.38,0.5216,swift-jewelry-studio-015.myshopify.com,KV_9014355744,act_8086172302,548-629-8397,CLIENT_0015_MART,2025-11-27 20:34:33,active
+CL_0016,North Home Club 016,Home Goods,$10k-$25k,115.32,0.6030,north-home-club-016.myshopify.com,KV_4c505b2485,act_9894847574,746-160-4750,CLIENT_0016_MART,2025-03-14 19:01:23,active
+CL_0017,Peak Apparel Collective 017,Apparel,$100k-$250k,69.51,0.6377,peak-apparel-collective-017.myshopify.com,KV_fb94419cea,act_3315992115,840-684-8744,CLIENT_0017_MART,2025-06-03 04:49:53,active
+CL_0018,Urban Baby Co 018,Baby,$100k-$250k,49.05,0.5354,urban-baby-co-018.myshopify.com,KV_4e75e4cb6b,act_7060638140,984-846-1887,CLIENT_0018_MART,2025-08-23 12:02:19,active
+CL_0019,Bold Fitness Market 019,Fitness,$10k-$25k,151.09,0.3970,bold-fitness-market-019.myshopify.com,KV_6ee329be5c,act_2926780541,532-287-5563,CLIENT_0019_MART,2025-05-25 09:44:55,active
+CL_0020,True Beauty Co 020,Beauty,$50k-$100k,42.34,0.7797,true-beauty-co-020.myshopify.com,KV_a7a89da80c,act_2015242176,516-597-8886,CLIENT_0020_MART,2026-01-30 16:20:29,active
+CL_0021,Bright Outdoor House 021,Outdoor,$100k-$250k,35.31,0.5179,bright-outdoor-house-021.myshopify.com,KV_00382adf02,act_7249213370,533-813-8973,CLIENT_0021_MART,2026-03-06 19:46:26,active
+CL_0022,North Footwear Club 022,Footwear,$25k-$50k,141.68,0.3762,north-footwear-club-022.myshopify.com,KV_52d9cf783b,act_1245522987,698-588-9238,CLIENT_0022_MART,2025-07-11 19:00:30,restricted
+CL_0023,True Jewelry Co 023,Jewelry,$25k-$50k,158.44,0.3795,true-jewelry-co-023.myshopify.com,KV_cdf4961af7,act_6305160342,222-683-5033,CLIENT_0023_MART,2025-04-07 09:26:27,active
+CL_0024,Bold Apparel Club 024,Apparel,$50k-$100k,116.96,0.4860,bold-apparel-club-024.myshopify.com,KV_ec573bc7ce,act_8370987661,344-371-7484,CLIENT_0024_MART,2025-06-21 06:30:43,active
+CL_0025,Kind Fitness Co 025,Fitness,$25k-$50k,36.35,0.6171,kind-fitness-co-025.myshopify.com,KV_e475cfbe05,act_5278201677,175-650-4492,CLIENT_0025_MART,2025-10-16 15:28:50,active
+CL_0026,Peak Supplements Studio 026,Supplements,$250k+,88.58,0.4178,peak-supplements-studio-026.myshopify.com,KV_e4c857f343,act_3271782991,783-936-5905,CLIENT_0026_MART,2026-01-29 19:03:57,restricted
+CL_0027,Bright Beauty Works 027,Beauty,$250k+,51.74,0.3960,bright-beauty-works-027.myshopify.com,KV_d2e91deba1,act_5962610986,388-719-4450,CLIENT_0027_MART,2025-10-12 20:25:04,active
+CL_0028,Ever Home Collective 028,Home Goods,$50k-$100k,105.84,0.7393,ever-home-collective-028.myshopify.com,KV_d382cb279c,act_1218179599,749-533-5533,CLIENT_0028_MART,2026-02-03 14:15:28,active
+CL_0029,Pure Pet Works 029,Pet Supplies,$100k-$250k,58.43,0.5400,pure-pet-works-029.myshopify.com,KV_11d65c2312,act_1041531046,177-807-3442,CLIENT_0029_MART,2025-12-11 01:17:49,active
+CL_0030,Bright Pet House 030,Pet Supplies,$50k-$100k,53.48,0.4826,bright-pet-house-030.myshopify.com,KV_41e2657c7b,act_2536778950,798-355-2684,CLIENT_0030_MART,2026-02-24 03:06:52,active
+CL_0031,Bold Jewelry Club 031,Jewelry,$100k-$250k,143.67,0.7481,bold-jewelry-club-031.myshopify.com,KV_1cb7b61318,act_4713453204,919-930-3900,CLIENT_0031_MART,2025-06-11 22:33:05,active
+CL_0032,Kind Apparel House 032,Apparel,$25k-$50k,151.32,0.7215,kind-apparel-house-032.myshopify.com,KV_cedf750c3b,act_6360837474,263-906-2771,CLIENT_0032_MART,2026-01-20 20:43:51,active
+CL_0033,Urban Apparel Studio 033,Apparel,$100k-$250k,153.41,0.5479,urban-apparel-studio-033.myshopify.com,KV_be6f2bcfcd,act_4742303947,328-124-4164,CLIENT_0033_MART,2025-07-08 12:35:05,active
+CL_0034,Ever Footwear Market 034,Footwear,$100k-$250k,128.01,0.5219,ever-footwear-market-034.myshopify.com,KV_0c37fdbf4d,act_7597996327,128-218-5279,CLIENT_0034_MART,2026-02-02 15:29:30,active
+CL_0035,Wild Footwear House 035,Footwear,$10k-$25k,85.12,0.6882,wild-footwear-house-035.myshopify.com,KV_451cb4420f,act_3196545325,494-690-4114,CLIENT_0035_MART,2025-08-28 11:29:07,active
+CL_0036,True Food Collective 036,Food & Beverage,$50k-$100k,134.59,0.7543,true-food-collective-036.myshopify.com,KV_5b7ac1fb2b,act_3880327491,472-541-2146,CLIENT_0036_MART,2025-12-23 05:41:20,restricted
+CL_0037,Pure Pet Co 037,Pet Supplies,$50k-$100k,139.36,0.4791,pure-pet-co-037.myshopify.com,KV_eab436bc09,act_8159250505,434-512-5844,CLIENT_0037_MART,2025-07-10 02:44:30,active
+CL_0038,Bold Home Supply 038,Home Goods,$50k-$100k,124.25,0.4794,bold-home-supply-038.myshopify.com,KV_7f5f156c27,act_4580822352,411-393-4443,CLIENT_0038_MART,2025-10-10 19:08:40,active
+CL_0039,Kind Consumer Goods 039,Consumer Electronics,$50k-$100k,99.06,0.6405,kind-consumer-goods-039.myshopify.com,KV_ac6d2f8bce,act_5659161352,627-779-6491,CLIENT_0039_MART,2025-09-26 12:29:12,active
+CL_0040,Urban Home Studio 040,Home Goods,$50k-$100k,56.37,0.3699,urban-home-studio-040.myshopify.com,KV_3f13edde8b,act_4300636585,566-524-4185,CLIENT_0040_MART,2025-09-12 12:35:29,active
+CL_0041,Urban Outdoor Supply 041,Outdoor,$50k-$100k,130.13,0.3524,urban-outdoor-supply-041.myshopify.com,KV_9c3aed85e3,act_4803044105,897-535-4585,CLIENT_0041_MART,2025-12-28 15:29:45,active
+CL_0042,North Food Collective 042,Food & Beverage,$50k-$100k,71.13,0.7148,north-food-collective-042.myshopify.com,KV_1746eefa8e,act_8995059760,560-365-5050,CLIENT_0042_MART,2025-09-05 06:31:56,active
+CL_0043,True Footwear Goods 043,Footwear,$100k-$250k,125.88,0.4681,true-footwear-goods-043.myshopify.com,KV_b7e4b3425a,act_8359619163,340-378-6502,CLIENT_0043_MART,2025-04-11 02:11:48,active
+CL_0044,Bright Jewelry Studio 044,Jewelry,$10k-$25k,90.54,0.4157,bright-jewelry-studio-044.myshopify.com,KV_4253b8a51f,act_5570828113,517-438-9890,CLIENT_0044_MART,2025-06-03 02:11:06,active
+CL_0045,Bold Apparel House 045,Apparel,$25k-$50k,166.20,0.6012,bold-apparel-house-045.myshopify.com,KV_71e2237f73,act_7767538527,588-106-6763,CLIENT_0045_MART,2025-12-07 02:44:37,active
+CL_0046,Bold Outdoor Collective 046,Outdoor,$100k-$250k,143.39,0.5848,bold-outdoor-collective-046.myshopify.com,KV_3f17e130b6,act_4856070374,599-324-5471,CLIENT_0046_MART,2025-11-01 06:43:16,active
+CL_0047,Pure Apparel House 047,Apparel,$25k-$50k,140.01,0.7114,pure-apparel-house-047.myshopify.com,KV_9665e6dc04,act_1116402431,758-538-3223,CLIENT_0047_MART,2026-03-04 02:44:55,active
+CL_0048,Bold Supplements Market 048,Supplements,$10k-$25k,65.69,0.4905,bold-supplements-market-048.myshopify.com,KV_6dd0def7af,act_9072992279,384-870-7906,CLIENT_0048_MART,2026-01-01 15:10:29,active
+CL_0049,Swift Beauty Collective 049,Beauty,$50k-$100k,42.55,0.7593,swift-beauty-collective-049.myshopify.com,KV_47762a0239,act_3792347639,899-767-1659,CLIENT_0049_MART,2025-06-07 01:54:06,active
+CL_0050,North Home Club 050,Home Goods,$25k-$50k,57.10,0.4043,north-home-club-050.myshopify.com,KV_4d9c0cc133,act_5070585433,576-816-5198,CLIENT_0050_MART,2025-11-26 23:48:30,active
+CL_0051,Swift Supplements Co 051,Supplements,$50k-$100k,147.78,0.4204,swift-supplements-co-051.myshopify.com,KV_4ba37e5030,act_9410288290,506-832-4249,CLIENT_0051_MART,2025-07-10 19:05:33,active
+CL_0052,Urban Food Co 052,Food & Beverage,$100k-$250k,136.09,0.4797,urban-food-co-052.myshopify.com,KV_a1461392dd,act_4361393222,455-645-8018,CLIENT_0052_MART,2025-12-02 17:45:22,active
+CL_0053,Kind Beauty Labs 053,Beauty,$50k-$100k,158.19,0.7036,kind-beauty-labs-053.myshopify.com,KV_0163a394fe,act_5952059278,280-851-9548,CLIENT_0053_MART,2025-04-21 23:41:35,restricted
+CL_0054,True Footwear Goods 054,Footwear,$50k-$100k,102.41,0.7051,true-footwear-goods-054.myshopify.com,KV_bc2b5832de,act_6447717367,972-351-2419,CLIENT_0054_MART,2025-10-28 02:15:48,active
+CL_0055,Nova Baby Club 055,Baby,$25k-$50k,123.50,0.5130,nova-baby-club-055.myshopify.com,KV_d0b0493b64,act_2395925222,599-317-6813,CLIENT_0055_MART,2025-03-23 03:30:11,active
+CL_0056,Wild Pet Works 056,Pet Supplies,$25k-$50k,115.59,0.5721,wild-pet-works-056.myshopify.com,KV_05017c62aa,act_1367704871,837-516-9004,CLIENT_0056_MART,2025-05-25 04:46:28,active
+CL_0057,Pure Home Goods 057,Home Goods,$50k-$100k,99.99,0.3574,pure-home-goods-057.myshopify.com,KV_539778b2ff,act_6246716604,808-349-6016,CLIENT_0057_MART,2025-07-04 06:28:26,active
+CL_0058,True Pet Market 058,Pet Supplies,$50k-$100k,96.70,0.6708,true-pet-market-058.myshopify.com,KV_2e64230539,act_7243788374,413-357-4777,CLIENT_0058_MART,2025-07-18 11:11:53,active
+CL_0059,Swift Home Collective 059,Home Goods,$25k-$50k,172.88,0.6468,swift-home-collective-059.myshopify.com,KV_de224cd1ac,act_7374584386,841-703-9595,CLIENT_0059_MART,2025-05-25 09:17:27,active
+CL_0060,Ever Beauty Studio 060,Beauty,$100k-$250k,87.33,0.4800,ever-beauty-studio-060.myshopify.com,KV_705e401921,act_3294092753,380-146-1893,CLIENT_0060_MART,2025-12-11 23:12:37,active
