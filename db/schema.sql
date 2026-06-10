@@ -193,6 +193,20 @@ CREATE TABLE IF NOT EXISTS optimization_history (
     evidence_refs JSONB
 );
 
+-- 12b. action_audit_events
+CREATE TABLE IF NOT EXISTS action_audit_events (
+    audit_id TEXT PRIMARY KEY,
+    action_id TEXT,
+    recommendation_id TEXT,
+    client_id TEXT,
+    event_type TEXT,
+    event_status TEXT,
+    actor TEXT,
+    message TEXT,
+    metadata JSONB,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+
 -- 13. cross_client_benchmarks
 CREATE TABLE IF NOT EXISTS cross_client_benchmarks (
     benchmark_id TEXT PRIMARY KEY,
@@ -254,6 +268,72 @@ CREATE TABLE IF NOT EXISTS rag_documents (
     updated_at TIMESTAMP WITH TIME ZONE
     -- Embeddings can be added later using pgvector once RAG retrieval is implemented.
     -- embedding vector(1536)
+);
+
+-- Future vector retrieval scaffold:
+-- CREATE EXTENSION IF NOT EXISTS vector;
+-- ALTER TABLE rag_documents ADD COLUMN IF NOT EXISTS search_text tsvector;
+-- ALTER TABLE rag_documents ADD COLUMN IF NOT EXISTS embedding vector(1536);
+
+-- 16b. learning_events
+CREATE TABLE IF NOT EXISTS learning_events (
+    event_id TEXT PRIMARY KEY,
+    source_type TEXT,
+    source_id TEXT,
+    client_id TEXT,
+    strategy TEXT,
+    platform TEXT,
+    outcome_type TEXT,
+    outcome_status TEXT,
+    expected_impact_pct NUMERIC,
+    actual_impact_pct NUMERIC,
+    confidence_before NUMERIC,
+    confidence_after NUMERIC,
+    benchmark_id TEXT,
+    graph_edge_id TEXT,
+    rag_doc_id TEXT,
+    learning_summary TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+
+-- 16c. outcome_measurements
+CREATE TABLE IF NOT EXISTS outcome_measurements (
+    measurement_id TEXT PRIMARY KEY,
+    recommendation_id TEXT,
+    optimization_id TEXT,
+    client_id TEXT,
+    campaign_id TEXT,
+    platform TEXT,
+    measurement_window_days INTEGER,
+    spend_before NUMERIC,
+    spend_after NUMERIC,
+    revenue_before NUMERIC,
+    revenue_after NUMERIC,
+    roas_before NUMERIC,
+    roas_after NUMERIC,
+    cpa_before NUMERIC,
+    cpa_after NUMERIC,
+    purchases_before INTEGER,
+    purchases_after INTEGER,
+    measured_impact_pct NUMERIC,
+    outcome_label TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+
+-- 16d. strategy_learning_scores
+CREATE TABLE IF NOT EXISTS strategy_learning_scores (
+    strategy_key TEXT PRIMARY KEY,
+    strategy TEXT,
+    brand_category TEXT,
+    spend_band TEXT,
+    platform TEXT,
+    total_trials INTEGER,
+    successful_trials INTEGER,
+    rolled_back_trials INTEGER,
+    avg_actual_impact_pct NUMERIC,
+    avg_confidence NUMERIC,
+    learning_score NUMERIC,
+    last_updated_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 
 -- 17. schema_versions
@@ -327,12 +407,39 @@ CREATE TABLE IF NOT EXISTS agent_run_steps (
 CREATE TABLE IF NOT EXISTS guardrail_settings (
     id SERIAL PRIMARY KEY,
     confidence_threshold NUMERIC NOT NULL DEFAULT 0.75,
+    auto_execute_confidence_threshold NUMERIC DEFAULT 0.90,
+    max_auto_execute_weekly_savings NUMERIC DEFAULT 2500,
     high_risk_requires_approval BOOLEAN NOT NULL DEFAULT TRUE,
+    medium_risk_requires_approval BOOLEAN DEFAULT TRUE,
     budget_changes_require_approval BOOLEAN NOT NULL DEFAULT TRUE,
     campaign_pause_requires_approval BOOLEAN NOT NULL DEFAULT TRUE,
+    rollback_required_for_execution BOOLEAN DEFAULT TRUE,
+    fresh_data_required BOOLEAN DEFAULT TRUE,
+    max_data_staleness_hours INTEGER DEFAULT 24,
     auto_execute_low_risk_audience_refresh BOOLEAN NOT NULL DEFAULT TRUE,
+    auto_execute_tracking_fix BOOLEAN DEFAULT FALSE,
+    auto_execute_budget_shift BOOLEAN DEFAULT FALSE,
+    auto_execute_campaign_pause BOOLEAN DEFAULT FALSE,
+    cross_client_privacy_mode TEXT DEFAULT 'aggregated_only',
+    require_benchmark_support BOOLEAN DEFAULT TRUE,
+    min_benchmark_sample_size INTEGER DEFAULT 10,
+    min_benchmark_confidence NUMERIC DEFAULT 0.65,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS auto_execute_confidence_threshold NUMERIC DEFAULT 0.90;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS max_auto_execute_weekly_savings NUMERIC DEFAULT 2500;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS medium_risk_requires_approval BOOLEAN DEFAULT TRUE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS rollback_required_for_execution BOOLEAN DEFAULT TRUE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS fresh_data_required BOOLEAN DEFAULT TRUE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS max_data_staleness_hours INTEGER DEFAULT 24;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS auto_execute_tracking_fix BOOLEAN DEFAULT FALSE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS auto_execute_budget_shift BOOLEAN DEFAULT FALSE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS auto_execute_campaign_pause BOOLEAN DEFAULT FALSE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS cross_client_privacy_mode TEXT DEFAULT 'aggregated_only';
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS require_benchmark_support BOOLEAN DEFAULT TRUE;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS min_benchmark_sample_size INTEGER DEFAULT 10;
+ALTER TABLE guardrail_settings ADD COLUMN IF NOT EXISTS min_benchmark_confidence NUMERIC DEFAULT 0.65;
 
 -- 4. Ingestion Global Settings
 CREATE TABLE IF NOT EXISTS ingestion_settings (
@@ -386,6 +493,12 @@ CREATE INDEX IF NOT EXISTS idx_opt_hist_created ON optimization_history(created_
 CREATE INDEX IF NOT EXISTS idx_opt_hist_risk_level ON optimization_history(risk_level);
 CREATE INDEX IF NOT EXISTS idx_opt_hist_status ON optimization_history(status);
 
+CREATE INDEX IF NOT EXISTS idx_action_audit_action ON action_audit_events(action_id);
+CREATE INDEX IF NOT EXISTS idx_action_audit_recommendation ON action_audit_events(recommendation_id);
+CREATE INDEX IF NOT EXISTS idx_action_audit_client ON action_audit_events(client_id);
+CREATE INDEX IF NOT EXISTS idx_action_audit_event_type ON action_audit_events(event_type);
+CREATE INDEX IF NOT EXISTS idx_action_audit_created ON action_audit_events(created_at);
+
 CREATE INDEX IF NOT EXISTS idx_benchmarks_benchmark_id ON cross_client_benchmarks(benchmark_id);
 
 CREATE INDEX IF NOT EXISTS idx_recs_recommendation_id ON recommendation_records(recommendation_id);
@@ -402,6 +515,19 @@ CREATE INDEX IF NOT EXISTS idx_kg_target ON knowledge_graph_edges(target_node_id
 CREATE INDEX IF NOT EXISTS idx_rag_client ON rag_documents(client_id);
 CREATE INDEX IF NOT EXISTS idx_rag_doc_type ON rag_documents(doc_type);
 CREATE INDEX IF NOT EXISTS idx_rag_embedding_group ON rag_documents(embedding_group);
+
+CREATE INDEX IF NOT EXISTS idx_learning_events_client ON learning_events(client_id);
+CREATE INDEX IF NOT EXISTS idx_learning_events_source_type ON learning_events(source_type);
+CREATE INDEX IF NOT EXISTS idx_learning_events_source_id ON learning_events(source_id);
+CREATE INDEX IF NOT EXISTS idx_learning_events_strategy ON learning_events(strategy);
+CREATE INDEX IF NOT EXISTS idx_learning_events_outcome_type ON learning_events(outcome_type);
+CREATE INDEX IF NOT EXISTS idx_learning_events_created ON learning_events(created_at);
+CREATE INDEX IF NOT EXISTS idx_outcome_measurements_recommendation ON outcome_measurements(recommendation_id);
+CREATE INDEX IF NOT EXISTS idx_outcome_measurements_optimization ON outcome_measurements(optimization_id);
+CREATE INDEX IF NOT EXISTS idx_outcome_measurements_client ON outcome_measurements(client_id);
+CREATE INDEX IF NOT EXISTS idx_strategy_learning_strategy ON strategy_learning_scores(strategy);
+CREATE INDEX IF NOT EXISTS idx_strategy_learning_category ON strategy_learning_scores(brand_category);
+CREATE INDEX IF NOT EXISTS idx_strategy_learning_spend_band ON strategy_learning_scores(spend_band);
 
 CREATE INDEX IF NOT EXISTS idx_schema_vers_detected ON schema_versions(detected_at);
 
@@ -430,15 +556,41 @@ VALUES (
 -- Seed guardrails
 INSERT INTO guardrail_settings (
     confidence_threshold,
+    auto_execute_confidence_threshold,
+    max_auto_execute_weekly_savings,
     high_risk_requires_approval,
+    medium_risk_requires_approval,
     budget_changes_require_approval,
     campaign_pause_requires_approval,
-    auto_execute_low_risk_audience_refresh
+    rollback_required_for_execution,
+    fresh_data_required,
+    max_data_staleness_hours,
+    auto_execute_low_risk_audience_refresh,
+    auto_execute_tracking_fix,
+    auto_execute_budget_shift,
+    auto_execute_campaign_pause,
+    cross_client_privacy_mode,
+    require_benchmark_support,
+    min_benchmark_sample_size,
+    min_benchmark_confidence
 )
 VALUES (
     0.75,
+    0.90,
+    2500,
     TRUE,
     TRUE,
     TRUE,
-    TRUE
+    TRUE,
+    TRUE,
+    TRUE,
+    24,
+    TRUE,
+    FALSE,
+    FALSE,
+    FALSE,
+    'aggregated_only',
+    TRUE,
+    10,
+    0.65
 ) ON CONFLICT DO NOTHING;

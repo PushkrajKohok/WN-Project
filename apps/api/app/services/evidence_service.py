@@ -340,12 +340,23 @@ def rag_document(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def get_risk_validation(recommendation: dict[str, Any]) -> dict[str, Any]:
-    guardrail = {"confidence_threshold": 0.75}
+    guardrail = {
+        "confidence_threshold": 0.75,
+        "high_risk_requires_approval": True,
+        "medium_risk_requires_approval": True,
+        "budget_changes_require_approval": True,
+        "campaign_pause_requires_approval": True,
+        "require_benchmark_support": True,
+        "min_benchmark_sample_size": 10,
+        "min_benchmark_confidence": 0.65,
+    }
     if is_db_configured():
         try:
             guardrail = fetch_one(
                 """
-                SELECT confidence_threshold
+                SELECT confidence_threshold, high_risk_requires_approval, medium_risk_requires_approval,
+                       budget_changes_require_approval, campaign_pause_requires_approval,
+                       require_benchmark_support, min_benchmark_sample_size, min_benchmark_confidence
                 FROM guardrail_settings
                 ORDER BY updated_at DESC NULLS LAST
                 LIMIT 1
@@ -359,8 +370,18 @@ def get_risk_validation(recommendation: dict[str, Any]) -> dict[str, Any]:
     confidence = number(recommendation.get("confidence_score"))
     risk = recommendation.get("risk_level", "Medium")
     rec_type = recommendation.get("recommendation_type", "").lower()
-    benchmark_ok = benchmark["sample_size"] >= 10 and benchmark["confidence_score"] >= 0.7
-    approval_type = risk == "High" or any(term in rec_type for term in ["budget", "pause", "bid", "campaign"])
+    min_sample = int(guardrail.get("min_benchmark_sample_size") or 10)
+    min_benchmark_confidence = number(guardrail.get("min_benchmark_confidence") or 0.65)
+    benchmark_ok = (
+        not guardrail.get("require_benchmark_support", True)
+        or (benchmark["sample_size"] >= min_sample and benchmark["confidence_score"] >= min_benchmark_confidence)
+    )
+    approval_type = (
+        (risk == "High" and guardrail.get("high_risk_requires_approval", True))
+        or (risk == "Medium" and guardrail.get("medium_risk_requires_approval", True))
+        or (guardrail.get("budget_changes_require_approval", True) and any(term in rec_type for term in ["budget", "bid"]))
+        or (guardrail.get("campaign_pause_requires_approval", True) and any(term in rec_type for term in ["pause", "campaign"]))
+    )
     auto_execute = risk == "Low" and not approval_type and recommendation.get("decision_required") == "auto_execute_allowed"
     rollback = get_rollback_plan(recommendation)
     return {
@@ -369,7 +390,7 @@ def get_risk_validation(recommendation: dict[str, Any]) -> dict[str, Any]:
         "risk_level": risk,
         "decision_required": recommendation.get("decision_required"),
         "data_freshness_status": "fresh" if recommendation.get("detected_at") else "unknown",
-        "sample_size_status": "sufficient" if benchmark["sample_size"] >= 10 else "limited",
+        "sample_size_status": "sufficient" if benchmark["sample_size"] >= min_sample else "limited",
         "benchmark_quality": "strong" if benchmark_ok else "needs_review",
         "rollback_available": bool(rollback["rollback_available"]),
         "auto_execute_allowed": auto_execute,
@@ -382,7 +403,7 @@ def get_risk_validation(recommendation: dict[str, Any]) -> dict[str, Any]:
             {
                 "check": "Benchmark support",
                 "status": _metric_status(benchmark_ok, True),
-                "detail": f"Supporting benchmark sample size is {benchmark['sample_size']} with {benchmark['confidence_score']:.2f} confidence.",
+                "detail": f"Supporting benchmark sample size is {benchmark['sample_size']} with {benchmark['confidence_score']:.2f} confidence. Required: sample {min_sample}, confidence {min_benchmark_confidence:.2f}.",
             },
             {
                 "check": "Spend impact",

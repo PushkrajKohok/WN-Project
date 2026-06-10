@@ -1,0 +1,17 @@
+{
+  "name": "wastenot-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:api": "cd apps/api && python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "dev": "echo \"Run npm run dev:api and npm run dev:web in separate terminals.\"",
+    "db:up": "docker compose up -d postgres",
+    "db:schema": "psql \"$DATABASE_URL\" -f db/schema.sql",
+    "data:generate": "python3 scripts/generate_wastenot_synthetic_data.py --output-dir ./data/generated_default --clients 60 --customers-per-client 800 --days 90 --seed 42",
+    "data:ingest": "python3 scripts/ingest_wastenot_data.py --data-dir ./data/generated_default --database-url \"$DATABASE_URL\" --reset",
+    "typecheck": "cd apps/web && npm run typecheck",
+    "lint": "cd apps/web && npm run lint",
+    "build": "cd apps/web && npm run build"
+  }
+}
