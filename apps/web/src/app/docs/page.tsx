@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ArchitectureDiagram } from "@/components/docs/ArchitectureDiagram";
 import { ArchitectureOverview } from "@/components/docs/ArchitectureOverview";
 import { DataIngestionSection } from "@/components/docs/DataIngestionSection";
 import { DeploymentReadiness } from "@/components/docs/DeploymentReadiness";
@@ -28,6 +29,7 @@ export default function DocsPage() {
         </div>
       </section>
 
+      <ArchitectureDiagram />
       <ArchitectureOverview />
       <DataIngestionSection />
       <MultiAgentSection />
