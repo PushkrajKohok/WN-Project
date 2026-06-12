@@ -23,7 +23,7 @@ class Settings(BaseModel):
     ]
     version: str = "0.2.0"
     openai_api_key: Optional[str] = None
-    openai_model: str = "gpt-5.4-mini"
+    openai_model: str = "gpt-4o"
     openai_embedding_model: str = "text-embedding-3-small"
     openai_embedding_dimensions: int = 1536
     llm_features_enabled: bool = False
@@ -71,7 +71,7 @@ def get_settings() -> Settings:
         database_url=os.getenv("DATABASE_URL"),
         api_cors_origins=parse_cors_origins(os.getenv("API_CORS_ORIGINS")),
         openai_api_key=os.getenv("OPENAI_API_KEY"),
-        openai_model=os.getenv("OPENAI_MODEL", "gpt-5.4-mini"),
+        openai_model=os.getenv("OPENAI_MODEL", "gpt-4o"),
         openai_embedding_model=os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small"),
         openai_embedding_dimensions=parse_int(os.getenv("OPENAI_EMBEDDING_DIMENSIONS"), 1536),
         llm_features_enabled=parse_bool(os.getenv("LLM_FEATURES_ENABLED"), False),

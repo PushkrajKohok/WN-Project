@@ -2,9 +2,9 @@
 
 const layers = [
   ["SQL retrieval", "Campaign performance, spend, revenue, ROAS, CPA, orders, audience data, recommendation/action history."],
-  ["RAG documents", "rag_documents table, pseudo-semantic scoring for MVP, source-record matching, keyword overlap, future pgvector support."],
+  ["RAG documents", "rag_documents table, source-record matching, keyword fallback, and optional pgvector embeddings."],
   ["GraphRAG", "cross_client_benchmarks, knowledge_graph_edges, similar clients, supported-by-benchmark relationships."],
-  ["Corrective RAG", "Evidence score, freshness score, guardrail compliance, confidence threshold, review-required decision."],
+  ["Corrective RAG", "Evidence score, freshness score, guardrail compliance, confidence threshold, and review-required decision."],
 ];
 
 export function RagReasoningSection() {
@@ -20,7 +20,7 @@ export function RagReasoningSection() {
         ))}
       </div>
       <p className="mt-5 text-sm leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
-        The `/rag` page shows hybrid retrieval, evidence scores, graph context, retrieval trace, and index rebuild simulation. Hallucination prevention comes from structured evidence citations, benchmark sample/confidence thresholds, high-risk approval gates, evidence scoring, and rollback-aware execution boundaries.
+        The `/rag` page shows hybrid retrieval, evidence scores, graph context, retrieval trace, vector-search status, and admin-controlled embedding rebuilds when OpenAI mode is configured. Hallucination prevention comes from structured evidence citations, benchmark sample/confidence thresholds, high-risk approval gates, evidence scoring, and rollback-aware execution boundaries.
       </p>
     </section>
   );

@@ -355,7 +355,7 @@ Render environment variables to add manually:
 
 ```text
 OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-5.4-mini
+OPENAI_MODEL=gpt-4o
 OPENAI_EMBEDDING_MODEL=text-embedding-3-small
 OPENAI_EMBEDDING_DIMENSIONS=1536
 LLM_FEATURES_ENABLED=true

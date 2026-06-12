@@ -484,7 +484,7 @@ export async function getLlmStatus(): Promise<LlmStatus> {
     llm_features_enabled: false,
     vector_rag_enabled: false,
     openai_key_configured: false,
-    model: "gpt-5.4-mini",
+    model: "gpt-4o",
     embedding_model: "text-embedding-3-small",
     embedding_dimensions: 1536,
     embedded_docs_count: 0,

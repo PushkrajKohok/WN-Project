@@ -6,6 +6,7 @@ export function RagSettingsCard({ status }: { status?: LlmStatus }) {
   const settings = [
     ["Mode", status?.mode?.replace(/_/g, " ") || "keyword fallback"],
     ["LLM", status?.llm_features_enabled ? "enabled" : "disabled"],
+    ["LLM model", status?.model || "gpt-4o"],
     ["Vector RAG", status?.vector_rag_enabled ? "enabled" : "disabled"],
     ["OpenAI key", status?.openai_key_configured ? "configured" : "missing"],
     ["Embedding model", status?.embedding_model || "text-embedding-3-small"],
