@@ -10,7 +10,6 @@ import { MultiAgentSection } from "@/components/docs/MultiAgentSection";
 import { NetworkEffectsMemo } from "@/components/docs/NetworkEffectsMemo";
 import { RagReasoningSection } from "@/components/docs/RagReasoningSection";
 import { RoadmapSection } from "@/components/docs/RoadmapSection";
-import { SubmissionChecklist } from "@/components/docs/SubmissionChecklist";
 
 export default function DocsPage() {
   return (
@@ -37,7 +36,6 @@ export default function DocsPage() {
       <RoadmapSection />
       <DeploymentReadiness />
       <ImplementedVsSimulated />
-      <SubmissionChecklist />
     </div>
   );
 }
