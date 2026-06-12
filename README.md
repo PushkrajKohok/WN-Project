@@ -129,7 +129,7 @@ python scripts/ingest_wastenot_data.py --generate --data-dir ./data/generated_de
 
 ```bash
 cd apps/api
-python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+python3 -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Health checks:
@@ -226,6 +226,50 @@ LOG_LEVEL=info
 
 Detailed deployment instructions are in `docs/DEPLOYMENT.md`.
 
+## Render Backend Deployment
+
+1. Create a new Render Web Service.
+2. Connect the GitHub repo.
+3. Set root directory to `apps/api`.
+4. Build command:
+
+```bash
+pip install -r requirements.txt
+```
+
+5. Start command:
+
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
+```
+
+6. Health check path:
+
+```text
+/health
+```
+
+7. Add environment variables:
+
+```text
+DATABASE_URL=<Supabase connection string>
+API_CORS_ORIGINS=http://localhost:3000
+ENVIRONMENT=production
+LOG_LEVEL=info
+```
+
+8. Deploy.
+9. Test:
+
+```text
+/health
+/health/db
+/health/readiness
+/dashboard/summary
+```
+
+After the Vercel frontend is deployed later, update `API_CORS_ORIGINS` to the final Vercel URL.
+
 ## Testing and Validation
 
 Recommended validation commands:
@@ -246,10 +290,11 @@ Backend smoke test:
 
 ```bash
 cd apps/api
-python3 -m uvicorn main:app --host 127.0.0.1 --port 8015
+python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8015
 curl http://127.0.0.1:8015/health
 curl http://127.0.0.1:8015/health/db
 curl http://127.0.0.1:8015/health/readiness
+curl http://127.0.0.1:8015/dashboard/summary
 ```
 
 Frontend route smoke test:

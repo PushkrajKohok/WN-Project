@@ -1,14 +1,16 @@
 services:
   - type: web
     name: wastenot-api
-    runtime: docker
+    runtime: python
     rootDir: apps/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
         sync: false
       - key: API_CORS_ORIGINS
-        sync: false
+        value: http://localhost:3000
       - key: ENVIRONMENT
         value: production
       - key: LOG_LEVEL

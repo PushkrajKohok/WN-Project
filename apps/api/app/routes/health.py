@@ -13,7 +13,7 @@ KEY_TABLES = [
     "clients",
     "recommendation_records",
     "rag_documents",
-    "cross_client_benchmarks",
+    "ad_performance_daily",
 ]
 
 
@@ -35,7 +35,7 @@ def database_health():
     return {
         "status": "degraded",
         "database": "unavailable",
-        "message": "Database connection failed. Mock fallback may be used by frontend.",
+        "message": "Database connection failed.",
     }
 
 

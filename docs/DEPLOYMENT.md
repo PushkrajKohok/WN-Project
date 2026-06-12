@@ -82,38 +82,44 @@ pgvector is scaffolded but not required for the MVP. Real embeddings can be adde
 1. Create a new Web Service.
 2. Connect the GitHub repo.
 3. Set root directory to `apps/api`.
-4. Use Docker deployment with the included `apps/api/Dockerfile`, or use Python runtime manually.
-5. If using Python runtime, set build command:
+4. Set build command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Set start command:
+5. Set start command:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port $PORT
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
+```
+
+6. Set health check path:
+
+```text
+/health
 ```
 
 7. Add environment variables:
 
 ```bash
 DATABASE_URL=<Supabase connection string>
-API_CORS_ORIGINS=https://your-vercel-app.vercel.app
+API_CORS_ORIGINS=http://localhost:3000
 ENVIRONMENT=production
 LOG_LEVEL=info
 ```
 
 8. Deploy.
-9. Verify:
+9. Test:
 
 ```text
 https://your-api.onrender.com/health
 https://your-api.onrender.com/health/db
 https://your-api.onrender.com/health/readiness
+https://your-api.onrender.com/dashboard/summary
 ```
 
-The included root `render.yaml` defines a Docker web service with `rootDir: apps/api` and `healthCheckPath: /health`.
+The included root `render.yaml` defines a Python web service with `rootDir: apps/api`. After the Vercel frontend is deployed later, update `API_CORS_ORIGINS` to the final Vercel URL.
 
 ## Railway Backend Alternative
 
@@ -124,7 +130,7 @@ The included root `render.yaml` defines a Docker web service with `rootDir: apps
 5. Set start command:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port $PORT
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 
 6. Verify `/health`, `/health/db`, and `/health/readiness`.
@@ -195,7 +201,7 @@ Run backend:
 
 ```bash
 cd apps/api
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Run frontend:

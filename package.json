@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev:web": "cd apps/web && npm run dev",
-    "dev:api": "cd apps/api && python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:api": "cd apps/api && python3 -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
     "dev": "echo \"Run npm run dev:api and npm run dev:web in separate terminals.\"",
     "db:up": "docker compose up -d postgres",
     "db:schema": "psql \"$DATABASE_URL\" -f db/schema.sql",
