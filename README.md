@@ -332,10 +332,44 @@ Then open `/dashboard`, `/data`, `/recommendations`, `/agents`, `/patterns`, `/a
 ## Known Limitations
 
 - Real external APIs are not connected.
-- Real embeddings are not active.
-- Agent orchestration is simulated and deterministic.
+- Real OpenAI embeddings and LLM explanations are now supported behind environment flags, but are disabled unless configured in Render.
+- Agent orchestration remains deterministic; LLM scan summaries are explanatory only.
 - Production authentication and tenant isolation are not implemented.
 - Production background jobs, execution snapshots, and live API idempotency are future work.
+
+## Real OpenAI RAG/LLM Mode
+
+Step 16 adds optional OpenAI-powered RAG and LLM-assisted public explanations without adding live ad-platform connectors.
+
+Backend additions:
+
+- `OPENAI_API_KEY` is read only from the backend environment.
+- `rag_document_embeddings` stores pgvector embeddings for `rag_documents`.
+- `/llm/status` reports whether LLM/vector mode is active without revealing secrets.
+- `/admin/embeddings/rebuild` embeds missing documents with a default limit of 500.
+- `/rag/vector-search` and `/rag/hybrid-search` combine vector, SQL, keyword, and graph evidence.
+- `/recommendations/{id}/llm-explain` generates a public explanation only.
+- `/agents/llm-scan-summary` creates a public operational summary only.
+
+Render environment variables to add manually:
+
+```text
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-5.4-mini
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_EMBEDDING_DIMENSIONS=1536
+LLM_FEATURES_ENABLED=true
+VECTOR_RAG_ENABLED=true
+ADMIN_API_TOKEN=optional_admin_secret
+```
+
+Apply the non-destructive Supabase migration before rebuilding embeddings:
+
+```bash
+psql "$DATABASE_URL" -f db/migrations/001_enable_vector_rag.sql
+```
+
+The OpenAI key belongs in Render only. Do not put it in Vercel. Vercel only needs `NEXT_PUBLIC_API_URL`.
 
 ## Changelog
 
@@ -376,3 +410,42 @@ Next steps:
 - Connect Supabase.
 - Test live URLs.
 - Optionally add real LLM embeddings and orchestration.
+
+### Step 16 - OpenAI vector RAG and LLM reasoning support
+
+Files changed:
+
+- `apps/api/app/core/config.py`
+- `apps/api/app/services/openai_service.py`
+- `apps/api/app/services/embedding_service.py`
+- `apps/api/app/services/rag_hybrid_service.py`
+- `apps/api/app/routes/llm.py`
+- `apps/api/app/routes/vector_rag.py`
+- `apps/api/app/routes/rag.py`
+- `apps/api/app/routes/recommendations.py`
+- `apps/api/app/routes/agents.py`
+- `apps/web/src/app/rag/page.tsx`
+- `apps/web/src/app/recommendations/[id]/page.tsx`
+- `apps/web/src/app/agents/page.tsx`
+- `db/schema.sql`
+- `db/migrations/001_enable_vector_rag.sql`
+- `docs/DEPLOYMENT.md`
+- `docs/KNOWN_LIMITATIONS.md`
+- `docs/FUTURE_WORK.md`
+
+Features added:
+
+- Optional OpenAI client wrapper
+- pgvector embedding table and migration
+- Admin-controlled embedding rebuild
+- Vector search endpoint
+- Hybrid SQL/vector/keyword/graph retrieval endpoint
+- LLM recommendation explanation endpoint
+- LLM agent scan summary endpoint
+- Frontend status indicators and controls
+
+Known issues:
+
+- Real Shopify, Meta, Google Ads, and Klaviyo connectors are still not implemented.
+- LLM outputs explain and summarize only; deterministic guardrails still control approval and execution.
+- Background embedding schedules should be handled with a worker or Render Cron later.

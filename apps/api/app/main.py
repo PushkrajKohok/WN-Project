@@ -21,10 +21,12 @@ from app.routes.data import router as data_router
 from app.routes.guardrails import router as guardrails_router
 from app.routes.health import router as health_router
 from app.routes.learning import router as learning_router
+from app.routes.llm import router as llm_router
 from app.routes.patterns import router as patterns_router
 from app.routes.rag import router as rag_router
 from app.routes.recommendations import router as recommendations_router
 from app.routes.settings import router as settings_router
+from app.routes.vector_rag import router as vector_rag_router
 from mock_data import DATA_PRESETS
 
 settings = get_settings()
@@ -50,6 +52,8 @@ app.include_router(actions_router)
 app.include_router(guardrails_router)
 app.include_router(rag_router)
 app.include_router(learning_router)
+app.include_router(llm_router)
+app.include_router(vector_rag_router)
 
 
 @app.get("/data/presets")

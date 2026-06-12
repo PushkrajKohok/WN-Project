@@ -4,3 +4,6 @@ python-multipart==0.0.20
 pydantic==2.10.4
 psycopg[binary]>=3.1.8
 python-dotenv>=1.0.0
+openai>=1.0.0
+pgvector>=0.3.6
+tiktoken>=0.7.0

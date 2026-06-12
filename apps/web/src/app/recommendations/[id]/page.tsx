@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, RefreshCw } from "lucide-react";
 import {
   decideRecommendation,
+  explainRecommendationWithLlm,
   getRecommendationDetail,
   scoreRecommendationEvidence,
 } from "@/lib/api";
@@ -13,7 +14,7 @@ import { EvidenceDrawer } from "@/components/recommendations/detail/EvidenceDraw
 import { RecommendationHero } from "@/components/recommendations/detail/RecommendationHero";
 import type { RecommendationDetailResponse } from "@/types/evidence";
 import type { RecommendationAction } from "@/types/recommendations";
-import type { EvidenceScore } from "@/types/rag";
+import type { EvidenceScore, RecommendationLlmExplanation } from "@/types/rag";
 
 export default function RecommendationDetailPage({
   params,
@@ -25,6 +26,7 @@ export default function RecommendationDetailPage({
   const [isLoading, setIsLoading] = useState(true);
   const [busyId, setBusyId] = useState<string | null>(null);
   const [ragScore, setRagScore] = useState<EvidenceScore | undefined>();
+  const [llmExplanation, setLlmExplanation] = useState<RecommendationLlmExplanation | undefined>();
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
   const loadDetail = useCallback(async (clearMessage = false) => {
@@ -100,6 +102,23 @@ export default function RecommendationDetailPage({
     }
   };
 
+  const generateLlmExplanation = async () => {
+    setBusyId(detail?.recommendation.recommendation_id || id);
+    setMessage(null);
+    try {
+      const explanation = await explainRecommendationWithLlm(id);
+      setLlmExplanation(explanation);
+      setMessage({
+        type: explanation.status === "completed" ? "success" : "error",
+        text: explanation.status === "completed" ? "LLM explanation generated." : explanation.error_message || "LLM explanation unavailable.",
+      });
+    } catch (error) {
+      setMessage({ type: "error", text: error instanceof Error ? error.message : "LLM explanation failed." });
+    } finally {
+      setBusyId(null);
+    }
+  };
+
   if (isLoading && !detail) {
     return (
       <div className="space-y-4">
@@ -136,6 +155,9 @@ export default function RecommendationDetailPage({
               <button type="button" onClick={refreshRagEvidence} disabled={busyId === detail.recommendation.recommendation_id} className="btn btn-secondary btn-sm">
                 <RefreshCw size={14} /> Run RAG Evidence Refresh
               </button>
+              <button type="button" onClick={generateLlmExplanation} disabled={busyId === detail.recommendation.recommendation_id} className="btn btn-primary btn-sm">
+                Generate LLM Explanation
+              </button>
             </div>
             <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
               This recommendation is supported by structured campaign performance, anonymized cross-client benchmarks, retrieved RAG context, and Corrective RAG validation checks. Only public evidence summaries are shown here; hidden agent reasoning is not exposed.
@@ -144,6 +166,36 @@ export default function RecommendationDetailPage({
               <div className="mt-4 rounded-lg border p-3 text-sm" style={{ borderColor: "var(--color-border)", background: "var(--color-bg-tertiary)" }}>
                 <div className="font-semibold">Latest RAG score: {(ragScore.overall_score * 100).toFixed(0)}% / {ragScore.decision.replace(/_/g, " ")}</div>
                 <div className="mt-1 text-xs" style={{ color: "var(--color-text-secondary)" }}>Review required: {ragScore.review_required ? "yes" : "no"}</div>
+              </div>
+            )}
+            {llmExplanation?.explanation && (
+              <div className="mt-4 rounded-lg border p-4 text-sm" style={{ borderColor: "var(--color-border)", background: "var(--color-bg-tertiary)" }}>
+                <div className="font-semibold">LLM explanation only. Guardrails still control approval/execution.</div>
+                <p className="mt-2" style={{ color: "var(--color-text-secondary)" }}>{llmExplanation.explanation.summary}</p>
+                <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wide">Why now</div>
+                    <p className="mt-1 text-xs" style={{ color: "var(--color-text-secondary)" }}>{llmExplanation.explanation.why_now}</p>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wide">Recommended action</div>
+                    <p className="mt-1 text-xs" style={{ color: "var(--color-text-secondary)" }}>{llmExplanation.explanation.recommended_action}</p>
+                  </div>
+                </div>
+                <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wide">Evidence used</div>
+                    <ul className="mt-1 list-disc pl-4 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+                      {(llmExplanation.explanation.evidence_used || []).map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wide">Risk notes</div>
+                    <ul className="mt-1 list-disc pl-4 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+                      {(llmExplanation.explanation.risk_notes || []).map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  </div>
+                </div>
               </div>
             )}
           </section>

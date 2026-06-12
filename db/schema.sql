@@ -6,6 +6,7 @@
 
 -- Enable pgcrypto for UUID generation if needed
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+CREATE EXTENSION IF NOT EXISTS vector;
 
 -- ─────────────────────────────────────────────────────────────
 -- 1. SYNTHETIC SOURCE TABLES
@@ -266,16 +267,36 @@ CREATE TABLE IF NOT EXISTS rag_documents (
     embedding_group TEXT,
     text TEXT NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE
-    -- Embeddings can be added later using pgvector once RAG retrieval is implemented.
-    -- embedding vector(1536)
 );
 
--- Future vector retrieval scaffold:
--- CREATE EXTENSION IF NOT EXISTS vector;
--- ALTER TABLE rag_documents ADD COLUMN IF NOT EXISTS search_text tsvector;
--- ALTER TABLE rag_documents ADD COLUMN IF NOT EXISTS embedding vector(1536);
+-- 16a. rag_document_embeddings
+CREATE TABLE IF NOT EXISTS rag_document_embeddings (
+    embedding_id TEXT PRIMARY KEY,
+    doc_id TEXT NOT NULL,
+    embedding_model TEXT NOT NULL,
+    embedding_dimensions INTEGER NOT NULL DEFAULT 1536,
+    text_hash TEXT NOT NULL,
+    embedding vector(1536),
+    token_estimate INTEGER,
+    created_at TIMESTAMP DEFAULT now(),
+    updated_at TIMESTAMP DEFAULT now()
+);
 
--- 16b. learning_events
+-- 16b. llm_invocation_logs
+CREATE TABLE IF NOT EXISTS llm_invocation_logs (
+    invocation_id TEXT PRIMARY KEY,
+    feature_name TEXT NOT NULL,
+    model TEXT,
+    embedding_model TEXT,
+    prompt_tokens INTEGER,
+    completion_tokens INTEGER,
+    total_tokens INTEGER,
+    status TEXT,
+    error_message TEXT,
+    created_at TIMESTAMP DEFAULT now()
+);
+
+-- 16c. learning_events
 CREATE TABLE IF NOT EXISTS learning_events (
     event_id TEXT PRIMARY KEY,
     source_type TEXT,
@@ -515,6 +536,18 @@ CREATE INDEX IF NOT EXISTS idx_kg_target ON knowledge_graph_edges(target_node_id
 CREATE INDEX IF NOT EXISTS idx_rag_client ON rag_documents(client_id);
 CREATE INDEX IF NOT EXISTS idx_rag_doc_type ON rag_documents(doc_type);
 CREATE INDEX IF NOT EXISTS idx_rag_embedding_group ON rag_documents(embedding_group);
+CREATE INDEX IF NOT EXISTS idx_rag_document_embeddings_doc_id ON rag_document_embeddings(doc_id);
+CREATE INDEX IF NOT EXISTS idx_rag_document_embeddings_model ON rag_document_embeddings(embedding_model);
+CREATE INDEX IF NOT EXISTS idx_rag_document_embeddings_text_hash ON rag_document_embeddings(text_hash);
+CREATE INDEX IF NOT EXISTS idx_rag_document_embeddings_created_at ON rag_document_embeddings(created_at);
+DO $$
+BEGIN
+    CREATE INDEX IF NOT EXISTS idx_rag_document_embeddings_vector
+    ON rag_document_embeddings USING hnsw (embedding vector_cosine_ops);
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE NOTICE 'Skipping HNSW vector index creation: %', SQLERRM;
+END $$;
 
 CREATE INDEX IF NOT EXISTS idx_learning_events_client ON learning_events(client_id);
 CREATE INDEX IF NOT EXISTS idx_learning_events_source_type ON learning_events(source_type);

@@ -76,11 +76,18 @@ import type {
 } from "@/types/guardrails";
 import type {
   EvidenceScore,
+  EmbeddingRebuildResponse,
+  HybridSearchRequest,
+  HybridSearchResponse,
+  LlmStatus,
+  RecommendationLlmExplanation,
   RagDocumentListResponse,
   RagFacetResponse,
   RagRebuildIndexResponse,
   RagSearchRequest,
   RagSearchResponse,
+  VectorSearchRequest,
+  VectorSearchResponse,
 } from "@/types/rag";
 import type {
   LearningEvent,
@@ -470,6 +477,56 @@ export async function rebuildRagIndex(): Promise<RagRebuildIndexResponse> {
     documents_indexed: 3,
     embedding_mode: "simulated_keyword_semantic",
   }));
+}
+
+export async function getLlmStatus(): Promise<LlmStatus> {
+  return apiGet<LlmStatus>("/llm/status", {
+    llm_features_enabled: false,
+    vector_rag_enabled: false,
+    openai_key_configured: false,
+    model: "gpt-5.4-mini",
+    embedding_model: "text-embedding-3-small",
+    embedding_dimensions: 1536,
+    embedded_docs_count: 0,
+    total_rag_docs_count: 0,
+    mode: "llm_disabled",
+  });
+}
+
+export async function rebuildEmbeddings(limit = 500, force = false): Promise<EmbeddingRebuildResponse> {
+  return apiSend<EmbeddingRebuildResponse>("/admin/embeddings/rebuild", "POST", { limit, force });
+}
+
+export async function vectorSearch(payload: VectorSearchRequest): Promise<VectorSearchResponse> {
+  return apiSend<VectorSearchResponse>("/rag/vector-search", "POST", payload).catch(() => ({
+    mode: "fallback_keyword",
+    query: payload.query,
+    results: [],
+    error_message: "Vector search unavailable.",
+  }));
+}
+
+export async function hybridSearch(payload: HybridSearchRequest): Promise<HybridSearchResponse> {
+  return apiSend<HybridSearchResponse>("/rag/hybrid-search", "POST", payload);
+}
+
+export async function explainRecommendationWithLlm(id: string): Promise<RecommendationLlmExplanation> {
+  return apiSend<RecommendationLlmExplanation>(`/recommendations/${id}/llm-explain`, "POST", {});
+}
+
+export async function getAgentLlmSummary(): Promise<{
+  status: string;
+  summary?: {
+    summary?: string;
+    operational_risks?: string[];
+    recommended_followups?: string[];
+    cited_evidence_ids?: string[];
+  };
+  error_message?: string;
+  logs_considered?: number;
+  recommendations_considered?: number;
+}> {
+  return apiSend("/agents/llm-scan-summary", "POST", {});
 }
 
 function fallbackRagResponse(payload: RagSearchRequest): RagSearchResponse {

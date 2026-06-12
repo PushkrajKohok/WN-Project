@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { Database, Lightbulb, RefreshCw } from "lucide-react";
 import {
+  getAgentLlmSummary,
   getAgentLogs,
   getAgentRunDetail,
   getAgentRuns,
@@ -54,6 +55,16 @@ export default function AgentWorkbenchPage() {
   const [filters, setFilters] = useState<AgentLogFilters>(defaultFilters);
   const [scan, setScan] = useState<RunScanRequest>(defaultScan);
   const [lastResult, setLastResult] = useState<RunScanResponse | null>(null);
+  const [llmSummary, setLlmSummary] = useState<{
+    status: string;
+    summary?: {
+      summary?: string;
+      operational_risks?: string[];
+      recommended_followups?: string[];
+      cited_evidence_ids?: string[];
+    };
+    error_message?: string;
+  } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isRunning, setIsRunning] = useState(false);
   const [isFallback, setIsFallback] = useState(false);
@@ -125,6 +136,18 @@ export default function AgentWorkbenchPage() {
     }
   };
 
+  const generateLlmSummary = async () => {
+    setIsRunning(true);
+    setError(null);
+    try {
+      setLlmSummary(await getAgentLlmSummary());
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "LLM scan summary failed.");
+    } finally {
+      setIsRunning(false);
+    }
+  };
+
   const updateFilters = (nextFilters: AgentLogFilters) => setFilters(nextFilters);
 
   return (
@@ -143,6 +166,9 @@ export default function AgentWorkbenchPage() {
           <button onClick={() => refresh(filters)} disabled={isLoading} className="btn btn-secondary">
             <RefreshCw size={15} className={isLoading ? "animate-spin" : ""} />
             Refresh Logs
+          </button>
+          <button onClick={generateLlmSummary} disabled={isRunning} className="btn btn-secondary">
+            Generate LLM Scan Summary
           </button>
           <Link href="/recommendations" className="btn btn-secondary">
             <Lightbulb size={15} />
@@ -182,6 +208,40 @@ export default function AgentWorkbenchPage() {
           </div>
         </div>
       ) : null}
+
+      {llmSummary && (
+        <section className="glass-card p-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-sm font-semibold">LLM Scan Summary</h2>
+            <span className="badge badge-info">{llmSummary.status}</span>
+          </div>
+          {llmSummary.summary ? (
+            <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-3">
+              <p className="text-sm md:col-span-3" style={{ color: "var(--color-text-secondary)" }}>{llmSummary.summary.summary}</p>
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-wide">Risks</div>
+                <ul className="mt-1 list-disc pl-4 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+                  {(llmSummary.summary.operational_risks || []).map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-wide">Followups</div>
+                <ul className="mt-1 list-disc pl-4 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+                  {(llmSummary.summary.recommended_followups || []).map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-wide">Citations</div>
+                <div className="mt-1 flex flex-wrap gap-1">
+                  {(llmSummary.summary.cited_evidence_ids || []).map((item) => <span key={item} className="badge badge-low">{item}</span>)}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <p className="mt-2 text-sm" style={{ color: "var(--color-text-secondary)" }}>{llmSummary.error_message || "LLM summary unavailable."}</p>
+          )}
+        </section>
+      )}
 
       <AgentStatusBoard agents={agents} />
 

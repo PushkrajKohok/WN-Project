@@ -104,3 +104,10 @@ def reject_recommendation(recommendation_id: str, req: RejectRequest):
 @router.post("/recommendations/{recommendation_id}/needs-more-evidence")
 def request_more_evidence(recommendation_id: str, req: MoreEvidenceRequest):
     return recommendation_service.mark_needs_more_evidence(recommendation_id, req.requested_by, req.note)
+
+
+@router.post("/recommendations/{recommendation_id}/llm-explain")
+def explain_recommendation_with_llm(recommendation_id: str):
+    from app.services import rag_hybrid_service
+
+    return rag_hybrid_service.explain_recommendation_with_llm(recommendation_id)

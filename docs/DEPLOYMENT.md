@@ -273,10 +273,38 @@ If the database is unavailable:
 - Rate-limit expensive endpoints.
 - Use read replicas or materialized views for large dashboards.
 
+## Real OpenAI RAG/LLM Mode
+
+Add these variables to the Render backend only:
+
+```text
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-5.4-mini
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_EMBEDDING_DIMENSIONS=1536
+LLM_FEATURES_ENABLED=true
+VECTOR_RAG_ENABLED=true
+ADMIN_API_TOKEN=optional_admin_secret
+```
+
+Do not add `OPENAI_API_KEY` to Vercel. Vercel only needs `NEXT_PUBLIC_API_URL` pointed at the Render backend.
+
+Before using vector search, apply the non-destructive Supabase migration:
+
+```bash
+psql "$DATABASE_URL" -f db/migrations/001_enable_vector_rag.sql
+```
+
+Then call `/admin/embeddings/rebuild` with a small limit first. The endpoint skips unchanged documents by text hash and does not run in a background loop.
+
+`gpt-5.4-mini` is the default cost-conscious model. If that model is unavailable for the account, change `OPENAI_MODEL` in Render. The backend will fail gracefully and will not automatically fall back to GPT-5.5.
+
+SQL and graph evidence remain the source of truth. LLM endpoints provide public explanations and summaries only; they do not execute actions.
+
 ## Demo-Safe Boundaries
 
 - Real ad-platform APIs are not connected.
-- RAG embeddings are simulated.
-- Agent orchestration is deterministic and simulated.
+- RAG can use real OpenAI embeddings when pgvector migration and Render env vars are configured; otherwise it falls back to deterministic keyword retrieval.
+- Agent orchestration is deterministic and simulated, with optional LLM public summaries.
 - Execution and rollback are simulated.
 - The app is suitable for a take-home demo and production architecture review, not live ad account control.

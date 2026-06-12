@@ -17,11 +17,11 @@
 
 ## Retrieval
 
-- Add pgvector embeddings to `rag_documents`.
-- Add embedding generation jobs.
+- Add scheduled embedding generation through Render Cron or a worker queue.
 - Add hybrid ranker evaluation.
 - Add index freshness monitoring.
 - Add retrieval regression tests.
+- Add pgvector index fallback docs for environments that do not support HNSW.
 
 ## Operations
 

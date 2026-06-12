@@ -107,3 +107,82 @@ export interface RagRebuildIndexResponse {
   documents_indexed: number;
   embedding_mode: string;
 }
+
+export interface LlmStatus {
+  llm_features_enabled: boolean;
+  vector_rag_enabled: boolean;
+  openai_key_configured: boolean;
+  model: string;
+  embedding_model: string;
+  embedding_dimensions: number;
+  openai_sdk_available?: boolean;
+  database_configured?: boolean;
+  embedded_docs_count?: number;
+  total_rag_docs_count?: number;
+  last_embedding_update?: string | null;
+  mode?: string;
+  error_message?: string;
+}
+
+export interface VectorSearchRequest {
+  query: string;
+  limit?: number;
+  client_id?: string | null;
+  embedding_group?: string | null;
+}
+
+export interface VectorSearchResponse {
+  mode: string;
+  query: string;
+  results: Array<RagDocumentResult & { distance?: number; similarity_score?: number }>;
+  error_message?: string;
+}
+
+export interface HybridSearchRequest {
+  query: string;
+  recommendation_id?: string | null;
+  client_id?: string | null;
+  campaign_id?: string | null;
+  limit?: number;
+}
+
+export interface HybridSearchResponse {
+  mode: "vector_hybrid" | "fallback_keyword";
+  query: string;
+  recommendation_id?: string | null;
+  client_id?: string | null;
+  sql_context: SqlContext;
+  vector_results: VectorSearchResponse["results"];
+  keyword_results: RagDocumentResult[];
+  graph_context: Array<Record<string, unknown>>;
+  benchmark_context: BenchmarkContext[];
+  evidence_score: Record<string, number | boolean | string>;
+  final_score: number;
+  review_required: boolean;
+  retrieval_trace: RetrievalTraceStep[];
+  vector_error?: string | null;
+}
+
+export interface EmbeddingRebuildResponse {
+  status: string;
+  embedded: number;
+  skipped: number;
+  limit: number;
+  force: boolean;
+}
+
+export interface RecommendationLlmExplanation {
+  status: string;
+  recommendation_id: string;
+  explanation?: {
+    summary?: string;
+    why_now?: string;
+    evidence_used?: string[];
+    risk_notes?: string[];
+    recommended_action?: string;
+    approval_required?: boolean;
+    confidence_adjustment?: number;
+  };
+  error_message?: string;
+  notice?: string;
+}

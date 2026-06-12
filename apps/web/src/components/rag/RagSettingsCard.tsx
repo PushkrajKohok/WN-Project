@@ -1,17 +1,20 @@
 "use client";
 
-const settings = [
-  ["Embedding mode", "simulated keyword/semantic scoring"],
-  ["Vector DB", "pgvector-ready, not active yet"],
-  ["Chunk source", "rag_documents"],
-  ["Retrieval strategy", "SQL + document scoring + graph edges"],
-  ["Safety", "corrective evidence scoring"],
-];
+import type { LlmStatus } from "@/types/rag";
 
-export function RagSettingsCard() {
+export function RagSettingsCard({ status }: { status?: LlmStatus }) {
+  const settings = [
+    ["Mode", status?.mode?.replace(/_/g, " ") || "keyword fallback"],
+    ["LLM", status?.llm_features_enabled ? "enabled" : "disabled"],
+    ["Vector RAG", status?.vector_rag_enabled ? "enabled" : "disabled"],
+    ["OpenAI key", status?.openai_key_configured ? "configured" : "missing"],
+    ["Embedding model", status?.embedding_model || "text-embedding-3-small"],
+    ["Embedded docs", `${status?.embedded_docs_count ?? 0} / ${status?.total_rag_docs_count ?? 0}`],
+    ["Safety", "deterministic guardrails control execution"],
+  ];
   return (
     <section className="glass-card p-5">
-      <h2 className="text-sm font-semibold">RAG Settings</h2>
+      <h2 className="text-sm font-semibold">Real RAG Status</h2>
       <div className="mt-4 space-y-2">
         {settings.map(([label, value]) => (
           <div key={label} className="flex justify-between gap-4 rounded-lg border px-3 py-2 text-sm" style={{ borderColor: "var(--color-border)", background: "var(--color-bg-tertiary)" }}>

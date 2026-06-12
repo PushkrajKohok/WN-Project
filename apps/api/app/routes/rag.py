@@ -26,9 +26,49 @@ class EvidenceScoreRequest(BaseModel):
     recommendation_id: str
 
 
+class VectorSearchRequest(BaseModel):
+    query: str
+    limit: int = 10
+    client_id: Optional[str] = None
+    embedding_group: Optional[str] = None
+
+
+class HybridSearchRequest(BaseModel):
+    query: str
+    recommendation_id: Optional[str] = None
+    client_id: Optional[str] = None
+    campaign_id: Optional[str] = None
+    limit: int = 10
+
+
 @router.post("/rag/search")
 def search(payload: RagSearchRequest):
     return rag_service.search_rag(payload.model_dump())
+
+
+@router.post("/rag/vector-search")
+def vector_search(payload: VectorSearchRequest):
+    from app.services import embedding_service
+
+    try:
+        return {
+            "mode": "vector_rag",
+            "query": payload.query,
+            "results": embedding_service.vector_search_rag_documents(
+                payload.query,
+                limit=payload.limit,
+                filters={"client_id": payload.client_id, "embedding_group": payload.embedding_group},
+            ),
+        }
+    except RuntimeError as exc:
+        return {"mode": "fallback_keyword", "query": payload.query, "results": [], "error_message": str(exc)}
+
+
+@router.post("/rag/hybrid-search")
+def hybrid_search(payload: HybridSearchRequest):
+    from app.services import rag_hybrid_service
+
+    return rag_hybrid_service.hybrid_search(**payload.model_dump())
 
 
 @router.get("/rag/recommendation/{recommendation_id}")

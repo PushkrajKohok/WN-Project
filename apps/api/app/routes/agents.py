@@ -58,3 +58,10 @@ def run_agent_scan(req: RunScanRequest):
 @router.get("/agents/current-investigation")
 def get_current_investigation():
     return agent_service.current_investigation()
+
+
+@router.post("/agents/llm-scan-summary")
+def llm_scan_summary():
+    from app.services import rag_hybrid_service
+
+    return rag_hybrid_service.agent_llm_scan_summary()
