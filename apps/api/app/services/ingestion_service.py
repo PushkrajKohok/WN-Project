@@ -19,7 +19,45 @@ from app.services.agent_log_service import (
     create_ingestion_logs,
 )
 
-ROOT = Path(__file__).resolve().parents[4]
+DEFAULT_TABLES_ORDER = [
+    "clients",
+    "products",
+    "customers",
+    "shopify_orders",
+    "shopify_order_items",
+    "klaviyo_events",
+    "ad_campaign_settings",
+    "ad_adsets",
+    "ad_performance_daily",
+    "audience_segments",
+    "audience_memberships",
+    "optimization_history",
+    "cross_client_benchmarks",
+    "recommendation_records",
+    "knowledge_graph_edges",
+    "rag_documents",
+    "schema_versions",
+]
+
+
+def find_project_root() -> Path:
+    env_root = os.getenv("PROJECT_ROOT")
+    if env_root:
+        return Path(env_root).expanduser().resolve()
+
+    current = Path(__file__).resolve()
+    for parent in [current.parent, *current.parents]:
+        if (parent / "scripts").exists() or (parent / "db").exists():
+            return parent
+
+    for parent in [current.parent, *current.parents]:
+        if (parent / "app").exists() and (parent / "requirements.txt").exists():
+            return parent
+
+    return Path.cwd().resolve()
+
+
+ROOT = find_project_root()
 DATA_DIR = ROOT / "data"
 GENERATOR_SCRIPT = ROOT / "scripts" / "generate_wastenot_synthetic_data.py"
 INGEST_SCRIPT = ROOT / "scripts" / "ingest_wastenot_data.py"
@@ -28,25 +66,7 @@ try:
     sys.path.insert(0, str(ROOT))
     from scripts.ingest_wastenot_data import TABLES_ORDER
 except Exception:  # pragma: no cover - service still works for generation fallback.
-    TABLES_ORDER = [
-        "clients",
-        "products",
-        "customers",
-        "shopify_orders",
-        "shopify_order_items",
-        "klaviyo_events",
-        "ad_campaign_settings",
-        "ad_adsets",
-        "ad_performance_daily",
-        "audience_segments",
-        "audience_memberships",
-        "optimization_history",
-        "cross_client_benchmarks",
-        "recommendation_records",
-        "knowledge_graph_edges",
-        "rag_documents",
-        "schema_versions",
-    ]
+    TABLES_ORDER = DEFAULT_TABLES_ORDER
 
 _jobs: Dict[str, Dict[str, Any]] = {}
 
@@ -175,6 +195,11 @@ def run_generation(job_id: str, data_dir: Path, clients: int, customers: int, da
     set_job(job_id, status="running", data_dir=str(data_dir), message="Generating synthetic CSV data.")
     create_db_job(job_id, "running", data_dir)
     try:
+        if not GENERATOR_SCRIPT.exists():
+            raise FileNotFoundError(
+                "Synthetic data generator is not available in this backend runtime. "
+                "Generate demo data locally or include the scripts directory in the deployment image."
+            )
         data_dir.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(
             [
@@ -216,6 +241,11 @@ def run_ingestion(job_id: str, data_dir: Path, reset: bool) -> None:
     set_job(job_id, status="running", data_dir=str(data_dir), message="Loading CSV data into Postgres.")
     create_db_job(job_id, "running", data_dir)
     try:
+        if not INGEST_SCRIPT.exists():
+            raise FileNotFoundError(
+                "CSV ingestion script is not available in this backend runtime. "
+                "Run ingestion locally or include the scripts directory in the deployment image."
+            )
         command = [
             sys.executable,
             str(INGEST_SCRIPT),
