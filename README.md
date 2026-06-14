@@ -1,56 +1,58 @@
 # WasteNot Always-On Intelligence Layer
 
-A full-stack take-home demo of an always-on multi-agent RAG intelligence layer for eCommerce ad optimization.
+WasteNot Always-On Intelligence Layer is a full-stack take-home project that demonstrates how WasteNot could move from reactive, human-in-the-loop ad optimization to a continuous intelligence layer for finding wasted spend, explaining recommendations, enforcing guardrails, and learning from outcomes.
 
-The project shows how WasteNot can move from reactive human-in-the-loop optimization to a continuous intelligence layer that ingests commerce and ad-platform data, finds wasted spend, explains recommendations with evidence, applies guardrails, simulates execution and rollback, and learns from outcomes.
+The app combines a Next.js command center, FastAPI backend, Supabase/Postgres schema, synthetic WasteNot data, recommendation workflows, RAG evidence, cross-client benchmark learning, action audit trails, recursive learning, and optional OpenAI-powered reasoning.
 
 ## What This Demonstrates
 
-- Continuous ingestion controls and synthetic WasteNot data.
-- Multi-agent topology for scanning, pattern mining, recommendation, risk grading, human review, and execution.
-- Recommendation queue with confidence, risk, expected impact, and approval workflow.
-- SQL, RAG document, and GraphRAG-style evidence for recommendation detail.
-- Cross-client pattern learning through anonymized benchmarks and graph edges.
-- Corrective RAG guardrails for confidence, freshness, benchmark support, rollback, and approval rules.
-- Simulated action execution and rollback history.
-- Recursive learning loop that writes outcome memory, benchmark updates, and graph-weight updates.
-- Executive memo, 90-day roadmap, deployment guide, and final submission checklist.
+- Data ingestion controls for Shopify, Klaviyo, Meta, Google Ads, Snowflake, and Postgres-style data.
+- A command center dashboard for spend, revenue, ROAS, CPA, risk, savings, ingestion health, and agent activity.
+- A recommendation queue with expected savings, confidence, risk, approval status, and decision workflow.
+- Recommendation detail pages with SQL evidence, RAG context, graph/benchmark support, risk validation, agent trace, and rollback planning.
+- A six-agent operating model: Data Scout, Pattern Miner, Recommendation Engine, Evidence + Risk Grader, Human Interface, and Action Executor.
+- Cross-client pattern exploration using anonymized benchmarks and knowledge graph edges.
+- Guardrails for confidence thresholds, data freshness, benchmark support, privacy boundaries, and auto-execution constraints.
+- Action log and rollback history for safe execution workflows.
+- Recursive learning from approved, rejected, executed, and rolled-back outcomes.
+- Submission documentation with architecture diagram, network-effects memo, realistic 90-day plan, deployment readiness, and implemented-vs-simulated clarity.
 
 ## Architecture Summary
 
-The chosen architecture is **Agentic Graph-Hybrid RAG with Corrective RAG guardrails**.
+The project uses **Agentic Graph-Hybrid RAG with Corrective RAG guardrails**.
 
-- Agentic RAG: specialized agents continuously scan, route, recommend, validate, escalate, and execute.
-- Hybrid RAG: structured SQL metrics are combined with deterministic document retrieval over `rag_documents`.
-- GraphRAG-style context: `cross_client_benchmarks` and `knowledge_graph_edges` model privacy-safe cross-client learning.
-- Corrective RAG: evidence quality, freshness, risk, benchmark confidence, and guardrail compliance determine whether action is safe.
-- Human boundary: high-risk, low-confidence, stale-data, or rollback-unavailable decisions require review or are blocked.
+- **Agentic RAG:** specialized agents scan, route, recommend, validate, escalate, and prepare actions.
+- **Hybrid RAG:** SQL metrics, RAG documents, optional vector search, keyword fallback, and graph evidence are combined into a single evidence view.
+- **GraphRAG-style context:** `cross_client_benchmarks` and `knowledge_graph_edges` model privacy-safe learning across similar clients.
+- **Corrective RAG:** evidence quality, freshness, risk level, benchmark confidence, and guardrail compliance determine whether a recommendation can proceed.
+- **Human boundary:** high-risk, low-confidence, stale-data, or rollback-unavailable decisions require human review.
 
 ## Tech Stack
 
 | Layer | Stack |
 | --- | --- |
-| Frontend | Next.js, React, TypeScript, Tailwind CSS, shadcn/ui-style local components, Recharts, Lucide icons |
-| Backend | FastAPI, Python, Pydantic, psycopg, deterministic agent/RAG simulation |
-| Database | Postgres/Supabase-compatible schema, RAG documents, benchmarks, graph edges, recommendation records, optimization history |
-| Data | Synthetic CSV generator, ingestion CLI, zip extraction support, row count summaries |
-| Deployment | Vercel frontend, Render/Railway/Fly.io backend, Supabase Postgres |
+| Frontend | Next.js, React, TypeScript, Tailwind CSS, Recharts, Lucide icons |
+| Backend | FastAPI, Python, Pydantic, psycopg, OpenAI SDK, deterministic service fallbacks |
+| Database | Supabase/Postgres-compatible schema, pgvector-ready embeddings table, RAG documents, benchmarks, graph edges, recommendation records, optimization history |
+| Data | Synthetic CSV generator, ingestion CLI, manifest row counts, schema drift and freshness concepts |
+| AI/RAG | SQL retrieval, keyword fallback, GraphRAG-style evidence, optional OpenAI embeddings and LLM public summaries |
+| Deployment | Vercel frontend, Render FastAPI backend, Supabase Postgres |
 
-## App Pages
+## App Walkthrough
 
 | Route | Purpose |
 | --- | --- |
-| `/data` | Generate and ingest synthetic data. |
-| `/dashboard` | Intelligence command center. |
-| `/recommendations` | Recommendation queue. |
-| `/recommendations/[id]` | Evidence drawer and risk validation. |
-| `/agents` | Agent Workbench. |
-| `/patterns` | Cross-client Pattern Explorer. |
-| `/actions` | Action Log and rollback history. |
-| `/guardrails` | Approval and auto-execution settings. |
-| `/rag` | Hybrid RAG retrieval and evidence scoring. |
-| `/learning` | Recursive Learning Loop. |
-| `/docs` | Take-home documentation and memo. |
+| `/data` | Data generation, ingestion controls, ingestion frequency, manifest row counts, and pipeline steps. |
+| `/dashboard` | Intelligence command center for KPIs, savings, risk, ingestion health, and agent activity. |
+| `/recommendations` | Recommendation queue with platform, risk, confidence, expected savings, and approval state. |
+| `/recommendations/[id]` | Recommendation detail, evidence drawer, risk validation, agent trace, rollback plan, and LLM explanation button. |
+| `/agents` | Agent Workbench with statuses, logs, run steps, scan controls, and optional LLM scan summary. |
+| `/patterns` | Cross-client Pattern Explorer with anonymized benchmark and graph intelligence. |
+| `/actions` | Action Log, execution simulation, rollback simulation, and audit history. |
+| `/guardrails` | Approval rules, confidence thresholds, freshness rules, benchmark rules, privacy, and auto-execution constraints. |
+| `/rag` | Hybrid RAG retrieval, vector readiness, evidence scoring, retrieval trace, and embedding rebuild controls. |
+| `/learning` | Recursive learning loop, outcome measurement, strategy learning scores, and learning memory. |
+| `/docs` | Executive submission docs, architecture diagram, network-effects memo, 90-day plan, deployment readiness, and implemented-vs-simulated table. |
 
 ## Local Setup
 
@@ -78,21 +80,14 @@ docker compose up -d postgres
 
 ### 4. Configure Environment
 
-Copy the example environment file:
+Use environment variables only. Do not commit real secrets.
 
 ```bash
-cp .env.example .env
 export DATABASE_URL=postgresql://postgres:postgres@localhost:5432/wastenot
-```
-
-Required variables:
-
-```env
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/wastenot
-NEXT_PUBLIC_API_URL=http://localhost:8000
-API_CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
-ENVIRONMENT=development
-LOG_LEVEL=info
+export NEXT_PUBLIC_API_URL=http://localhost:8000
+export API_CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+export ENVIRONMENT=development
+export LOG_LEVEL=info
 ```
 
 ### 5. Initialize Schema
@@ -101,31 +96,43 @@ LOG_LEVEL=info
 psql "$DATABASE_URL" -f db/schema.sql
 ```
 
-### 6. Generate Synthetic Data
+### 6. Generate and Ingest Synthetic Data
+
+Generate CSVs:
 
 ```bash
-python scripts/generate_wastenot_synthetic_data.py --output-dir ./data/generated_default --clients 60 --customers-per-client 800 --days 90 --seed 42
+python scripts/generate_wastenot_synthetic_data.py \
+  --output-dir ./data/generated_default \
+  --clients 60 \
+  --customers-per-client 800 \
+  --days 90 \
+  --seed 42
 ```
 
-If using the original generator file outside the repo root, the equivalent command is:
+Ingest CSVs:
 
 ```bash
-python generate_wastenot_synthetic_data.py --output-dir ./data/generated_default --clients 60 --customers-per-client 800 --days 90 --seed 42
+python scripts/ingest_wastenot_data.py \
+  --data-dir ./data/generated_default \
+  --database-url "$DATABASE_URL" \
+  --reset
 ```
 
-### 7. Ingest Data
+Generate and ingest in one command:
 
 ```bash
-python scripts/ingest_wastenot_data.py --data-dir ./data/generated_default --database-url "$DATABASE_URL" --reset
+python scripts/ingest_wastenot_data.py \
+  --generate \
+  --data-dir ./data/generated_default \
+  --clients 60 \
+  --customers-per-client 800 \
+  --days 90 \
+  --seed 42 \
+  --database-url "$DATABASE_URL" \
+  --reset
 ```
 
-You can also generate and ingest in one command:
-
-```bash
-python scripts/ingest_wastenot_data.py --generate --data-dir ./data/generated_default --clients 60 --customers-per-client 800 --days 90 --seed 42 --database-url "$DATABASE_URL" --reset
-```
-
-### 8. Run Backend
+### 7. Run Backend
 
 ```bash
 cd apps/api
@@ -140,7 +147,7 @@ http://localhost:8000/health/db
 http://localhost:8000/health/readiness
 ```
 
-### 9. Run Frontend
+### 8. Run Frontend
 
 ```bash
 cd apps/web
@@ -153,72 +160,77 @@ Open:
 http://localhost:3000
 ```
 
-## Root Convenience Scripts
+## Optional OpenAI RAG/LLM Mode
 
-These scripts are optional helpers:
+The app supports optional OpenAI-powered vector RAG and LLM-assisted public summaries. This mode is controlled by backend environment variables and is disabled unless explicitly configured.
 
-```bash
-npm run db:up
-npm run db:schema
-npm run data:generate
-npm run data:ingest
-npm run dev:api
-npm run dev:web
-npm run typecheck
-npm run lint
-npm run build
+What it enables:
+
+- `/llm/status` reports LLM/vector readiness without exposing secrets.
+- `/admin/embeddings/rebuild` embeds missing `rag_documents` with OpenAI embeddings.
+- `/rag/vector-search` searches Supabase pgvector embeddings.
+- `/rag/hybrid-search` combines SQL, vector, keyword, graph, and benchmark evidence.
+- `/recommendations/{id}/llm-explain` generates public recommendation explanations.
+- `/agents/llm-scan-summary` generates public operational summaries.
+
+Render backend variables:
+
+```text
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_EMBEDDING_DIMENSIONS=1536
+LLM_FEATURES_ENABLED=true
+VECTOR_RAG_ENABLED=true
+ADMIN_API_TOKEN=optional_admin_secret
 ```
 
-Run `dev:api` and `dev:web` in separate terminals.
+For lower LLM cost, set:
 
-## Demo Flow
+```text
+OPENAI_MODEL=gpt-4o-mini
+```
 
-1. Open `/docs` to explain the project.
-2. Open `/data` and show ingestion frequency plus synthetic data controls.
-3. Open `/dashboard` and show KPIs.
-4. Open `/recommendations` and review the recommendation queue.
-5. Open a recommendation detail page and show SQL, RAG, GraphRAG, risk, and rollback evidence.
-6. Open `/agents` and run an optimization scan.
-7. Open `/patterns` to show network-effect intelligence.
-8. Open `/actions` and simulate execution or rollback.
-9. Open `/guardrails` and show approval settings.
-10. Open `/rag` and run retrieval.
-11. Open `/learning` and run the learning loop.
+Apply the non-destructive pgvector migration before rebuilding embeddings:
 
-## Demo Script
+```bash
+psql "$DATABASE_URL" -f db/migrations/001_enable_vector_rag.sql
+```
 
-"WasteNot currently ingests eCommerce and ad-platform data to reduce wasted spend. This demo shows how that evolves into an always-on intelligence layer. I start from Data & Ingestion Control, where synthetic Shopify/Klaviyo/Meta/Google-style data can be generated and ingested. The dashboard summarizes savings, risk, recommendations, and ingestion health. The recommendation queue shows optimization actions with confidence and risk. Opening a recommendation shows SQL evidence, RAG documents, cross-client benchmark support, risk validation, and rollback planning. The Agent Workbench makes the multi-agent process transparent: Data Scout detects issues, Pattern Miner retrieves patterns, Recommendation Engine proposes actions, Risk Grader validates evidence, Human Interface escalates decisions, and Action Executor simulates execution. Cross-Client Patterns demonstrates network effects through anonymized benchmarks. Guardrails control autonomy. RAG Retrieval shows hybrid evidence scoring. Learning Loop feeds outcomes back into memory, benchmarks, and graph relationships."
+Security boundary:
+
+- Put `OPENAI_API_KEY` in Render only.
+- Do not put the OpenAI key in Vercel.
+- Vercel only needs `NEXT_PUBLIC_API_URL`.
+- LLM outputs explain and summarize only; deterministic guardrails still control approval and execution.
 
 ## Implemented vs Simulated
 
-| Implemented | Simulated | Future Production Work |
-| --- | --- | --- |
-| Full app shell | Real ad-platform execution | Real Shopify/Klaviyo/Meta/Google connectors |
-| Database schema | Real LLM agent orchestration | LangGraph or equivalent orchestration |
-| Synthetic data ingestion | Real pgvector embeddings | pgvector embeddings and background jobs |
-| Dashboard | Causal lift attribution | Auth and tenant isolation |
-| Recommendations | Production auth/tenant isolation | Execution snapshots and idempotent API writes |
-| Evidence detail | Live external API side effects | Observability and retry policies |
-| Agent Workbench | | |
-| Pattern Explorer | | |
-| Action Log | | |
-| Guardrails | | |
-| RAG retrieval simulation | | |
-| Learning Loop | | |
-| Docs, memo, roadmap, deployment guide | | |
+| Implemented Now | Optional Live AI Mode | Simulated / Not Connected | Production Next |
+| --- | --- | --- | --- |
+| Next.js app shell | OpenAI client wrapper | Shopify/Klaviyo/Meta/Google live connectors | Real platform connectors |
+| FastAPI backend | Configurable LLM model | Real ad-platform execution | OAuth/token refresh |
+| Supabase/Postgres schema | pgvector embedding table and migration | Autonomous media buying | Background workers or cron |
+| Synthetic generation and ingestion | Admin embedding rebuild endpoint | LangGraph-style orchestration | LangGraph or durable agent routing |
+| Dashboard and recommendation queue | Vector search endpoint | Causal attribution | Auth and tenant isolation |
+| Recommendation evidence drawer | Hybrid SQL/vector/keyword/graph search | Hourly production API sync | Idempotency and retry policies |
+| Agent Workbench and public logs | LLM recommendation explanations | Production-grade job queue | Execution snapshots and audit retention |
+| Pattern Explorer and graph benchmarks | LLM agent scan summaries | | Observability and alerting |
+| Action Log, rollback history, guardrails | Token/cost audit log table | | |
+| Learning Loop and Submission Docs | | | |
 
 ## Deployment Summary
 
-- Frontend: Vercel, project root `apps/web`.
-- Backend: Render, Railway, or Fly.io, service root `apps/api`.
+- Frontend: Vercel, root directory `apps/web`.
+- Backend: Render Web Service, root directory `apps/api`.
 - Database: Supabase Postgres.
-- Credentials: added after implementation through hosting-provider environment variables only.
+- Secrets: hosting-provider environment variables only.
 
 Production values:
 
-```env
-NEXT_PUBLIC_API_URL=https://your-api-service.onrender.com
-DATABASE_URL=<Supabase pooled or direct Postgres connection string>
+```text
+NEXT_PUBLIC_API_URL=https://your-render-api-url
+DATABASE_URL=your_supabase_database_url_here
 API_CORS_ORIGINS=https://your-vercel-app.vercel.app
 ENVIRONMENT=production
 LOG_LEVEL=info
@@ -226,62 +238,57 @@ LOG_LEVEL=info
 
 Detailed deployment instructions are in `docs/DEPLOYMENT.md`.
 
-## Render Backend Deployment
+## Render Backend Settings
 
-1. Create a new Render Web Service.
-2. Connect the GitHub repo.
-3. Set root directory to `apps/api`.
-4. Build command:
+Use these exact Render settings:
 
-```bash
-pip install -r requirements.txt
-```
+| Setting | Value |
+| --- | --- |
+| Service type | Web Service |
+| Root Directory | `apps/api` |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `uvicorn app.main:app --host 0.0.0.0 --port $PORT` |
+| Health Check Path | `/health` |
 
-5. Start command:
-
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port $PORT
-```
-
-6. Health check path:
+Backend endpoints to test after deploy:
 
 ```text
-/health
+https://YOUR_RENDER_URL/health
+https://YOUR_RENDER_URL/health/db
+https://YOUR_RENDER_URL/health/readiness
+https://YOUR_RENDER_URL/dashboard/summary
 ```
 
-7. Add environment variables:
+After the Vercel frontend is deployed, update `API_CORS_ORIGINS` in Render to the final Vercel URL.
 
-```text
-DATABASE_URL=<Supabase connection string>
-API_CORS_ORIGINS=http://localhost:3000
-ENVIRONMENT=production
-LOG_LEVEL=info
-```
+## Demo Flow
 
-8. Deploy.
-9. Test:
-
-```text
-/health
-/health/db
-/health/readiness
-/dashboard/summary
-```
-
-After the Vercel frontend is deployed later, update `API_CORS_ORIGINS` to the final Vercel URL.
+1. Open `/docs` to frame the project, architecture, network-effects memo, and roadmap.
+2. Open `/data` to show ingestion frequency, synthetic data controls, manifest row counts, and pipeline steps.
+3. Open `/dashboard` to show KPIs, risk, recommendations, ingestion health, and agent activity.
+4. Open `/recommendations` and review the recommendation queue.
+5. Open a recommendation detail page and show SQL, RAG, GraphRAG, risk, agent trace, and rollback evidence.
+6. Open `/rag` to show hybrid retrieval, vector readiness, evidence scoring, and retrieval trace.
+7. Open `/agents` and run an optimization scan.
+8. Open `/patterns` to show privacy-safe cross-client intelligence.
+9. Open `/actions` and simulate execution or rollback.
+10. Open `/guardrails` and show approval rules.
+11. Open `/learning` and run the learning loop.
 
 ## Testing and Validation
 
-Recommended validation commands:
+Backend checks:
 
 ```bash
 cd apps/api
-PYTHONPYCACHEPREFIX=/tmp/wastenot_pycache python3 -m py_compile main.py app/core/config.py app/core/cors.py app/routes/health.py
+PYTHONPYCACHEPREFIX=/tmp/wastenot_pycache venv/bin/python -m compileall app
+venv/bin/python -c "import app.main"
 ```
+
+Frontend checks:
 
 ```bash
 cd apps/web
-npm run typecheck
 npm run lint
 npm run build
 ```
@@ -290,7 +297,7 @@ Backend smoke test:
 
 ```bash
 cd apps/api
-python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8015
+venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8015
 curl http://127.0.0.1:8015/health
 curl http://127.0.0.1:8015/health/db
 curl http://127.0.0.1:8015/health/readiness
@@ -306,18 +313,6 @@ NEXT_PUBLIC_API_URL=http://localhost:8000 npm run dev -- --port 3015
 
 Then open `/dashboard`, `/data`, `/recommendations`, `/agents`, `/patterns`, `/actions`, `/guardrails`, `/rag`, `/learning`, and `/docs`.
 
-## Submission Checklist
-
-- [x] Data ingestion covered.
-- [x] Multi-agent architecture covered.
-- [x] RAG and reasoning covered.
-- [x] Network-effects memo included.
-- [x] 90-day roadmap included.
-- [x] Deployment plan included.
-- [x] README updated.
-- [x] No secrets committed.
-- [x] Local run instructions documented and tested where environment permits.
-
 ## Documentation
 
 - `docs/ARCHITECTURE.md`
@@ -329,123 +324,35 @@ Then open `/dashboard`, `/data`, `/recommendations`, `/agents`, `/patterns`, `/a
 - `docs/KNOWN_LIMITATIONS.md`
 - `docs/FUTURE_WORK.md`
 
+## Submission Checklist
+
+- [x] Data ingestion and context assembly explained.
+- [x] Multi-agent topology explained.
+- [x] RAG and reasoning layer explained.
+- [x] Hallucination prevention and guardrails explained.
+- [x] Network-effects memo included.
+- [x] Realistic 90-day roadmap included.
+- [x] Deployment plan included.
+- [x] Implemented-vs-simulated boundary documented.
+- [x] No real secrets committed.
+
 ## Known Limitations
 
-- Real external APIs are not connected.
-- Real OpenAI embeddings and LLM explanations are now supported behind environment flags, but are disabled unless configured in Render.
-- Agent orchestration remains deterministic; LLM scan summaries are explanatory only.
-- Production authentication and tenant isolation are not implemented.
-- Production background jobs, execution snapshots, and live API idempotency are future work.
+- Real Shopify, Meta, Google Ads, and Klaviyo connectors are not implemented yet.
+- No hourly production data sync is running yet.
+- Real ad-platform execution is simulated.
+- Budget changes, bid changes, and broad campaign restructuring remain human-approved future work.
+- Agent orchestration is deterministic, not LangGraph-based.
+- Optional OpenAI mode provides public explanations and vector retrieval only when configured.
+- Production authentication, tenant isolation, job queues, execution snapshots, retries, and observability are future work.
 
-## Real OpenAI RAG/LLM Mode
+## Production Next Steps
 
-Step 16 adds optional OpenAI-powered RAG and LLM-assisted public explanations without adding live ad-platform connectors.
-
-Backend additions:
-
-- `OPENAI_API_KEY` is read only from the backend environment.
-- `rag_document_embeddings` stores pgvector embeddings for `rag_documents`.
-- `/llm/status` reports whether LLM/vector mode is active without revealing secrets.
-- `/admin/embeddings/rebuild` embeds missing documents with a default limit of 500.
-- `/rag/vector-search` and `/rag/hybrid-search` combine vector, SQL, keyword, and graph evidence.
-- `/recommendations/{id}/llm-explain` generates a public explanation only.
-- `/agents/llm-scan-summary` creates a public operational summary only.
-
-Render environment variables to add manually:
-
-```text
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-4o
-OPENAI_EMBEDDING_MODEL=text-embedding-3-small
-OPENAI_EMBEDDING_DIMENSIONS=1536
-LLM_FEATURES_ENABLED=true
-VECTOR_RAG_ENABLED=true
-ADMIN_API_TOKEN=optional_admin_secret
-```
-
-Apply the non-destructive Supabase migration before rebuilding embeddings:
-
-```bash
-psql "$DATABASE_URL" -f db/migrations/001_enable_vector_rag.sql
-```
-
-The OpenAI key belongs in Render only. Do not put it in Vercel. Vercel only needs `NEXT_PUBLIC_API_URL`.
-
-## Changelog
-
-### Step 15 - Final polish and submission readiness
-
-Files changed:
-
-- `README.md`
-- `docs/*`
-- shared frontend components
-- frontend documentation page
-- backend health/config files from deployment readiness
-- root scripts
-
-Features added:
-
-- Final demo script
-- Final submission checklist
-- UI consistency helper components
-- Route/link cleanup guidance
-- Health check validation guidance
-- Documentation cleanup
-- Implemented-vs-simulated clarity
-- Credential placeholder guidance
-
-Known issues:
-
-- Real external APIs are not connected.
-- Real embeddings are not active.
-- Agent orchestration is simulated/deterministic.
-- Production auth and tenant isolation are not implemented.
-
-Next steps:
-
-- Add real deployment credentials.
-- Deploy backend.
-- Deploy frontend.
-- Connect Supabase.
-- Test live URLs.
-- Optionally add real LLM embeddings and orchestration.
-
-### Step 16 - OpenAI vector RAG and LLM reasoning support
-
-Files changed:
-
-- `apps/api/app/core/config.py`
-- `apps/api/app/services/openai_service.py`
-- `apps/api/app/services/embedding_service.py`
-- `apps/api/app/services/rag_hybrid_service.py`
-- `apps/api/app/routes/llm.py`
-- `apps/api/app/routes/vector_rag.py`
-- `apps/api/app/routes/rag.py`
-- `apps/api/app/routes/recommendations.py`
-- `apps/api/app/routes/agents.py`
-- `apps/web/src/app/rag/page.tsx`
-- `apps/web/src/app/recommendations/[id]/page.tsx`
-- `apps/web/src/app/agents/page.tsx`
-- `db/schema.sql`
-- `db/migrations/001_enable_vector_rag.sql`
-- `docs/DEPLOYMENT.md`
-- `docs/KNOWN_LIMITATIONS.md`
-- `docs/FUTURE_WORK.md`
-
-Features added:
-
-- Optional OpenAI client wrapper
-- pgvector embedding table and migration
-- Admin-controlled embedding rebuild
-- Vector search endpoint
-- Hybrid SQL/vector/keyword/graph retrieval endpoint
-- LLM recommendation explanation endpoint
-- LLM agent scan summary endpoint
-- Frontend status indicators and controls
-
-Known issues:
-
-- Real Shopify, Meta, Google Ads, and Klaviyo connectors are still not implemented.
-- LLM outputs explain and summarize only; deterministic guardrails still control approval and execution.
-- Background embedding schedules should be handled with a worker or Render Cron later.
+- Add one real read-only connector first, preferably Shopify or Meta Ads.
+- Add scheduled ingestion through Render Cron, workers, or a queue.
+- Apply the pgvector migration in Supabase and rebuild embeddings.
+- Add OAuth/token refresh handling for real platform connectors.
+- Add tenant isolation and authentication before real client data.
+- Add guarded execution for one low-risk audience action.
+- Add idempotency, retry policies, before/after snapshots, and rollback tracking.
+- Add durable agent orchestration and production observability.
